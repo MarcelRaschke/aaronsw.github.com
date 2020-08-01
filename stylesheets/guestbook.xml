@@ -1,0 +1,1408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.9.0.1
+- https://www.phpmyadmin.net
+-
+- Host: localhost:3306
+- Erstellungszeit: 17. Jun 2020 um 04:00
+- Server-Version: 10.2.30-MariaDB
+- PHP-Version: 7.1.14
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="jessejay" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="guestbook">
+                CREATE TABLE `guestbook` (
+                  `idnum` int(11) NOT NULL AUTO_INCREMENT,
+                  `whenposted` int(11) DEFAULT NULL,
+                  `name` text DEFAULT NULL,
+                  `email` text DEFAULT NULL,
+                  `www` text DEFAULT NULL,
+                  `comments` text DEFAULT NULL,
+                  PRIMARY KEY (`idnum`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=280 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Datenbank: 'jessejay'
+    -->
+    <database name="jessejay">
+        <!-- Tabelle guestbook -->
+        <table name="guestbook">
+            <column name="idnum">277</column>
+            <column name="whenposted">1348181566</column>
+            <column name="name">Eine Gruppe von Fans</column>
+            <column name="email"></column>
+            <column name="www">http://</column>
+            <column name="comments">Schöner Jesse
+
+Dein Sound ist jedesmal eine wahnsinnig tiefe Gefühlsreise, die selten ein DJ hin kriegt. 
+Du bist in den Emotionen, die Du vermittelst und makellos spielst unverkennbar und einzigartig. 
+
+Danke, dass es Dich gibt, Jesse Jay. Danke für Deine Musik.
+We all love you. (und es eine grosse Gruppe, die Dich sonst still verehrt :-) </column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">270</column>
+            <column name="whenposted">1344544674</column>
+            <column name="name">michi k.</column>
+            <column name="email"></column>
+            <column name="www">http://</column>
+            <column name="comments">ciao jesse. jetzt war ich das erste mal auf deiner homepage :-)) lieben gruss m.</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">269</column>
+            <column name="whenposted">1343933832</column>
+            <column name="name">Beni</column>
+            <column name="email">our.beats@gmx.ch</column>
+            <column name="www">http://a2.ec-images.myspacecdn.com/images02/141/8d282c55c9e54af29c2e00cfb936bf2c/l.jpg</column>
+            <column name="comments">Hallo Michi! Danke für deinen GB-Eintrag auf unserer Page! Deine Page ist ebenfalls sehr interessant und hat ein hammer Design, Respect! Wünsche dir eine Gute Zeit und weiterhin viel Erfolg... Let the beat goes on Beats and Greetz Beni</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">163</column>
+            <column name="whenposted">1300391047</column>
+            <column name="name">DancingQueen</column>
+            <column name="email"></column>
+            <column name="www">http://</column>
+            <column name="comments">Grosser Jesse, nach mehr als 10 Jahren kann wohl sagen, dass Du eine IKONE bist. 
+
+Dein Stil, Dein Feeling, Deine Leidenschaft, die Macht DEIN Publikum mitzureissen, zu verzaubern, zu Highs empor zu heben, ist eine seltene Kunst, eine unglaubliche Gabe, ein grosses Talent und eine totale Hingabe Deinerseits. 
+
+Dafür, dass Du uns seit sooo langem schon vom Feinsten verwöhnst, dass Du ein derart schöner Mensch bist und dass Du Dir und uns treu bleibst mit Deiner Passion, danke ich Dir von Herzen. 
+
+Zürich ist die beste Stadt der Welt, auch weil es DJs wie Dich hat! 
+
+Herzlichste Gratulation Jesse. 
+
+Mich auf mehr freuend, umarme ich Dich, Deine, Dancing Queen</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">157</column>
+            <column name="whenposted">1286679539</column>
+            <column name="name">Mathias</column>
+            <column name="email"></column>
+            <column name="www">Dejavu</column>
+            <column name="comments">hey jessejay! vielen dank nochmals für die 2 demo-cd`s welche du mir geschenkt hast letzten freitagmorgen! dein set war oberhammergeil im thaithai. ich bin definitiv von deinem sound &amp; können begeistert oder wie du sagst infiziert! du hast den groove echt drauf und die musik kommt von &quot;innen&quot;. eine pandemie wäre in deinem fall sehr wünschenswert... weiter so und hoffentlich bis bald. Mathias
+</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">156</column>
+            <column name="whenposted">1283706183</column>
+            <column name="name">stefan</column>
+            <column name="email">stefanzollinger@hotmail.com</column>
+            <column name="www">http://</column>
+            <column name="comments">hoooi Michi,
+han mich namal welle bi dir und bide anderne bedanke für de lässig abig gestert, mal was anders gsi+ han mi gfreut uf die nett bekannschaft mit eu allne.
+
+hoffe mi köhrt oder gseht sich wieder mal bald, ich weis ja woni eu /dich finde chan.
+
+cheers stefan</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">155</column>
+            <column name="whenposted">1280177478</column>
+            <column name="name">jayjay</column>
+            <column name="email">jay.rickli@bluewin.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">ja hammer ... hallo michi  du warst fleissig am webside auf pimpen...cool !!!!  
+so freue ich mich auf samstag  im CELESTIAL  wo DU die leute rockst...jepaaaaaaaaaaa
+en schmatzer jj </column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">152</column>
+            <column name="whenposted">1279128288</column>
+            <column name="name">Annemarie  ( !! )</column>
+            <column name="email">lady-julia@lady-julia.com</column>
+            <column name="www">http://www.latex-deluxe.com</column>
+            <column name="comments">Hi Michl,
+
+Für die Lora-Galaxy-Space-Sommerpause hast Du endlich mal wieder Zeit für Deine *Hausaufgaben* Das heisst fleissig CDs für uns mixen ** freu **  
+
+Plus mehr Zeit für uns wieder :-) 
+
+Freu mich auf Dich, werde aber trotzdem die heimelige couch im Lora ein wenig vermissen.
+
+Kiss vom Annerl
+
+@Ken-Zoo , treue &quot;Fans&quot; sind live dabei und *wohnen* nicht in Gästebüchern *zwinker* 
+
+</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">151</column>
+            <column name="whenposted">1274540055</column>
+            <column name="name">DJ Ken-ZOO</column>
+            <column name="email">jaeseoul@hotmail.com</column>
+            <column name="www">http://www.gayromeo.com/GALAXY</column>
+            <column name="comments">hey Michi,
+was ist los mit Dir, dass niemand mehr in Dein GB schreibt? Bin ich wirklich Dein letzter treuer Fan?
+
+Wünsche Dir alles Gute.
+
+hiro
+
+P.S.schreib mir doch mal eine e-mail. würde mich riesig freuen.</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">150</column>
+            <column name="whenposted">1265326553</column>
+            <column name="name">DJ Various Artists</column>
+            <column name="email">habore@hispeed.ch</column>
+            <column name="www">http://myspace.com/yahushii</column>
+            <column name="comments">Lieber DJJJ,
+ich habe einen neuen Electronicastil entwickelt. Ab sofort heisst TranceInTheFire™ Trancesty™, auf Deutsch: vollgedonnert auf den Floor. Kennst Du doch, oder nicht, oder wohl doch? 
+Grusss
+DJVA
+</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">149</column>
+            <column name="whenposted">1263368065</column>
+            <column name="name"></column>
+            <column name="email"></column>
+            <column name="www">http://</column>
+            <column name="comments"></column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">148</column>
+            <column name="whenposted">1260188033</column>
+            <column name="name">david</column>
+            <column name="email">begoodbebadjustbe@hotmail.com</column>
+            <column name="www">http://</column>
+            <column name="comments">huhuhuhuhuhu
+nochmals vielen dank für deine cd
+war genau das richtige zum noch ein wenig zuhause zu chillen und die nacht ausklingen zu lassen
+thanksthanksthanks und bis bald
+bumdibum</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">147</column>
+            <column name="whenposted">1257498965</column>
+            <column name="name">Marc Hodel</column>
+            <column name="email">marc_hodel@gmx.net</column>
+            <column name="www">http://</column>
+            <column name="comments">Hoi Michi
+Wie gahts dir denn so? han scho ewigs nüt meh vo dir ghört...also besser gseit ich han mich scho ewigs nümme bi dir gmolde. Wie ich gsehne bisch du immer na sehr aktiv was DJ'ing abelangt...fini hammer. Wohne etz au wieder in ZH...würd mich übere antwort freue. Peace</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">146</column>
+            <column name="whenposted">1251236280</column>
+            <column name="name">DJ Ken-ZOO aka exhiro</column>
+            <column name="email">habore@hispeed.ch</column>
+            <column name="www">http://www.myspace.com/yahushii</column>
+            <column name="comments">lieber Michael, lieber Dream,
+
+ich habe in den letzten 12 jahren immer wieder mit wehmut and Euch und Eure elysischen Klänge im Oxaaah gedacht.
+jetzt möchte ich mich einmal mit Euch bei einer tasse kaffee über mein riesenprojekt an neujahr unterhalten. es soll alles bisher dagewesene (ex you) in den schatten stellen und den pseudo-progressive-labyanern klar machen, dass Trance nie sterben wird. GIGA-EVENT ENGINE1 is powered by star-newcomer-DJ Ken-ZOO. location: Zurich-City.  start: january 1st 2010, 00:30  style: Trance In The Fire. line up: Ken-ZOO &amp; friends
+kuss
+Hans-Jörg
+
+P.S. für DJJJ: Dreams könnte exakt meine sein (http://www.djdream.ch/3/index.html) </column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">145</column>
+            <column name="whenposted">1247372198</column>
+            <column name="name">hiro</column>
+            <column name="email">habore@hispeed.ch</column>
+            <column name="www">http://www.myspace.com/yahushii</column>
+            <column name="comments">verehrter Michi,
+muss wieder mal etwas in dein gb setzen, sonst wird es mir langweilig. ein blick in meine hp lohnt sich. es hat sich einiges verändert. allem voran hat sich die crème de la crème der eurotrance-DJ's in meinem sorgfältig ausgewählten, kleinen freundeskreis versammelt.
+das projekt TRANZ fällt wohl ins wasser. die behörden wissen eben nicht, was sie da verpassen.
+mach's gut und herzliche grüsse an Michael K. und Zed. und wenn dir Luca über den weg läuft, kannst du ihm einen einfachen kuss von mir geben.
+
+hiro</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">144</column>
+            <column name="whenposted">1242857218</column>
+            <column name="name">Ricardo Sobral </column>
+            <column name="email">rickitbr@hotmail.com</column>
+            <column name="www">http://</column>
+            <column name="comments">Lieber Michi wie geht es dir? Hoffe gut...
+ich habe immer mit dir geträumt!
+mir geht es hier gut und bald komm ich zurück nach europa.
+für eine neue Tour ohne Zeit und Destination, Ziel. Es würde mich freuen zu wissen ob die POstkarte bei dir angekommen ist, die ich dir geschickt habe.
+meine telefonnummer in brasilien ist(005561-3347-30-63) es sind 5 stunden weniger
+zur schweiz.
+Einen grossen Kuss für dein Herz und tausend küsse ricardo !!
+
+
+</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">143</column>
+            <column name="whenposted">1240224546</column>
+            <column name="name">mirta</column>
+            <column name="email">mirta.b.modric@swisscard.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">hallo michi ! dein set vom samstag im laby war 1. klasse danke für die angaben für radio und deine web seite. liebe grüsse, mirta</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">142</column>
+            <column name="whenposted">1237439255</column>
+            <column name="name">hiro</column>
+            <column name="email">habore@hispeed.ch</column>
+            <column name="www">http://www.myspace.com/yahushii</column>
+            <column name="comments">ciao Michi,
+
+wollte Dir nur mal guten tag sagen.
+im folgenden siehst du meinen eintag in gayromeo (APOCALYPSE-NOW):
+
+highly recommended 4 trancing ravers:
+
+live streaming:
+www.ah.fm
+www.trance.fm
+www.1.fm
+
+favourite DJ-line-up:
+DJ Michael K., Zürich
+DJ Jesse Jay, Zürich (www.jessejay.ch)
+DJ afternoon, Bern
+DJ Ken-ZOO, Basel (myself)
+DJ Noise, Zürich
+
+world number 1 event:
+streetparade 2009 (http://www.streetparade.ch/)
+ </column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">141</column>
+            <column name="whenposted">1237438879</column>
+            <column name="name">hiro</column>
+            <column name="email"></column>
+            <column name="www">http://</column>
+            <column name="comments"></column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">140</column>
+            <column name="whenposted">1235727447</column>
+            <column name="name">grille</column>
+            <column name="email">janosch-3@hotmail.com</column>
+            <column name="www">http://</column>
+            <column name="comments">so michi han grad dis gästebuech duregacheret .. das staht ja nüt aktuells dinne.. usert de doooofi hiro, was isch das für en psycho??..egal..
+chamer nöd mal party eifach gnüsse und din geile sound ihneziehe?!?!?! mir findet din sound eifach innnovativ,frreeech, friiiisch.. und so oder so de michi bringts :D danke vielmal für die schöni zit mit dir und uf weiteri geili partys kiz</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">139</column>
+            <column name="whenposted">1231485431</column>
+            <column name="name">hiro aka DJVA aka Ken-ZOO</column>
+            <column name="email">habore@hispeed.ch</column>
+            <column name="www">http://www.myspace.com/yahushii</column>
+            <column name="comments">hallo Michi,
+
+ich hoffe, Du bist gut im neuen jahr gelandet. ich habe post für Dich @ aaah! geschickt. sie sollte heute eintreffen.
+
+übrigens:
+am 31. dezember 2009 eröffne ich in zürich die disco TRANZ. was das wohl wird? Ken-ZOO vs. Luca?
+
+herzliche grüsse
+
+hiro
+</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">138</column>
+            <column name="whenposted">1228759594</column>
+            <column name="name">hiro</column>
+            <column name="email">habore@hispeed.ch</column>
+            <column name="www">http://www.trance.fm/?gclid=CK3694HL-pUCFRF5bgod5DF_Fg</column>
+            <column name="comments">hi Michi,
+
+again old e-mail-adress
+
+kind regards
+
+hiro</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">137</column>
+            <column name="whenposted">1224355084</column>
+            <column name="name">hiro</column>
+            <column name="email">TranceFM@hispeed.ch</column>
+            <column name="www">http://www.trance.fm/?gclid=CK3694HL-pUCFRF5bgod5DF_Fg</column>
+            <column name="comments">new e-mail-adress and hp
+
+regards
+
+hiro</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">136</column>
+            <column name="whenposted">1222481704</column>
+            <column name="name">hiro</column>
+            <column name="email">habore@hispeed.ch</column>
+            <column name="www">http://www.myspace.com/yahushii</column>
+            <column name="comments">ob du es glaubst oder nicht, es gibt mich immer noch in alter frische.
+
+vielleicht treffen wir uns am hexenball im lotus. wäre sehr nett, dich wieder mal zu sehen.
+
+gruss
+
+hiro</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">135</column>
+            <column name="whenposted">1222430590</column>
+            <column name="name">sandra</column>
+            <column name="email">crazy_@freesurf.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">hi min lieblings dj,wenn Du ufleisch isches eifach immer vollgeil!partygarantie-aber wo sind dänn dini&quot;wännwouflegdate&quot;?das wär schön zwüsse!in soundlove san</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">134</column>
+            <column name="whenposted">1219586634</column>
+            <column name="name">Maggie</column>
+            <column name="email">maggi@localunderground.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">Hoi Michi, isch HAMMERGEILE sound gsi im Laby am Samschtig. Merci viil mal und es isch schön gsi dich widermal z gseh!!! Ich chum dänn mal bi dir vebi oder meld dich mal wännd i dä nöchi bisch. Bisc hoffentlich gli. Dicke schamtz!!!</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">133</column>
+            <column name="whenposted">1218440686</column>
+            <column name="name">claudio</column>
+            <column name="email">claudio.lubello@bluewin.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">ciao jesse,
+danke viel mal für din super sound vom letzte weekend... mues scho säge - isch vom feinste gsi!! :) hope to see you soon... maybe @ aaah.. gruss claudio</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">132</column>
+            <column name="whenposted">1218185073</column>
+            <column name="name">corinne</column>
+            <column name="email"></column>
+            <column name="www">http://</column>
+            <column name="comments">hey michi.... du häsch mer dä fritigmorge im gschäft versüesst ufem lora.. hammer sound gsi wie immer. schmaaaatz</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">131</column>
+            <column name="whenposted">1200753073</column>
+            <column name="name">priska</column>
+            <column name="email"></column>
+            <column name="www">http://</column>
+            <column name="comments">sali michi
+
+Die cd &quot;galaxy space night&quot; vom 10.7. isch dè Hammer!!!!!!
+Lose momentan nur no die cd. Danke villmal. Gruess und Kuss Priska</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">119</column>
+            <column name="whenposted">1187019541</column>
+            <column name="name">claudio</column>
+            <column name="email">claudio.lubello@bluewin.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">ciao jesse,
+han mich wele bedanke für de sound vom letzte samstig bim hirscheplatz und im volkshus! ich bin de im schwarze t-shirt, wo am hirscheplatz direkt vor dir ume tanzet hät, uf dere chline bühni grad vor em dj pult. :) danke namal und s'next mal bin ich wieder mit debi ade vorderste front.. *smile* cu soon, claudio</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">118</column>
+            <column name="whenposted">1184676579</column>
+            <column name="name">Danny</column>
+            <column name="email">toadness@gmx.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">Hey,hey jesse, hammer sound gsi am samstig im labitzke.Wie immer of course.Dankä namal für Cd und bis zum nächschtä mal.Greetz Dani</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">117</column>
+            <column name="whenposted">1183700366</column>
+            <column name="name">--DIESEL--</column>
+            <column name="email">traviz169@yahoo.com</column>
+            <column name="www">http://</column>
+            <column name="comments">from tomorrow will rise the unknown destiny of love
+</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">116</column>
+            <column name="whenposted">1183699495</column>
+            <column name="name">hiro</column>
+            <column name="email">habore@hispeed.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">whatever time brings
+whatever world has
+we set our aims
+for eternitys sake </column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">115</column>
+            <column name="whenposted">1183405091</column>
+            <column name="name">Mänu</column>
+            <column name="email">okult@bluewin.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">hey und ich han der jesse erst letztens zerst mal ghört uflege. und bin ganz versunke i dem geile sound. es kompliment. isch echt hammer gsi im aaah. de name mues mer merke =) au e liebe gruess vo mir</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">114</column>
+            <column name="whenposted">1182526638</column>
+            <column name="name">hiro</column>
+            <column name="email">habore@hispeed.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">um des friedens willen und weil ich michael k. (trotz böser mail) gern habe, gebe ich ohne kommentar auf.</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">113</column>
+            <column name="whenposted">1182525541</column>
+            <column name="name">dj michael k.</column>
+            <column name="email"></column>
+            <column name="www">http://</column>
+            <column name="comments">lieber hiro. ich habe deine emails gelesen und ich muss sagen, der einzige der hier ausfällig und beleidigend ist, bist du. auch du bist einer der nicht begriffen hat das es uns mit der musik um liebe, frieden und eierkuchen geht. deine einstellung ist so intolerant und böse, das ich gut verstehe, wenn dir lokalverbote und ablehnung passieren.jesse ist ein seelenverwandter von mir und nur weil er dir nicht trancig genug ist ziehst so eine banale show ab. entschuldigen musst nur du dich, das hast du ja auch. und alles andere ist totaler bockmist.deine einstellung zur musik aka uns djs passt mit unserer philosophie nicht überein.und menschen mit solch faschistischen ausfällen haben auf dem dancefloor nichts verloren. denk mal drüber nach und ändere deine einstellung, dann kann man dich auch gern habe und ernst nehmen.ach ja, egal wie du darauf reagierst, das ist und bleibt mein einziges statement zu deinen ausfällen.peace michael k.</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">112</column>
+            <column name="whenposted">1182525290</column>
+            <column name="name">h</column>
+            <column name="email">habore@hispeed.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">du willst deine ruhe haben. das würde dir so passen. mit hiro legt man sich nur eimal an. du hast immer mit mir gespielt, jetzt habe ich einmal mit dir gespielt, und schon wirst du ausfällig. falls du dich nicht umgehend für deine bösartigen beschimpfungen entschuldigst,werde ich dich weiter plagen. die grosse munition ist noch lange nicht verschossen. hiro wirst du schon noch kennenlernen.</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">111</column>
+            <column name="whenposted">1182524657</column>
+            <column name="name">dj michael k.</column>
+            <column name="email"></column>
+            <column name="www">http://</column>
+            <column name="comments"></column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">105</column>
+            <column name="whenposted">1182346159</column>
+            <column name="name"></column>
+            <column name="email"></column>
+            <column name="www">http://</column>
+            <column name="comments"></column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">103</column>
+            <column name="whenposted">1181983458</column>
+            <column name="name">Sontaya krutthamas</column>
+            <column name="email">jasonh_948@hotmail.com</column>
+            <column name="www">http://</column>
+            <column name="comments">Hi.... Hope you are doing well... Thank you for the CD...... I just need to invite you to come to Koh Samui again if you have a holiday..  we need some DJ here for the fullmoon party.....</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">102</column>
+            <column name="whenposted">1174849181</column>
+            <column name="name">andrea</column>
+            <column name="email">andrea.roulet@gmx.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">hoi jesse oder ebe michi
+
+has total gnosse letscht friitig im laby zu dim sound z'tanze und ha der eifach no es persönlichs komplimänt uf dem wäg welle mache, d.h. ich has ja au ganz churz gmacht vor ort ;-).
+
+liebi grüess
+andrea
+</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">101</column>
+            <column name="whenposted">1172608387</column>
+            <column name="name">Barbara </column>
+            <column name="email">barbara.schluep@hispeed.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">Hoi Michi 
+Bi grad dini CD am lose und sie isch,wie immer,de Hammer!! 
+&quot;macht richtig süchtig&quot; ;-)
+Bis bald Gruss &amp; Kuss Babsi
+</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">100</column>
+            <column name="whenposted">1168281265</column>
+            <column name="name">segreto</column>
+            <column name="email">segreto@bluemail.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">you're so hot &amp; sexy..
+
+ich han denkt ich probier's mal uf dem weg z'säge. 
+bewundere dini set's und himmle dich jedes mal a, wenn du ufleisch.. es isch jedes mal es erlebnis.
+
+gruess vom heimliche verehrer..</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">99</column>
+            <column name="whenposted">1161003353</column>
+            <column name="name">claudio</column>
+            <column name="email">nytom@nytom.ch</column>
+            <column name="www">http://www.nytom.ch</column>
+            <column name="comments">ciao michi. freue mi, am 11. november mit dir dr ex-klub s'rocke. cheers.</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">98</column>
+            <column name="whenposted">1160032232</column>
+            <column name="name">cherie</column>
+            <column name="email">djcherie@freesurf.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">hoi michi, han grad a dich dänkt und schick dir uf dem wäg ganz äs liebs grüessli:-)
+</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">97</column>
+            <column name="whenposted">1159611284</column>
+            <column name="name">Priska</column>
+            <column name="email">info@priskadenzler.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">Hoi Michi
+
+Dini 2 CD`s sind dè Hammer. Bisch eifach min Lieblings-DJ. Und ha mega froid am TAKE A DANCE-Fächer.
+
+En liebe Gruess. Froi mi uf die näggscht Party, wo Du wieder uufleggsch.
+
+Priska</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">96</column>
+            <column name="whenposted">1156236306</column>
+            <column name="name">Ken Thailand Baan Samui Resort</column>
+            <column name="email">krutthamas</column>
+            <column name="www">for Micheal</column>
+            <column name="comments">hi I don't know What happened with you.
+Could you reply to me as soon as possible.
+
+kem</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">95</column>
+            <column name="whenposted">1156165699</column>
+            <column name="name">pat</column>
+            <column name="email">artist@djgirl.ch</column>
+            <column name="www">http://www.djgirl.ch</column>
+            <column name="comments">hola chico...
+isch würklech mega lang här...
+bi grad vo mim south africa trip heicho...mega schön gsi!!
+hoffe dir geits guet und villicht klappet ja das mi däm wo dir i sinn isch cho...
+bis glii, muntsch,
+</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">94</column>
+            <column name="whenposted">1152441421</column>
+            <column name="name">tanja</column>
+            <column name="email">moonchild@hispeed.ch</column>
+            <column name="www">http://www.attic-club.ch</column>
+            <column name="comments">hey michi, mir sind gad gest vo ibiza zrug cho &amp; lose nur no dini cd, das mis ferie-feeling nochli wiiter gat :-)) THANX</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">93</column>
+            <column name="whenposted">1149895232</column>
+            <column name="name">Daniela</column>
+            <column name="email">brausli@hispeed.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">Hoi Michi, au wenn ich nöd immer cha döt si wo du ufleisch, los ich diä CD woni vo dir öbercho han eifach mega gern. Ich han grad än super schöne Obig mit dä Ingrid, Denis, Coni, Roger &amp; Brigitte verbrocht und ha dini neuscht CD ghört:-))))eifach hammer:))) und ich freu mich mega uf dä Sunntig bim Willi...da chann ich ändli wieder mal zu dim Sound abtanze...tuusig liäbi Grüässli Daniela</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">92</column>
+            <column name="whenposted">1145246732</column>
+            <column name="name">SONTAYA KRUTTHAMAS MR.  KEN</column>
+            <column name="email">krutthamas@yahoo.com</column>
+            <column name="www"></column>
+            <column name="comments"> I hope you enjoyed your holiday in Thailand.If you would like to come to Thailand agian, Please invite my join with you too.
+This is my frist time that i now this web site from Mr.Micheal when he have been in samui Island.He is very nice man. I hope he arrival at swizerland safety, I hope to heard from you soon.
+
+Thank you again for CD DISC. I really like the music.
+KEN SONTAYA KRUTTHAMAS.
+BAAN SAMUI RESORT.
+SURATTHANI
+THAILAND,</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">91</column>
+            <column name="whenposted">1143849024</column>
+            <column name="name">Free Soul</column>
+            <column name="email">jala@freesurf.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">Jesse - angefangen an der Nacht der Blumen...........die ganze Deko hat gepasst.......so natürlich, einen süssen Duft, ausserordentlich, ein Muss, eine Augenweide fürs Auge, in andere Welten versetzend, eine Legende.......DAS ALLES BIST AUCH DU! Du warst gigantisch, ich konnte mich - wie immer - nicht von Dir losreissen (obwohl der 2. Floor auch mega war).habe ich es genossen...Wow...Dann weiter...ins Hermetschloo..unser Underground Nest..und wer verwöhnt uns vom aller, aller feinstem...JESSE JAY! und Du wolltest einfach nicht aufhören, es hat gepeitscht, es hat mitgerissen, es hat wieder ein non-stop Lächeln gezaubert, ein nie-mehr aufhören wollen..nicht wegen irgendwas..WEGEN DEINEM SOUND, Deinem Lächeln hinter dem DJ Pult..dann Pause, und er shaked mit..und wie..EIN AUSSERIRDISCH SCHÖNER MACHT SOUND...es ging über zig-zig Stunden Dein Set, hattest schon die ganze Nacht gesoundet und es war so perfekt wie am Anfang...nahtlos..inspirierend,verstehend! Jesse, Du hast ein solches Einfühlungsvermögen für Deine ergebenen Dancers..und Du nährst sie/uns..mit dem Besten! .....Dann wieder das letzte Weekend im Labby..und das noch als Dream Team mit CHERIE...ach ich liebe sie auch! Ihr seid gigantisch! Wer Sound mässig verwöhnt ist - weiss Gott, das sind wir - der/die kann sich euch nicht entziehen. Wie oft kann man sagen: PERFEKT und Du bist es! Für mich - als hardcore Szenengängerin und -kennerin - bist Du ganz klar eines der talentiersten und zukunftsträchtigsten, kreativsten, mitreissendensten DJ dieses Landes. Es wird langsam Zeit fürs Ausland..meinst Du nicht? Ich bin von Dir überzeugt! Die CD von KÖNIGIN CHERIE ist der Hammer und ihr seid EINNEHMEND..VERZAUBERND. Ich danke euch vom ganzen Hardcore liebendem und empfindsamen Herzen für all die Gefühle, die Du/ihr erzeugt. Das sich verausgaben und so zufrieden zu sein, weil man sich gehen lassen kann, eben versteht und befördert, gefördert fühlt......Ich küsse DICH und ich küsse CHERIE und sage euch eine mega erfolgreiche Zukunft voraus. Bleibt dran, tut es bitte auch für uns...die hungrigen nach mega Sound, die devoted Dancers, die Rythm-Sklaven....und ich freue mich extrem zu Dir/euch noch so viele Nächte, Afterhours und After-Afterhours zu schweben, zu geniessen und das Gefühl zu haben soooo lebending zu sein...JUST BECAUSE OF YOUUUUUUU! Party Smackers everywhere, Deine/Eure Jacqueline alias Free Soul </column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">90</column>
+            <column name="whenposted">1143010119</column>
+            <column name="name">corinne</column>
+            <column name="email">corinne.e@bluewin.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">michi.. du hast unsere geburtstagsfete vom samstag bis in den späten sonntag rein an der hermetschloo zur besten party in town gemacht ;-)) es war einfach der HAAAAAMMMMMER!!auf diesem weg nochmals herzlichen dank... so feiert man gerne seinen geburtstag...
+dicker kuss corinne</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">89</column>
+            <column name="whenposted">1142877616</column>
+            <column name="name">Manuela</column>
+            <column name="email">manuela-fellner@gmx.ch</column>
+            <column name="www">http://www.manuela-fellner.ch</column>
+            <column name="comments">Hoi Brüederli
+
+hmmm, ich glaube ich mues au emal irgendwo here, wo du uufleisch :-) muesch ja würkli hammer mässig sii, so wie ich da all die Komplimänt läse.. mega :-) wür mi freue, wider emal öppis vo dir zghöre. Und dich vilicht au wider emal z'gseh! küssli dini chlinscht schwöster *hihi*</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">88</column>
+            <column name="whenposted">1140114823</column>
+            <column name="name">Dä Migros Marky</column>
+            <column name="email">marc_hodel@gmx.net</column>
+            <column name="www">http://</column>
+            <column name="comments">sali michi du süässä du....ähm, ja weiss gar ned was schriibe will ich ja eigentlich schaffe sött...aber wie du ja immer so schön betonsch schaff ich ja eh nie öppis ;-)... dir wiiterhin viel DJ-Erfolg und besti Gsundheit...und na viel spass i de neue Wohnig....kiss marky</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">87</column>
+            <column name="whenposted">1139572405</column>
+            <column name="name">stefania</column>
+            <column name="email">djcherie@freesurf.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">hoi michi... han mal uf dem wäg wellä hallo säge... hoff mir gsehnd üs gli wider - noch vor de bluemeparty;-)
+dicke schmatz s</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">86</column>
+            <column name="whenposted">1137802502</column>
+            <column name="name">Riccardo</column>
+            <column name="email">lordofhardstyle@hotmail.com</column>
+            <column name="www">http://</column>
+            <column name="comments">Sali Mich. Waiss nöd ob mech no känsch bin dr Riccardo. Gaili Page ha gra gläse das jo hüt im Laby uflaisch leider cha ich nöd dr bi si :( Hoffentlich bis bald.</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">85</column>
+            <column name="whenposted">1133357525</column>
+            <column name="name">pat</column>
+            <column name="email">artist@djgirl.ch</column>
+            <column name="www">http://www.djgirl.ch</column>
+            <column name="comments">hey michi...
+eifach mau e liebe gruess us bärn.
+gruzz</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">84</column>
+            <column name="whenposted">1133357454</column>
+            <column name="name"></column>
+            <column name="email"></column>
+            <column name="www">http://</column>
+            <column name="comments"></column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">83</column>
+            <column name="whenposted">1132855939</column>
+            <column name="name">d&amp;m-babes</column>
+            <column name="email">filoumax@hispeed.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">Hallo Michi, 
+
+hatten schon länger wieder mal n'Eintrag machen wollen...genossen Deine Musik in der Zwischenzeit in der DK und letzte Woche auch im Laby (19.11.05)...Hammer...waren gespannt, wie Du Dich im Laby zwischen Thommy B und Liquid Soul eingliederst....und wieder einmal hast Du's mit Bravour gemeistert...mit einem noch ziemlich anständigen Stück übernommen und dann wieder Jesse-Sound...mega....Danke für die tolle Sessions, die wir von/mit Dir erleben dürfen...freuen uns auf jeden Fall schon auf die nächste Session, wo auch Du wieder den Takt angibst...wünschen weiterhin viel Spass und bis gli wieder...d&amp;m-babes</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">82</column>
+            <column name="whenposted">1132271363</column>
+            <column name="name">devoted dancequeen</column>
+            <column name="email">jala@freesurf.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">Michi Sweety
+ 
+Ich bedanke mich nochmals ganz herzlich und mit einem langen und dicken
+Kuss für Deine HAMMMMMMMERRRR &amp;#150; CD!! Sie läuft die ganze Zeit seit ich
+sie zum ersten Mal gehört habe und ich finde es immer besser!!
+ 
+DU BIST EINFACH SPITZE !!! und wenn das ja alles wäre, würde es noch
+gehen, aber dann bist Du noch so ein riesen Schatz, das würde ja auch
+gehen, aber dann bist Du noch sooooo süess!!!! 
+ 
+Ganz fest hoffe ich, dass wir uns bald wieder sehen und dass ich Deine
+devoted Dancer sein darf, oder eure mit Cherie zusammen. 
+ 
+&amp;#133;..THIS IS THE LAST CHANCE&amp;#133;.TO BE WITH ME&amp;#133;.THIS IS THE LAST CHANCE&amp;#133;&amp;#133;.
+YEAHHAAAA &amp;#150; einfach ein perfekter Mix die ganze CD!!
+ 
+CONGRATULATIONS SCHÄTZLI!! 
+ 
+Einen dicken Smacker und bis sehr bald!
+ 
+Kiss &amp; Hug 
+ 
+</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">81</column>
+            <column name="whenposted">1132063716</column>
+            <column name="name">Fran</column>
+            <column name="email">biko@boisdechet.org</column>
+            <column name="www">http://</column>
+            <column name="comments">sali michi,
+
+härzliche dank für dini cd, gfallt me mega :) hoffa i ghör denn au bald mol weda live ;)
+
+grüess din schnüggel au ganz härzlich, riisa-schmatz a eu zwei xx</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">80</column>
+            <column name="whenposted">1131798162</column>
+            <column name="name">nicole</column>
+            <column name="email">n.muttenzer@freesurf.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">ciao michi...i ha di am samstig im notusgang zum erschtä mau ghörtu sägä;  WAU, du hesch meeeega geil ufgleit!!!bi total begeischteret!!ha mau wieder so richtig chönnä &quot;abschejkä&quot;!!DANKA!michi bis hoffentlich baud mau wieder!p.s. dini cd isch ganz genial!!!!!Gruzz nicole </column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">79</column>
+            <column name="whenposted">1130758161</column>
+            <column name="name">corinne</column>
+            <column name="email">corinne.e</column>
+            <column name="www">http://</column>
+            <column name="comments">hey michi... es war DAS HAMMER-SET überhaupt am Samstagabend in der Dachkantine.Ein Riesenkompliment, Du und Steffi habt mir einen unvergesslichen Abend bereitet... Freu mich aufs nächste Mal... Dicke Schmatz</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">78</column>
+            <column name="whenposted">1130757868</column>
+            <column name="name"></column>
+            <column name="email"></column>
+            <column name="www">http://</column>
+            <column name="comments"></column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">77</column>
+            <column name="whenposted">1130361971</column>
+            <column name="name">Annemarie</column>
+            <column name="email">bewerbung@lady-julia.com</column>
+            <column name="www">http://</column>
+            <column name="comments">Hi Michel....nun bin ich schon zwei monate nicht mehr auf der piste gewesen und konnte dich und deine Sets nicht geniessen !! ich leide an totalem Entzug und immer wenn es  ganz schlimm ist lege ich dann ne Cd von dir ein ...... dann gehts wieder ne zeit lang..... hey, ich vermisse Dich tierisch und hoffe ich kann dich bald wieder sehen und hören ....und dann lassens wir krachen .., okay  :-)   Kuss </column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">76</column>
+            <column name="whenposted">1124112080</column>
+            <column name="name">cyrex</column>
+            <column name="email">cyrex@bluewin.ch</column>
+            <column name="www"></column>
+            <column name="comments">dein set im innenhof vom museum bellerive war einfach der HAMMER! deep, sexy &amp; f*ckin' groovy - schade gingen um mitternacht bereits die lichter aus :(
+freu mich schon auf dein näxtes set @ DK!
+
+grz &amp; go on
+stefan</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">75</column>
+            <column name="whenposted">1122477008</column>
+            <column name="name">natascha</column>
+            <column name="email"></column>
+            <column name="www">http://</column>
+            <column name="comments">pearl jam hat mich überrascht
+schön&lt;br&gt;&lt;br&gt;JJ: und ich freu mich immer wenns doch leute gibt die das original kennen *freu*!</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">74</column>
+            <column name="whenposted">1122294336</column>
+            <column name="name">Corinne</column>
+            <column name="email">corinne.e@bluewin.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">Hoi Michi, du besch am fritig weder emal dä hammer gsi i dä dk. Du und d'Steffi händ en mega stimmig gmacht i dem club, freu mi schoweder ufs nächschte Mal.
+Dicke Schmatz
+Corinne&lt;br&gt;&lt;br&gt;JJ: dicke *schmmmatz* zrug...han mi halt so gfreut au für dich wieder mal musig zmache, da hani doch müesse alles geh...*schmunzel*</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">73</column>
+            <column name="whenposted">1121946211</column>
+            <column name="name">d&amp;m-babes</column>
+            <column name="email">filoumax@hispeed.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">Hallo Jesse, 
+
+han mich nomol wöllä uf dem Weg für d'CD bedankä. Mer freuäd üs jetzt scho, Dich und Dini Musig wieder z'erlebä...und das isch jo scho Morn, am 22.07.05, i dä DK...bis denn.
+Liäbä Gruäss
+d&amp;m-babes</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">72</column>
+            <column name="whenposted">1121267632</column>
+            <column name="name">Silvia</column>
+            <column name="email"></column>
+            <column name="www">http://</column>
+            <column name="comments">hoi jesse jay
+
+han geschter abig dini cd g'loset, wo du mir am samschtig im laby geh häsch und i find sie ächt hämmermässig guet, genau min musikstill :-)
+i danke dir namal vielmal für dini cd und mach wieter so mit dim hämmermässige sound ...
+
+ganz ä liebs grüessli
+silvia</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">71</column>
+            <column name="whenposted">1120477800</column>
+            <column name="name">Marco Cattarozzi</column>
+            <column name="email">marco@vibeclub.ch</column>
+            <column name="www">http://www.vibeclub.ch</column>
+            <column name="comments">Ciao Michi
+Wollte mich für die Super-CD bedanken, welche Du für den Vibeclub gamacht hast. Von unseren Mitgliedern habe ich jetzt schon nur positive Reaktionen bekommen. Unser Vorstand ist natürlich sowieso begeistert. Also vielen Dank nochmals und natürlich auch viel Spass mit Deiner Vibeclub-Mitgliedschaft. Bin gespannt, wie das Voting ausfallen wird...
+
+Liebe Grüsse und bis bald
+Marco, Präsident Vibeclub</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">70</column>
+            <column name="whenposted">1116993223</column>
+            <column name="name">Oliver  Wilkensen</column>
+            <column name="email">oliverwilkensen@bluewin.ch</column>
+            <column name="www">http://www.bbKing.ch</column>
+            <column name="comments">tschau michi meldä dich doch ämol.Cgansch in mim club,mol uflegä,wen magsch gruss oliver.ps: Geil das no ,wieä ich am uflege bisch,smile.</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">69</column>
+            <column name="whenposted">1116972703</column>
+            <column name="name">domenico</column>
+            <column name="email">domenico@rabe.ch</column>
+            <column name="www">http://www.123galaxy.ch</column>
+            <column name="comments">electronische grüsse aus dem radio bern studio! fals ihr lust habt, bei uns live aufzulegen;so meldet euch bei uns!
+
+infos und anmeldung unter: www.123galaxy.ch
+
+Domenico
+Radio Bern 95,6fm</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">68</column>
+            <column name="whenposted">1115915939</column>
+            <column name="name">Stäbler Max</column>
+            <column name="email">filoumax@hispeed.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">Hallo Michael, 
+
+chasch Dich no am mich im Laby erinnerä? hani Dich echli zuätextet...aber eigentlich au numä, well ich weiss, dass Du immer geilä Sound machsch....leider händ mer Dich scho länger numä als DJ gha...s'letscht mol um d'Wiähnacht umä...also Du, wär super, wenn mer Dich au wieder emol uf emenä Line-up hetät, vo dä verbliebendä Clubs.
+Wünsch en erfolgrichi und wieterhin kreativi Zyt. 
+Gruäss Max Stäbler </column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">67</column>
+            <column name="whenposted">1110721048</column>
+            <column name="name">Sabine Fellner</column>
+            <column name="email">sabine2@bluemail.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">Hei min Brüeder...wie gahts der?scho lang nüt meh ghört vo dir :/ würd mich mega freue wännd dich würdisch mälde...küssli sabi</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">66</column>
+            <column name="whenposted">1108058663</column>
+            <column name="name">a:morph</column>
+            <column name="email"></column>
+            <column name="www">http://www.toughchicks.de</column>
+            <column name="comments">phatte grüsse! wenn ihr chilliges material braucht, remember us! ;D</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">65</column>
+            <column name="whenposted">1107034106</column>
+            <column name="name">Simona aka Al Bosh</column>
+            <column name="email">S.von-Barany@gmx.net</column>
+            <column name="www">http://</column>
+            <column name="comments">Hey hey hey......
+Ihr netten Musik Menschen...
+wie gehts, wie stehts?
+Lange nicht mehr zusammen gesoundet, hätte da ne After Hour sache am Start. Meine Tel.-Nr.= 076 461 52 79
+See Ya Boyz
+P.S. haben hier ne coole, kleine, neue Bar mit PA etc.</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">64</column>
+            <column name="whenposted">1106128130</column>
+            <column name="name">djshop.ch Switzerland</column>
+            <column name="email">info@djshop.ch</column>
+            <column name="www">http://www.djshop.ch</column>
+            <column name="comments">Switzerland's biggest online dj-store 
+
+vinyl equipment, cds, software &amp; games, real audio, news center, top preise and many more.... 
+
+www.djshop.ch
+
+</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">63</column>
+            <column name="whenposted">1106074215</column>
+            <column name="name">roger</column>
+            <column name="email">everstonebeatbrothers.ch@</column>
+            <column name="www">www.beatbrothers.ch</column>
+            <column name="comments">sali michi hans wieder mol uf dini sitä gschafft. hoff s got dir guät.
+
+grüässli...roger</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">62</column>
+            <column name="whenposted">1103705646</column>
+            <column name="name">DJ_BigB.</column>
+            <column name="email">DJ-BigB@bluemail.ch</column>
+            <column name="www">http://www.DJ-BigB.ch</column>
+            <column name="comments">Ciao Jessy, au ech wett's ned versüme bi Der mini Glückwünsch zum Johresendi z'deponiere...
+Drum wünsch ech Der frohi Feschttäg zäme met Dine Liebe und es ganz erfolgrichs 2005, sowohl vor als au hinder de Plattetäller!
+Keep on rocking tha HOUSE ;-)
+Greetz BigB.</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">61</column>
+            <column name="whenposted">1102617676</column>
+            <column name="name">maggie</column>
+            <column name="email">maggie@localunderground.ch</column>
+            <column name="www">http://www.localunderground.ch</column>
+            <column name="comments">hoi michi, han mi no uf disem wäg welle bedanke für dini sets a de letschte LU. Ich sowie au dä reste vo de lüt sind vo dim sound begeisteret.... keep on grooven :o) kiss maggie</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">60</column>
+            <column name="whenposted">1102196389</column>
+            <column name="name">patrizia</column>
+            <column name="email">pattilou@tiscali.ch</column>
+            <column name="www">http://www.lora.ch</column>
+            <column name="comments">Hi ich känne dich nicht wollte nur schauen wer bei Beay aufleit und hab gesehen dass du auch im lora bist coool es freut mich ich mache auch 3 mal im monat music im lora letzte am 03.12.04  </column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">59</column>
+            <column name="whenposted">1101684187</column>
+            <column name="name">Oliver  Wilkensen</column>
+            <column name="email">oliverwilkensen@bluewin.ch</column>
+            <column name="www">http://www.bbKing.ch</column>
+            <column name="comments">ciao Michi He äs Grüessli und meld Dich mol.Wen magsch chansch mol cho go uflegä in min dinercafeclub. Gruess au an Fabio und martin.  Hoffä häsch äs guet?! Oli.</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">58</column>
+            <column name="whenposted">1101403891</column>
+            <column name="name">Jim</column>
+            <column name="email">marky22@bluewin.ch</column>
+            <column name="www"></column>
+            <column name="comments">Hoi, hoff dir gahts guet. Coole Page, immer weiter so und freue mich bald wieder dich zu sehn.
+Greets the Garderob :-)</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">57</column>
+            <column name="whenposted">1098714632</column>
+            <column name="name">Prinzen.....</column>
+            <column name="email">info@prinzclub.ch</column>
+            <column name="www">http://www.prinzclub.ch/</column>
+            <column name="comments">Fröhliche Grüsse
+aus Bern....
+Melde dich doch bald bei uns.
+
+deine prinzen</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">56</column>
+            <column name="whenposted">1097406399</column>
+            <column name="name">Nelson</column>
+            <column name="email">nelson_labass@hotmail.com</column>
+            <column name="www">http://</column>
+            <column name="comments">Wegen nicht gebrauch,
+
+zu Verkaufen,
+
+neuwertiger Vestax PMC46 Rotary House Mixer. Nur als Bedroom-Mixer gebraucht. 2 Jahre alt. Der Klassiker unter den House Mixern.
+Damaliger Neupreis 2450.- CHF. Verkaufspreis 1400.- CHF.
+
+Für weiter Infos:
+
+076/442 22 40
+
+Mit freundlichen Grüßen
+
+Nelson
+
+PS: Bitte weitersagen</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">55</column>
+            <column name="whenposted">1097139103</column>
+            <column name="name">FUEGO ASTRAL</column>
+            <column name="email"></column>
+            <column name="www">http://www.universalcreations.ch</column>
+            <column name="comments">hallo michi
+interstellare grüsse aus marokko
+www.camp-desertview.com
+gruss
+fuego</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">54</column>
+            <column name="whenposted">1095772831</column>
+            <column name="name">Aron Tanie</column>
+            <column name="email">info@arontanie.com</column>
+            <column name="www">http://www.arontanie.com</column>
+            <column name="comments">nice page.. 
+
+c u
+
+aron</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">53</column>
+            <column name="whenposted">1093784171</column>
+            <column name="name">remy</column>
+            <column name="email">info@djmanic.ch</column>
+            <column name="www">http://www.djmanic.ch</column>
+            <column name="comments">hey michi! danke für deinen besuch auf meiner website. die ist übrigens wirklich recht neu. noch keine woche alt... lieber gruss und bis gli! rémy</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">52</column>
+            <column name="whenposted">1093436864</column>
+            <column name="name">Markus</column>
+            <column name="email">dj-leon@hispeed.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">Sali Michi, ich hoffe das mir nüme &quot;bös&quot; bisch wege dere tolle Nacht in Bern. Würd mich mega freuie Dich wider emol z'ghöre. Gruz Mege</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">51</column>
+            <column name="whenposted">1091306959</column>
+            <column name="name">Rudy Gybels </column>
+            <column name="email">rudygybels@rudygybels.be</column>
+            <column name="www">http://www.rudygybels.be</column>
+            <column name="comments">hoi, erg mooie site! Veel succes. Vriendelijke groeten, Rudy Gybels uit Diest (België)</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">50</column>
+            <column name="whenposted">1091035554</column>
+            <column name="name">olgi</column>
+            <column name="email"></column>
+            <column name="www">http://</column>
+            <column name="comments">sali michi. ich bis d´olgi. wi gahts? so wi ich ghört han guät. mir gahts au guät. han mi no wellä für dä herzig purzeltaggruäss bedankä. freu mi scho uf d´streetparade. also mis brüädärherz witer so und alles guäti.    olgi &amp; co </column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">49</column>
+            <column name="whenposted">1091035155</column>
+            <column name="name"></column>
+            <column name="email"></column>
+            <column name="www">http://</column>
+            <column name="comments"></column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">48</column>
+            <column name="whenposted">1090418118</column>
+            <column name="name">Corinne</column>
+            <column name="email">corinne.e@bluewin.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">don't forget you birthday present ;-)))...
+war wieder mal der mega sound am letzten samstag.... 
+liebe gruess corinne</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">47</column>
+            <column name="whenposted">1088779038</column>
+            <column name="name">feivel</column>
+            <column name="email"></column>
+            <column name="www">http://</column>
+            <column name="comments">Ja, ja, die schonzeit ist vorbei. bin wieder zurück, darf wieder rumsauen. freue mich auf unseren nächsten ausgang. melde mich bei dir. gruss feivel</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">46</column>
+            <column name="whenposted">1088619478</column>
+            <column name="name">Beat Bachmann</column>
+            <column name="email">hosli2002@bluewin</column>
+            <column name="www">http://</column>
+            <column name="comments">Super sound wot amel bringsch.RESPECT!Gits CDs Oder Demotapes vo dir</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">44</column>
+            <column name="whenposted">1085505995</column>
+            <column name="name">y</column>
+            <column name="email"></column>
+            <column name="www">http://</column>
+            <column name="comments">ah yeah  keep it goin' jesse</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">43</column>
+            <column name="whenposted">1083826442</column>
+            <column name="name">DJ_BigB.</column>
+            <column name="email">DJ-BigB@bluemail.ch</column>
+            <column name="www">http://www.DJ-BigB.ch</column>
+            <column name="comments">Ciao DJ-Friend
+Bin gerade ein wenig am surfen und nun auf Deiner Page gelandet. Erst einmal ein grosses Kompliment, Deine Homepage gefällt mir wirklich sehr sehr gut.
+Ich surf jetzt mal weiter und wünsch Dir beim &quot;Scheibendrehen&quot; weiterhin ganz viel Erfolg!
+
+Greetz by BigB.
+BigMusic for BigPeople!
+</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">42</column>
+            <column name="whenposted">1081881846</column>
+            <column name="name">SABI</column>
+            <column name="email">Fellner</column>
+            <column name="www">http://</column>
+            <column name="comments">hooi..bin wider mal chli uf dinere Homepage gsi..gfallt mer :) schad hani scho lang nüt meh ghört vo dir... :) küssli sabine</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">41</column>
+            <column name="whenposted">1080722667</column>
+            <column name="name">Gaby</column>
+            <column name="email">info@gaby-fellner.ch</column>
+            <column name="www">http://www.gaby-fellner.ch</column>
+            <column name="comments">mach doch am Frühlingswettbewerb mit und gewinne tolle
+JEMAKO-Produkte. Einsendeschluss ist der 13.05.2004. Die Verlosung findet am
+14.05.2004 statt.
+
+Würde mich auch sehr darüber freuen, wenn Du meine Seite weiterempfiehlst und
+Deine Freunde und Bekannte auch die Gelegenheit haben für den Frühlingsputz
+etwas zu gewinnen.
+</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">38</column>
+            <column name="whenposted">1079468767</column>
+            <column name="name">Bruno</column>
+            <column name="email">fila.brasil@hispeed.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">Ha där nur na schnäll wellä än schönä Abig wünschä! Macht Spass Dich z'kännä und mit Dir zämä tschaffä, mag Di total guet! Alläs Liebi Bruno</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">37</column>
+            <column name="whenposted">1079249008</column>
+            <column name="name">Berry</column>
+            <column name="email">whitetornado@ctcweb.net</column>
+            <column name="www">http://</column>
+            <column name="comments">Ach so! At last the music I like, it took time before to fall jj</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">36</column>
+            <column name="whenposted">1076785010</column>
+            <column name="name">sandro und markus</column>
+            <column name="email"></column>
+            <column name="www">http://www.swissprimitiv.ch.vu</column>
+            <column name="comments">Sali Michi,freue mich mega mit Dir am 2.april in Züri am Radio Lora, und am 10.april in Basel am Radio X sound z machä. 1000sig Grüess Markus (DJ Léon) </column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">35</column>
+            <column name="whenposted">1075554256</column>
+            <column name="name">Beni aka Electric Bandit</column>
+            <column name="email">undergroundpleasure-info@gmx.ch</column>
+            <column name="www">http://www.underground-pleasure.ch.vu</column>
+            <column name="comments">Hallo Michi!
+Danke für deinen GB-Eintrag auf unserer Page!
+Deine Page ist ebenfalls sehr interessant und hat ein hammer Design, Respect!
+
+Wünsche dir eine Gute Zeit und weiterhin viel Erfolg...
+Let the beat goes on
+
+Beats and Greetz 
+Beni</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">34</column>
+            <column name="whenposted">1073670296</column>
+            <column name="name">roger</column>
+            <column name="email">everstone@beatbrothers.ch</column>
+            <column name="www">http://www.beatbrothers.ch</column>
+            <column name="comments">Hi Michi,
+Hans mega cool gfundä bi dir in dä sendig dörfä music z machä. Ich wünsch dir witerhin viel erfolg und das du üs no lang mit dinerä music chasch beglückä.
+Mir gsend eus allerspötischtens am 10. April bi euserä sendig in basel (www.treibhouse.ch)
+
+....roger</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">33</column>
+            <column name="whenposted">1072706270</column>
+            <column name="name">corinne</column>
+            <column name="email">corinne.e@bluewin.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">Michi, du häsch hammermässige sound abgela a dä hermetschlostrasse am samschtig.... mach witer so.... du machsch dä beschti sound för eus alli......:-))) kiss corinne</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">32</column>
+            <column name="whenposted">1072302373</column>
+            <column name="name"></column>
+            <column name="email"></column>
+            <column name="www">http://</column>
+            <column name="comments"></column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">31</column>
+            <column name="whenposted">1072196864</column>
+            <column name="name">Besim Hadzic</column>
+            <column name="email">balija@hotmail.com</column>
+            <column name="www">http://www.discoquovadis.ch</column>
+            <column name="comments">EJ MICHI ICH BINS DIN JUGO-KOLLEG :) VOLL FETTI SITE, SCHÜSICH HOFFENTLICH NO PAR FOTIS UND VIDEO SEQUENZE DRI PS:SUPER SAJTS WWW.DISCOPLANET.AT UND WWW.NACHTWERK.AT SIND 2 BOSNISCHI DISKOS ABER VOLL FETTI LINKS VILICHT KASCH DET PAAR IDRÜCK SAMMLE GRUESS BESIM ( BOSNIER ) HADZIC</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">30</column>
+            <column name="whenposted">1071952035</column>
+            <column name="name">bruno</column>
+            <column name="email">bruno.graf@glattnet.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">ciao michi 
+
+colli page und vill infos. mach witer so das chunt mega guet. du bisch ja scho fast e berühmtheit. bis bald. gruessli 
+
+din arbeitskolleg bruno </column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">29</column>
+            <column name="whenposted">1071689502</column>
+            <column name="name">Domenico</column>
+            <column name="email">djgalaxys@hotmail.com</column>
+            <column name="www">http://www.123galaxy.ch</column>
+            <column name="comments">liebs grüessli us em berneroberland und em radio bern team!wünsche dir und dine gpändli tolli fest-täg!übrigens,bist du herzlich eingeladen ein week-end bei mir in den bergen zu verbringen,ein kleines davos;einfach ohne indianerbemahlung... ;-))
+
+nice week !</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">28</column>
+            <column name="whenposted">1069919617</column>
+            <column name="name">Gaby</column>
+            <column name="email">g.fel@gmx.net</column>
+            <column name="www">http://cinderellasharks.ch.vu</column>
+            <column name="comments">Sali Brüederli Danke dir vielmal für die mega CD bin si sit 2 Täg nur no am lose isch würklich u guet. Ich han mega de Plausch. Kiss Dis Schwesli</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">27</column>
+            <column name="whenposted">1068251326</column>
+            <column name="name">Oliver  Wilkensen</column>
+            <column name="email">OliverWilkensen@bluewin.ch</column>
+            <column name="www">OliverWilkensen@bluewin.ch - mail</column>
+            <column name="comments">Ciao Michi äs Grüessli vom Oliver. Meld Dich doch ämol wieder,hoffä häsch äs supiGuet.Grüessli an alli.Oli.      Tschautschau.</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">26</column>
+            <column name="whenposted">1066213777</column>
+            <column name="name">Bernie</column>
+            <column name="email">djmatoberocka@tele2.ch</column>
+            <column name="www">http://www.djmatoberocka.ch</column>
+            <column name="comments">Ciao Jesse Jay
+
+Dancar e por amore e para paz.
+
+tanti saluti da Bernie</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">25</column>
+            <column name="whenposted">1061500711</column>
+            <column name="name">Maggie</column>
+            <column name="email">maggie@LocalUnderground.ch</column>
+            <column name="www">http://www.LocalUnderground.ch</column>
+            <column name="comments">hoi michi! *wink* ach, michi han hüt ganz viil a dich müesse dänke und drum hani gfunde es isch au widermal ziit da öpis ine z schribe. isch u schön dich als guete fründ z ha *es lebe silvester 02* e grossi umarmig und en dicke schmatz Maggie </column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">24</column>
+            <column name="whenposted">1060029846</column>
+            <column name="name">rémy </column>
+            <column name="email">manic@localunderground.ch</column>
+            <column name="www">http://www.localunderground.ch</column>
+            <column name="comments">hoi michi!
+schade hats nicht geklappt mit dem scharfen höschen... ;-) 
+ich hoffe auf das nächste mal... :-) lieber gruss und bis hoffentlich bald. rémy</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">23</column>
+            <column name="whenposted">1059514420</column>
+            <column name="name">Pidi</column>
+            <column name="email">pidi@pedro-flores.ch</column>
+            <column name="www">http://www.laby.ch</column>
+            <column name="comments">hi michi, colle page. ich wünsche dir weiterhin viel erfolg und danke für deine coolen warm ups bei uns. gruss pidi</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">22</column>
+            <column name="whenposted">1057355636</column>
+            <column name="name">Bruno</column>
+            <column name="email">fila.brasil@hispeed.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">Hallo Michi, äs liebs Grüssli vo äm, wo Dich total guet mag. Du bisch än lässige Typ! </column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">21</column>
+            <column name="whenposted">1055447584</column>
+            <column name="name">feivel</column>
+            <column name="email">djfeivel@tele2.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">so, wird zeit, dass ich mich auch mal verewige auf deiner super hp. ist super rausgekommen, hut ab. wie du siehst, haben wir auch endlich wieder internetanschluss zuhause. neue internetadresse siehe oben. freue mich auf die kommenden events im juni, juli und zukunft mit dir. mach weiter so. just a friend  feivel </column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">20</column>
+            <column name="whenposted">1053379744</column>
+            <column name="name">Oliver</column>
+            <column name="email">OliverWilkensen@bluewin.ch</column>
+            <column name="www"></column>
+            <column name="comments">Ciao Michi Ich wünsch Dir viel Erfolg,Supi das nöd Ufgisch, wieä au Ich Nieä Ufgibä,mit Dir entli wieder ämol z-Mixä. Smile. Alläs Liebii und positivä führ Di. vom Oli. respect. see you. Tschüssi. </column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">18</column>
+            <column name="whenposted">1053359398</column>
+            <column name="name">Porti</column>
+            <column name="email">philipp.portenier@tele2.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">Super Dini Homepage!! Gisch ja richtig Gas!! Wünsch Dir viel Erfolg!! Mir gsehnd öis hoffentlich am 24.5.!! Gruess Porti </column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">17</column>
+            <column name="whenposted">1053318972</column>
+            <column name="name">Gaby</column>
+            <column name="email">g.fel@gmx.net</column>
+            <column name="www">http://cinderellasharks.ch.vu</column>
+            <column name="comments">Echt tolle HP Gratuliere. Weiterhin viel Erfolg. Dein Schwesterlein</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">15</column>
+            <column name="whenposted">1053251801</column>
+            <column name="name">Manuela</column>
+            <column name="email">manu.f@gmx.ch</column>
+            <column name="www">http://</column>
+            <column name="comments">Hey min gross Schatz!
+
+Ich bin mega stolz uf dich, was du so alles uf d bei gstellt häsch i dim Läbe. Au wänn mir nur sehr sälte Kontakt händ, muesch wüsse, dass ich vill a dich dänke. Han dich gärn! Küssli vo dinäre chli Schwöschter!
+
+P.S. Mach wiiter so!!!!</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">14</column>
+            <column name="whenposted">1053243543</column>
+            <column name="name">FUEGO ASTRAL</column>
+            <column name="email">FUEGOASTRAL@NETSCAPE.NET</column>
+            <column name="www">http://www.UNIVERSALCREATIONS.ch</column>
+            <column name="comments">@
+CIAO AMICI
+WEITERHIN VIEL ERFOLG 
+UND MEGA SPASS... :-)
+INTERSTELLARE GRÜSSE
+F.A.
+@</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">13</column>
+            <column name="whenposted">1053196851</column>
+            <column name="name">MFg</column>
+            <column name="email">info@jessejay.ch</column>
+            <column name="www">http://www.123galaxy.ch</column>
+            <column name="comments">RE: *sniff* bin ganz grüehrt.......
+....und sprachlos....säg nur danke au, ihr sind zwei riiiseschätzis ;-)*blinzel*</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">12</column>
+            <column name="whenposted">1053193442</column>
+            <column name="name">Mäxxx</column>
+            <column name="email">ucsd@bluewin.ch</column>
+            <column name="www">http://www.chillup.ch</column>
+            <column name="comments">Hey Cowboy :-)
+Als erschts es RIIISÄ Komplimänt für Dini Homepage; Isch würkli informativ und megacool gstalltet........
+ABER JETZ NO ÖPPIS FIIIL WICHTIGERS:
+Im 10 jährigä bestah fu Mäxxx &amp; Friends händ fili DJs versuächt öppis für d Partycrowd z'tuä und es sind leider nöd fil debi gsi wo mit sonnere hiigab und mit somene iifühligsvermögä sich mit dä Partygescht identifiziärt hät! Miär danked Diär fu ganzem Herzä für din Iisatz und schiked Diär en virtuelle RIIISÄSCHMATZ!!!! Alles Liäbi au für Dich fum Mäxxx &amp; Andrea</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">5</column>
+            <column name="whenposted">1052560475</column>
+            <column name="name">rémy</column>
+            <column name="email">manic@localunderground.ch</column>
+            <column name="www">http://www.localunderground.ch</column>
+            <column name="comments">hey dj! schön das du jetzt auch im netz vertreten bist. freu mich auf kommenden donnerstag! die seite gefällt mir übrigens sehr gut! lieber gruss, rémy</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">4</column>
+            <column name="whenposted">1052522257</column>
+            <column name="name">maggie</column>
+            <column name="email">maggie@localunderground.ch</column>
+            <column name="www">http://www.localunderground.ch</column>
+            <column name="comments">mo mol, dini site nimmt form ahh... gfallt mer sehr guet michi. jetzt gsien i jo uf ein blick wo du dänn am sounde bisch! michi, ich wünsch dir nur s'beschte und freu mich dich morn z'gseh! schmatz und bis dänn</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">3</column>
+            <column name="whenposted">1052416949</column>
+            <column name="name">MFg</column>
+            <column name="email">info@jessejay.ch</column>
+            <column name="www">http://www.123galaxy.ch</column>
+            <column name="comments">yep! das hoff ich doch auch...
+°smile°</column>
+        </table>
+        <table name="guestbook">
+            <column name="idnum">1</column>
+            <column name="whenposted">1052265632</column>
+            <column name="name">marcin kolonko</column>
+            <column name="email">info@kolonko.ch</column>
+            <column name="www">http://www.division-2.com</column>
+            <column name="comments">hallo michi, ich hoffe dieses guestbook wird oft benutzt werden!!!</column>
+        </table>
+    </database>
+</pma_xml_export>

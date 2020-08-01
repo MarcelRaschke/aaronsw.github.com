@@ -1,0 +1,1992 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="AVA Documentation.">
+      
+      
+        <link rel="canonical" href="https://docs.ava.network/v1.0/en/core-concepts/overview/">
+      
+      
+        <meta name="author" content="AVA Community">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>System Overview - AVA Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/application.1b62728e.css">
+      
+        <link rel="stylesheet" href="../../../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#e91e63">
+      
+    
+    
+      <script src="../../../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../../assets/fonts/material-icons.css">
+    
+    
+    
+  <!--Empty the footer analytics bloc as we need it the headers -->
+
+    
+  <link rel="stylesheet" href="../../../../assets/stylesheets/ava_custom.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"></script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="pink" data-md-color-accent="deep-purple">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#system-overview" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://docs.ava.network/" title="AVA Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">library_books</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              AVA Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                System Overview
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            <!--
+  Copyright (c) 2016-2019 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<!--
+  Check whether the repository is hosted on one of the supported code hosting
+  platforms (GitHub, GitLab or Bitbucket) to show icon.
+-->
+
+
+  
+
+
+<!-- Repository containing source -->
+<a href="https://github.com/ava-labs/" title="Go to repository"
+    class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    github.com/ava-labs
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../.." class="md-tabs__link md-tabs__link--active">
+          AVA Documentation
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://docs.ava.network/" title="AVA Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon">library_books</i>
+      
+    </a>
+    AVA Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <!--
+  Copyright (c) 2016-2019 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<!--
+  Check whether the repository is hosted on one of the supported code hosting
+  platforms (GitHub, GitLab or Bitbucket) to show icon.
+-->
+
+
+  
+
+
+<!-- Repository containing source -->
+<a href="https://github.com/ava-labs/" title="Go to repository"
+    class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    github.com/ava-labs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
+    
+    <label class="md-nav__link" for="nav-1">
+      AVA Documentation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        AVA Documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../quickstart/ava-getting-started/" title="Quickstart" class="md-nav__link">
+      Quickstart
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        System Overview
+      </label>
+    
+    <a href="./" title="System Overview" class="md-nav__link md-nav__link--active">
+      System Overview
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <!--<label class="md-nav__title" for="__toc">Table of contents</label>-->
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-blockchain" class="md-nav__link">
+    What is a Blockchain?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-decentralized-application" class="md-nav__link">
+    What is a Decentralized Application?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-brief-history-of-blockchains" class="md-nav__link">
+    A Brief History of Blockchains
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blockchain-10" class="md-nav__link">
+    Blockchain 1.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blockchain-20" class="md-nav__link">
+    Blockchain 2.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blockchain-30-and-ava" class="md-nav__link">
+    Blockchain 3.0 and AVA
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-virtual-machines" class="md-nav__link">
+    What are Virtual Machines
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-virtual-machines" class="md-nav__link">
+    Why Virtual Machines
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-your-own-blockchain-and-virtual-machine" class="md-nav__link">
+    Creating Your Own Blockchain and Virtual Machine
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-subnets" class="md-nav__link">
+    What are Subnets
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compliance" class="md-nav__link">
+    Compliance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#support-for-private-blockchains" class="md-nav__link">
+    Support for Private Blockchains
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#separation-of-concerns" class="md-nav__link">
+    Separation of Concerns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-specific-requirements" class="md-nav__link">
+    Application-Specific Requirements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#built-in-blockchains" class="md-nav__link">
+    Built-in blockchains
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-x-chain" class="md-nav__link">
+    The X-Chain
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-p-chain" class="md-nav__link">
+    The P-Chain
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-c-chain" class="md-nav__link">
+    The C-Chain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-avalanche" class="md-nav__link">
+    What is Avalanche
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classical-and-nakamoto-consensus-protocols" class="md-nav__link">
+    Classical and Nakamoto Consensus Protocols
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-does-avalanche-work" class="md-nav__link">
+    How Does Avalanche Work
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#properties-of-avalanche" class="md-nav__link">
+    Properties of Avalanche
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparison-of-consensus-protocol-families" class="md-nav__link">
+    Comparison of Consensus Protocol Families
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-staking" class="md-nav__link">
+    What is Staking
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sybil-attacks" class="md-nav__link">
+    Sybil Attacks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-does-proof-of-stake-work" class="md-nav__link">
+    How Does Proof-of-Stake Work
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-can-i-validate-the-default-subnet-stake-ava" class="md-nav__link">
+    How Can I Validate the Default Subnet (Stake AVA)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validation-rewards" class="md-nav__link">
+    Validation Rewards
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    Summary
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#high-performance" class="md-nav__link">
+    High performance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#safety" class="md-nav__link">
+    Safety
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sustainability" class="md-nav__link">
+    Sustainability
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flexibility" class="md-nav__link">
+    Flexibility
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#private-blockchains" class="md-nav__link">
+    Private Blockchains
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    Next steps
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-4" type="checkbox" id="nav-1-4">
+    
+    <label class="md-nav__link" for="nav-1-4">
+      Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-4">
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/fixed-cap-asset/" title="Create a Fixed-Cap Asset" class="md-nav__link">
+      Create a Fixed-Cap Asset
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/variable-cap-asset/" title="Create a Variable-Cap Asset" class="md-nav__link">
+      Create a Variable-Cap Asset
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/create-a-subnet/" title="Create a Subnet" class="md-nav__link">
+      Create a Subnet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/adding-validators/" title="Add Validators to a Subnet" class="md-nav__link">
+      Add Validators to a Subnet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/create-a-blockchain/" title="Create a Blockchain" class="md-nav__link">
+      Create a Blockchain
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/creating-a-virtual-machine/" title="Create a Virtual Machine" class="md-nav__link">
+      Create a Virtual Machine
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/atomic-swap/" title="Transfer AVA between Chains" class="md-nav__link">
+      Transfer AVA between Chains
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/creating-a-local-testnet/" title="Create a Local Test Network" class="md-nav__link">
+      Create a Local Test Network
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-5" type="checkbox" id="nav-1-5">
+    
+    <label class="md-nav__link" for="nav-1-5">
+      APIs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-5">
+        APIs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api/intro-apis/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api/issuing-api-calls/" title="Issuing API Calls" class="md-nav__link">
+      Issuing API Calls
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api/keystore/" title="Keystore API" class="md-nav__link">
+      Keystore API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api/avm/" title="AVM (X-Chain) API" class="md-nav__link">
+      AVM (X-Chain) API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api/platform/" title="Platform (P-Chain) API" class="md-nav__link">
+      Platform (P-Chain) API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api/evm/" title="EVM (C-Chain) API" class="md-nav__link">
+      EVM (C-Chain) API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api/admin/" title="Admin API" class="md-nav__link">
+      Admin API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api/ipc/" title="IPC API" class="md-nav__link">
+      IPC API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api/metrics/" title="Metrics API" class="md-nav__link">
+      Metrics API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api/timestamp/" title="Timestamp API" class="md-nav__link">
+      Timestamp API
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-6" type="checkbox" id="nav-1-6">
+    
+    <label class="md-nav__link" for="nav-1-6">
+      Developer Tools
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-6">
+        Developer Tools
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-6-2" type="checkbox" id="nav-1-6-2">
+    
+    <label class="md-nav__link" for="nav-1-6-2">
+      Slopes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-1-6-2">
+        Slopes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/slopes/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/slopes/api/" title="API" class="md-nav__link">
+      API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/slopes/managing-keys/" title="Manage Keys" class="md-nav__link">
+      Manage Keys
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/slopes/create-asset/" title="Create Asset" class="md-nav__link">
+      Create Asset
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/slopes/send-coins/" title="Send Asset" class="md-nav__link">
+      Send Asset
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/avash/" title="Avash" class="md-nav__link">
+      Avash
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-7" type="checkbox" id="nav-1-7">
+    
+    <label class="md-nav__link" for="nav-1-7">
+      Reference Materials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-7">
+        Reference Materials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../references/command-line-interface/" title="Command Line Interface" class="md-nav__link">
+      Command Line Interface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../references/cryptographic-primitives/" title="Cryptographic Primitives" class="md-nav__link">
+      Cryptographic Primitives
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../references/serialization-primitives/" title="Serialization Primitives" class="md-nav__link">
+      Serialization Primitives
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../references/avm-transaction-serialization/" title="Transaction Format" class="md-nav__link">
+      Transaction Format
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../references/network-protocol/" title="Network Protocol" class="md-nav__link">
+      Network Protocol
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../references/glossary/" title="Glossary" class="md-nav__link">
+      Glossary
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../papers/" title="Papers" class="md-nav__link">
+      Papers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-9" type="checkbox" id="nav-1-9">
+    
+    <label class="md-nav__link" for="nav-1-9">
+      Release Notes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-9">
+        Release Notes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../release-notes/release-history/" title="Release History" class="md-nav__link">
+      Release History
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../references/feature-pipeline/" title="Roadmap and Feature Pipeline" class="md-nav__link">
+      Roadmap and Feature Pipeline
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <!--<label class="md-nav__title" for="__toc">Table of contents</label>-->
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-blockchain" class="md-nav__link">
+    What is a Blockchain?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-decentralized-application" class="md-nav__link">
+    What is a Decentralized Application?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-brief-history-of-blockchains" class="md-nav__link">
+    A Brief History of Blockchains
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blockchain-10" class="md-nav__link">
+    Blockchain 1.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blockchain-20" class="md-nav__link">
+    Blockchain 2.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blockchain-30-and-ava" class="md-nav__link">
+    Blockchain 3.0 and AVA
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-virtual-machines" class="md-nav__link">
+    What are Virtual Machines
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-virtual-machines" class="md-nav__link">
+    Why Virtual Machines
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-your-own-blockchain-and-virtual-machine" class="md-nav__link">
+    Creating Your Own Blockchain and Virtual Machine
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-subnets" class="md-nav__link">
+    What are Subnets
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compliance" class="md-nav__link">
+    Compliance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#support-for-private-blockchains" class="md-nav__link">
+    Support for Private Blockchains
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#separation-of-concerns" class="md-nav__link">
+    Separation of Concerns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-specific-requirements" class="md-nav__link">
+    Application-Specific Requirements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#built-in-blockchains" class="md-nav__link">
+    Built-in blockchains
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-x-chain" class="md-nav__link">
+    The X-Chain
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-p-chain" class="md-nav__link">
+    The P-Chain
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-c-chain" class="md-nav__link">
+    The C-Chain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-avalanche" class="md-nav__link">
+    What is Avalanche
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classical-and-nakamoto-consensus-protocols" class="md-nav__link">
+    Classical and Nakamoto Consensus Protocols
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-does-avalanche-work" class="md-nav__link">
+    How Does Avalanche Work
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#properties-of-avalanche" class="md-nav__link">
+    Properties of Avalanche
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparison-of-consensus-protocol-families" class="md-nav__link">
+    Comparison of Consensus Protocol Families
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-staking" class="md-nav__link">
+    What is Staking
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sybil-attacks" class="md-nav__link">
+    Sybil Attacks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-does-proof-of-stake-work" class="md-nav__link">
+    How Does Proof-of-Stake Work
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-can-i-validate-the-default-subnet-stake-ava" class="md-nav__link">
+    How Can I Validate the Default Subnet (Stake AVA)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validation-rewards" class="md-nav__link">
+    Validation Rewards
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    Summary
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#high-performance" class="md-nav__link">
+    High performance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#safety" class="md-nav__link">
+    Safety
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sustainability" class="md-nav__link">
+    Sustainability
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flexibility" class="md-nav__link">
+    Flexibility
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#private-blockchains" class="md-nav__link">
+    Private Blockchains
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    Next steps
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/ava-labs/edit/master/docs/v1.0/en/core-concepts/overview.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="system-overview">System Overview</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This document describes the core concepts and architecture of the AVA network.</p>
+<h2 id="what-is-a-blockchain">What is a Blockchain?</h2>
+<p>A blockchain is a decentralized digital ledger. It&rsquo;s decentralized because there is no single
+entity in charge of maintaining the ledger. Many parties, called <strong>validators</strong>, maintain their own
+copy of the ledger. The validators use a <strong>consensus protocol</strong> to ensure they always agree on the
+contents of the ledger.</p>
+<p>A desirable property of blockchains is that validators agree on the contents of the ledger
+even in the presence of byzantine (malicious) validators who do not follow the rules of
+the consensus protocol.</p>
+<h2 id="what-is-a-decentralized-application">What is a Decentralized Application?</h2>
+<p>An application stores some information, or <strong>state</strong>. You can interact with the application by performing a <strong>transaction</strong>.
+Transactions change the state of the application or, in other words, cause a <strong>state transition</strong>.
+Applications also allows users to retrieve information about the state (query it) without modifying it.</p>
+<p>A <strong>decentralized application</strong> (dApp) is one where there is no single authority that maintains the state and processes transactions.
+This might all seem very abstract, so let&rsquo;s look at Bitcoin through the lens of decentralized applications.</p>
+<p>Bitcoin is a decentralized application built atop a blockchain. The state of the application is a record of
+who has how many Bitcoin. The state is stored on Bitcoin&rsquo;s blockchain. Remember, a blockchain is a ledger;
+in this case, the entries in the ledger are something like &ldquo;Alice sends Bob 1 Bitcoin&rdquo; or &ldquo;Jasmine pays Tosha 2 Bitcoin.&rdquo;
+Each transaction causes a state transition by adding a new entry to the ledger.
+Bitcoin is decentralized because many independent validators maintain the blockchain, which holds its state, and process transactions.</p>
+<h2 id="a-brief-history-of-blockchains">A Brief History of Blockchains</h2>
+<p>In order to understand the value AVA provides, it&rsquo;s necessary to look at legacy blockchain technologies.</p>
+<h3 id="blockchain-10">Blockchain 1.0</h3>
+<p>Bitcoin demonstrated the value of blockchains and decentralization by creating a robust, decentralized payments system.
+However, the Bitcoin network supports a small number of transactions per second, and Bitcoin&rsquo;s architecture makes 
+it difficult to adapt its codebase for any use other than digital payments.
+A number of other blockchain platforms duplicated the Bitcoin code base, with some small modifications, to issue their own coins.
+Most of these copycat efforts provided zero additional value from both a technical and business perspective.
+Bitcoin&rsquo;s main value proposition today is as a store of value and hedge against inflation.</p>
+<h3 id="blockchain-20">Blockchain 2.0</h3>
+<p>In 2014, Ethereum introduced the innovative idea of using a decentralized application (Ethereum) to launch and use 
+new decentralized applications (smart contracts.) 
+Before, it had been impossible to launch a blockchain-based decentralized application without creating
+and launching one&rsquo;s own blockchain. 
+Ethereum sparked a huge wave of new dApps, including DeFi (decentralized finance) applications.</p>
+<h3 id="blockchain-30-and-ava">Blockchain 3.0 and AVA</h3>
+<p>Like Bitcoin and Ethereum, AVA introduces new paradigms to the blockchain world.</p>
+<p>Unlike legacy blockchain networks, which have only one blockchain and one validator set, <strong>AVA is a heterogeneous network of many blockchains and validator sets.</strong></p>
+<p>Just as Ethereum allows one to launch a decentralized application defined by a smart contract, AVA allows one to launch a decentralized applications defined by a <strong>Virtual Machine.</strong>
+Unlike Ethereum, each dApp runs on its own independent blockchain.
+Each blockchain is validated by a <strong>Subnet,</strong> a dynamic, custom set of validators.
+This allows for the creation of private blockchains.</p>
+<p>AVA is not just a platform for creating custom dApps. It also has native support for creating and trading smart digital assets.
+An asset can have a complex, custom ruleset that defines its behavior (eg &ldquo;can&rsquo;t be traded until next year&rdquo;), allowing users to get the functionality they want and to comply with regulations.</p>
+<p>AVA is the first blockchain network to use <strong>Avalanche</strong>, a new family of consensus protocols
+created by distributed systems researchers in 2018 that allow AVA to process thousands of transactions per second.
+Avalanche permanently finalizes transactions in a few seconds, making AVA suitable for real-time payments.
+Avalanche can be used to achieve consensus on not only linear blockchains but also on blockchains that are <strong>Directed Acyclic Graphs (DAGs).</strong></p>
+<p>AVA uses <strong>Proof-of-Stake</strong>, which allows tens of thousands of validators to have a first-hand say in the system while consuming minimal energy.</p>
+<p>The following sections explain AVA&rsquo;s architecture, innovations and capabilities in greater detail.</p>
+<h2 id="what-are-virtual-machines">What are Virtual Machines</h2>
+<p>A <strong>Virtual Machine</strong> (VM) defines the application-level logic of a blockchain.
+In technical terms, it defines a state machine.
+It specifies the blockchain&rsquo;s state, state transition function, transactions and the API through which users can interact with the blockchain.</p>
+<p>Every blockchain on the AVA network is an instance of a Virtual Machine.
+(We sometimes say, equivalently, that a blockchain <em>runs</em> a Virtual Machine.)</p>
+<p>When a developer writes a Virtual Machine they do not need to concern themself
+with lower-level logic like networking, consensus and the structure of the blockchain.
+AVA does all of that behind the scenes so that developers can focus on the thing they&rsquo;d like to build.</p>
+<p>Think of a Virtual Machine as a blueprint for a blockchain; one can use the same Virtual Machine to
+create arbitrarily many blockchains, each of which follows the same ruleset but is logically independent from other blockchains.</p>
+<h3 id="why-virtual-machines">Why Virtual Machines</h3>
+<p>At first, blockchain networks had one Virtual Machine with a pre-defined, static set of functionality.
+This rigid, monolithic design limited what blockchain-based applications one could run on such networks.</p>
+<p>People who wanted custom decentralized applications had to create their own, entirely new blockchain network from scratch.
+Doing so required a great deal of time and effort, offered limited security, and generally resulted in a bespoke, fragile blockchain that never got off the ground.</p>
+<p>Ethereum made a step toward solving this problem with smart contracts.
+Developers didn&rsquo;t need to worry about networking and consensus but creating decentralized applications was still hard.
+The Ethereum Virtual Machine has low performance and imposes restrictions on smart contract developers.
+Solidity and the other few languages for writing Ethereum smart contracts are unfamiliar to most programmers.</p>
+<p>AVA Virtual Machines make it easy to define a blockchain-based decentralized application.
+Rather than lightly-used, poorly-understood languages like Solidity, developers can write Virtual Machines in Go.
+(AVA will support VM creation in other popular languages in the future.)</p>
+<p>Virtual machines can contain almost any arbitrary logic and AVA imposes few restrictions on a VM&rsquo;s functionality.</p>
+<h3 id="creating-your-own-blockchain-and-virtual-machine">Creating Your Own Blockchain and Virtual Machine</h3>
+<p>AVA is a network of custom, independent blockchains, so naturally blockchain creation is a core feature of AVA.</p>
+<p>AVA does not yet support creation of new Virtual Machines.
+This means that presently, AVA only supports creation of new instances of the <a href="../../api/avm/">AVM</a> or the <a href="../../api/timestamp/">Timestamp VM.</a> That is, one can only create a new blockchain that runs the AVM or Timestamp VM. See <a href="../../tutorials/create-a-blockchain/">this tutorial</a> to learn how to do so.</p>
+<p>In the future AVA will allow users to define and launch custom blockchains, and we&rsquo;ll release SDKs to help developers do so. </p>
+<p>To get an idea of what a Virtual Machine implementation looks like, check out <a href="../../tutorials/creating-a-virtual-machine/">this tutorial</a>, which shows and explains all of the code in a simple Virtual Machine, the Timestamp VM.</p>
+<h2 id="what-are-subnets">What are Subnets</h2>
+<p>A <strong>Subnet</strong>, or Subnetwork, is a dynamic set of validators working together to achieve consensus on the state of a set of blockchains.
+Each blockchain is validated by exactly one Subnet.
+A Subnet can validate arbitrarily many blockchains.
+A node may be a member of arbitrarily many Subnets.</p>
+<p>A Subnet manages its own membership and it may require that its constituent validators have certain properties.
+This is very useful and we explore its ramifications in more depth below.</p>
+<p>There is a special Subnet called the <strong>Default Subnet,</strong> which validates AVA&rsquo;s <a href="#built-in-blockchains">built-in blockchains.</a> 
+All members of all Subnets must also be a member of the <strong>Default Subnet.</strong>
+In order to become a member of the Default Subnet, one must <a href="#what-is-staking">stake</a> some <a href="#the-x-chain">AVA tokens.</a>
+The upshot of the preceding two points is that all validators of all blockchains must also validate AVA&rsquo;s built-in blockchains and must have staked AVA tokens.</p>
+<p>There are tutorials on <a href="../../tutorials/create-a-subnet/">creating a subnet</a> and <a href="../../tutorials/adding-validators/">adding validators to a subnet.</a></p>
+<h3 id="compliance">Compliance</h3>
+<p>AVA&rsquo;s Subnet architecture makes regulatory compliance manageable.
+As mentioned above, a Subnet may require validators to meet an arbitrary set of requirements. 
+This may include compliance requirements, such as:</p>
+<ul>
+<li>Validators must be located in a given country</li>
+<li>Validators must pass a KYC check </li>
+<li>Validators must hold a certain license</li>
+</ul>
+<h3 id="support-for-private-blockchains">Support for Private Blockchains</h3>
+<p>One can create a Subnet where only certain pre-defined validators may join. 
+In this way, one could create a private Subnet where the contents of blockchains would be visible only to those validators.</p>
+<h3 id="separation-of-concerns">Separation of Concerns</h3>
+<p>In a heterogeneous network of blockchains, some validators will not want to validate certain blockchains because they simply have no 
+interest in those blockchains. The Subnet model allows validators to only concern themselves with blockchains that they care about, 
+rather than forcing validators to concern themselves about the state of every blockchain. This reduces the burden on validators.</p>
+<h3 id="application-specific-requirements">Application-Specific Requirements</h3>
+<p>Different blockchain-based applications may require validators to have certain properties. For example, suppose there is an application that requires large amounts of RAM or CPU power. A Subnet could require that validators meet certain hardware requirements so that the application doesn&rsquo;t suffer from low performance due to slow validators.</p>
+<h2 id="built-in-blockchains">Built-in blockchains</h2>
+<p>As mentioned before, AVA is a network of blockchains.
+There are 3 blockchains that are inherent to the AVA network.
+They are validated by the <a href="#what-are-subnets">Default Subnet.</a></p>
+<h3 id="the-x-chain">The X-Chain</h3>
+<p>The <strong>X-Chain</strong> acts as a decentralized platform for creating and trading <strong>smart digital assets.</strong>
+(Think X for eXchanging assets.)
+A smart digital asset is a representation of a real-world thing, such as an equity or bond,
+with a set of rules that govern its behavior, like &ldquo;can&rsquo;t be traded until tomorrow&rdquo; or &ldquo;can only be sent to US citizens.&rdquo;</p>
+<p>One of the assets traded on the X-Chain is <strong>AVA</strong>. AVA is the AVA network&rsquo;s native token.
+When one issues a transaction to a blockchain on the AVA network they pay a fee denominated in AVA.
+Right now there are no transaction fees but there will be in the future.</p>
+<p>The X-Chain is an instance of the AVA Virtual Machine (AVM).
+(Recall that all blockchains are an instance of a Virtual Machine.)</p>
+<p>See <a href="../../tutorials/fixed-cap-asset/">here</a> for tutorials on creating and trading new assets on the X-Chain.</p>
+<h3 id="the-p-chain">The P-Chain</h3>
+<p>Another chain inherent to the AVA network is the <strong>P-Chain</strong>, which manages metadata about the AVA network.
+(P stands for platform.)</p>
+<p>The <a href="../../api/platform/">P-Chain&rsquo;s API</a> allows clients to create subnets, add validators to subnets and create blockchains.</p>
+<h3 id="the-c-chain">The C-Chain</h3>
+<p>The final built-in chain is the <strong>C-Chain</strong>.
+(C stands for contract.)</p>
+<p>The C-Chain is an instance of the Ethereum Virtual Machine powered by <a href="#what-is-avalanche">Avalanche</a>.
+One can create smart contracts on the C-Chain and do anything else they would do on Ethereum by using the <a href="../../api/evm/">C-Chain&rsquo;s API</a>.</p>
+<h2 id="what-is-avalanche">What is Avalanche</h2>
+<p>Many online applications require agreement (consensus) between a set of computers.
+Asset trading is one such application; every participant needs to agree on who holds what assets.</p>
+<p>In 2018 distributed systems researchers created Avalanche, a novel consensus protocol that is secure, performant and energy-efficient.</p>
+<h3 id="classical-and-nakamoto-consensus-protocols">Classical and Nakamoto Consensus Protocols</h3>
+<p>In order to illustrate what differentiates Avalance, it&rsquo;s worth reviewing legacy consensus protocols.</p>
+<p>Classical protocols, including PBFT, Libra&rsquo;s HotStuff, Hedera Hashgraph, HyperLedger and Tendermint/Cosmos, are based on all-to-all voting.
+They typically have a designated leader who initiates the decision process and a series of rounds of all-to-all communication. This process is inherently expensive; all-to-all communication
+requires <span><span class="MathJax_Preview">O(N^2)</span><script type="math/tex">O(N^2)</script></span> messages, where N is the number of participants. Therefore, classical protocols can&rsquo;t handle many participants. Libra, for instance, is limited to less than 100 participants.</p>
+<p>The Nakamoto family of protocols relies on a process known as proof-of-work mining. While this does away with
+the requirement for all-to-all communication, it requires useless calculations that use vast amounts of energy; an analysis by the International Energy Agency estimates that cryptocurrency mining uses at least as much energy as the entire nation of Ireland. As a result, Nakamoto-based systems constantly leak value out of their ecosystems to power companies. To maintain the security of proof-of-work systems, the miners can never be switched off, thus ensuring that this eye-watering energy consumption never ends. Mining a block is difficult by design, so Nakamoto protocols finalize transactions very slowly &ndash; it takes an hour for a Bitcoin transaction to become final, and this low latency will not improve even as technology does. </p>
+<h3 id="how-does-avalanche-work">How Does Avalanche Work</h3>
+<p>Protocols in the Avalanche family operate through repeated sub-sampled voting.</p>
+<p>When a validator is trying to determine whether a transaction should be accepted or rejected, it asks a small, random subset of validators whether they think the transaction should be accepted or rejected.
+If the queried validator thinks the transaction is invalid, has already rejected the transaction or prefers a conflicting transaction, it replies that it thinks the transaction should be rejected. Otherwise, it replies that it thinks the transaction should be accepted.</p>
+<p>If a sufficiently large portion (<em>alpha</em>) of the validators sampled reply that they think the transaction should be accepted, the validator prefers to accept the transaction.
+That is, when it is queried about the transaction in the future, it will reply that it thinks the transaction should be accepted. Similarly, the validator will prefer to reject the transaction if a sufficiently large portion of the validators reply that they think the transaction should be rejected.</p>
+<p>The validator repeats this sampling process until <em>alpha</em> of the validators queried reply the same way (accept/reject) for <em>beta</em> consecutive rounds. </p>
+<p>In the common case when a transaction has no conflicts, finalization happens very quickly.
+When conflicts exist, honest validators quickly cluster around preferring one of the conflicting transactions, entering a positive feedback loop until all correct validators prefer that transaction, leading to its acceptance and the rejection of conflicting transactions. Avalanche gets its name from this cascading property.</p>
+<p>It is guaranteed (with arbitrarily high probability based on system parameters) that if any honest validator accepts (rejects) a transaction, all honest validators will accept (reject) that transaction.</p>
+<h3 id="properties-of-avalanche">Properties of Avalanche</h3>
+<p>Protocols in the Avalanche family are very fast.
+They can achieve irreversible finality in 1-2 seconds, quicker than a typical credit card transaction.
+They support many thousands of transactions per second, in excess of Visa&rsquo;s typical throughput.</p>
+<p>In a given round a validator queries only a small sub-sample of validators, allowing Avalanche to scale to up to millions of participants.
+No other proof-of-stake protocol can support nearly as many validators without compromising the decentralization of the network.</p>
+<p>Avalanche protocols are lightweight and sustainable.
+Unlike Nakamoto protocols, they use very little energy, and when there is no work to do, the system quiesces (waits in a low-energy-consumption state.)</p>
+<p>Finally, Avalanche protocols are highly secure.
+Because they operate without a leader, they are immune to a large class of attacks that
+other consensus protocol families face.
+The large number of validators ensures immutability and censorship resistance that proof-of-work protocols, backed by small numbers of mining pools, cannot achieve.
+Most projects that use proof-of-stake attempt to scale by delegating validation to a subcommittee.
+The cost of violating safety in such a system is only as low as the cost of corrupting any subcommittee, which may be very low. 
+In Avalanche protocols, such delegation is not necessary because the protocol allows every validator to have a first-hand say in consensus. </p>
+<p>Those interested in a more technical, in-depth discussion of Avalanche should read the <a href="https://arxiv.org/pdf/1906.08936.pdf">Avalanche whitepaper.</a></p>
+<h3 id="comparison-of-consensus-protocol-families">Comparison of Consensus Protocol Families</h3>
+<p>The table below provides a comparison of the Avalanche, Nakamoto and Classical consensus protocol families.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Nakamoto</th>
+<th>Classical</th>
+<th>Avalanche</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scalable</td>
+<td>+</td>
+<td>-</td>
+<td>+</td>
+</tr>
+<tr>
+<td>Robust</td>
+<td>+</td>
+<td>-</td>
+<td>+</td>
+</tr>
+<tr>
+<td>Highly Decentralized</td>
+<td>+</td>
+<td>-</td>
+<td>+</td>
+</tr>
+<tr>
+<td>Low Latency</td>
+<td>-</td>
+<td>+</td>
+<td>+</td>
+</tr>
+<tr>
+<td>High Throughput</td>
+<td>-</td>
+<td>+</td>
+<td>+</td>
+</tr>
+<tr>
+<td>Lightweight</td>
+<td>-</td>
+<td>+</td>
+<td>+</td>
+</tr>
+<tr>
+<td>Green, Sustainable</td>
+<td>-</td>
+<td>+</td>
+<td>+</td>
+</tr>
+<tr>
+<td>Resilient to 51% Attacks</td>
+<td>-</td>
+<td>-</td>
+<td>+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="what-is-staking">What is Staking</h2>
+<h3 id="sybil-attacks">Sybil Attacks</h3>
+<p>In a decentralized network like Bitcoin, Ethereum or AVA, each validator influences which transactions are accepted and which are rejected.</p>
+<p>A <a href="https://en.wikipedia.org/wiki/Sybil_attack"><strong>sybil attack</strong></a> is an attack where the attacker controls many validators and therefore gains an unsafe amount of influence over the network.
+This is analogous to vote-stuffing in an election.</p>
+<p>Proof-of-Stake is the method by which the AVA network prevents sybil attacks.</p>
+<h3 id="how-does-proof-of-stake-work">How Does Proof-of-Stake Work</h3>
+<p>To resist sybil attacks, a decentralized network must require that influence over the network is paid for with a scarce resource so that it is infeasibly expensive for an attacker to gain enough influence over the network to compromise its security. In proof-of-work systems, the scarce resource is computing power. On the AVA network, the scarce resource is the native token, AVA.</p>
+<p>If a node wishes to validate for any blockchain it must <em>stake</em> AVA.
+To stake is to lock up some $AVA tokens, making them temporarily unspendable. </p>
+<h3 id="how-can-i-validate-the-default-subnet-stake-ava">How Can I Validate the Default Subnet (Stake AVA)</h3>
+<p>See <a href="../../tutorials/adding-validators/#add-a-validator-to-the-default-subnet">this tutorial.</a></p>
+<h3 id="validation-rewards">Validation Rewards</h3>
+<p>When a validator is done validating the Default Subnet it receives back the AVA tokens it staked. 
+Additionally, it may receive a reward for helping to secure the network by validating.</p>
+<p>Right now, a reward is always paid out to validators.
+In the future, a validator will only receive the validation reward if it is sufficiently responsive and correct during the time it validates.</p>
+<p>See the <a href="https://files.avalabs.org/papers/ava-token.pdf">AVA token paper</a> to learn more about AVA and the mechanics of staking.</p>
+<h2 id="summary">Summary</h2>
+<h3 id="high-performance">High performance</h3>
+<p>Blockchains built on AVA use the innovative Avalanche consensus protocol to 
+handle thousands of transactions per second and permanently finalize transactions in seconds.</p>
+<h3 id="safety">Safety</h3>
+<p>AVA allows tens-of-thousands of validators to have a first-hand say in the system,
+making AVA robust and resistant to attacks.</p>
+<h3 id="sustainability">Sustainability</h3>
+<p>AVA uses energy-efficient Proof-of-Stake rather than Proof-of-Work.</p>
+<h3 id="flexibility">Flexibility</h3>
+<p>Virtual Machines model allows developers to easily create custom blockchains and dApps that can contain almost any arbitrary logic.</p>
+<h3 id="private-blockchains">Private Blockchains</h3>
+<p>Users can create Subnets, allowing for private blockchains.</p>
+<h2 id="next-steps">Next steps</h2>
+<ul>
+<li><a href="../../quickstart/ava-getting-started/">Get started with the quickstart tutorial</a></li>
+<li><a href="../../tutorials/fixed-cap-asset/">Follow the Quickstart guide</a></li>
+<li><a href="../../api/intro-apis/">Explore AVA&rsquo;s APIs</a></li>
+<li><a href="../../references/cryptographic-primitives/">Explore reference materials</a></li>
+<li><a href="../papers/">Read the whitepaper and other papers</a></li>
+</ul>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        <!--
+  Copyright (c) 2016-2018 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<div class="feedback md-typeset">
+    Questions or feedback? You can discuss <a href="https://github.com/ava-labs/gecko/issues">issues</a> and obtain free support on <a href="https://discordapp.com/invite/Ja3CSs7">Avalabs Discord channel</a>.
+</div>
+
+<!-- Application footer -->
+<footer class="md-footer">
+
+  <!-- Link to previous and/or next page -->
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+
+        <!-- Link to previous page -->
+        
+          <a href="../../quickstart/ava-getting-started/"
+              title="Quickstart"
+              class="md-flex md-footer-nav__link md-footer-nav__link--prev"
+              rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back
+                    md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch
+                  md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Quickstart
+              </span>
+            </div>
+          </a>
+        
+
+        <!-- Link to next page -->
+        
+          <a href="../../tutorials/fixed-cap-asset/"
+              title="Create a Fixed-Cap Asset"
+              class="md-flex md-footer-nav__link md-footer-nav__link--next"
+              rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch
+                  md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Create a Fixed-Cap Asset
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward
+                    md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+
+  <!-- Further information -->
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+
+      <!-- Copyright and theme information -->
+      <div class="md-footer-copyright" style="padding-top: 0px; padding-bottom: 0px;">
+        
+          <div class="md-footer-copyright__highlight">
+            &copy; 2020 AVA Labs
+          </div>
+        
+      </div>
+
+      <!-- Social links -->
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../../.."}})</script>
+      
+    
+  </body>
+</html>

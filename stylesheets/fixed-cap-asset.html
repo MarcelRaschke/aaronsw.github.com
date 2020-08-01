@@ -1,0 +1,1429 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="AVA Documentation.">
+      
+      
+        <link rel="canonical" href="https://docs.ava.network/v1.0/en/tutorials/fixed-cap-asset/">
+      
+      
+        <meta name="author" content="AVA Community">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>Create a Fixed-Cap Asset - AVA Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/application.1b62728e.css">
+      
+        <link rel="stylesheet" href="../../../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#e91e63">
+      
+    
+    
+      <script src="../../../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../../assets/fonts/material-icons.css">
+    
+    
+    
+  <!--Empty the footer analytics bloc as we need it the headers -->
+
+    
+  <link rel="stylesheet" href="../../../../assets/stylesheets/ava_custom.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"></script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="pink" data-md-color-accent="deep-purple">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#creating-a-fixed-cap-asset" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://docs.ava.network/" title="AVA Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">library_books</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              AVA Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Create a Fixed-Cap Asset
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            <!--
+  Copyright (c) 2016-2019 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<!--
+  Check whether the repository is hosted on one of the supported code hosting
+  platforms (GitHub, GitLab or Bitbucket) to show icon.
+-->
+
+
+  
+
+
+<!-- Repository containing source -->
+<a href="https://github.com/ava-labs/" title="Go to repository"
+    class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    github.com/ava-labs
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../.." class="md-tabs__link md-tabs__link--active">
+          AVA Documentation
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://docs.ava.network/" title="AVA Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon">library_books</i>
+      
+    </a>
+    AVA Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <!--
+  Copyright (c) 2016-2019 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<!--
+  Check whether the repository is hosted on one of the supported code hosting
+  platforms (GitHub, GitLab or Bitbucket) to show icon.
+-->
+
+
+  
+
+
+<!-- Repository containing source -->
+<a href="https://github.com/ava-labs/" title="Go to repository"
+    class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    github.com/ava-labs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
+    
+    <label class="md-nav__link" for="nav-1">
+      AVA Documentation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        AVA Documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../quickstart/ava-getting-started/" title="Quickstart" class="md-nav__link">
+      Quickstart
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../core-concepts/overview/" title="System Overview" class="md-nav__link">
+      System Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-4" type="checkbox" id="nav-1-4" checked>
+    
+    <label class="md-nav__link" for="nav-1-4">
+      Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-4">
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Create a Fixed-Cap Asset
+      </label>
+    
+    <a href="./" title="Create a Fixed-Cap Asset" class="md-nav__link md-nav__link--active">
+      Create a Fixed-Cap Asset
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <!--<label class="md-nav__title" for="__toc">Table of contents</label>-->
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assumptions" class="md-nav__link">
+    Assumptions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-asset" class="md-nav__link">
+    Create the Asset
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trade-the-asset" class="md-nav__link">
+    Trade the Asset
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check-a-balance" class="md-nav__link">
+    Check a balance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#send-the-asset" class="md-nav__link">
+    Send the asset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-the-transaction-status" class="md-nav__link">
+    Check the transaction status
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wrapping-up" class="md-nav__link">
+    Wrapping up
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../variable-cap-asset/" title="Create a Variable-Cap Asset" class="md-nav__link">
+      Create a Variable-Cap Asset
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../create-a-subnet/" title="Create a Subnet" class="md-nav__link">
+      Create a Subnet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../adding-validators/" title="Add Validators to a Subnet" class="md-nav__link">
+      Add Validators to a Subnet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../create-a-blockchain/" title="Create a Blockchain" class="md-nav__link">
+      Create a Blockchain
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../creating-a-virtual-machine/" title="Create a Virtual Machine" class="md-nav__link">
+      Create a Virtual Machine
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../atomic-swap/" title="Transfer AVA between Chains" class="md-nav__link">
+      Transfer AVA between Chains
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../creating-a-local-testnet/" title="Create a Local Test Network" class="md-nav__link">
+      Create a Local Test Network
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-5" type="checkbox" id="nav-1-5">
+    
+    <label class="md-nav__link" for="nav-1-5">
+      APIs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-5">
+        APIs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api/intro-apis/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api/issuing-api-calls/" title="Issuing API Calls" class="md-nav__link">
+      Issuing API Calls
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api/keystore/" title="Keystore API" class="md-nav__link">
+      Keystore API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api/avm/" title="AVM (X-Chain) API" class="md-nav__link">
+      AVM (X-Chain) API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api/platform/" title="Platform (P-Chain) API" class="md-nav__link">
+      Platform (P-Chain) API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api/evm/" title="EVM (C-Chain) API" class="md-nav__link">
+      EVM (C-Chain) API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api/admin/" title="Admin API" class="md-nav__link">
+      Admin API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api/ipc/" title="IPC API" class="md-nav__link">
+      IPC API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api/metrics/" title="Metrics API" class="md-nav__link">
+      Metrics API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api/timestamp/" title="Timestamp API" class="md-nav__link">
+      Timestamp API
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-6" type="checkbox" id="nav-1-6">
+    
+    <label class="md-nav__link" for="nav-1-6">
+      Developer Tools
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-6">
+        Developer Tools
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-6-2" type="checkbox" id="nav-1-6-2">
+    
+    <label class="md-nav__link" for="nav-1-6-2">
+      Slopes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-1-6-2">
+        Slopes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/slopes/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/slopes/api/" title="API" class="md-nav__link">
+      API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/slopes/managing-keys/" title="Manage Keys" class="md-nav__link">
+      Manage Keys
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/slopes/create-asset/" title="Create Asset" class="md-nav__link">
+      Create Asset
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/slopes/send-coins/" title="Send Asset" class="md-nav__link">
+      Send Asset
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/avash/" title="Avash" class="md-nav__link">
+      Avash
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-7" type="checkbox" id="nav-1-7">
+    
+    <label class="md-nav__link" for="nav-1-7">
+      Reference Materials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-7">
+        Reference Materials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../references/command-line-interface/" title="Command Line Interface" class="md-nav__link">
+      Command Line Interface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../references/cryptographic-primitives/" title="Cryptographic Primitives" class="md-nav__link">
+      Cryptographic Primitives
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../references/serialization-primitives/" title="Serialization Primitives" class="md-nav__link">
+      Serialization Primitives
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../references/avm-transaction-serialization/" title="Transaction Format" class="md-nav__link">
+      Transaction Format
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../references/network-protocol/" title="Network Protocol" class="md-nav__link">
+      Network Protocol
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../references/glossary/" title="Glossary" class="md-nav__link">
+      Glossary
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../papers/" title="Papers" class="md-nav__link">
+      Papers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-9" type="checkbox" id="nav-1-9">
+    
+    <label class="md-nav__link" for="nav-1-9">
+      Release Notes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-9">
+        Release Notes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../release-notes/release-history/" title="Release History" class="md-nav__link">
+      Release History
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../references/feature-pipeline/" title="Roadmap and Feature Pipeline" class="md-nav__link">
+      Roadmap and Feature Pipeline
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <!--<label class="md-nav__title" for="__toc">Table of contents</label>-->
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assumptions" class="md-nav__link">
+    Assumptions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-asset" class="md-nav__link">
+    Create the Asset
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trade-the-asset" class="md-nav__link">
+    Trade the Asset
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check-a-balance" class="md-nav__link">
+    Check a balance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#send-the-asset" class="md-nav__link">
+    Send the asset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-the-transaction-status" class="md-nav__link">
+    Check the transaction status
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wrapping-up" class="md-nav__link">
+    Wrapping up
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/ava-labs/edit/master/docs/v1.0/en/tutorials/fixed-cap-asset.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="creating-a-fixed-cap-asset">Creating A Fixed-Cap Asset</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This tutorial illustrates how AVA can be used to create and trade a fixed-cap, fungible asset.
+A quantity of the asset is created at the asset&rsquo;s initialization, and then no more is ever created. </p>
+<p>Suppose there is an Income Sharing Agreement (ISA) with 10M shares, and no more shares are ever created.
+Let&rsquo;s create an asset where one unit of the asset represents one share of the ISA.</p>
+<h2 id="assumptions">Assumptions</h2>
+<p>We assume the reader has already completed the <a href="../../quickstart/ava-getting-started/">quickstart guide.</a></p>
+<h2 id="create-the-asset">Create the Asset</h2>
+<p>Our asset will exist on the <a href="../../core-concepts/overview/#the-x-chain">X-Chain</a>, so to create our asset we&rsquo;ll call <code>avm.createFixedCapAsset</code>, a method of the <a href="../../api/avm/">X-Chain&rsquo;s API.</a></p>
+<p>The signature for this method is:</p>
+<div class="codehilite"><pre><span></span><span class="nx">avm</span><span class="p">.</span><span class="nx">createFixedCapAsset</span><span class="p">({</span>
+    <span class="nx">name</span><span class="p">:</span> <span class="kt">string</span><span class="p">,</span> 
+    <span class="nx">symbol</span><span class="p">:</span> <span class="kt">string</span><span class="p">,</span>
+    <span class="nx">denomination</span><span class="p">:</span> <span class="kt">int</span><span class="p">,</span>  
+    <span class="nx">initialHolders</span><span class="p">:</span> <span class="p">[]{</span>
+        <span class="nx">address</span><span class="p">:</span> <span class="kt">string</span><span class="p">,</span> 
+        <span class="nx">amount</span><span class="p">:</span> <span class="kt">int</span>
+    <span class="p">},</span> 
+    <span class="nx">username</span><span class="p">:</span> <span class="kt">string</span><span class="p">,</span>  
+    <span class="nx">password</span><span class="p">:</span> <span class="kt">string</span>
+<span class="p">})</span> <span class="o">-</span><span class="p">&gt;</span> <span class="p">{</span><span class="nx">assetID</span><span class="p">:</span> <span class="kt">string</span><span class="p">}</span>
+</pre></div>
+
+<ul>
+<li><code>name</code> is a human-readable name for the asset. Not necessarily unique.</li>
+<li><code>symbol</code> is a shorthand symbol for the asset. Between 0 and 4 characters. Not necessarily unique. May be omitted.</li>
+<li><code>denomination</code> determines how balances of this asset are displayed by user interfaces. If denomination is 0, 100 units of this asset are displayed as 100. If denomination is 1, 100 units of this asset are displayed as 10.0. If denomination is 2, 100 units of this asset are displays as .100, etc.</li>
+<li>Performing a transaction on the X-Chain will require a transaction fee in AVA in the future. <code>username</code> and <code>password</code> denote the user paying the fee.
+  That user will need to hold enough AVA to cover the fee.
+  Since there are no transaction fees right now, you can leave <code>username</code> and <code>password</code> blank.</li>
+<li>Each element in <code>initialHolders</code> specifies that <code>address</code> holds <code>amount</code> units of the asset at genesis.</li>
+<li><code>assetID</code> is the ID of the new asset.</li>
+</ul>
+<p>Now, on to creating the asset.
+You&rsquo;ll want to replace <code>address</code> with an address your user controls so that you will
+hold all of the newly created asset and be able to send it later in this tutorial.</p>
+<div class="codehilite"><pre><span></span><span class="err">curl</span> <span class="err">-X</span> <span class="err">POST</span> <span class="err">--data</span> <span class="err">&#39;</span><span class="p">{</span>
+    <span class="nt">&quot;jsonrpc&quot;</span><span class="p">:</span><span class="s2">&quot;2.0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;id&quot;</span>     <span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&quot;method&quot;</span> <span class="p">:</span><span class="s2">&quot;avm.createFixedCapAsset&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;params&quot;</span> <span class="p">:{</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;ISA Shares&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;symbol&quot;</span><span class="p">:</span><span class="s2">&quot;ISAS&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;initialHolders&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;X-Dxs8JWAzDZX1VXcLZT5GZR7TyfX8h9ic9&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">10000000</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;username&quot;</span><span class="p">:</span><span class="s2">&quot;yourUsername&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;password&quot;</span><span class="p">:</span><span class="s2">&quot;yourPassword&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span><span class="err">&#39;</span> <span class="err">-H</span> <span class="err">&#39;content-type:application/json;&#39;</span> <span class="mf">127.0</span><span class="err">.</span><span class="mf">0.1</span><span class="err">:</span><span class="mi">9650</span><span class="err">/ext/bc/X</span>
+</pre></div>
+
+<p>The response should look like this:</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;jsonrpc&quot;</span><span class="p">:</span><span class="s2">&quot;2.0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;id&quot;</span>     <span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&quot;result&quot;</span> <span class="p">:{</span>
+        <span class="nt">&quot;assetID&quot;</span><span class="p">:</span><span class="s2">&quot;keMuoTQSGjqZbNVTCcbrwuNNNv9eEEZWBaRY3TapcgjkoZmQ1&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<h2 id="trade-the-asset">Trade the Asset</h2>
+<h3 id="check-a-balance">Check a balance</h3>
+<p>All 10,000,000 units of the asset (shares) are controlled by the address we specified in <code>initialHolders</code>.</p>
+<p>To verify this we call <code>avm.getBalance</code>:</p>
+<div class="codehilite"><pre><span></span><span class="err">curl</span> <span class="err">-X</span> <span class="err">POST</span> <span class="err">--data</span> <span class="err">&#39;</span><span class="p">{</span>
+    <span class="nt">&quot;jsonrpc&quot;</span><span class="p">:</span><span class="s2">&quot;2.0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;id&quot;</span>     <span class="p">:</span><span class="mi">2</span><span class="p">,</span>
+    <span class="nt">&quot;method&quot;</span> <span class="p">:</span><span class="s2">&quot;avm.getBalance&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;params&quot;</span> <span class="p">:{</span>
+        <span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="s2">&quot;X-Dxs8JWAzDZX1VXcLZT5GZR7TyfX8h9ic9&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;assetID&quot;</span><span class="p">:</span><span class="s2">&quot;keMuoTQSGjqZbNVTCcbrwuNNNv9eEEZWBaRY3TapcgjkoZmQ1&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span><span class="err">&#39;</span> <span class="err">-H</span> <span class="err">&#39;content-type:application/json;&#39;</span> <span class="mf">127.0</span><span class="err">.</span><span class="mf">0.1</span><span class="err">:</span><span class="mi">9650</span><span class="err">/ext/bc/X</span>
+</pre></div>
+
+<p>The response confirms that our asset creation was successful, and that the expected address holds all 10,000,000 shares:</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;jsonrpc&quot;</span><span class="p">:</span><span class="s2">&quot;2.0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;id&quot;</span>     <span class="p">:</span><span class="mi">2</span><span class="p">,</span>
+    <span class="nt">&quot;result&quot;</span> <span class="p">:{</span>
+        <span class="nt">&quot;balance&quot;</span><span class="p">:</span><span class="mi">10000000</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<h3 id="send-the-asset">Send the asset</h3>
+<p>Now, let&rsquo;s send 100 shares by calling <code>avm.send</code>.</p>
+<p>To send the shares, we need to prove that we control the user the shares are being sent from.
+Therefore, this time we&rsquo;ll need to fill in <code>username</code> and <code>password</code>.</p>
+<div class="codehilite"><pre><span></span><span class="err">curl</span> <span class="err">-X</span> <span class="err">POST</span> <span class="err">--data</span> <span class="err">&#39;</span><span class="p">{</span>
+    <span class="nt">&quot;jsonrpc&quot;</span><span class="p">:</span><span class="s2">&quot;2.0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;id&quot;</span>     <span class="p">:</span><span class="mi">3</span><span class="p">,</span>
+    <span class="nt">&quot;method&quot;</span> <span class="p">:</span><span class="s2">&quot;avm.send&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;params&quot;</span> <span class="p">:{</span>
+        <span class="nt">&quot;username&quot;</span><span class="p">:</span><span class="s2">&quot;yourUsername&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;password&quot;</span><span class="p">:</span><span class="s2">&quot;yourPassword&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;assetID&quot;</span> <span class="p">:</span><span class="s2">&quot;keMuoTQSGjqZbNVTCcbrwuNNNv9eEEZWBaRY3TapcgjkoZmQ1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;amount&quot;</span>  <span class="p">:</span><span class="mi">100</span><span class="p">,</span>
+        <span class="nt">&quot;to&quot;</span>      <span class="p">:</span><span class="s2">&quot;X-9R5xWj1DkMtGVDQmyTB4uNnvYdCnj57pa&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span><span class="err">&#39;</span> <span class="err">-H</span> <span class="err">&#39;content-type:application/json;&#39;</span> <span class="mf">127.0</span><span class="err">.</span><span class="mf">0.1</span><span class="err">:</span><span class="mi">9650</span><span class="err">/ext/bc/X</span>
+</pre></div>
+
+<h3 id="check-the-transaction-status">Check the transaction status</h3>
+<p>The response from the above call should look like this:</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;jsonrpc&quot;</span><span class="p">:</span><span class="s2">&quot;2.0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;id&quot;</span>     <span class="p">:</span><span class="mi">3</span><span class="p">,</span>
+    <span class="nt">&quot;result&quot;</span> <span class="p">:{</span>
+        <span class="nt">&quot;txID&quot;</span><span class="p">:</span><span class="s2">&quot;2EAgR1YbsaJrwFiU4DpwjUfTLkt97WrjQYYNQny13AheewnxSR&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p><code>txID</code> is the ID of the <code>send</code> transaction we sent to the network.</p>
+<p>After a second or two, the transaction should be finalized.
+We can check the status of the transaction with <code>avm.getTxStatus</code>:</p>
+<div class="codehilite"><pre><span></span><span class="err">curl</span> <span class="err">-X</span> <span class="err">POST</span> <span class="err">--data</span> <span class="err">&#39;</span><span class="p">{</span>
+    <span class="nt">&quot;jsonrpc&quot;</span><span class="p">:</span><span class="s2">&quot;2.0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;id&quot;</span>     <span class="p">:</span><span class="mi">4</span><span class="p">,</span>
+    <span class="nt">&quot;method&quot;</span> <span class="p">:</span><span class="s2">&quot;avm.getTxStatus&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;params&quot;</span> <span class="p">:{</span>
+        <span class="nt">&quot;txID&quot;</span><span class="p">:</span><span class="s2">&quot;2EAgR1YbsaJrwFiU4DpwjUfTLkt97WrjQYYNQny13AheewnxSR&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span><span class="err">&#39;</span> <span class="err">-H</span> <span class="err">&#39;content-type:application/json;&#39;</span> <span class="mf">127.0</span><span class="err">.</span><span class="mf">0.1</span><span class="err">:</span><span class="mi">9650</span><span class="err">/ext/bc/X</span>
+</pre></div>
+
+<p>The response should look like this</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;jsonrpc&quot;</span><span class="p">:</span><span class="s2">&quot;2.0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;id&quot;</span>     <span class="p">:</span><span class="mi">4</span><span class="p">,</span>
+    <span class="nt">&quot;result&quot;</span> <span class="p">:{</span>
+        <span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="s2">&quot;Accepted&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>You might also see that <code>status</code> is <code>Pending</code> if the network has not yet finalized it yet.</p>
+<p>Now let&rsquo;s check the balance of the <code>to</code> address:</p>
+<div class="codehilite"><pre><span></span><span class="err">curl</span> <span class="err">-X</span> <span class="err">POST</span> <span class="err">--data</span> <span class="err">&#39;</span><span class="p">{</span>
+    <span class="nt">&quot;jsonrpc&quot;</span><span class="p">:</span><span class="s2">&quot;2.0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;id&quot;</span>     <span class="p">:</span><span class="mi">6</span><span class="p">,</span>
+    <span class="nt">&quot;method&quot;</span> <span class="p">:</span><span class="s2">&quot;avm.getBalance&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;params&quot;</span> <span class="p">:{</span>
+        <span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="s2">&quot;X-9R5xWj1DkMtGVDQmyTB4uNnvYdCnj57pa&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;assetID&quot;</span><span class="p">:</span><span class="s2">&quot;keMuoTQSGjqZbNVTCcbrwuNNNv9eEEZWBaRY3TapcgjkoZmQ1&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span><span class="err">&#39;</span> <span class="err">-H</span> <span class="err">&#39;content-type:application/json;&#39;</span> <span class="mf">127.0</span><span class="err">.</span><span class="mf">0.1</span><span class="err">:</span><span class="mi">9650</span><span class="err">/ext/bc/X</span>
+</pre></div>
+
+<p>The response should be:</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;jsonrpc&quot;</span><span class="p">:</span><span class="s2">&quot;2.0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;id&quot;</span>     <span class="p">:</span><span class="mi">6</span><span class="p">,</span>
+    <span class="nt">&quot;result&quot;</span> <span class="p">:{</span>
+        <span class="nt">&quot;balance&quot;</span><span class="p">:</span><span class="mi">100</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<h2 id="wrapping-up">Wrapping up</h2>
+<p>In this tutorial, we:</p>
+<ul>
+<li>Called <code>createFixedCapAsset</code> to create a fixed cap asset</li>
+<li>Called <code>getBalance</code> to check address balances</li>
+<li>Called <code>send</code> to transfer a quantity of our asset</li>
+</ul>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        <!--
+  Copyright (c) 2016-2018 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<div class="feedback md-typeset">
+    Questions or feedback? You can discuss <a href="https://github.com/ava-labs/gecko/issues">issues</a> and obtain free support on <a href="https://discordapp.com/invite/Ja3CSs7">Avalabs Discord channel</a>.
+</div>
+
+<!-- Application footer -->
+<footer class="md-footer">
+
+  <!-- Link to previous and/or next page -->
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+
+        <!-- Link to previous page -->
+        
+          <a href="../../core-concepts/overview/"
+              title="System Overview"
+              class="md-flex md-footer-nav__link md-footer-nav__link--prev"
+              rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back
+                    md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch
+                  md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                System Overview
+              </span>
+            </div>
+          </a>
+        
+
+        <!-- Link to next page -->
+        
+          <a href="../variable-cap-asset/"
+              title="Create a Variable-Cap Asset"
+              class="md-flex md-footer-nav__link md-footer-nav__link--next"
+              rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch
+                  md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Create a Variable-Cap Asset
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward
+                    md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+
+  <!-- Further information -->
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+
+      <!-- Copyright and theme information -->
+      <div class="md-footer-copyright" style="padding-top: 0px; padding-bottom: 0px;">
+        
+          <div class="md-footer-copyright__highlight">
+            &copy; 2020 AVA Labs
+          </div>
+        
+      </div>
+
+      <!-- Social links -->
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../../.."}})</script>
+      
+    
+  </body>
+</html>

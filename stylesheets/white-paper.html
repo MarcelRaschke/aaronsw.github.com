@@ -1,0 +1,1677 @@
+<!doctype html>
+<html lang="en-US"
+		xmlns:og="http://opengraphprotocol.org/schema/"
+		xmlns:fb="http://www.facebook.com/2008/fbml" >
+	<head>
+        <title>Libra White Paper | Blockchain, Association, Reserve</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-config" content="https://libra.org/en-US/wp-content/themes/jfl-default/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="profile" href="http://gmpg.org/xfn/11">
+
+        
+<meta name="description" content="The Libra Whitepaper. Take a closer look at the Libra Blockchain, the Libra Reserve, and The Libra Association." />
+<meta name="keywords" content="libra blockchain, libra association, libra reserve" /><meta name="google-site-verification" content="fdZCOAIHF21ghXl2nW4w2G9W2-xvW7wH_Zivkg8LlZ8" />
+<meta name="msvalidate.01" content="4236877D41AFD9809A38C77DCFD8FD6E" />
+
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Libra White Paper | Blockchain, Association, Reserve"/>
+<meta property="og:description" content="The Libra Whitepaper. Take a closer look at the Libra Blockchain, the Libra Reserve, and The Libra Association."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://libra.org/en-US/white-paper/"/>
+<meta property="og:site_name" content="Libra.org"/>
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image" content="https://libra.org/en-US/wp-content/themes/jfl-default/images/graph-image.png">
+<meta name="twitter:card" content="summary">
+<link rel="apple-touch-icon" sizes="180x180" href="https://libra.org/en-US/wp-content/themes/jfl-default/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://libra.org/en-US/wp-content/themes/jfl-default/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://libra.org/en-US/wp-content/themes/jfl-default/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://libra.org/en-US/wp-content/themes/jfl-default/favicons/site.webmanifest">
+<link rel="mask-icon" href="https://libra.org/en-US/wp-content/themes/jfl-default/favicons/safari-pinned-tab.svg" color="#ffffff">
+<link rel="shortcut icon" href="https://libra.org/en-US/wp-content/themes/jfl-default/favicons/favicon.ico">
+<link rel='stylesheet' id='jam3-styles-css'  href='https://libra.org/en-US/wp-content/themes/jfl-default/release/styles.f267bf3d3587cd8386b1.css' media='all' />
+				<link rel='preload' href='https://libra.org/en-US/wp-content/themes/jfl-default/release/webpack-runtime-43112f84fbf18c593fb4.js' as='script'/>
+								<link rel='preload' href='https://libra.org/en-US/wp-content/themes/jfl-default/release/styles-8be8c3ffa4a571b01fc4.js' as='script'/>
+								<link rel='preload' href='https://libra.org/en-US/wp-content/themes/jfl-default/release/app-2c45513840bd01dea0b9.js' as='script'/>
+							<link rel='preload' href='https://libra.org/en-US/wp-content/themes/jfl-default/release/styles.f267bf3d3587cd8386b1.css' as='style'/>
+			<link rel='https://api.w.org/' href='https://libra.org/en-US/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://libra.org/en-US/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://libra.org/en-US/wp-includes/wlwmanifest.xml" /> 
+<link rel="canonical" href="https://libra.org/en-US/white-paper/" />
+<link rel='shortlink' href='https://libra.org/en-US/?p=179' />
+<link rel="alternate" hreflang="fr-FR" href="https://libra.org/fr-FR/white-paper/"><link rel="alternate" hreflang="de-DE" href="https://libra.org/de-DE/white-paper/"><link rel="alternate" hreflang="id-ID" href="https://libra.org/id-ID/white-paper/"><link rel="alternate" hreflang="pt-BR" href="https://libra.org/pt-BR/white-paper/"><link rel="alternate" hreflang="zh-Hans-CN" href="https://libra.org/zh-CN/white-paper/"><link rel="alternate" hreflang="es-419" href="https://libra.org/es-LA/white-paper/"><link rel="alternate" hreflang="ja-JP" href="https://libra.org/ja-JP/white-paper/"><link rel="alternate" hreflang="ru-RU" href="https://libra.org/ru-RU/white-paper/"><link rel="alternate" hreflang="en-US" href="https://libra.org/en-US/white-paper/"><link rel="alternate" href="https://libra.org/en-US/white-paper/" hreflang="x-default"><style type='text/css'>img#wpstats{display:none}</style>		<style type="text/css" id="wp-custom-css">
+			
+
+@media (max-width: 375px){
+	.Hero.is-home .container{
+		padding: 6rem 3rem 9rem;
+	}
+}		</style>
+		        
+<script>
+	if ('IntersectionObserver' in window) document.documentElement.className += ' enable-animations';
+</script>
+	</head>
+	<body>
+		<div id="___gatsby">
+<div style="outline:none" tabindex="-1" role="group"
+  ><nav class="NavBar sticky white"
+    ><div class="topNavWrapper container"
+      ><div class="HamburgerButton purple"
+        ><svg width="22" height="22">
+          <g fill="none" fill-rule="evenodd">
+            <circle
+              fill="#D8D8D8"
+              opacity="0.013"
+              cx="11"
+              cy="11"
+              r="11"
+            ></circle>
+            <path
+              d="M8 7.75a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0 4.75a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0 4.75a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+              fill="#39298C"
+              fill-rule="nonzero"
+            ></path>
+          </g></svg></div
+      ><a
+        class="logo-container not-active"
+        target=""
+        href="https://libra.org/en-US/"
+        ><svg class="Logo" viewBox="0 0 1229.78 330.24">
+          <path
+            d="M314.82,292.65a192,192,0,0,0,23.31-32.92l-39.45-19.64A120.78,120.78,0,0,1,278,266c-11,10.21-22.7,16.16-34.61,17.68-23,2.94-39.07-4.17-62.51-19.21-24.63-15.8-52.54-33.71-92.15-28.65-24,3.08-46.06,15.66-65.44,37.39A191.89,191.89,0,0,0,0,306.13l39.44,19.64a121.7,121.7,0,0,1,20.64-25.93c10.88-10.07,22.52-16,34.62-17.51a79.51,79.51,0,0,1,10-.66c18.14,0,32.71,7,52.52,19.71,23,14.77,51.66,33.15,92.17,28C273.87,326.22,295.89,313.87,314.82,292.65Zm0-117.48a192,192,0,0,0,23.31-32.92l-39.45-19.64A121,121,0,0,1,278,148.53c-11,10.21-22.7,16.16-34.61,17.68-23,2.93-39.07-4.17-62.51-19.21-24.63-15.8-52.54-33.71-92.15-28.65-24,3.08-46.06,15.65-65.44,37.39A191.5,191.5,0,0,0,0,188.65l39.44,19.64a122,122,0,0,1,20.64-25.94C71,172.29,82.6,166.4,94.7,164.85a79.51,79.51,0,0,1,10-.66c18.14,0,32.71,7,52.52,19.71,23,14.77,51.66,33.15,92.17,28C273.87,208.74,295.89,196.39,314.82,175.17Zm0-117.48a192,192,0,0,0,23.31-32.92L298.68,5.13A121,121,0,0,1,278,31.05c-11,10.21-22.7,16.16-34.61,17.68-23,2.93-39.07-4.17-62.51-19.21C156.28,13.72,128.37-4.19,88.76.87,64.72,4,42.7,16.52,23.32,38.26A191.5,191.5,0,0,0,0,71.17L39.44,90.81A122,122,0,0,1,60.08,64.87C71,54.81,82.6,48.92,94.7,47.37a79.51,79.51,0,0,1,10-.66c18.14,0,32.71,7,52.52,19.71,23,14.77,51.64,33.14,92.17,28C273.87,91.26,295.89,78.91,314.82,57.69Z"
+          ></path>
+          <path
+            d="M452.56,5.45V326.61H407V5.45Zm48.09,92.44V326.61h45.6V97.89ZM929.5,150.7c18.77-12.62,40.86-16.24,63-12.71V98.19a125.23,125.23,0,0,0-15.42-1c-31.27,0-56.07,9.56-68,26.22l-5.6,7.78V97.63H857.84v229h45.37V247.05c0-14.57-.16-26.82,0-41.39C903.5,181.62,911.6,162.75,929.5,150.7Zm300.28,175.91v-229h-42.41v25.15l-5.1-4.39c-19.87-17.1-43.94-25.77-71.54-25.77-20.55,0-39.9,5-56,14.58-37,21.87-59,61.09-59,104.92s21.88,82.74,58.53,104.42c15.9,9.44,37.38,15.08,57.46,15.08,26.92,0,52-9.14,70.49-25.73l5.15-4.61v25.33Zm-60.51-57.25A73.75,73.75,0,0,1,1118,292.71c-.92,0-1.82.05-2.71.05-45.5,0-81.14-35.42-81.14-80.64,0-21.28,7.64-41.26,21.52-56.26,14.55-15.72,34.84-24.38,57.12-24.38,1,0,2.1,0,3.16.05a75.59,75.59,0,0,1,52.75,23.78,78.06,78.06,0,0,1,21.52,54v7.44A76.41,76.41,0,0,1,1169.27,269.36ZM713.38,331.62c20.55,0,39.9-5,56-14.58,37-21.87,59-61.09,59-104.92S806.5,129.38,769.85,107.7c-15.9-9.44-37.39-15.08-57.47-15.08-26.91,0-51.94,9.14-70.49,25.74l-5.15,4.6V5.45h-42.4V326.61h42.4V301.46l5.11,4.39C661.72,323,685.79,331.62,713.38,331.62ZM633.94,215v-7.44a76.46,76.46,0,0,1,20.9-52.64,73.78,73.78,0,0,1,51.33-23.35c.91,0,1.81-.05,2.71-.05,45.5,0,81.14,35.42,81.14,80.64,0,21.28-7.65,41.26-21.53,56.26-14.55,15.72-34.83,24.38-57.11,24.38-1,0-2.11,0-3.16-.05a75.61,75.61,0,0,1-52.76-23.78A78.11,78.11,0,0,1,633.94,215ZM546.25,5.45h-45.6V51h45.6Z"
+          ></path></svg></a
+      ><ul class="nav-site nav-site-internal"
+        ><li
+          ><a
+            class=" not-active"
+            target=""
+            href="https://libra.org/en-US/vision/"
+            >Vision</a
+          ></li
+        ><li
+          ><a
+            class=" not-active"
+            target=""
+            href="https://libra.org/en-US/association/"
+            >Association</a
+          ></li
+        ><li
+          ><a
+            class=" not-active"
+            target=""
+            href="https://libra.org/en-US/developers/"
+            >Developers</a
+          ></li
+        ><li
+          ><a
+            class=" not-active"
+            target=""
+            href="https://libra.org/en-US/learn-faqs/"
+            >Learn</a
+          ></li
+        ><li
+          ><a
+            class=" not-active"
+            target=""
+            href="https://libra.org/en-US/media-press-news/"
+            >Media</a
+          ></li
+        ><li
+          class="highlight"
+          ><a
+            class=" active"
+            target=""
+            href="https://libra.org/en-US/white-paper/"
+            >White Paper</a
+          ></li
+        ></ul
+      ><div
+        class="whitepapericon"
+        ><a
+          class=" active"
+          target=""
+          href="https://libra.org/en-US/white-paper/"
+          ><svg width="45" height="46" class="">
+            <defs>
+              <circle id="whitepaper_svg__a" cx="18" cy="18" r="18"></circle>
+            </defs>
+            <g fill="none" fill-rule="evenodd">
+              <g transform="translate(5.5)">
+                <mask id="whitepaper_svg__b" fill="#fff">
+                  <use xlink:href="#whitepaper_svg__a"></use>
+                </mask>
+                <use fill="#FAFAFA" xlink:href="#whitepaper_svg__a"></use>
+                <g mask="url(#whitepaper_svg__b)">
+                  <path
+                    fill="#706AAF"
+                    d="M1.555 11.624l25.862-4.089 5.343 33.676L6.897 45.3z"
+                  ></path>
+                  <path
+                    fill="#42318C"
+                    d="M4.57 8.377L30.654 6.1l2.977 33.966-26.086 2.278z"
+                  ></path>
+                  <path
+                    fill="#EFEFEF"
+                    d="M7.948 5.25h26.195v34.162H7.948z"
+                  ></path>
+                  <path
+                    fill="#AEAEAE"
+                    d="M11.086 11.889h11.045v1H11.086zM11.147 15.511h15.391v1h-15.39zM11.086 17.14h19.435v1H11.086zM11.086 18.83h8.208v1h-8.208zM11.086 22.814h7.001v1h-7zM11.147 24.504h15.27v1h-15.27zM11.147 29.393h15.27v1h-15.27zM11.086 26.073h8.208v1h-8.208zM11.086 27.703H23.46v1H11.086zM20.743 26.073h9.778v1h-9.778zM20.743 18.83h8.208v1h-8.208z"
+                  ></path>
+                </g>
+              </g>
+              <text
+                font-family="NBInternationalPro-Reg, NB International Pro"
+                font-size="8"
+                fill="#39298C"
+                transform="translate(-1)"
+              >
+                <tspan x="1.664" y="44">White Paper</tspan>
+              </text>
+            </g>
+          </svg></a
+        ></div
+      ></div
+    ></nav
+  ><main id="WhitePaper"
+    ><header class="Splash"
+      ><div class="welcome"
+        ><span
+          ></span
+        ></div
+      ><div class="fan-block purple-block"><div class="bottom-part"></div></div
+      ><div class="fan-block green-block"><div class="bottom-part"></div></div
+      ><div class="fan-block main-block"
+        ><div class="bottom-part"></div
+        ><div class="text-container"
+          ><span class="welcome-text"
+            >Welcome to the official</span
+          ><svg class="Logo" viewBox="0 0 1229.78 330.24">
+            <path
+              d="M314.82,292.65a192,192,0,0,0,23.31-32.92l-39.45-19.64A120.78,120.78,0,0,1,278,266c-11,10.21-22.7,16.16-34.61,17.68-23,2.94-39.07-4.17-62.51-19.21-24.63-15.8-52.54-33.71-92.15-28.65-24,3.08-46.06,15.66-65.44,37.39A191.89,191.89,0,0,0,0,306.13l39.44,19.64a121.7,121.7,0,0,1,20.64-25.93c10.88-10.07,22.52-16,34.62-17.51a79.51,79.51,0,0,1,10-.66c18.14,0,32.71,7,52.52,19.71,23,14.77,51.66,33.15,92.17,28C273.87,326.22,295.89,313.87,314.82,292.65Zm0-117.48a192,192,0,0,0,23.31-32.92l-39.45-19.64A121,121,0,0,1,278,148.53c-11,10.21-22.7,16.16-34.61,17.68-23,2.93-39.07-4.17-62.51-19.21-24.63-15.8-52.54-33.71-92.15-28.65-24,3.08-46.06,15.65-65.44,37.39A191.5,191.5,0,0,0,0,188.65l39.44,19.64a122,122,0,0,1,20.64-25.94C71,172.29,82.6,166.4,94.7,164.85a79.51,79.51,0,0,1,10-.66c18.14,0,32.71,7,52.52,19.71,23,14.77,51.66,33.15,92.17,28C273.87,208.74,295.89,196.39,314.82,175.17Zm0-117.48a192,192,0,0,0,23.31-32.92L298.68,5.13A121,121,0,0,1,278,31.05c-11,10.21-22.7,16.16-34.61,17.68-23,2.93-39.07-4.17-62.51-19.21C156.28,13.72,128.37-4.19,88.76.87,64.72,4,42.7,16.52,23.32,38.26A191.5,191.5,0,0,0,0,71.17L39.44,90.81A122,122,0,0,1,60.08,64.87C71,54.81,82.6,48.92,94.7,47.37a79.51,79.51,0,0,1,10-.66c18.14,0,32.71,7,52.52,19.71,23,14.77,51.64,33.14,92.17,28C273.87,91.26,295.89,78.91,314.82,57.69Z"
+            ></path>
+            <path
+              d="M452.56,5.45V326.61H407V5.45Zm48.09,92.44V326.61h45.6V97.89ZM929.5,150.7c18.77-12.62,40.86-16.24,63-12.71V98.19a125.23,125.23,0,0,0-15.42-1c-31.27,0-56.07,9.56-68,26.22l-5.6,7.78V97.63H857.84v229h45.37V247.05c0-14.57-.16-26.82,0-41.39C903.5,181.62,911.6,162.75,929.5,150.7Zm300.28,175.91v-229h-42.41v25.15l-5.1-4.39c-19.87-17.1-43.94-25.77-71.54-25.77-20.55,0-39.9,5-56,14.58-37,21.87-59,61.09-59,104.92s21.88,82.74,58.53,104.42c15.9,9.44,37.38,15.08,57.46,15.08,26.92,0,52-9.14,70.49-25.73l5.15-4.61v25.33Zm-60.51-57.25A73.75,73.75,0,0,1,1118,292.71c-.92,0-1.82.05-2.71.05-45.5,0-81.14-35.42-81.14-80.64,0-21.28,7.64-41.26,21.52-56.26,14.55-15.72,34.84-24.38,57.12-24.38,1,0,2.1,0,3.16.05a75.59,75.59,0,0,1,52.75,23.78,78.06,78.06,0,0,1,21.52,54v7.44A76.41,76.41,0,0,1,1169.27,269.36ZM713.38,331.62c20.55,0,39.9-5,56-14.58,37-21.87,59-61.09,59-104.92S806.5,129.38,769.85,107.7c-15.9-9.44-37.39-15.08-57.47-15.08-26.91,0-51.94,9.14-70.49,25.74l-5.15,4.6V5.45h-42.4V326.61h42.4V301.46l5.11,4.39C661.72,323,685.79,331.62,713.38,331.62ZM633.94,215v-7.44a76.46,76.46,0,0,1,20.9-52.64,73.78,73.78,0,0,1,51.33-23.35c.91,0,1.81-.05,2.71-.05,45.5,0,81.14,35.42,81.14,80.64,0,21.28-7.65,41.26-21.53,56.26-14.55,15.72-34.83,24.38-57.11,24.38-1,0-2.11,0-3.16-.05a75.61,75.61,0,0,1-52.76-23.78A78.11,78.11,0,0,1,633.94,215ZM546.25,5.45h-45.6V51h45.6Z"
+            ></path></svg
+          ><h1
+            >White Paper</h1
+          ></div
+        ><div class="scroll-container"
+          ><div class="vertical-line"><div class="progress"></div></div
+          ><p class="instruction"
+            >Scroll to Read</p
+          ></div
+        ></div
+      ></header
+    ><section
+      class="Chapter"
+      id="cover-letter"
+      data-title="00 Cover letter"
+      ><div class="background-layer"></div
+      ><div class="title-container"
+        ><p class="minutes"
+          >White Paper v2.0 | From the Libra Association Members<!-- -->
+          <span></span></p
+        ><h1>Cover letter</h1></div
+      ><section class="WhitepaperWrapper"
+        ><div class="white-background"></div
+        ><div class="container"
+          ><article class="sections-wrapper"
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4></h4
+              ><div
+                ><p><i><strong>Note to readers:</strong> The first Libra Association white paper was published in June 2019. This new Association white paper, published in April 2020, is intended to be a stand-alone update regarding the plans of the Association. Additionally, supporting technical papers also published in June 2019 have been edited or retired.</i></p>
+<p>The Libra Association’s mission is to enable a simple global payment system and financial infrastructure that empowers billions of people. The Association’s first step toward creating a more inclusive and innovative financial system began in June 2019 with the announcement of the project. Our goal was to establish a collaborative dialogue early in the journey. We have worked with regulators, central bankers, elected officials, and various stakeholders around the world to determine the best way to marry blockchain technology with accepted regulatory frameworks. Our objective is for the Libra payment system to integrate smoothly with local monetary and macroprudential policies and complement existing currencies by enabling new functionality, drastically reducing costs, and fostering financial inclusion.</p>
+<p>The Association has made changes to its initial approach, many of which depart from the approaches taken by other blockchain projects. The Association’s goal was never to emulate other systems, but rather to leverage the innovative approach of using distributed governance through Association Members and distributed technology to create an open and trustworthy system. By undertaking the difficult work of enhancing traditional financial systems to become programmable, interoperable, and upgradeable, we hope to allow others to leverage our efforts to build innovative but also safe and compliant financial applications that can serve everyone. We appreciate the discussions with policymakers around the world who have helped us understand key concerns so that we can integrate actionable improvements into the Libra payment system’s design and into a phased rollout plan.</p>
+<p>This updated white paper outlines the significant work we have done on the design of the Libra payment system since June 2019. Four key changes have been made to address regulatory concerns that deserve specific attention, each of which is addressed briefly below and then in more depth in the updated white paper:</p>
+<ol>
+<li>Offering single-currency stablecoins in addition to the multi-currency coin.</li>
+<li>Enhancing the safety of the Libra payment system with a robust compliance framework.</li>
+<li>Forgoing the future transition to a permissionless system while maintaining its key economic properties.</li>
+<li>Building strong protections into the design of the Libra Reserve.</li>
+</ol></div
+              ></section
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4>Offering single-currency stablecoins in addition to the multi-currency coin</h4
+              ><div
+                ><p>While our vision has always been for the Libra network to complement fiat currencies, not compete with them, a key concern that was shared was the potential for the multi-currency Libra Coin (≋LBR) to interfere with monetary sovereignty and monetary policy if the network reaches significant scale and a large volume of domestic payments are made in ≋LBR. We are therefore augmenting the Libra network by including single-currency stablecoins in addition to ≋LBR, initially starting with some of the currencies in the proposed ≋LBR basket (e.g., LibraUSD or ≋USD, LibraEUR or ≋EUR, LibraGBP or ≋GBP, LibraSGD or ≋SGD). This will allow people and businesses in the regions whose local currencies have single-currency stablecoins on the Libra network to directly access a stablecoin in their currency. Each single-currency stablecoin will be fully backed by the Reserve, which will consist of cash or cash equivalents and very short-term government securities denominated in that currency. We hope to work with regulators, central banks, and financial institutions around the world to expand over time the number of single-currency stablecoins available on the Libra network. ≋LBR will not be a separate digital asset from the single-currency stablecoins. Under this change, ≋LBR will simply be a digital composite of some of the single-currency stablecoins available on the Libra network. It will be defined in terms of fixed nominal weights, such as the Special Drawing Rights (SDR) maintained by the International Money Fund (IMF). ≋LBR can be used as an efficient cross-border settlement coin as well as a neutral, low-volatility option for people and businesses in countries that do not have a single-currency stablecoin on the network yet. This approach has the added benefit of allowing the network to support a wider range of domestic use cases and of providing a clear path for seamlessly integrating central bank digital currencies (CBDCs) as they become available. For more details, <a href="https://libra.org/en-US/white-paper/#the-economic-and-the-libra-reserve">click here</a>.</p></div
+              ></section
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4>Enhancing the safety of the Libra payment system with a robust compliance framework</h4
+              ><div
+                ><p>Our goal is to develop a system designed to ensure compliance with applicable laws and regulations while supporting our objectives of openness and financial inclusion. Integrated safeguards enable people and businesses to trust the security and integrity of the Libra payment system. The Association has incorporated feedback from regulators and continues to develop a comprehensive framework for financial compliance and network-wide risk management as well as strong standards for Anti-Money Laundering (AML), Combating the Financing of Terrorism (CFT), sanctions compliance, and the prevention of illicit activities. This includes the establishment of a Financial Intelligence Function (FIU-function) to help support and uphold operating standards for network participants. The Libra network distinguishes between four categories of participants: (i) Designated Dealers; (ii) Virtual Asset Service Providers (“VASPs,” including exchanges and custodial wallets) that are registered or licensed as VASPs in a Financial Action Task Force (FATF) member jurisdiction, or are registered or licensed in a FATF member jurisdiction and are permitted to perform VASP activities under such license or registration (Regulated VASPs); (iii) VASPs that have completed a certification process approved by the Association (Certified VASPs); and (iv) all other individuals and entities seeking to transact or provide services through the Libra network (Unhosted Wallets). Unhosted Wallets enable financial inclusion, broad competition, and responsible innovation and thus facilitate the creation of services for the unbanked and underbanked. Since their activities may pose a greater risk, they will be subject to balance and transaction limits. Initially, the network will only be accessible to Designated Dealers and Regulated VASPs while the Association continues to develop its certification process for other VASPs and its compliance framework for Unhosted Wallets based on the feedback received from regulators. The Association intends to make the network accessible to Certified VASPs and Unhosted Wallets once the relevant compliance frameworks have been finalized. For more details, <a href="https://libra.org/en-US/white-paper/#compliance-and-the-prevention-of-illicit-activity">click here</a>.</p></div
+              ></section
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4>Forgoing the future transition to a permissionless system while maintaining its key economic properties</h4
+              ><div
+                ><p>Regulators raised thoughtful questions about the perimeter of control for the Libra network — in particular, the need to guard against unknown participants taking control of the system and removing key compliance provisions. We believe it is possible to replicate the key economic properties of a permissionless system through an open, transparent, and competitive market for network services and governance, all while incorporating the robust due diligence of Members and validators that is inherent to a permissioned system. For more details, <a href="https://libra.org/en-US/white-paper/#an-open-and-competitive-network">click here</a>.</p></div
+              ></section
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4>Building strong protections into the design of the Libra Reserve</h4
+              ><div
+                ><p>We have had constructive discussions with regulators on how to handle extreme situations — in particular, how the Reserve would function in stressed scenarios and what claims and protections are in place for Libra Coin holders. We have incorporated strategies in the design and structure of the Reserve that are based on approaches in other systems. The Reserve will hold assets with very short-term maturity, low credit risk, and high liquidity. It will also maintain a capital buffer. For more details, <a href="https://libra.org/en-US/white-paper/#the-economic-and-the-libra-reserve">click here</a>.</p></div
+              ><div
+                ><p>This updated Libra white paper documents the mission and mechanisms supporting the Libra payment system while seeking to provide greater detail on key areas of importance. Furthermore, we hope this document opens the door to building broader public-private partnerships with the shared goals of advancing global payments efficiency and expanding financial inclusion.</p></div
+              ></section
+            ></article
+          ></div
+        ></section
+      ></section
+    ><section
+      class="Chapter"
+      id="introduction"
+      data-title="01 Introduction"
+      ><div class="background-layer"></div
+      ><div class="title-container"
+        ><p class="minutes"
+          >Section 01<!-- -->
+          <span></span></p
+        ><h1>Introduction</h1></div
+      ><section class="WhitepaperWrapper"
+        ><div class="white-background"></div
+        ><div class="container"
+          ><article class="sections-wrapper"
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4></h4
+              ><div
+                ><p>The advent of the internet and mobile broadband has empowered billions of people globally by providing access to the world’s knowledge and information, high-fidelity communications, and a wide range of lower-cost, more convenient services. These services are now accessible using a $40 smartphone from almost anywhere in the world.<sup>1</sup></p>
+<p>Despite this connectivity, large swaths of the world’s population are left behind — 1.7 billion adults globally remain outside of the financial system with no access to a traditional bank, even though one billion have a mobile phone and nearly half a billion have internet access.<sup>2</sup> For too many, parts of the financial system look like pre-internet telecommunication networks. Twenty years ago, the average price to send a text message in Europe was 16 cents per message.<sup>3</sup> Prices were high but were the same for everyone. Today, people with less money pay more for financial services. Hard-earned income is eroded by fees, from remittances and wire costs to overdraft and ATM charges.</p>
+<p>Blockchains have a number of unique properties that can potentially address some of the problems of accessibility and trustworthiness. These include distributed governance, which ensures that no single entity controls the network; open access, which allows anybody with an internet connection to participate; and security through cryptography, which protects the integrity of funds. But existing blockchain systems have yet to reach mainstream adoption. Mass-market usage of existing blockchain-based currencies has been hindered by their volatility and lack of scalability, which have, so far, made them poor mediums of exchange.</p>
+<p>We believe that it is possible to combine the best aspects of blockchain-based technological innovation — distributed governance, open access, and security — with a robust compliance and regulatory framework. Building certain compliance requirements at the Libra protocol level can improve the effectiveness of programs like prevention of illicit activities or Anti-Money Laundering (AML), Combating the Financing of Terrorism (CFT), and sanctions compliance. Developers, merchants, and consumers benefit from the compliance and security that is built into the Libra network. Technological innovation conducted in collaboration with the financial sector, including regulators and experts across a variety of industries, is the only way to ensure that a sustainable, secure, and trusted framework underpins this new system. And this approach can deliver a giant leap forward toward a lower-cost, more accessible, more connected global financial system.</p></div
+              ></section
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4>The opportunity</h4
+              ><div
+                ><p>As we embark on this journey together, we think it is important to share our beliefs to align the community and network we intend to spark around this initiative:</p>
+<ul>
+<li>We believe that many more people should have access to financial services.</li>
+<li>We believe that people have an inherent right to control the fruit of their legal labor.</li>
+<li>We believe that global, open, instant, and low-cost payment networks create immense economic opportunities and more commerce across the world.</li>
+<li>We believe that people will increasingly trust distributed forms of governance.</li>
+<li>We believe that an open and broadly interoperable payment network should be designed and governed with high standards of compliance.</li>
+<li>We believe that we all have a responsibility to help advance financial inclusion, support ethical actors, and continuously uphold the integrity of the payment system.</li>
+</ul></div
+              ></section
+            ></article
+          ></div
+        ></section
+      ></section
+    ><section
+      class="Chapter"
+      id="the-libra-payment-system"
+      data-title="02 The Libra Payment System"
+      ><div class="background-layer"></div
+      ><div class="title-container"
+        ><p class="minutes"
+          >Section 02<!-- -->
+          <span></span></p
+        ><h1>The Libra Payment System</h1></div
+      ><section class="WhitepaperWrapper"
+        ><div class="white-background"></div
+        ><div class="container"
+          ><article class="sections-wrapper"
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4></h4
+              ><div
+                ><p>The world needs a reliable and interoperable payment system that can deliver on the promise of “the internet of money.” Securing your financial assets on your mobile device should be simple and intuitive. Moving money around globally, and in a compliant way, should be as easy and cost-effective as — and even safer and more secure than — sending a message or sharing a photo, no matter where you are, what you do, or how much you earn. New product innovation and additional entrants lower barriers to access and facilitate frictionless payments for more people.</p>
+<p>Now is the time to create a new kind of digital infrastructure built on the foundation of blockchain technology. The Libra mission is to enable a simple global payment system and financial infrastructure that empowers billions of people. The Libra project will be made up of three parts that work together to create a more inclusive financial system:</p>
+<ul>
+<li>A secure, scalable, and reliable blockchain as the technological backbone of the payment system;</li>
+<li>Libra Coins that are backed by the Libra Reserve of assets made up of cash or cash equivalents and very short-term government securities; and</li>
+<li>Governance by the independent Libra Association and its subsidiary Libra Networks, tasked with developing and operating the payment system.</li>
+</ul>
+<p>The Libra payment system is built on the Libra Blockchain. Because it is intended to address a global audience, the software that implements the Libra Blockchain is open source — designed so that anyone can build on it, and billions of people can depend on it for their financial needs. Imagine an open, interoperable payment system that developers and organizations build to help people and businesses hold and transfer Libra Coins for everyday use. With the proliferation of smartphones and wireless data, more people are coming online and will be able to access the Libra payment system. To enable the Libra network to achieve this vision over time, the Libra Blockchain has been built from the ground up to prioritize scalability, security, efficiency in storage and throughput, as well as future adaptability. Keep reading for an overview of the Libra payment system, or read more about the Libra Blockchain <a href="https://libra.org/en-US/white-paper/#the-libra-blockchain">here</a>.</p>
+<p>The Libra payment system will support single-currency stablecoins (e.g., ≋USD, ≋EUR, ≋GBP, etc.) and a multi-currency coin (≋LBR), which we refer to together as Libra Coins. Libra Coins will need to be accepted in many places and easy to access for those who want to use them. People need to have confidence that they can use Libra Coins and that their value will remain relatively stable over time. To accomplish this, each single-currency stablecoin will be backed 1:1 by the Reserve, which will consist of cash or cash equivalents and very short-term government securities denominated in the relevant currency. Each ≋LBR, being a composite of 1:1-backed single-currency stablecoins supported by the Libra network, inherits the backing and stability of those stablecoins. The Libra Reserve will be administered to preserve the value of Libra Coins over time. Keep reading for an overview of the Libra Association, or read more about the Reserve <a href="https://libra.org/en-US/white-paper/#the-economic-and-the-libra-reserve">here</a>.</p>
+<p>The Association is an independent membership organization headquartered in Geneva, Switzerland. The Association’s purpose is to coordinate and provide a framework of governance decision-making for the Libra network and Reserve, oversee the operation and evolution of the Libra payment system, facilitate the provision of services on top of the Libra Blockchain in a safe and compliant manner, and establish social impact grantmaking in support of financial inclusion. This white paper is a reflection of our mission, vision, and<br />
+purview.</p>
+<p>Membership of the <a href="https://libra.org/en-US/association/" rel="noopener">Association</a> consists of geographically distributed and diverse businesses and nonprofit organizations.</p>
+<p>While Facebook teams played a key role in the creation of the Association and the Libra Blockchain, they have no special rights within the Association. On October 14, 2019, the initial Association Members signed on to the Association Charter. This marked the formalization of the Association Council, which is made up of one representative per Member organization. The setup is designed to ensure that each Member has the same privileges and obligations as any other Member. In addition, the Council elected a five-member board of directors to carry out the day-to-day management and representation of the Association. For more details on the organization and governance of the Association, <a href="https://libra.org/en-US/white-paper/#the-libra-association">see here</a>.</p></div
+              ></section
+            ></article
+          ></div
+        ></section
+      ></section
+    ><section
+      class="Chapter"
+      id="the-libra-blockchain"
+      data-title="03 The Libra Blockchain"
+      ><div class="background-layer"></div
+      ><div class="title-container"
+        ><p class="minutes"
+          >Section 03<!-- -->
+          <span></span></p
+        ><h1>The Libra Blockchain</h1></div
+      ><section class="WhitepaperWrapper"
+        ><div class="white-background"></div
+        ><div class="container"
+          ><article class="sections-wrapper"
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4></h4
+              ><div
+                ><p>The goal of the Libra Blockchain is to serve as a foundation for financial services, including a new global payment system that meets the daily financial needs of billions of people. Through the process of evaluating existing options, we decided to build a new blockchain based on the following three requirements:</p>
+<ul>
+<li>Able to scale to billions of accounts, which requires high transaction throughput, low latency, and an efficient, high-capacity storage system.</li>
+<li>Highly secure to ensure the safety of funds and financial data.</li>
+<li>Flexible, so that it can power future innovation in financial services.</li>
+</ul>
+<p>The Libra Blockchain is designed from the ground up to holistically address these requirements and build on the learnings from existing projects and research — a combination of innovative approaches and well-understood techniques. This next section highlights three decisions regarding the Libra Blockchain:</p>
+<ol>
+<li>Designing and using the Move programming language.</li>
+<li>Using a Byzantine Fault Tolerant (BFT) consensus approach.</li>
+<li>Adopting and iterating on widely adopted blockchain data structures.</li>
+</ol></div
+              ></section
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4>Designing and using the Move programming language</h4
+              ><div
+                ><p>Move is a new programming language for implementing custom transaction logic and “smart contracts” on the Libra Blockchain. Because of the Libra Association’s goal to one day serve billions of people, Move is designed with safety and security as the highest priorities. Move takes insights from security incidents that have happened with smart contracts to date and creates a language that makes it inherently easier to write code that fulfills the author’s intent, thereby lessening the risk of unintended bugs or security incidents. Specifically, Move is designed to prevent assets from being cloned. It enables “resource types” that constrain digital assets to the same properties as physical assets: a resource has a single owner, it can only be spent once, and the creation of new resources is restricted.</p>
+<p>The Move language also facilitates automatic proofs that transactions satisfy specific properties, such as the requirement that payment transactions only change the balances of the payer and receiver. By prioritizing these features, Move helps keep the Libra Blockchain secure. Move allows easy and secure definition of the core elements of the Libra network, such as payment transfers and the management of validator nodes. Lastly, Move is one way that compliance mechanisms, such as those to facilitate Travel Rule compliance and protocol-level sanctions screening, will be built into the Libra network.</p>
+<p>The Association is committed to implementing appropriate review and risk controls for smart contracts. At first, only Association-approved and -published smart contracts will be able to interact directly with the Libra payment system. Over time, the Association will explore appropriate controls to allow third-party publishing of smart contracts.</p></div
+              ></section
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4>Using a Byzantine Fault Tolerant (BFT) consensus approach</h4
+              ><div
+                ><p>To facilitate agreement among all validator nodes on the ledger of transactions, the Libra Blockchain adopted the BFT approach by using the Libra Byzantine Fault Tolerance (LibraBFT) consensus protocol. This approach accomplishes three important goals. First, it builds trust in the network because BFT consensus protocols are designed to function correctly even if some validator nodes — up to one-third of the network — are compromised or fail. Second, this class of consensus protocols enables high transaction throughput, low latency, and a more energy-efficient approach to consensus than “proof of work” used in some other blockchains. And third, the LibraBFT protocol facilitates clearly described transaction finality, so when a participant sees confirmation of a transaction from a quorum of validators, they can be sure that the transaction has completed.</p>
+<p>The security of BFT depends on the quality of the validators, so the Association will perform due diligence on prospective validators. The Libra network is designed with a security-first approach and sophisticated cyber and critical infrastructure attacks in mind. The network is structured to strengthen the assurance of the software run by the validators, including leveraging techniques such as the separation of critical code (a “trusted computing base”), innovative ways of testing the consensus algorithm, and careful management of dependencies. Finally, Libra Networks will define policies and procedures for reconfiguring the Libra Blockchain in the case of critical errors or the need for upgrades. In addition to being designed to ensure a safe recovery of the system in these cases, this preparation will deter attacks because attackers will know that their actions can be countered.</p></div
+              ></section
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4>Adopting and iterating on widely adopted blockchain data structures</h4
+              ><div
+                ><p>In order to securely store transactions, data on the Libra Blockchain will be protected by Merkle trees, a data structure used by other blockchains that enables the detection of any changes to existing data. Unlike previous blockchain projects, which view the blockchain as a collection of blocks of transactions, the Libra Blockchain will be a single data structure that records the history of transactions and states over time. This implementation simplifies the work of applications accessing the blockchain, enabling a unified framework that allows for data to be read from any point in time in order to verify the integrity of that data.</p>
+<p>One outcome of the above design decisions is that the Libra Blockchain will provide public verifiability, meaning that anyone (validators, Libra Networks, Virtual Asset Service Providers (VASPs), law enforcement, or any third party) can audit the accuracy of all operations. Transactions will be signed cryptographically so that even if all validators are compromised, no falsified transactions from addresses with secure signature keys can be accepted as committed. The design is compatible with hardware key management and off-line storage of high-value cryptographic keys.</p>
+<p>Another outcome of the above design decisions is that the Libra Blockchain will support a privacy approach that will take into account the variety of participants on the network. The Association oversees the evolution of the Libra Blockchain protocol and network and continuously evaluates new techniques to enhance privacy compliance on the blockchain while taking into account applicable regulatory requirements.</p>
+<p>For more details, read the <a href="https://developers.libra.org/docs/the-libra-blockchain-paper" target="_blank" rel="noopener">technical paper</a> on the Libra Blockchain. Detailed information is also available on the <a href="https://developers.libra.org/docs/move-paper" target="_blank" rel="noopener">Move programming language </a>and the <a href="https://developers.libra.org/docs/state-machine-replication-paper" target="_blank" rel="noopener">LibraBFT consensus protocol</a>. The Association has open-sourced an early preview of the <a href="https://developers.libra.org/" target="_blank" rel="noopener">Libra testnet</a>, with accompanying documentation. The testnet is still under development, and APIs are subject to change. Since June 2019, progress has been reported in periodic <a href="https://libra.org/en-US/blog/">blog posts</a> and <a href="https://libra.org/en-US/updates/">roadmap updates</a> by the Association. The Association commits to work openly with the community, and we hope you continue to read, build, and provide feedback.</p></div
+              ></section
+            ></article
+          ></div
+        ></section
+      ></section
+    ><section
+      class="Chapter"
+      id="the-economic-and-the-libra-reserve"
+      data-title="04 Economics and the Libra Reserve"
+      ><div class="background-layer"></div
+      ><div class="title-container"
+        ><p class="minutes"
+          >Section 04<!-- -->
+          <span></span></p
+        ><h1>Economics and the Libra Reserve</h1></div
+      ><section class="WhitepaperWrapper"
+        ><div class="white-background"></div
+        ><div class="container"
+          ><article class="sections-wrapper"
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4></h4
+              ><div
+                ><p class="p1">When the Libra Association released its ideas for the operations of the Libra Reserve, the document was intended to be a proof of concept rather than a finished roadmap for the project. Since June 2019, we have met with many different organizations, regulators, policymakers, and academics to understand key concerns and integrate actionable improvements into the economic design of the Libra network. These consultations and meetings around the world have been invaluable in informing our direction. In particular, the Association greatly appreciates the thorough and thoughtful research the G7 working group <a href="https://www.bis.org/cpmi/publ/d187.pdf" target="_blank" rel="noopener">completed on stablecoins</a>. The concerns raised in the report helped highlight immediate questions to be answered, as well as longer-term challenges that may emerge.</p>
+<p class="p1">A key concern that was shared was the potential for the multi-currency Libra Coin (≋LBR) to interfere with monetary sovereignty and monetary policy if the network reaches significant scale in a country (i.e., ≋LBR becomes a substitute for domestic currency). While we believe this is unlikely because ≋LBR introduces foreign exchange exposure for coin holders in domestic transactions and the use of ≋LBR may be subject to restrictions, such as foreign exchange controls, we take this concern seriously.</p>
+<p class="p1">The Libra network is designed to be a globally accessible and low-cost payment system — a complement to, not a replacement for, domestic currencies. The stabilization of currencies and value preservation are key efforts that are properly within the exclusive remit of the public sector. Therefore, we are augmenting the Libra network by including single-currency stablecoins (e.g., ≋USD, ≋EUR, ≋GBP, etc.) and planning to increase the number of single-currency stablecoins over time. These will enable a range of domestic use cases by giving people and businesses the ability to transact in a stablecoin denominated in their own currency. Each single-currency stablecoin will be supported by a Reserve of cash or cash-equivalents and very short-term government securities denominated in that currency and issued by the home country of that currency. Single-currency stablecoins will only be minted and burned in response to market demand for that coin. Because of the 1:1 backing of each coin, this approach would not result in new net money creation.</p>
+<p class="p1">We believe this approach can lower costs and enable new functionality while giving maximum flexibility and control to central banks for how the Libra payment system is used in their countries.</p>
+<p class="p1">Initially, the Association expects to offer a small number of single-currency stablecoins based on the presence of highly liquid and safe government securities markets in the relevant currencies. We hope to work with regulators, central banks, and financial institutions around the world to expand the number of single-currency stablecoins available on the Libra network over time and to explore the technical, operational, and legal requirements to access direct custody with them. In particular, if adoption in a region without a single-currency stablecoin on the network generates concerns about currency substitution, then the Association could work with the relevant central bank and regulators to make a stablecoin available on the Libra network. The Association welcomes feedback on how it can help support local monetary and macroprudential policies.</p>
+<p class="p1">For countries that do not have a single-currency stablecoin on the Libra network, we believe ≋LBR is a neutral and low-volatility alternative that could ensure users in such regions can benefit from accessing the network and increased financial inclusion. In this context, ≋LBR could operate as a settlement coin in cross-border transactions, and people and businesses could convert the ≋LBR they receive into local currency to spend on goods and services through third-party financial service providers. For example, consider a Libra user in the US wanting to send money to their family in another country. The sender in the US would likely use ≋USD as their default Libra Coin to make the transfer. If the receiver lives in a region with a different single-currency stablecoin on the Libra network, the sender could transfer that single-currency stablecoin or the receiver could convert ≋USD to that single-currency stablecoin or local currency through a third-party financial service provider, providing a convenient and simple option for the receiver to access and use the funds. If a single-currency stablecoin is not available, the transfer could be made in ≋LBR. The receiver could convert ≋LBR into their local currency through a third-party financial service provider to buy goods and services in that currency. The Libra network would not itself provide for, record, or settle conversions between Libra Coins and fiat currency or other digital assets; instead, as noted, any such exchange functionality would be conducted by third-party financial service providers. Regardless of the region, we expect to require all Virtual Asset Service Providers (VASPs), such as currency exchanges that have addresses on the Libra Blockchain to hold and transfer Libra Coins, to fully comply with all applicable foreign exchange limitations and capital controls in order to mitigate currency substitution risk.</p>
+<p>Moreover, our hope is that as central banks develop central bank digital currencies (CBDCs), these CBDCs could be directly integrated with the Libra network, removing the need for Libra Networks to manage the<br />
+associated Reserves, thus reducing credit and custody risk. As an example, if a central bank develops a digital representation of the US dollar, euro, or British pound, the Association could replace the applicable single-currency stablecoin with the CBDC.</p>
+<p>Single-currency stablecoins simplify the design of ≋LBR. ≋LBR can be implemented as a smart contract that aggregates single-currency stablecoins using fixed nominal weights (e.g., ≋USD 0.50, ≋EUR 0.18, ≋GBP 0.11, etc.). This approach to the ≋LBR design is similar to what is used by the International Monetary Fund (IMF) in the Special Drawing Rights (SDR). Because ≋LBR is composed of fixed amounts of single-currency stablecoins that are supported by the network, ≋LBR is fully backed by the Reserve assets backing each single-currency stablecoin.</p>
+<p>To limit concerns about the Association updating the ≋LBR weights unilaterally, the Association would welcome the oversight and control over the basket composition (both currencies included and their respective weights) by a group of regulators and central banks or an international organization (e.g., IMF) under the guidance of the Association’s main supervisory authority, the Swiss Financial Market Supervisory Authority (FINMA).</p>
+<p>Single-currency stablecoins, however, may add complexity for wallets, exchanges, and merchant solution providers. For example, exchanges will need to maintain sufficient liquidity across multiple digital assets rather than just one. Wallets will need to handle cross-currency use cases, such as sending remittances, even though we expect people will default to the single-currency stablecoin for their domestic currency (where available), to another single-currency stablecoin (e.g., ≋USD, ≋EUR, ≋GBP, etc.), or to ≋LBR.</p>
+<p>The Libra network is intended to support global, cross-border exchanges by extending the functionality of fiat currencies, which are appropriately under the governance and control of central banks. Under this new<br />
+approach, we seek to reduce concerns around monetary sovereignty and help usher in more accessible payments and financial products for people and businesses around the world.</p></div
+              ></section
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4>The Libra Reserve and protections</h4
+              ><div
+                ><p>A key objective of the Libra network’s economic design is building trust in an efficient payment method. Each stablecoin on the Libra network will be fully backed by a Reserve of high-quality liquid assets and supported by a competitive network of resellers and exchanges buying and selling each coin. That means that Libra Coin holders should have a high degree of assurance they can convert their Libra Coins into local currency.</p></div
+              ></section
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4>The importance of full backing and risk mitigation</h4
+              ><div
+                ><p>In the first Libra white paper, the Association committed to full backing, recognizing its importance for people and businesses using the network. In September 2019, the Association announced its intention to file for a payment system license with FINMA, which is expected to specify the continued full backing of each Libra Coin as a condition of the license.</p>
+<p>Full backing means that the Reserve will hold, in cash or cash equivalents and very short-term government securities, an amount at least equal to the face value of each Libra Coin in circulation. This is different from banks, which only hold a fractional reserve of cash and other liquid assets (e.g., 10 percent) to back their deposit liabilities, with the rest of their assets consisting of loans and other illiquid assets (also known as fractional reserve banking). Full backing by liquid assets is important for discouraging runs and stabilizing the payment system. Combined with a commitment to transparency and auditability, we believe that the full backing of each Libra Coin will help ensure that people and businesses have confidence that their Libra Coins can be converted into local currency.</p>
+<p>The Reserve will mint and burn each single-currency stablecoin (e.g., ≋USD, ≋EUR, ≋GBP, etc.) in response to market demand. Additionally, a smart contract will combine these specific single-currency stablecoins into ≋LBR based on specified fixed nominal weights. Since ≋LBR is not a peg to a single currency, as the value of each currency moves, the value of one ≋LBR in any local currency may fluctuate. The Association would welcome the oversight and control over ≋LBR by a group of regulators and central banks or an international organization (e.g., IMF) under the guidance of the Association’s main supervisory authority, FINMA, which could oversee and control the weights and components to minimize volatility.</p>
+<p>The structure of the Reserve is intentionally designed to mitigate threats and minimize risks. In order to keep Libra Networks solvent and the Libra payment system functioning smoothly over time, the Reserve will rely on only high-quality liquid assets or assets that can rapidly be converted into high-quality liquid assets. In particular, we will require the Reserve to consist of at least 80 percent very short-term (up to three months’ remaining maturity) government securities issued by sovereigns that have very low credit risk (e.g., A+ rating from S&P and A1 from Moody’s, or higher) and whose securities trade in highly liquid secondary markets. The remaining 20 percent will be held in cash, with overnight sweeps into money market funds that invest in short-term (up to one year’s remaining maturity) government securities with the same risk and liquidity profiles. To address currency risk, the currency composition of assets comprising the Reserve will match the composition of outstanding single-currency stablecoins (including the single-currency stablecoins that comprise the outstanding ≋LBR). This mandate — which is expected to be reflected in Libra’s FINMA payment system license — will help mitigate interest rate, liquidity, and credit risks.</p>
+<p>However, even with these high-quality liquid assets, Libra Networks could incur losses (e.g., arising from rapid changes in interest rates) or find it more difficult to liquidate assets in extreme economic conditions. To help consumers remain protected, the Reserve will be further endowed with a capital buffer. With input from regulators, the Association is developing a regulatory capital framework to ensure it maintains an appropriately sized, loss-absorbing capital buffer. For instance, this capital buffer will protect against potential losses from credit, market, and operational risks of the Libra payment system. Operational risks include external or internal fraud, business disruptions, and system and control failures.</p>
+<p>The administration of the Reserve will be transparent to the public. The Reserve will be audited on a regular basis by independent auditors. The results of those audits will be made publicly available to demonstrate that all Libra Coins in circulation are fully backed by matching assets comprising the Reserve. The Association will publish on its website on a daily basis the then-current composition of the Reserve and the then-current market value of the assets.</p>
+<p>Over time, our hope is that the Association will be able to collaborate with central banks on issues such as direct custody of cash or cash equivalents and very short-term government securities or the integration of the Libra payment system with CBDCs. This would reduce credit and custody risk, streamline the operations of the Reserve, and provide additional comfort to Libra Coin holders.</p>
+<p>If Libra Networks faces negative yields in the custody of any of its very short-term government securities or cash or cash equivalents, it will have to cover these costs through its other revenue streams (e.g., transaction and other fees). Positive interest on the Reserve’s assets, if available, will be used to cover the costs of the system, ensure low transaction fees, augment the required capital buffer, and support growth and adoption. The rules for allocating interest on the Reserve will be set in advance and overseen by the Association. Libra Coin holders will not receive a return from the Reserve.</p></div
+              ></section
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4>Custody and Designated Dealers</h4
+              ><div
+                ><p>The assets comprising the Reserve will be held by a geographically distributed network of well-capitalized custodian banks to provide both security and decentralization of the assets. We expect that these institutions will already have a number of risk mitigation practices in place. The Association proposes to put additional measures in place with these custodians that are designed to ensure that Reserve assets cannot be used for lending, pledging or repledging, or otherwise be removed, even temporarily, from the Reserve’s account or encumbered to secure an obligation of a custodian unrelated to the custody services provided to Libra Networks.</p>
+<p>Libra Networks will not directly interface with consumers, but will instead partner with a select number of Designated Dealers to extend liquidity to consumer-facing products, such as wallets and exchanges. These Designated Dealers will commit to making markets within tight spreads and will be able to accommodate high volumes of trading. If extreme circumstances occur and Designated Dealers no longer make markets in Libra Coins, Libra Networks will call on a pre-existing arrangement with a third-party administrator or dealer to assist, in an administrative capacity, in burning Libra Coins for end users and liquidating assets comprising the Reserve to make payment as appropriate. These emergency operations will always be implemented under the guidance of the relevant regulators.</p></div
+              ></section
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4>Emergency operations</h4
+              ><div
+                ><p>The Association is focused on implementing a system that mitigates risk, includes appropriate loss-absorbing capital buffers, and facilitates ongoing and comprehensive supervision. Nevertheless, we are mindful of the need to plan for stress scenarios that could result in a run or otherwise threaten the viability of the Libra payment system – even though the occurrence of those stress scenarios and the possibility of the Libra payment system becoming non-viable is highly unlikely. In the context of a recovery and resolution plan, the Association is considering whether to provide for two key components that could be implemented in severe stress scenarios in the unlikely case that the Libra network is unable to convert the very short-term government securities in the Reserve into cash fast enough to satisfy all requests to burn Libra Coins without incurring fire-sale losses:</p>
+<ul>
+<li><strong>Redemption stays,</strong> which would delay Libra Coin redemptions and allow for additional time to liquidate the Reserve’s assets during a window of time without incurring large fire-sale losses.</li>
+<li><strong>Early redemption haircuts,</strong> which would impose a fee for instant redemptions and require coin holders to internalize their negative externality (i.e., fire-sale losses) in a run.</li>
+</ul>
+<p>The goal of both these measures would be to slow the speed of a run on the Reserve.</p>
+<p>Finally, even if the Association or the Libra network fails altogether, we still plan to protect Libra Coin holders to the best of our ability. First, because the Reserve will consist primarily of very short-term government securities, which will self-liquidate on a continuous basis, the Reserve can generate a lot of cash very quickly to use in burning Libra Coins. Second, if the self-liquidation of these securities does not generate enough cash fast enough to satisfy all demands to burn Libra Coins, Libra Networks should be able to sell large amounts of these securities at only a small discount to face value. Third, if the sale of these securities would result in fire-sale losses, Libra Networks would have the option to temporarily suspend redemptions and liquidate its remaining assets over a window of time deemed sufficient to minimize market impact. If Designated Dealers are operating, they would be expected to receive, on behalf of consumers, funds in exchange for Libra Coins based on the liquidation of a portion of the Reserve’s balance. If no Designated Dealers are operating, the Association will rely on a third-party administrator to assist these operations. The Association will work with regulators to develop a mechanism to return funds in the Reserve to end users in the event that neither Designated Dealers nor the standby third-party administrator or dealer are operating.</p>
+<p>The full backing of each coin is an essential component of the overall Libra payment system. We take threats to the Reserve very seriously, but we are confident the approaches described above will protect our users against a wide range of risks, however unlikely they may be.</p></div
+              ></section
+            ></article
+          ></div
+        ></section
+      ></section
+    ><section
+      class="Chapter"
+      id="compliance-and-the-prevention-of-illicit-activity"
+      data-title="05 Compliance and the Prevention of Illicit Activity"
+      ><div class="background-layer"></div
+      ><div class="title-container"
+        ><p class="minutes"
+          >Section 05<!-- -->
+          <span></span></p
+        ><h1>Compliance and the Prevention of Illicit Activity</h1></div
+      ><section class="WhitepaperWrapper"
+        ><div class="white-background"></div
+        ><div class="container"
+          ><article class="sections-wrapper"
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4></h4
+              ><div
+                ><p>Trust in the safety, security, and integrity of the Libra payment system is imperative to encourage people and businesses to participate in the network. All payment systems face constantly evolving security threats and other risks. The Libra Association recognizes the importance of building Anti-Money Laundering (AML), Combating the Financing of Terrorism (CFT), sanctions compliance mechanisms, and mechanisms for the prevention of illicit activities to effectively address threats and risks. With the mission of the Libra Association in mind, our challenge is to design a system that addresses important policy concerns and is broadly available to underserved populations.</p>
+<p>The Association and its subsidiaries are committed to creating a payment system that is legally compliant, safe, and consumer-friendly and to supporting efforts by regulators, central banks, and lawmakers to ensure that the Association and its subsidiaries contribute to the fight against money laundering, terrorism financing, and more. The Association and its subsidiaries will implement the following compliance framework designed to ensure that they meet their regulatory obligations and to support compliance by Libra payment system participants. Protocol-level controls will assist the Association and its subsidiaries in facilitating and encouraging a high standard of compliance.</p></div
+              ></section
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4>Types of participants and payments activity on the Libra network</h4
+              ><div
+                ><p>The following summarizes the specific roles of participants in the Libra network:</p>
+<p><strong>Entity: The Association and/or one of its subsidiaries</strong></p>
+<ul>
+<li>Responsible for the governance of the Libra network and the development of the Libra project.</li>
+<li>Conducts due diligence on Association Members, Designated Dealers, and validators.</li>
+<li>Controls the process of minting and burning Libra Coins.</li>
+<li>Establishes compliance standards for network participants, and implements protocol-level and other compliance controls.</li>
+<li>Operates a Financial Intelligence Function (FIU-function) to monitor the network and flag suspicious activity.</li>
+</ul>
+<p><strong>Entity: Association Members</strong></p>
+<ul>
+<li>Participate in Association governance.</li>
+<li>Will be subject to periodic due diligence by the Association.</li>
+</ul>
+<p><strong>Entity: Designated Dealers</strong></p>
+<ul>
+<li>Entities that have the right, pursuant to a contract with Libra Networks, to purchase Libra Coins from and sell Libra Coins to Libra Networks.</li>
+<li>Buy Libra Coins from and sell Libra Coins to exchanges and over-the-counter (OTC) dealers to facilitate the market in Libra Coins for end users.</li>
+<li>Will be subject to periodic due diligence by the Association and/or its subsidiaries, and are expected to be well-capitalized financial institutions with expertise in the foreign exchange markets.</li>
+</ul>
+<p><strong>Entity: Virtual Asset Service Provider</strong></p>
+<ul>
+<li>Defined in the June 2019 Financial Action Task Force (FATF) guidance (FATF Guidance) on virtual assets and virtual asset service providers.</li>
+<li>Entities that perform exchange, custody, or other similar financial services for customers on the Libra network.</li>
+<li>Certain Virtual Asset Service Providers (VASPs) will be able to operate on the Libra network without transaction and address balance limits; these entities will be regulated entities and will be required to undergo a risk-based due diligence process established by the Association or one of its subsidiaries that will include confirming that the VASP is registered or licensed as a VASP in a FATF member jurisdiction, or is an entity that is registered or licensed in a FATF member jurisdiction and is permitted to perform VASP activities under such license or registration (Regulated VASPs). In addition, certain other VASPs will be subject to a risk-based compliance certification process by either the Association or a third-party service provider applying standards set by the Association or one of its subsidiaries (Certified VASPs).</li>
+<li>The Association may consider establishing transaction and address balance limits on a certain Regulated and Certified VASP commensurate with its risk profile, if appropriate.</li>
+</ul>
+<p><strong>Entity: Unhosted Wallet Users</strong></p>
+<ul>
+<li>Libra Blockchain addresses other than those associated with a Regulated VASP, Certified VASP, or Designated Dealer.</li>
+<li>These addresses will be subject to controls, among them transaction and address balance limits that, along with other controls, will be enforced by the protocol.</li>
+</ul></div
+              ></section
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4>Details of compliance and safety controls across the Libra network</h4
+              ><div
+                ><p><strong>A. Association will create a comprehensive Compliance Program</strong></p>
+<p>The Association will implement a comprehensive Compliance Program designed to meet or exceed relevant laws and requirements. At a minimum, the Compliance Program will:</p>
+<ul>
+<li>Designate a Chief Compliance Officer.</li>
+<li>Designate a committee with oversight reporting responsibilities.</li>
+<li>Develop written AML/CFT/sanctions compliance policies and procedures based on a risk assessment and approved by the board of directors of the Association (and/or the boards of directors of its subsidiaries).</li>
+<li>Perform risk-based due diligence on all Members, Designated Dealers, and Regulated and Certified VASPs.</li>
+<li>Periodically revise the AML/CFT/sanctions programs as appropriate, based on periodic risk assessments<br />
+and evolving regulatory requirements.</li>
+<li>Create an FIU-function to facilitate monitoring for potential suspicious and sanctioned activity on the<br />
+Libra network, increasing the safety and compliance of the network.</li>
+<li>Designate a function such as Internal Audit that meets the standards of independence required to<br />
+conduct periodic independent reviews of the Association’s AML/CFT/ sanctions compliance programs.</li>
+<li>Perform relevant employee training.</li>
+</ul></div
+              ><div
+                ><p><strong>B. Association will set mandatory standards for unrestricted use of the Libra payment system</strong></p>
+<p>The Association and/or one of its subsidiaries will set mandatory standards for Members, Designated Dealers, Regulated VASPs, and Certified VASPs for entry on the Libra network. Entities that meet these standards may transact on the Libra network without being subject to transaction and address balance limits, or, in some cases, may be subject to higher limits than those assigned to Unhosted Wallets.</p></div
+              ><div
+                ><p class="p1"><strong>C. Association will conduct due diligence on Association Members and Designated Dealers</strong></p>
+<p class="p1">The Association and/or one of its subsidiaries will conduct due diligence on all future Members before their admission to the Association and on potential Designated Dealers prior to entering into written agreements with them.</p>
+<p class="p1">This due diligence will be conducted against Association-set standards for Members and Designated Dealers, as appropriate, designed to ensure high levels of compliance, reputability, and trustworthiness. This due diligence will include, but not be limited to, a review of each Member’s or Designated Dealer’s:</p>
+<ul>
+<li>Entity status</li>
+<li>Sanctions screening</li>
+<li>Negative news</li>
+<li>Beneficial owners and control persons</li>
+<li>Adherence to applicable AML/CFT/sanctions compliance regulatory requirements (if any)</li>
+<li>Licenses and registrations</li>
+<li>Entity location and the geographic reach of its customer base</li>
+</ul>
+<p>During this due diligence, the Association and/or one of its subsidiaries will also verify that all Designated Dealers fulfill requirements with respect to capitalization and expertise in foreign exchange markets and that all Designated Dealers will, in turn, conduct due diligence on their downstream counterparties in the Libra payment system.</p>
+<p>In addition to conducting its due diligence review for future Members and Designated Dealers, the Association and/or one of its subsidiaries will also conduct periodic, ongoing risk-based due diligence of existing Members and Designated Dealers.</p></div
+              ><div
+                ><p><strong>D. Association will distribute Libra Coins through regulated Designated Dealers</strong></p>
+<p>Libra Networks will mint Libra Coins intended for distribution to the market only with Designated Dealers and will redeem Libra Coins only from those Designated Dealers. These Designated Dealers will be regulated, well-capitalized financial institutions that will have the right — pursuant to a contract with Libra Networks — to purchase Libra Coins from and sell Libra Coins to Libra Networks. In turn, these entities will buy Libra Coins from and sell Libra Coins to exchanges and OTC dealers to facilitate the market in Libra Coins for end users. Libra Networks will mint and burn Libra Coins with the Designated Dealers and will not have any contractual relationship with any exchanges or end users, save for certain contingent contractual rights that may exist in the context of Emergency Operations.</p></div
+              ><div
+                ><p><strong>E. Only Regulated or Certified VASPs will be allowed to transact on the network without transaction and address balance limits</strong></p>
+<p>The Association expects that most people will interact with the Libra payment system through VASPs. VASPs will facilitate transactions by their users and may record some transactions internally on their own books instead of on the Libra Blockchain. Regulated VASPs and Certified VASPs, as described below, will be permitted to use the Libra payment system without being subject to the transaction and address balance limits for Unhosted Wallets (described below).</p>
+<p><span style="text-decoration: underline">Regulated VASPs</span></p>
+<p>A Regulated VASP is a VASP that is registered or licensed as a VASP in a FATF member jurisdiction, or any entity that is registered or licensed in a FATF member jurisdiction and is permitted to perform VASP activities under such license or registration.</p>
+<p>An entity that seeks treatment as a Regulated VASP must submit a request for approval to the Association or one of its subsidiaries containing at minimum:</p>
+<ul>
+<li>Proof of licensing or registration in a FATF member jurisdiction where such license or registration permits the licensee or registrant to perform VASP activities;</li>
+<li>Representation that the entity has obtained all licenses and registrations required in the jurisdiction in which it is located and operates. Based upon the information provided by the entity and the performance<br />
+of appropriate risk-based due diligence on the entity, the Association or one of its subsidiaries will verify that the entity is properly licensed or registered as a VASP in a FATF member jurisdiction, or is an entity that is registered or licensed in a FATF member jurisdiction and is permitted to perform VASP activities under such license or registration;</li>
+<li>Demonstration of a reasonable risk-based regulatory compliance program and controls.</li>
+</ul>
+<p>Upon successful verification and a risk-based due diligence review of the VASP by the Association, one of its subsidiaries, or a vetted third-party service provider, the entity will be permitted to create Regulated VASP addresses on the Libra network. These addresses will enable a Regulated VASP to conduct its business without being subject to transaction or address balance limits. The Association may also consider assigning certain Regulated VASP addresses with transaction and address balance limits commensurate with their risk profile.</p>
+<p>The Association or one of its subsidiaries will record and publish a directory of Regulated VASPs and their status. The entity will be required to recertify its Regulated VASP status on an annual basis, and the Association, one of its subsidiaries, or a vetted third-party service provider will also perform ongoing monitoring for any changes in the regulatory status of Regulated VASPs or other developments associated with the VASPs risk profile.</p>
+<p><span style="text-decoration: underline">Certified VASPs</span></p>
+<p>A Certified VASP is a VASP that does not qualify as a Regulated VASP but has been certified under standards established by the Association. Certified VASP status is intended to permit VASPs that operate in a FATF jurisdiction without VASP regulations or in a non-FATF member jurisdiction and meet appropriate standards to provide services on the Libra network without being subject to the same transaction and address balance limits imposed on Unhosted Wallets (described below). Any VASP from a FATF member jurisdiction that has implemented a licensing or registration regime must be licensed or registered, as appropriate, and would be subject to Regulated VASP due diligence.</p>
+<p>The highest level of Certified VASP would be for a VASP that meets requirements as established by the Association, which are expected to be consistent in principle with those imposed under the FATF Guidance. The Association may consider establishing lower levels of certification for certain Certified VASPs with transaction and address balance limits commensurate with their risk profile.</p>
+<p>An entity that seeks treatment as a Certified VASP will apply for certification, and demonstrate that it meets the relevant standards established by the Association and has in place a reasonable risk-based compliance program and controls. The certification could be provided by the Association, one of its subsidiaries, or by one or more vetted third-party certification providers approved by the Association. This could include, for example, a Designated Dealer that performs due diligence as part of its Know-Your-Business (KYB) program or a designated independent audit firm that charges applicants for the certification service.</p>
+<p>The Association or one of its subsidiaries will record and publish a directory of Certified VASPs and their status. The VASP will be required to recertify its Certified VASP status on an annual basis, and the certifying entity will also perform, or will be required through another certifying entity to have performed, appropriate risk-based due diligence on the VASP and ongoing monitoring of its status.</p>
+<p><span style="text-decoration: underline">Unhosted Wallet activity for users will be subject to transaction and address balance limits and other controls</span></p>
+<p>The Association believes it is important that the Libra network permits direct access by non-VASPs, namely Unhosted Wallets, as a means of enabling financial inclusion, providing broad access to financial services, and fostering innovation and competition:</p>
+<p><span style="text-decoration: underline"><strong>Financial inclusion:</strong> </span>The goal of the Association is for the Libra network to be as inclusive as possible within the current regulatory framework. The network will benefit a large global underbanked and unbanked population who may not have access to a Regulated or Certified VASP, many of which will not find it commercially feasible to service these groups. The Association believes that permitting access by Unhosted Wallets will allow those without access to financial services to benefit from the secure, low-cost, and fast payment services offered by the Libra network.</p>
+<p>Today, 1.7 billion adults globally remain outside of the financial system with no access to a traditional bank, even though one billion have a mobile phone, and nearly half a billion have internet access. Unhosted Wallets are key to addressing their needs.</p>
+<p><span style="text-decoration: underline"><strong>Fostering innovation and competition:</strong></span></p>
+<p>Unhosted Wallets allow the Libra network to offer software developers a platform with built-in security features, such as protocol-level sanctions screening, compliance infrastructure (such as the FIU-function), access to a wide population, and a low barrier to entry. These attributes allow for increased innovation and competition, leading to higher-quality consumer wallets.</p>
+<p>Unhosted Wallets also ensure access to innovative products powered by smart contracts. Just as a payment system helps participants settle payments and manage counterparty risk, smart contracts allow participants to agree on more complex business logic that is executed directly by the Libra network, enabling innovative applications. We expect that smart contracts have the potential to add useful functionality to the Libra network beyond its core functionality. Such smart contract modules will be made available for use and development over time, subject to approval by the Association or one of its subsidiaries, which will be granted in cases where satisfactory controls are implemented against regulatory and other risks. Unhosted Wallets ensure that all users can access these innovative services, even if they cannot find a Regulated or Certified VASP that supports that smart contract functionality.</p>
+<p>The Association recognizes that Unhosted Wallets may pose increased compliance and financial crime risks. To address those risks, all Unhosted Wallets (i.e., all Libra Blockchain addresses other than those associated with a Regulated or Certified VASP or Designated Dealer) will be subject to additional controls.</p>
+<p>The Libra protocol will enforce a transaction limit and a maximum address balance on each Unhosted Wallet address. Any user who wishes to transact at levels beyond these limits will be required to work with a Regulated or Certified VASP.</p>
+<p>The Association recognizes that bad actors may attempt to circumvent these threshold limitations and controls by creating and using multiple Unhosted Wallets to remain within the transaction and address balance limits while not operating as a Regulated or Certified VASP. The FIU-function will specifically seek to detect and deter such activity (as explained in Section H below).</p></div
+              ><div
+                ><p><strong>F. Automated protocol-level compliance controls will apply for all on-chain activity</strong></p>
+<p>The Association will include certain compliance controls directly in the Libra protocol. These controls are designed to enforce certain compliance requirements for all transactions on the Libra Blockchain.</p>
+<p>The following are some of the compliance controls that will be implemented as part of the Libra protocol:</p>
+<ul>
+<li>Sanctioned addresses: Protocol-level controls will apply to all network participants, including Unhosted Wallets and VASPs, and automatically prevent transactions involving blockchain addresses identified by authorities as associated with sanctioned persons (sanctioned blockchain addresses). In addition, these controls can be used to restrict amounts stored in sanctioned blockchain addresses.</li>
+<li>Sanctioned jurisdictions: Protocol-level controls will automatically prevent transactions originating from IP addresses associated with sanctioned jurisdictions.</li>
+<li>Unhosted Wallet limits: Protocol-level controls will enforce transaction and address balance limits on Unhosted Wallets.</li>
+<li>VASP certifications: Protocol-level controls will enforce certification renewal requirements on Regulated and Certified VASPs.</li>
+<li>Travel Rule: The Libra protocol will require Regulated and Certified VASPs to attest to compliance with the Travel Rule when transacting. An off-blockchain protocol will assist Regulated and Certified VASPs in complying with the Travel Rule (as described in Section G below).</li>
+</ul></div
+              ><div
+                ><p><strong>G. Association will develop an off-blockchain Travel Rule protocol</strong></p>
+<p>The Association will develop an off-blockchain protocol to facilitate compliance by Regulated and Certified VASPs with applicable Travel Rule and record-keeping requirements. This protocol will facilitate the exchange of information between these Libra network participants to facilitate their own compliance and will include an open-text field to allow for the sharing of supplemental information. Unhosted Wallet addresses can use this off-blockchain protocol to submit required or requested data to Regulated and Certified VASPs. The Association will maintain a public directory of Regulated and Certified VASPs, and Regulated and Certified VASPs will publicly attest to their compliance with applicable Travel Rule and record-keeping requirements (as described in Section F above).</p></div
+              ><div
+                ><p><strong>H. Association’s FIU-function will monitor Libra network activity and coordinate with Libra network participants</strong></p>
+<p>The Association and/or one of its subsidiaries will operate an FIU-function with the goal of maintaining high levels of compliance within the Libra payment system. The FIU-function will monitor Libra network activity and work with both government authorities and service providers to seek to detect and deter inappropriate use of the platform.</p>
+<p><span style="text-decoration: underline">Cooperating with Libra network participants</span></p>
+<p>Regulated and Certified VASPs and Designated Dealers operating in the Libra network will maintain their own compliance programs that will be subject to periodic reviews by the Association or one of its subsidiaries, or a vetted third-party service provider as part of its risk-based due diligence. The FIU-function will seek to coordinate with these network participants to detect and report potentially illicit or evasive activity. Subject to applicable law, the FIU-function will cooperate and coordinate with Designated Dealers, Regulated and Certified VASPs, and other network participants to gather and share risk signals and compliance insights (e.g., recognition of new typologies, addresses associated with elevated risk, and structuring).</p>
+<p><span style="text-decoration: underline">Detecting suspicious activity and protocol compliance control evasion</span></p>
+<p>An important goal of the FIU-function will be to detect suspicious activity and deter attempts to evade protocol compliance controls, which includes the evasion of sanctions geoblocking, as well as transaction and address balance limits. The FIU-function will use network analysis techniques to seek to detect suspicious activity across the Libra network and partner with service and technology providers in the blockchain monitoring space.</p>
+<p>If any such activity is detected, the FIU-function will share elevated risk signals with network participants and with the relevant authorities as permitted or required by applicable law. Such addresses may also be restricted based upon court orders or administrative orders issued or obtained by government authorities.</p></div
+              ><div
+                ><p><strong>I. Association will respond to identified potentially suspicious and sanctioned activity, including through </strong><strong>reporting</strong></p>
+<p>When potentially suspicious and/or sanctioned activity is identified by the Association’s FIU-function, the Libra Blockchain addresses and supporting evidence may be shared with blockchain monitoring service providers and with network participants, subject to applicable law. We expect service providers will also integrate this information into their overall data set to inform network participants and regulators.</p>
+<p>In order to deter abuse, the FIU-function will notify VASPs, as appropriate and subject to applicable law, of the Libra Blockchain addresses of Unhosted Wallets that are potentially attempting to circumvent established limits.</p>
+<p><span style="text-decoration: underline">Reporting and law enforcement</span></p>
+<p>The Association’s FIU-function will actively monitor the network and will utilize risk signals shared by Designated Dealers, Regulated and Certified VASPs, Members, and other network participants as appropriate. When potentially suspicious and sanctioned activity is detected, the FIU-function will submit appropriate reports to applicable authorities as permitted or required by applicable law.</p>
+<p>The Association’s FIU-function will cooperate, to the extent permitted or required by applicable laws, with requests for information or assistance from law enforcement related to the use of the Libra network.</p></div
+              ></section
+            ></article
+          ></div
+        ></section
+      ></section
+    ><section
+      class="Chapter"
+      id="an-open-and-competitive-network"
+      data-title="06 An Open and Competitive Network"
+      ><div class="background-layer"></div
+      ><div class="title-container"
+        ><p class="minutes"
+          >Section 06<!-- -->
+          <span></span></p
+        ><h1>An Open and Competitive Network</h1></div
+      ><section class="WhitepaperWrapper"
+        ><div class="white-background"></div
+        ><div class="container"
+          ><article class="sections-wrapper"
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4></h4
+              ><div
+                ><p>The safety and integrity of the Libra network are at the forefront of the Libra Association’s efforts. We started our journey with businesses and nonprofit organizations that share our vision to facilitate a more connected global payment system built and governed as a public good. At the same time, it is crucial to establish a clear path for membership renewal and expanded participation over time.</p>
+<p>We believe that competition is a prerequisite for building a highly interoperable, efficient, and innovative payment system. In the first Libra white paper, we sought to achieve this goal by announcing our intention to eventually transition the network to a permissionless system. However, in the months since, a key concern expressed by regulators in a number of jurisdictions, including the Swiss Financial Market Supervisory Authority (FINMA), is that it would be challenging for the Association to guarantee that the compliance provisions of the network would be maintained if it were to transition to a permissionless network where, for example, no due diligence is performed on validators.</p>
+<p>Here we present the approach the Association is exploring to offer new entrants the ability to compete for the provision of core network services and participate in the governance of the Libra network while ensuring the Association’s ability to meet regulatory expectations. Some of the most important objectives of a permissionless network that we propose to incorporate are the ability of new entrants to compete for:</p>
+<ol>
+<li>The provision of payments and financial services to businesses and consumers.</li>
+<li>The opportunity to run independent validator nodes that increase the security and reliability of the Libra consensus protocol by having non-correlated failure risks.</li>
+<li>Active participation in the governance and evolution of the Libra project.</li>
+</ol>
+<p>The Libra project achieves the first objective at the outset as the network is modeled after an open technology standard, and the Libra protocol is built for a high degree of interoperability. The second and third objectives require a market-driven process that allows newly qualified Association Members to enter and compete with existing ones. In the next section, we provide a high-level overview of how this could work.</p></div
+              ></section
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4>Exploring an Open, Transparent, and Competitive Market for Network Services and Governance</h4
+              ><div
+                ><p>An open, transparent, and competitive process for the provision of network services and governance of the network is key for 1) expanding the membership base of the Association and 2) ensuring its renewal over time. At both stages, the Association will set open-call criteria to ensure that the selection process is objective and transparent, and also that it incorporates critical dimensions for the growth, diversity, safety, and integrity of the network.</p>
+<p><strong>1. Expanding membership:</strong> The Association plans to rely on open calls for new Members and define how many membership slots are available in each round. Potential applicants will submit an application that could cover dimensions such as:</p>
+<ul>
+<li>Basic information proving that the applicant satisfies the membership requirements, including<br />
+compliance due diligence.</li>
+<li>Technical information showing the applicant’s ability to successfully run a validator node.</li>
+<li>Economic performance information that supports the applicant’s past and future ability to drive growth on the Libra network.</li>
+<li>Financial contribution to support the Association’s operating costs and incentives.</li>
+</ul>
+<p>The information from the application form would be used to calculate a transparent Member Contribution Score (MCS), which would be used to rank applications. The terms used to calculate the MCS would be public before each open call is run. Such scores are commonly used in allocation mechanisms today (e.g., admission processes and advertisement auctions).</p>
+<p><strong>2. Renewing membership:</strong> The Association’s goal is to ensure that new Members can enter and compete for the provision of core network services and contribute to governance while existing Members can renew their participation based on good performance — both in terms of running a validator node and in driving adoption. Over time, the Association could transparently modify the MCS calculation and selection process to meet new needs and to balance continuity with change, while ensuring it remains based on objective and non-discriminatory criteria. All of these decisions would be made while taking into account antitrust and competition issues and regulatory compliance requirements, and in accordance with the governance procedures under the Charter.</p>
+<p>In the event that a Member undermines the integrity or safety of the network, the Association could have a mechanism for removing the Member from the validator set, and, in extremely severe cases, for expulsion from membership. Removal from the validator set might also be triggered by material violations of the membership eligibility criteria, regulatory issues, criminal proceedings, or interference with the health and integrity of the network. The Association will also have a process to commence an off-cycle open call for new Members in the event of a severely underperforming network or other major governance challenges.</p></div
+              ></section
+            ></article
+          ></div
+        ></section
+      ></section
+    ><section
+      class="Chapter"
+      id="the-libra-association"
+      data-title="07 The Libra Association"
+      ><div class="background-layer"></div
+      ><div class="title-container"
+        ><p class="minutes"
+          >Section 07<!-- -->
+          <span></span></p
+        ><h1>The Libra Association</h1></div
+      ><section class="WhitepaperWrapper"
+        ><div class="white-background"></div
+        ><div class="container"
+          ><article class="sections-wrapper"
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4></h4
+              ><div
+                ><p>We believe that making the Libra mission a reality is best accomplished by diverse and independent collaborators. This is the role played by the Libra Association — an independent membership organization — and its wholly-owned subsidiary Libra Networks, both headquartered in Geneva, Switzerland. The Association strives to be a well respected international institution. The choice of Switzerland as the home for the Association is motivated by its openness towards financial innovation, commitment to robust financial regulation and history as a hub for international organizations.</p>
+<p>The Association is designed to facilitate the operation of the Libra payment system; to coordinate the agreement among its stakeholders in their pursuit to promote, develop, and expand the network; to oversee the administration of the Libra Reserve; and to facilitate the provision of services in the Libra payment system in a safe and compliant manner.</p>
+<p>The Association is governed by the Association Council, which is comprised of one representative per Association Member. Each Council representative is entitled to one vote on each matter brought to the Council for approval. Together, they make policy decisions on the governance of the Libra network and Reserve. Currently, the Members consist of businesses and nonprofit organizations from around the world. The Council may delegate its authorities to the board and the executive staff of the Association and rely on the board and the executive staff for the execution of its decisions. Major policy decisions require the consent of two-thirds of the Council representatives, the same supermajority of the network required in the Libra Byzantine Fault Tolerance (LibraBFT) consensus protocol.</p>
+<p>Through the Association, the Members will align on the network’s technical roadmap and development goals. In that sense, the Association is similar to other not-for-profit entities — often in the form of foundations — that govern other open-source projects. In December 2019, the Council appointed a Technical Steering Committee (TSC), comprising representatives from five Member organizations, tasked with overseeing and coordinating the technical design and development of the Libra network. As the Libra network relies on a growing distributed community of open-source contributors to further itself, the Association’s TSC is an important vehicle to establish and supervise a process for the community to decide on which protocols or specifications to develop and adopt, as well as to serve as a resource supporting all developers working on Libra-related contributions.</p>
+<p>The Association is the parent of Libra Networks, which is the entity directly responsible for operating the Libra payment system, minting and burning Libra Coins, and administering the Reserve. As such, Libra Networks is in the process of applying for a license as an operator of a payment system from the Swiss Financial Market Supervisory Authority (FINMA). If and once the payment system license is granted, Libra Networks will be subject to ongoing prudential supervision by FINMA. As a consequence, decisions that affect its license, such as modifications of the rules regarding the administration of the Libra Reserve or the addition of new lines of services, may require the prior approval of FINMA. In addition to its direct supervision of the licensed Libra Networks, FINMA will also supervise the Association and its other subsidiaries on a consolidated basis. Libra Networks is the only party able to create (mint) and destroy (burn) Libra single-currency stablecoins. Single-currency stablecoins are only minted when Designated Dealers have purchased those coins from Libra Networks with fiat assets to fully back the new coins. Single-currency stablecoins are only burned when the Designated Dealers sell Libra Coins to Libra Networks in exchange for the underlying assets. Designated Dealers will have a contractual right to sell single-currency stablecoins to Libra Networks at a price equal to the face value of the underlying fiat currency. These activities of Libra Networks are governed and constrained by a Reserve Management Policy that can only be changed by a Member supermajority, subject to regulatory approval. In addition to the single-currency stablecoins, the Libra network will support multi-currency ≋LBR that will be implemented as a smart contract aggregating single-currency stablecoins using fixed nominal weights (e.g., ≋USD 0.50, ≋EUR 0.18, ≋GBP 0.11, etc.).</p>
+<p>Libra Networks is also tasked with facilitating the provision of services on the Libra Blockchain in a safe and compliant manner. This effort will be led and managed by a Chief Compliance Officer and the Financial Intelligence Function (FIU-function). They will, among other activities, conduct due diligence and continuous monitoring to ascertain the integrity, lawfulness, and legally compliant conduct of all Members, Designated Dealers, and Virtual Asset Service Providers (VASPs), such as custodial wallets or exchanges, that have an address on the Libra Blockchain; govern the implementation of protocol-level sanctions controls; govern the implementation of protocol-level transaction and address balance limits where required, per its policies; facilitate and guide the adherence to the Travel Rule on the Libra Blockchain; monitor the activity on the Libra Blockchain to detect suspicious activity, including attempts to circumvent network limits; and partner with regulators and law enforcement through reporting suspicious activities and acting on them as appropriate. These activities and others are further described <a href="https://libra.org/en-US/white-paper/#compliance-and-the-prevention-of-illicit-activity">here</a>.</p>
+<p>In the near-term, there are additional roles that need to be performed on behalf of the Association: the recruitment of additional Members; the design and implementation of incentive programs to propel the adoption of the Libra payment system, including the distribution of such incentives; and the establishment of the Association’s social impact grant-making program.</p>
+<p>An additional long-term goal of the Association is to develop and promote an open identity standard. We believe that decentralized and portable digital identity is a prerequisite to financial inclusion and competition. In addition, the Association aims to build an open, transparent, and competitive market for network services and governance where new participants face the lowest possible barriers to entry.</p>
+<p>For more on the Association, please read <a href="https://libra.org/en-US/association/" target="_blank" rel="noopener">here</a>.</p></div
+              ></section
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4>How to get involved</h4
+              ><div
+                ><p>The Association envisions a vibrant community of developers building apps and services to spur the global use of the Libra network. The Association defines success as enabling any person or business globally to have fair, affordable, and instant access to their money. For example, success means that a person working abroad has a fast and simple way to send money to family back home, and a college student can pay their rent as easily as they can buy a coffee.</p>
+<p>Our journey is just beginning, and we are asking the community to help. If you believe in what the Libra network could do for billions of people around the world, share your perspective, and join in. Your feedback is needed to make financial inclusion a reality for people everywhere.</p>
+<ul>
+<li>If you are a researcher or protocol developer, a preview of the <a href="https://developers.libra.org/" target="_blank" rel="noopener">Libra testnet</a> is available under the <a href="http://www.apache.org/licenses/" target="_blank" rel="noopener">Apache 2.0 Open Source License</a>, with accompanying documentation. The testnet is still a prototype under development, but you can read, build, and provide feedback right away. The Association is committed to building a community-oriented development process and opening the platform to developers. The Association’s TSC has appointed a Lead Maintainer and an initial group of Maintainers and has established open and transparent processes for the acceptance of technical proposals for Libra Improvement Proposals (LIP). These will be published shortly.</li>
+<li>If your organization is interested in applying for social impact grants from the Association, read more <a href="https://developers.libra.org/partner_form" target="_blank" rel="noopener">here</a>.</li>
+</ul></div
+              ></section
+            ></article
+          ></div
+        ></section
+      ></section
+    ><section
+      class="Chapter"
+      id="whats-next"
+      data-title="08 What’s Next?"
+      ><div class="background-layer"></div
+      ><div class="title-container"
+        ><p class="minutes"
+          >Section 8<!-- -->
+          <span></span></p
+        ><h1>What’s Next?</h1></div
+      ><section class="WhitepaperWrapper"
+        ><div class="white-background"></div
+        ><div class="container"
+          ><article class="sections-wrapper"
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4></h4
+              ><div
+                ><p>It has been an important nine months since our initial announcement of the Libra project. The Libra Association has had many helpful discussions with regulators, central bankers, elected officials, and various stakeholders around the world to determine the best way to marry blockchain technology with accepted regulatory frameworks. Further, the Association participated in conversations for the <a href="https://www.bis.org/cpmi/publ/d187.pdf" target="_blank" rel="noopener">G7 report on stablecoins</a>, and engaged in constructive dialogue with international stakeholders such as the Financial Stability Board, World Bank Group, International Monetary Fund, Bank for International Settlements, Inter- American Development Bank, World Economic Forum, and central banks and financial system authorities in jurisdictions around the world. It has also been exciting to see thousands of developers engage with the open-source Libra Blockchain code, and their work has made millions of test transactions on the Libra testnet. The Association has elected a board of directors, added new Members, and established a strong, independent operating cadence. Most importantly, international discussion around financial innovation and inclusion has accelerated.</p>
+<p>Operating a payment system that can support responsible financial services innovation requires ongoing engagement with key stakeholders at regional, national, and international levels. To this end, Libra Networks is in the process of filing for a payment systems license with the Swiss Financial Market Supervisory Authority (FINMA). We believe that lowering the barriers to entry to the modern financial system should not lower the bar of strong regulatory standards.</p>
+<p>Looking ahead, the Association will continue to engage in constructive international dialogue about how to harmonize regulatory standards, approaches to consumer protection, and extending the perimeter of payments to include marginalized communities. The Association remains committed to public-private collaboration to deliver financial system innovations. Indeed, as the prospect of central bank digital currencies (CBDCs) becomes a reality, the expectation that the Libra payment system will be capable of being upgraded to support these public sector innovations is a design principle we aim to deliver.</p>
+<p><strong>The Libra Blockchain:</strong></p>
+<p>Over the coming months, the Association will work with the community to gather feedback on the Libra Blockchain testnet and bring it to a production-ready state. In particular, this work will focus on ensuring the security, performance, and scalability of the protocol and implementation.</p>
+<ul>
+<li>The Association will construct well-documented APIs and libraries to enable users to interact with the Libra Blockchain.</li>
+<li>The Association will institute a procedure for Libra Improvement Proposals (LIPs), open to community participation and scrutiny, where material changes to the protocol and software that support the Libra Blockchain will be discussed and reviewed.</li>
+<li>The Association will create a framework for the collaborative development of the technology behind the Libra Blockchain using the open-source methodology.</li>
+<li>The Association will perform extensive testing of the Libra Blockchain, which will range from tests of the protocol to constructing a full-scale test of the network in collaboration with entities such as wallet services and exchanges to ensure the system is working before launch.</li>
+<li>The Association will work to foster the development and deployment of the Move language, allowing developers to use the safeguards inherent to the Move language to develop innovative financial applications. This will entail collaboration with regulators on defining appropriate safeguards for third-party publishing of smart contracts as well as an exploration of other financial programming contexts that would benefit from the innovations in Move.</li>
+</ul>
+<p><strong>The Libra Reserve:</strong></p>
+<ul>
+<li>The Association will establish custody agreements with a geographically distributed and regulated group of global institutional custodians for the Reserve.</li>
+<li>The Association will establish operational procedures for the Reserve to interact with Designated Dealers and ensure high-transparency and auditability.</li>
+<li>The Association will work with regulators to determine the best framework for determining the composition of fixed weights of single-currency stablecoins that comprise ≋LBR.</li>
+</ul>
+<p><strong>The Libra Association:</strong></p>
+<ul>
+<li>We will work to grow the Association Council through open, transparent, and competitive processes to further increase the geographic distribution and diversity of Association Members.</li>
+<li>The Association will continue to develop its governance mechanisms and adopt key Association policies set forth under the Association’s Charter.</li>
+<li>The Managing Director / Chief Executive Officer of the Association will be hired and will build out an executive team.</li>
+<li>The Association will establish a Financial Intelligence Function (FIU-function) that will support and govern network-wide financial integrity. The FIU-function will become a center of excellence promoting best practices and techniques for the safe operation of blockchain-based payment systems.</li>
+<li>The Association will identify social impact partners aligned with our joint mission and will work with them to establish a Social Impact Advisory Board and a social impact program.</li>
+</ul></div
+              ></section
+            ></article
+          ></div
+        ></section
+      ></section
+    ><section
+      class="Chapter"
+      id="conclusion"
+      data-title="09 Conclusion"
+      ><div class="background-layer"></div
+      ><div class="title-container"
+        ><p class="minutes"
+          >Section 9<!-- -->
+          <span></span></p
+        ><h1>Conclusion</h1></div
+      ><section class="WhitepaperWrapper"
+        ><div class="white-background"></div
+        ><div class="container"
+          ><article class="sections-wrapper"
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4></h4
+              ><div
+                ><p>The mission of the Libra Association is to enable a simple global payment system and financial infrastructure that empowers billions of people. With more than 1.7 billion people who are either unbanked or underbanked around the world, large-scale innovation that promotes financial inclusion, compliance, and competition could help those who need it the most.</p>
+<p>Since the release of the first Libra white paper on June 18, 2019, the Association has incorporated feedback from policymakers, regulators, and other stakeholders who have materially improved the design of the project. We are hopeful these changes ensure that the Association can achieve its ultimate goal of modernizing payment infrastructure and creating a core transport layer for value that is low-cost, interoperable, and compliant.</p>
+<p>We are grateful for the engagement and commitment that so many organizations and individuals have demonstrated in helping define this opportunity for the world. We remain fully committed to the mission and are eager to begin delivering on it.</p></div
+              ></section
+            ><section
+              class="chapter-section"
+              id=""
+              ><h4></h4
+              ><ul class="footnotes"
+                ><li
+                  ><p><sup>1</sup> Best Buy. “AT&T prepaid Alcatel CAMEOX device purchase.” Bestbuy.com.(Accessed: May 15, 2019). Available: https://www.bestbuy.com/site/at-t-prepaid-alcatel-cameox-4g-lte-with- 16gb-memory-cell-phone-arctic-white/6008102.p?skuId=6008102</p>
+<p><sup>2</sup> A. Demirgüç-Kunt, L. Klapper, D. Singer, S. Ansar, and J. Hess. The Global Findex database 2017: Measuring financial inclusion and the fintech revolution. World Bank Group, 2018. Globalfindex.worldbank.org. Accessed: May 15 2019. Available: https://globalfindex.worldbank.org/sites/globalfindex/ files/2018-04/2017%20Findex%20full%20report_0.pdf</p>
+<p><sup>3</sup> OECD. Mobile phones: Pricing structures and trends. Paris, France: OECD Publishing, 2000, p. 67. Available: <span class="break">https://books.google.com/books?id=p- cP84M_GBeoC&pg=PA6&lpg=PA6&dq=1999+price+SMS+europe&source=bl&ots=TIbwgZWCmj&sig=ACfU3U2Z_yRawxW78qVSVO_wHCtRupoqoA&hl=en&sa=X- &ved=2ahUKEwjOmeG9tMHiAhVVFzQIHU8eBEMQ6AEwD3oECAkQAQ#v=onepage&q=SMS&f=false</span></p>
+<p>We make no representation or guaranty that our current understanding of Libra Association’s expected future action or inaction will remain unchanged as events and circumstances unfold and as members of the Libra Association work to develop policies for Libra Association. We reserve the right to supplement the information contained herein as necessary to ensure the accuracy of such information.</p></li
+                ></ul
+              ></section
+            ></article
+          ></div
+        ></section
+      ></section
+    ><section class="WhitepaperWrapper"
+      ><div class="white-background"></div
+      ><div class="container small-margin"
+        ><div class="Lexicon animateInit" id="lexicon"
+          ><h4 class="subtitle"
+            ></h4
+          ><h3 class="description"
+            >Libra Lexicon</h3
+          ><div class="CollapsibleGrid theme-lexicon animateInit"
+            ><div class="grid-container"
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Blockchain"
+                title="Blockchain"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Blockchain</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>The technology underpinning the Libra payment system. Blockchain is a technology that uses cryptography to allow a distributed collection of independent servers, or nodes, to operate a database of transactions.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Byzantine Fault Tolerant (BFT)"
+                title="Byzantine Fault Tolerant (BFT)"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Byzantine Fault Tolerant (BFT)</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>Byzantine Fault Tolerance (BFT) is the ability of a distributed system to provide safety guarantees in the presence of faulty, or "Byzantine," members. BFT consensus protocols are designed to function correctly even if some validator nodes — up to one-third of the network — are compromised or fail.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Central Bank Digital Currency (CBDC)"
+                title="Central Bank Digital Currency (CBDC)"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Central Bank Digital Currency (CBDC)</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>An electronic form of central bank money that could be used by households and businesses to make payments and store value (Bank of England, 2020).</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Consensus protocol"
+                title="Consensus protocol"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Consensus protocol</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>Consensus protocol allows nodes to collectively reach an agreement on whether to accept or reject a transaction.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Cryptography"
+                title="Cryptography"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Cryptography</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>A tool for protecting the integrity of information, which is a key component of blockchain technology.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Designated Dealers"
+                title="Designated Dealers"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Designated Dealers</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>Entities that have the right, pursuant to a contract with the Libra Association subsidiary Libra Networks, to purchase Libra Coins from and sell Libra Coins to Libra Networks.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Fiat currency"
+                title="Fiat currency"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Fiat currency</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>Fiat money is a currency without intrinsic value that has been established as money by government regulation. Fiat money has value only because a government maintains its value, and because parties engaging in exchange agree on its value. It contrasts with commodity money (where the value of money comes from the materials that comprise it, e.g., actual gold coins) and representative money (in which money represents a claim on a physical asset, e.g., a gold standard).</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Libra Association"
+                title="Libra Association"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Libra Association</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>The Libra Association is an independent membership organization headquartered in Geneva, Switzerland. Membership consists of geographically distributed and diverse businesses and nonprofit organizations. The Association’s purpose is to coordinate and provide a framework of governance decision-making for the Libra network and Libra Reserve; to oversee the operation of the Libra payment system; to facilitate the provision of services on top of the Libra Blockchain in a safe and compliant manner; and to establish social impact grant-making in support of financial inclusion.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Libra Blockchain"
+                title="Libra Blockchain"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Libra Blockchain</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>The technological backbone of the Libra payment system that has been built from the ground up to prioritize scalability, security, efficiency in storage and throughput, as well as future adaptability.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Libra Coins"
+                title="Libra Coins"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Libra Coins</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>Libra Coins consist of single-currency stablecoins (e.g., ≋USD, ≋EUR, and ≋GBP) and a multi-currency coin (≋LBR) and are backed by a reserve of assets made up of cash or cash equivalents and very short-term government securities.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Libra Core"
+                title="Libra Core"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Libra Core</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>The official name for the open-source implementation of the Libra protocol published by the Libra Association. This software is the first implementation of the Libra protocol and the Move language.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Libra Council"
+                title="Libra Council"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Libra Council</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>The Association is governed by the Libra Association Council, which comprises of one representative per Association Member.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Libra Networks"
+                title="Libra Networks"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Libra Networks</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>A Libra Association subsidiary that is directly responsible for operating the Libra payment system, minting and burning Libra Coins, and administering the Libra Reserve.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Libra Payment System"
+                title="Libra Payment System"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Libra Payment System</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>A global payment system built on blockchain technology to facilitate a more accessible and connected global financial system.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Libra Reserve"
+                title="Libra Reserve"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Libra Reserve</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>A collection of assets made up of cash or cash equivalents and very short-term government securities that fully back Libra Coins. The assets in the Libra Reserve will be held by a geographically distributed network of well-capitalized custodians to provide both security and decentralization of the assets.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="LibraBFT"
+                title="LibraBFT"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >LibraBFT</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>The Libra Blockchain uses the LibraBFT consensus protocol, adopting a Byzantine Fault Tolerant approach to consensus. See "Consensus protocol" and "Byzantine Fault Tolerant" for more detail.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Merkle tree"
+                title="Merkle tree"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Merkle tree</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>Merkle tree is a type of authenticated data structure that allows for efficient verification of data integrity and updates.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Move"
+                title="Move"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Move</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>Move is the name of a new programming language designed to make it safe and easy to program with digital assets. Move is used to implement custom transaction logic and smart contracts on the Libra Blockchain.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Multi-currency coin (or ≋LBR)"
+                title="Multi-currency coin (or ≋LBR)"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Multi-currency coin (or ≋LBR)</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>A digital composite of some of the single-currency stablecoins available on the Libra network that can be used as an efficient cross-border settlement coin as well as a neutral, low-volatility option for people and businesses in countries that do not yet have a single-currency stablecoin on the network.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Node"
+                title="Node"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Node</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>A node is a computer or server that operates the blockchain. It takes many nodes to form a distributed network.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Open source"
+                title="Open source"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Open source</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>Open source is a term used for software that makes the original source code freely available so that it can be distributed and modified.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Single-currency stablecoin"
+                title="Single-currency stablecoin"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Single-currency stablecoin</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>A digital representation of fiat currency that is backed 1:1 by a reserve containing cash or cash-equivalents and very short-term government securities denominated in the relevant currency.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Smart contracts"
+                title="Smart contracts"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Smart contracts</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>Smart contract is a term used for code published on a blockchain that can execute transactions. The Move programming language will implement smart contracts on the Libra Blockchain.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Social impact grants"
+                title="Social impact grants"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Social impact grants</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>The Libra Association will establish a social impact grant-making program in support of financial inclusion.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Stablecoin"
+                title="Stablecoin"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Stablecoin</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>Stablecoins are digital tokens that typically transact on a distributed ledger and rely on cryptographic validation techniques to be transacted, with the goal of achieving stable value relative to fiat currencies. (From G7 Working Group on Stablecoins, “Investigating the impact of global stablecoins,” October 2019)</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Testnet"
+                title="Testnet"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Testnet</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>The testnet is a publicly deployed instance of the Libra network that runs using a set of validator test nodes. The testnet is a demonstration of the Libra network that is built for experimenting with new ideas. The testnet simulates a digital payment system and the coins on the testnet have no real-world value.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Unhosted Wallets"
+                title="Unhosted Wallets"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Unhosted Wallets</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>Libra Blockchain addresses other than those associated with a Regulated VASP, Certified VASP, or Designated Dealer.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Validator nodes"
+                title="Validator nodes"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Validator nodes</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>Independent servers around the world, called nodes, make up the network that operates the blockchain. A validator node is an entity that validates transactions on the Libra Blockchain. It receives requests from clients and runs consensus, execution, and storage.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Virtual Asset Service Providers (VASPs)"
+                title="Virtual Asset Service Providers (VASPs)"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Virtual Asset Service Providers (VASPs)</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>Entities that perform exchange, transfer, custody, or other similar financial services for customers on the Libra network.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Regulated VASPs"
+                title="Regulated VASPs"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Regulated VASPs</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>VASPs that are registered or licensed as a VASP in a Financial Action Task Force (FATF) member jurisdiction, or entities that are registered or licensed in a FATF member jurisdiction and are permitted to perform VASP activities under such license or registration. A Regulated VASP must receive approval to operate on the Libra network following risk-based due diligence conducted by the Association’s subsidiary, Libra Networks, or an authorized third-party service provider.</p></div
+                ></div
+              ><div
+                class="CollapsibleItem animateInit"
+                role="button"
+                aria-pressed="false"
+                aria-expanded="false"
+                aria-controls="Certified VASPs"
+                title="Certified VASPs"
+                ><div class="clickable-section"
+                  ><div class="collapsible-icon"
+                    ><div class="bar"></div><div class="bar"></div></div
+                  ><h5 class="title"
+                    >Certified VASPs</h5
+                  ></div
+                ><div class="collapsible-section"
+                  ><p>VASPs that do not qualify as a Regulated VASP but have been certified by Libra Networks or an authorized third-party service provider under standards established by the Association’s subsidiary, Libra Networks.</p></div
+                ></div
+              ></div
+            ><button class="toggle-button"
+              ><span class="toggle-button-text"
+                >Show More</span
+              >
+              <svg width="13" height="11" class="down-arrow-svg">
+                <g fill="none" fill-rule="evenodd" stroke-linecap="square">
+                  <path
+                    d="M1.301 5.516l5.157 5.241 5.156-5.241M6.498 10.332V1.009"
+                  ></path>
+                </g></svg></button></div></div></div></section
+    ><a
+      class="DownloadPDF"
+      aria-label="Download PDF"
+      download=""
+      href="https://libra.org/en-US/wp-content/uploads/sites/23/2020/04/Libra_WhitePaperV2_April2020.pdf"
+      ><svg viewBox="0 0 35.7 47.6" class="pdf-icon">
+        <path
+          d="M33.529 16l-14.8-3.7 1.2-9.7h-17.8V45h31.3V16zm-.7-2l-11.2-10.7-1 7.7 12.2 3zM21.729.8l13.7 13.1v33h-35V.8h21.3zm-16.1 29.3V28s0-.1.1-.1h2s.1 0 .1.1v2.1s0 .1-.1.1l-2.1-.1zm3.4 2.6v-9.4s0-.1.1-.1h1.3c.1 0 .1 0 .1.1l.1.4h.2c.2-.2.4-.3.7-.4.3-.1.7-.2 1-.2.9 0 1.7.3 2.3 1 .6.7.8 1.5.8 2.6 0 1-.3 1.9-.9 2.6-.6.7-1.3 1-2.2 1-.4 0-.7-.1-1-.2-.3-.1-.5-.3-.7-.4h-.1v3.2s0 .1-.1.1l-1.6-.3c.1.1 0 .1 0 0zm1.7-6c0 1.4.5 2.1 1.6 2.1.6 0 1-.2 1.3-.6.3-.4.5-.9.5-1.5s-.2-1.1-.5-1.5c-.3-.4-.7-.6-1.3-.6-.5 0-.9.2-1.2.6-.3.4-.4.9-.4 1.5zm6.1 0c0-1 .3-1.9.9-2.6.6-.7 1.3-1 2.2-1 .4 0 .7.1 1 .2.3.1.5.3.7.5h.1v-3.2s0-.1.1-.1h1.5s.1 0 .1.1V30s0 .1-.1.1h-1.3c-.1 0-.1 0-.1-.1l-.1-.4h-.2c-.2.2-.4.3-.7.4-.3.1-.7.2-1 .2-.9 0-1.7-.3-2.3-1-.6-.6-.8-1.4-.8-2.5zm2-1.5c-.3.4-.5.9-.5 1.5s.2 1.1.5 1.5c.3.4.7.6 1.3.6.5 0 .9-.2 1.2-.6.3-.4.4-.9.4-1.5 0-1.4-.5-2.1-1.6-2.1-.5 0-1 .2-1.3.6zm5.5-.6v-1.3s0-.1.1-.1h1.1s.1 0 .1-.1v-.7c0-.6.2-1.1.5-1.4.4-.3.8-.5 1.4-.5h1.1s.1 0 .1.1V22s0 .1-.1.1h-1c-.1 0-.3 0-.3.1-.1.1-.1.2-.1.3v.7s0 .1.1.1h1.4s.1 0 .1.1v1.3s0 .1-.1.1h-1.4s-.1 0-.1.1v5.3s0 .1-.1.1h-1.5s-.1 0-.1-.1v-5.3s0-.1-.1-.1l-1.1-.2c.1.1 0 .1 0 0z"
+          fill="#402f8f"
+        ></path></svg></a></main
+  ><footer id="Footer"
+    ><div class="container big-footer"
+      ><svg class="Logo" viewBox="0 0 338.13 330.24">
+        <path
+          d="M314.82,292.65a192,192,0,0,0,23.31-32.92l-39.45-19.64A120.78,120.78,0,0,1,278,266c-11,10.21-22.7,16.16-34.61,17.68-23,2.94-39.07-4.17-62.51-19.21-24.63-15.8-52.54-33.71-92.15-28.65-24,3.08-46.06,15.66-65.44,37.39A191.89,191.89,0,0,0,0,306.13l39.44,19.64a121.7,121.7,0,0,1,20.64-25.93c10.88-10.07,22.52-16,34.62-17.51a79.51,79.51,0,0,1,10-.66c18.14,0,32.71,7,52.52,19.71,23,14.77,51.66,33.15,92.17,28C273.87,326.22,295.89,313.87,314.82,292.65Zm0-117.48a192,192,0,0,0,23.31-32.92l-39.45-19.64A121,121,0,0,1,278,148.53c-11,10.21-22.7,16.16-34.61,17.68-23,2.93-39.07-4.17-62.51-19.21-24.63-15.8-52.54-33.71-92.15-28.65-24,3.08-46.06,15.65-65.44,37.39A191.5,191.5,0,0,0,0,188.65l39.44,19.64a122,122,0,0,1,20.64-25.94C71,172.29,82.6,166.4,94.7,164.85a79.51,79.51,0,0,1,10-.66c18.14,0,32.71,7,52.52,19.71,23,14.77,51.66,33.15,92.17,28C273.87,208.74,295.89,196.39,314.82,175.17Zm0-117.48a192,192,0,0,0,23.31-32.92L298.68,5.13A121,121,0,0,1,278,31.05c-11,10.21-22.7,16.16-34.61,17.68-23,2.93-39.07-4.17-62.51-19.21C156.28,13.72,128.37-4.19,88.76.87,64.72,4,42.7,16.52,23.32,38.26A191.5,191.5,0,0,0,0,71.17L39.44,90.81A122,122,0,0,1,60.08,64.87C71,54.81,82.6,48.92,94.7,47.37a79.51,79.51,0,0,1,10-.66c18.14,0,32.71,7,52.52,19.71,23,14.77,51.64,33.14,92.17,28C273.87,91.26,295.89,78.91,314.82,57.69Z"
+        ></path></svg
+      ><nav
+        ><ul
+          ><li
+            ><a href="/en-US/vision/"
+              >Vision</a
+            ></li
+          ><li
+            ><a href="/en-US/association/"
+              >Association</a
+            ></li
+          ><li
+            ><a href="/en-US/developers/"
+              >Developers</a
+            ></li
+          ><li
+            ><a href="/en-US/learn-faqs/"
+              >Learn</a
+            ></li
+          ><li
+            ><a href="/en-US/media-press-news/"
+              >Media</a
+            ></li
+          ><li
+            ><a href="/en-US/white-paper/"
+              >White Paper</a
+            ></li
+          ><li
+            ><a href="/en-US/careers/"
+              >Careers</a
+            ></li
+          ><li
+            ><ul class="social-links"
+              ><li
+                ><a
+                  href="https://developers.libra.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Github"
+                  ><img
+                    src="https://libra.org/en-US/wp-content/uploads/sites/23/2019/06/github.png"
+                    alt=""/></a></li
+              ><li
+                ><a
+                  href="https://www.instagram.com/libra"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Instagram"
+                  ><img
+                    src="https://libra.org/en-US/wp-content/uploads/sites/23/2019/06/instagram.png"
+                    alt=""/></a></li
+              ><li
+                ><a
+                  href="https://twitter.com/libra_"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Twitter"
+                  ><img
+                    src="https://libra.org/en-US/wp-content/uploads/sites/23/2019/06/twitter.png"
+                    alt=""/></a></li
+              ><li
+                ><a
+                  href="https://www.facebook.com/LibraAssociation/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Facebook"
+                  ><img
+                    src="https://libra.org/en-US/wp-content/uploads/sites/23/2019/06/facebook.png"
+                    alt=""/></a></li
+              ><li
+                ><a
+                  href="https://www.linkedin.com/company/libra-association/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="LinkedIn"
+                  ><img
+                    src="https://libra.org/en-US/wp-content/uploads/sites/23/2019/12/LinkedIn.png"
+                    alt=""/></a></li
+              ></ul
+            ></li
+          ></ul
+        ></nav
+      ></div
+    ><div class="container tiny-footer"
+      ><div class="TinyFooter"
+        ><ul class="left-side"
+          ><li>© 2020 Libra Association</li
+          ><li
+            >Powered by WordPress.com VIP</li
+          ></ul
+        ><ul class="right-side"
+          ><li
+            ><a href="/en-US/privacy/#cookies_policy"
+              >Cookies</a
+            ></li
+          ><li
+            ><a href="/en-US/privacy/#data_policy"
+              >Data Policy</a
+            ></li
+          ><li
+            ><a href="/en-US/privacy/#terms_of_use"
+              >Terms of Use</a
+            ></li
+          ></ul
+        ></div
+      ></div
+    ></footer
+  ></div
+>
+
+		</div>
+				<script type="text/javascript">
+            //<![CDATA[
+            /**
+             * Jam3InitCookieBanner
+             *
+             * Class to handle initiating Jam3 Cookie Banner,
+             * detects if current user has closed the banner or not already
+             * and loads JS and CSS assets if banner should be rendered
+             *
+             * @access public
+             * @author Ben Moody
+             */
+            var Jam3InitCookieBanner = function () {
+
+                var pluginCookieName;
+                var isHttps;
+
+                /**
+                 * init
+                 *
+                 * Constructor method, called on class instance
+                 *
+                 * Boots the process
+                 *
+                 * @access public
+                 * @author Ben Moody
+                 */
+                this.init = function () {
+
+                    //vars
+                    var theBannerContainer = document.getElementById('jam3-cookie-banner');
+
+                    //Cache cookiename
+                    this.pluginCookieName = "jam3_cookie_closed";
+
+                    //Cache if this is https
+                    this.isHttps = "true";
+
+                    //Has user already closed banner?
+                    if (true === this.maybeRenderBanner()) {
+
+                        //Load plugin assets, JS, CSS
+                        this.loadAssets();
+
+                    } else {
+
+                        //remove banner from DOM
+                        theBannerContainer.remove();
+                    }
+
+                };
+
+                /**
+                 * loadAssets
+                 *
+                 * Call method to dynamically load and assets, CSS or JS
+                 *
+                 * @access public
+                 * @author Ben Moody
+                 */
+                this.loadAssets = function () {
+
+                    //vars
+                    var pluginJSFile = "https:\/\/libra.org\/en-US\/wp-content\/plugins\/jam3-cookie-banner\/js\/main-min.js?v=1.1";
+                    var pluginCSSFile = "https:\/\/libra.org\/en-US\/wp-content\/plugins\/jam3-cookie-banner\/css\/main.css";
+
+                    //Load JS file
+                    this.loadJsCssFile(pluginJSFile, 'js');
+
+                    //Load CSS file
+                    this.loadJsCssFile(pluginCSSFile, 'css');
+
+                };
+
+                /**
+                 * maybeRenderBanner
+                 *
+                 * Detect if current user has closed the banner by
+                 * looking for a valid browser cookie.
+                 *
+                 * @access public
+                 * @author Ben Moody
+                 */
+                this.maybeRenderBanner = function () {
+
+                    var cookieValue = '';
+
+                    //Does cookie exist
+                    cookieValue = this.getCookie(this.pluginCookieName);
+
+                    if ('true' === cookieValue) {
+                        return false;
+                    }
+
+                    return true;
+                };
+
+                /**
+                 * getCookie
+                 *
+                 * Helper to get a cookie value by cookie name
+                 *
+                 * @param string cname
+                 * @access public
+                 * @author Ben Moody
+                 */
+                this.getCookie = function (cname) {
+
+                    var v = document.cookie.match('(^|;) ?' + cname + '=([^;]*)(;|$)');
+
+                    return v ? v[2] : null;
+                };
+
+                /**
+                 * loadJsCssFile
+                 *
+                 * Dynamically load a JS or CSS file into the DOM
+                 *
+                 * @param string filename
+                 * @param string filetype
+                 * @access public
+                 * @author Ben Moody
+                 */
+                this.loadJsCssFile = function (filename, filetype) {
+
+                    if (filetype == "js") { //if filename is a external JavaScript file
+                        var fileref = document.createElement('script')
+                        fileref.setAttribute("type", "text/javascript")
+                        fileref.setAttribute("src", filename)
+                    }
+                    else if (filetype == "css") { //if filename is an external CSS file
+                        var fileref = document.createElement("link")
+                        fileref.setAttribute("rel", "stylesheet")
+                        fileref.setAttribute("type", "text/css")
+                        fileref.setAttribute("href", filename)
+                    }
+                    if (typeof fileref != "undefined")
+                        document.getElementsByTagName("head")[0].appendChild(fileref)
+                };
+
+            };
+
+            //Create instance of class to get things started
+            var Jam3InitCookieBanner = new Jam3InitCookieBanner;
+            window.onload = function () {
+                Jam3InitCookieBanner.init();
+            }
+            //]]>
+		</script>
+			<div id="jam3-cookie-banner" style="display: none">
+
+		<!-- The banner content !-->
+		To help us provide relevant content, analyze our traffic, and provide a variety of features, we use cookies. By clicking on or navigating the site, you agree to allow us to collect information on and off the Libra Website through cookies. Learn more, including about available controls: <a href="https://libra.org/privacy/">Cookies Policy</a>.
+	</div>
+
+	<!-- Banner dynamic theme elements !-->
+	<style type="text/css">
+		#jam3-cookie-banner,
+		#jam3-cookie-banner a {
+			color: ;
+		}
+
+		#jam3-close-cookie-banner:before,
+		#jam3-close-cookie-banner:after {
+		   background-color: ;
+	    }
+	</style>
+<script>
+var page = {"componentChunkName":"component---src-templates-white-paper-white-paper-js","jsonName":"en-us-white-paper-794","path":"\/en-US\/white-paper\/"};
+var dataPath = "path---en-us-white-paper-794-517";
+var ___chunkMapping = {"app":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/app-2c45513840bd01dea0b9.js"],"component---src-templates-home-home-js":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/component---src-templates-home-home-js-2bb5b6ddb3bab7a0b36b.js"],"component---src-templates-vision-vision-js":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/component---src-templates-vision-vision-js-c69a259d002e1236281b.js"],"component---src-templates-association-association-js":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/component---src-templates-association-association-js-3f18c78feddf933031ce.js"],"component---src-templates-developers-developers-js":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/component---src-templates-developers-developers-js-6d29a2ca952e5f083ad8.js"],"component---src-templates-partners-partners-js":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/component---src-templates-partners-partners-js-38fd14a256825de81013.js"],"component---src-templates-learn-learn-js":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/component---src-templates-learn-learn-js-500561e7e7101b6c4dd5.js"],"component---src-templates-media-media-js":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/component---src-templates-media-media-js-b5a48f7c5b4f13d39b17.js"],"component---src-templates-careers-careers-js":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/component---src-templates-careers-careers-js-bac010c501073ac2e444.js"],"component---src-templates-job-board-job-board-js":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/component---src-templates-job-board-job-board-js-d92e2f27c8c7ddf89c3b.js"],"component---src-templates-white-paper-white-paper-js":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/component---src-templates-white-paper-white-paper-js-29c3ad89996a1441c284.js"],"component---src-templates-privacy-privacy-js":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/component---src-templates-privacy-privacy-js-3444975668a66bb367b5.js"],"component---src-templates-deep-dive-deep-dive-js":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/component---src-templates-deep-dive-deep-dive-js-db02cf1a1d40e23e37df.js"],"component---src-templates-press-release-post-press-release-post-js":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/component---src-templates-press-release-post-press-release-post-js-850f73727ba35ce87c8b.js"],"component---src-templates-press-release-archive-press-release-archive-js":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/component---src-templates-press-release-archive-press-release-archive-js-0610eac08300aa420703.js"],"component---src-templates-press-release-taxonomy-press-release-taxonomy-js":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/component---src-templates-press-release-taxonomy-press-release-taxonomy-js-9fd699ada8d2fad09629.js"],"component---src-templates-blog-post-blog-post-js":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/component---src-templates-blog-post-blog-post-js-f3470cf31c6745391832.js"],"component---src-templates-blog-archive-blog-archive-js":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/component---src-templates-blog-archive-blog-archive-js-581e3a159adb268fda0a.js"],"component---src-templates-blog-taxonomy-blog-taxonomy-js":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/component---src-templates-blog-taxonomy-blog-taxonomy-js-3d1f3f0efb7d3ab4d561.js"],"component---src-templates-event-archive-event-archive-js":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/component---src-templates-event-archive-event-archive-js-b50d6e1dc307200e36a7.js"],"component---src-templates-cla-learn-learn-js":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/component---src-templates-cla-learn-learn-js-95ab98783bca47fac572.js"],"component---src-templates-cla-sign-sign-js":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/component---src-templates-cla-sign-sign-js-60759ad15b78517624f7.js"],"component---src-templates-cla-sign-individual-sign-individual-js":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/component---src-templates-cla-sign-individual-sign-individual-js-e3fec9c2f791d29d0382.js"],"component---src-templates-cla-sign-corporation-sign-corporation-js":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/component---src-templates-cla-sign-corporation-sign-corporation-js-aee728f56013bdca86f7.js"],"component---src-templates-thanks-thanks-js":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/component---src-templates-thanks-thanks-js-a91d24c0e35196982dcc.js"],"component---src-templates-document-document-js":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/component---src-templates-document-document-js-619b6dc24707280ff695.js"],"pages-manifest":["https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default\/release\/pages-manifest-207881e26bdb5169d685.js"]};
+var general = {"theme_directory":"https:\/\/libra.org\/en-US\/wp-content\/themes\/jfl-default","frontend_route":"release","global_settings":{"global_copy":{"next":"Next","previous":"Previous","close":"Close","jump_to_links":"On this page","language_selector_text":"Language","back":"Back"},"fb_pixel":{"fb_pixel_live":"328963054441350","fb_pixel_develop":"425347724711558"},"segment_analytics":{"js_write_key_live":"b8zMpZ1kwBKfOFS9uiSB2LcUNOkmem93","js_write_key_develop":"4o1O3LLd7EvFJ2Cp3CbFfXk3yy8LeT5t"},"not_found":{"title":"Page Not Found","description":"Sorry, it appears that the page you requested doesn't exist anymore and cannot be found."}},"menus":{"header":[{"copy":"Vision","link":"\/en-US\/vision\/","externallink":"https:\/\/libra.org\/en-US\/vision\/","page_title":"","target":"","associated_nav_name":"Vision"},{"copy":"Association","link":"\/en-US\/association\/","externallink":"https:\/\/libra.org\/en-US\/association\/","page_title":"","target":"","associated_nav_name":"Association"},{"copy":"Developers","link":"\/en-US\/developers\/","externallink":"https:\/\/libra.org\/en-US\/developers\/","page_title":"","target":"","associated_nav_name":"Developers"},{"copy":"Learn","link":"\/en-US\/learn-faqs\/","externallink":"https:\/\/libra.org\/en-US\/learn-faqs\/","page_title":"","target":"","associated_nav_name":"Learn"},{"copy":"Media","link":"\/en-US\/media-press-news\/","externallink":"https:\/\/libra.org\/en-US\/media-press-news\/","page_title":"","target":"","associated_nav_name":"Media"}],"highlight":[{"copy":"White Paper","link":"\/en-US\/white-paper\/","externallink":"https:\/\/libra.org\/en-US\/white-paper\/","page_title":"","target":"","associated_nav_name":"White Paper"}],"legal":[{"copy":"Cookies","link":"\/en-US\/privacy\/#cookies_policy","externallink":"\/privacy\/#cookies_policy","page_title":"","target":"","associated_nav_name":"Cookies"},{"copy":"Data Policy","link":"\/en-US\/privacy\/#data_policy","externallink":"\/privacy\/#data_policy","page_title":"","target":"","associated_nav_name":"Data Policy"},{"copy":"Terms of Use","link":"\/en-US\/privacy\/#terms_of_use","externallink":"\/privacy\/#terms_of_use","page_title":"","target":"","associated_nav_name":"Terms of Use"}],"logo":[{"link":"\/en-US\/","externallink":"https:\/\/libra.org\/en-US\/","target":"","associated_nav_name":"Home Page"}],"developers":[{"copy":"Overview","link":"\/en-US\/developers\/","externallink":"https:\/\/libra.org\/en-US\/developers\/","page_title":"","target":"","associated_nav_name":"Overview"},{"copy":"Libra Docs","link":"\/en-US\/https:\/\/developers.libra.org\/docs\/welcome-to-libra","externallink":"https:\/\/developers.libra.org\/docs\/welcome-to-libra","page_title":"","target":"","associated_nav_name":"Libra Docs"},{"copy":"Governance","link":"\/en-US\/https:\/\/lip.libra.org","externallink":"https:\/\/lip.libra.org","page_title":"","target":"","associated_nav_name":"Governance"},{"copy":"Community","link":"\/en-US\/https:\/\/community.libra.org","externallink":"https:\/\/community.libra.org","page_title":"","target":"","associated_nav_name":"Community"},{"copy":"GitHub","link":"\/en-US\/https:\/\/github.com\/libra","externallink":"https:\/\/github.com\/libra","page_title":"","target":"_blank","associated_nav_name":"GitHub"}],"media":[{"copy":"Overview","link":"\/en-US\/media-press-news\/","externallink":"https:\/\/libra.org\/en-US\/media-press-news\/","page_title":"","target":"","associated_nav_name":"Overview"},{"copy":"Blog","link":"\/en-US\/blog\/","externallink":"https:\/\/libra.org\/en-US\/blog\/","page_title":"","target":"","associated_nav_name":"Blog"},{"copy":"Updates","link":"\/en-US\/updates\/","externallink":"https:\/\/libra.org\/en-US\/updates\/","page_title":"","target":"","associated_nav_name":"Updates"},{"copy":"Events","link":"\/en-US\/events\/","externallink":"https:\/\/libra.org\/en-US\/events\/","page_title":"","target":"","associated_nav_name":"Events"}]},"footer":{"newsletter":{"title":"Sign up for the Libra newsletter","email":{"placeholder":"Email","invalid_error":"Invalid Email","empty_error":"This field is required"},"confirmation_message":"Success!"},"social_icons":[{"name":"Github","media":{"type":"image","image":{"default":{"width":20,"height":20,"url":"https:\/\/libra.org\/en-US\/wp-content\/uploads\/sites\/23\/2019\/06\/github.png","alt":"","title":"github"}}},"link":"https:\/\/developers.libra.org"},{"name":"Instagram","media":{"type":"image","image":{"default":{"width":20,"height":20,"url":"https:\/\/libra.org\/en-US\/wp-content\/uploads\/sites\/23\/2019\/06\/instagram.png","alt":"","title":"instagram"}}},"link":"https:\/\/www.instagram.com\/libra"},{"name":"Twitter","media":{"type":"image","image":{"default":{"width":20,"height":20,"url":"https:\/\/libra.org\/en-US\/wp-content\/uploads\/sites\/23\/2019\/06\/twitter.png","alt":"","title":"twitter"}}},"link":"https:\/\/twitter.com\/libra_"},{"name":"Facebook","media":{"type":"image","image":{"default":{"width":20,"height":20,"url":"https:\/\/libra.org\/en-US\/wp-content\/uploads\/sites\/23\/2019\/06\/facebook.png","alt":"","title":"facebook"}}},"link":"https:\/\/www.facebook.com\/LibraAssociation\/"},{"name":"LinkedIn","media":{"type":"image","image":{"default":{"width":29,"height":29,"url":"https:\/\/libra.org\/en-US\/wp-content\/uploads\/sites\/23\/2019\/12\/LinkedIn.png","alt":"","title":"icon-social-linkedIn"}}},"link":"https:\/\/www.linkedin.com\/company\/libra-association\/"}],"copyright":"\u00a9 2020 Libra Association","wordpress_attribution":"Powered by WordPress.com VIP","links":[{"copy":"Vision","link":"\/en-US\/vision\/","externallink":"https:\/\/libra.org\/en-US\/vision\/","page_title":"","target":"","associated_nav_name":"Vision"},{"copy":"Association","link":"\/en-US\/association\/","externallink":"https:\/\/libra.org\/en-US\/association\/","page_title":"","target":"","associated_nav_name":"Association"},{"copy":"Developers","link":"\/en-US\/developers\/","externallink":"https:\/\/libra.org\/en-US\/developers\/","page_title":"","target":"","associated_nav_name":"Developers"},{"copy":"Learn","link":"\/en-US\/learn-faqs\/","externallink":"https:\/\/libra.org\/en-US\/learn-faqs\/","page_title":"","target":"","associated_nav_name":"Learn"},{"copy":"Media","link":"\/en-US\/media-press-news\/","externallink":"https:\/\/libra.org\/en-US\/media-press-news\/","page_title":"","target":"","associated_nav_name":"Media"},{"copy":"White Paper","link":"\/en-US\/white-paper\/","externallink":"https:\/\/libra.org\/en-US\/white-paper\/","page_title":"","target":"","associated_nav_name":"White Paper"},{"copy":"Careers","link":"\/en-US\/careers\/","externallink":"https:\/\/libra.org\/en-US\/careers\/","page_title":"","target":"","associated_nav_name":"Careers"}]},"lang":"en-US","languages":{"id-ID":"Indonesia (Indonesia)","zh-CN":"\u4e2d\u6587 (\u7b80\u4f53\u4e2d\u6587)","en-US":"English","fr-FR":"Fran\u00e7ais (France)","de-DE":"Deutsch (Deutschland)","ja-JP":"\u65e5\u672c\u8a9e (\u65e5\u672c)","pt-BR":"Portugu\u00eas (Brasil)","es-LA":"Espa\u00f1ol (Latinoam\u00e9rica)","ru-RU":"\u0420\u0443\u0441\u0441\u043a\u0438\u0439 (\u0420\u043e\u0441\u0441\u0438\u044f)"},"general_site_title":"Libra.org","page_title":"Libra White Paper | Blockchain, Association, Reserve"};
+</script>
+<script async="true" src='https://libra.org/en-US/wp-content/themes/jfl-default/release/webpack-runtime-43112f84fbf18c593fb4.js'></script>
+<script async="true" src='https://libra.org/en-US/wp-content/themes/jfl-default/release/styles-8be8c3ffa4a571b01fc4.js'></script>
+<script async="true" src='https://libra.org/en-US/wp-content/themes/jfl-default/release/app-2c45513840bd01dea0b9.js'></script>
+<script src='https://www.google.com/recaptcha/api.js?render=6Lf2h9oUAAAAAFOoom8x_2QjI-Q3T0lcB2ZSTz5w&#038;ver=5'></script>
+<script type='text/javascript' src='https://stats.wp.com/e-202024.js' async='async' defer='defer'></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:8.6.1',blog:'163316427',post:'179',tz:'0',srv:'libra.org'} ]);
+	_stq.push([ 'clickTrackerInit', '163316427', '179' ]);
+</script>
+			</body>
+</html>

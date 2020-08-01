@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta property="og:type" content="website"/>
+	<meta property="og:site_name" content="plesk"/>
+			<meta property="og:title" content="Plesk University"/>
+		<meta property="og:description" content="TalentLMS - Cloud based, Lean Learning Platform with an Emphasis on Usability and Easy Course Creation"/>
+		<base href="https://university.plesk.com/">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="Content-Language" content="en">
+	<meta charset="utf-8">
+	<meta name="keywords" content="lms, elearning, learning platform, cloud, saas">
+	<meta name="description" content="TalentLMS - Cloud based, Lean Learning Platform with an Emphasis on Usability and Easy Course Creation">
+				<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="apple-touch-startup-image" href="/pages/images/iphone_preloader.png">
+		<link rel="apple-touch-icon" href="https://d3j0t7vrtr92dk.cloudfront.net/plesk/1527841453_u_logo.png?">
+		<title>Course catalog - Plesk University</title>
+	<link href="pages/themes/default/css/animate.min.css?v=439" rel="stylesheet" type="text/css">
+						<link href="https://university.plesk.com/index/css/fmt:1594213540,tn:25,tv:428,ct:1,rtl:0" rel="stylesheet" type="text/css">
+						<link href="pages/themes/default/css/dtpicker.css?v=439" rel="stylesheet" type="text/css">
+								<link href="https://d3j0t7vrtr92dk.cloudfront.net/plesk/1527841453_u_logo.png?" rel="shortcut icon">
+				<script src="pages/scripts/lib/standalone-439.min.js" type="text/javascript"></script>
+				<script src="pages/scripts/lib/main-439.min.js" type="text/javascript"></script>
+																					<script async src="pages/scripts/lib/formenhancements-439.min.js" type="text/javascript"></script>
+						<link href="pages/themes/default/css/toastr.min.css?v=439" rel="stylesheet" type="text/css">
+	</head>
+<body class="tl-body">
+<div class="navbar navbar-fixed-top" id="navbar-catalog">
+	<div class="navbar-inner">
+		<div class="container-fluid nav-container">
+			<a class="btn btn-navbar hamburger hamburger--slider hamburger--small hamburger--collapse" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</a>
+			<a class="brand" href="https://university.plesk.com/index"><img src="https://d3j0t7vrtr92dk.cloudfront.net/plesk/1464951739_plesk_u_new_logo.png?" class="avatar-square"/></a>
+			<div id="tl-loading-pane" class="hide affix text-center"><p><img src="https://d3j0t7vrtr92dk.cloudfront.net/images/loading-small.gif" class="tl-loader-small"/></p></div>
+			<div class="nav-collapse collapse">
+				<ul class="nav pull-right">
+															<li class="tl-cms-page" style="display:none" id="tl-cms-menu-entry-1"><a href="https://university.plesk.com/catalog" >Course catalog</a></li>
+										<li class="tl-cms-page" style="display:none" id="tl-cms-menu-entry-17"><a href="https://university.plesk.com/faq" >FAQ</a></li>
+										<li class="tl-cms-page" style="display:none" id="tl-cms-menu-entry-129"><a href="https://university.plesk.com/privacy-policy" >Privacy Policy</a></li>
+										<li class="dropdown" id='tl-cms-page-dropdown-more' style="display:none">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">More&nbsp;<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+						</ul>
+					</li>
+					<li class="divider-vertical hidden-phone hidden-tablet " id='tl-cms-page-dropdown-more-divider'></li>
+																						<li><a href="javascript:void(0)" onclick="openAuthModalAt('signup', 'catalog')" >Signup</a></li>
+						<li class="divider-vertical"></li>												<li><a href="javascript:void(0)" id="tl-catalog-nav-login" >Login&nbsp;<i class="icon-signin"></i></a></li>
+									</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="hidden-phone hidden-tablet" style="margin-top: 72px;"></div>
+
+
+<div class="modal fade hide" id="tl-catalog-login-modal" style="outline: none;" tabindex="-1">
+	<div class="modal-header text-center">
+		<a href="javascript:void(0)" class="close" data-dismiss="modal" >&times;</a>
+		<h3 class="tl-auth-form--handle-display" data-state-scope="auth_form_view" data-state-name="login">
+			Log in		</h3>
+		<h3 class="tl-auth-form--handle-display" data-state-scope="auth_form_view" data-state-name="social_login">
+			Log in with social media		</h3>
+		<h3 class="tl-auth-form--handle-display" data-state-scope="auth_form_view" data-state-name="social_signup">
+			Sign up with social media		</h3>
+		<h3 class="tl-auth-form--handle-display" data-state-scope="auth_form_view" data-state-name="forgot_password">
+			Reset password		</h3>
+		<h3 class="tl-auth-form--handle-display" data-state-scope="auth_form_view" data-state-name="ldap_login">
+			Log in with LDAP		</h3>
+		<h3 class="tl-auth-form--handle-display" data-state-scope="auth_form_view" data-state-name="signup">
+			Sign up		</h3>
+	</div>
+	<div class="modal-body">
+	<div class="tl-auth-form--handle-display" data-state-scope="auth_form_view" data-state-name="login">
+		<div class="tl-auth-form">
+			<form name='login_form' method='post' action='https://university.plesk.com/catalog' class='tl-form form-horizontal' id='tl-catalog-login-form'  ><input type='hidden' name='_track_login_form' value="1594260769" class='' id='2119101536' /><input type='hidden' name='_redirect_' value="" class='' id='_redirect_' /><input type='hidden' name='_loginToken' value="73c2f9255dfb8fb0fa82053cb620e584" class='' id='_loginToken' /><input type='hidden' name='course-id' value="0" class='tl-catalog-course-id' id='course-id' /><input type='hidden' name='category-id' value="0" class='tl-catalog-category-id' id='category-id' /><input type='hidden' name='group-id' value="0" class='tl-catalog-group-id' id='group-id' /><input type='hidden' name='catalog-get-subscription' value="0" class='tl-catalog-get-subscription' id='catalog-get-subscription' /><input type='hidden' name='login-referrer' value="" class='' id='login-referrer' />			<div class="spacer"></div>
+			<div class="spacer">
+				<div class="control-group ">
+					<label>
+						Username or email					</label>
+					<div class='controls'>
+						<input type='text' name='login' value="" class='' id='tl-shared-username' placeholder=""   autocomplete="on"  tabindex=''/>						<span class="help-block">
+													</span>
+					</div>
+				</div>
+			</div>
+			<div class="spacer">
+				<div class="control-group ">
+					<label>
+						Password					</label>
+					<div class='controls'>
+						<input type='password' name='password'  value="" class=' tl-form-password-field' id='1147744371' placeholder="" autocomplete="off" tabindex=''/>						<span class="help-block">
+													</span>
+					</div>
+				</div>
+			</div>
+			<div class="spacer spacer--x2">
+				<div class="control-group">
+					<input type='submit' name='submit'  value="Login" class='btn btn-primary btn-large' id='2102934351'  data-loading-text="Logging in..." tabindex=''/>				</div>
+			</div>
+			<div class="spacer spacer--x2">
+				<div class="control-group">
+					<div class="text-center">
+						Forgot your <a href='javascript:void(0)' class='link-color' data-select-state='auth_form_view:forgot_password'>password</a>?					</div>
+				</div>
+																			</div>
+			</form>		</div>
+					<hr class="m-0 tl-auth-form_hr">
+			<div class="spacer--x2 text-center">
+				Don't have an account? <a class="link-color" href="javascript:void(0)" data-select-state="auth_form_view:signup">Sign up</a> for free!			</div>
+			</div>
+
+
+
+	<div class="tl-auth-form--handle-display" data-state-scope="auth_form_view" data-state-name="forgot_password">
+		<div class="tl-auth-form">
+			<form name='form' method='post' action='https://university.plesk.com/catalog' class='tl-form form-horizontal hide' id='tl-catalog-forgot-password-form'  ><input type='hidden' name='_track_form' value="1594260769" class='' id='1455734791' /><input type='hidden' name='_redirect_' value="" class='' id='_redirect_' />			<div class="spacer"></div>
+			<div class="spacer">
+				<h3 class="tl-auth-form_title">Reset password</h3>
+				<p>Enter your username or email address and we'll email you instructions on how to reset your password</p>
+			</div>
+			<div class="spacer">
+				<div class='control-group '>
+					<div class='controls'>
+						<input type='text' name='username' value="" class='' id='1798868333' placeholder=""    autocomplete='off'  tabindex=''/>						<span class="help-block"></span>
+					</div>
+				</div>
+			</div>
+			<div class="spacer--x2">
+				<div class='control-group'>
+					<input type='submit' name='submit_login'  value="Send" class='btn btn-primary btn-large' id='1370580968' autocomplete="off" data-loading-text="Processing..." tabindex=''/>				</div>
+			</div>
+			<div class="spacer"></div>
+			<div class="spacer spacer--x2 text-center">
+				<a class="link-color" href="javascript:void(0)" data-select-state="auth_form_view:login">
+					Log in				</a>
+				with your credentials			</div>
+			</form>		</div>
+	</div>
+
+	<div class="tl-auth-form--handle-display" data-state-scope="auth_form_view" data-state-name="signup">
+		<div class="tl-auth-form">
+			<form name='signup_form' method='post' action='https://university.plesk.com/catalog' class='tl-form form-horizontal' id='tl-catalog-signup-form'  ><input type='hidden' name='_track_signup_form' value="1594260769" class='' id='1851695108' /><input type='hidden' name='_redirect_' value="" class='' id='_redirect_' /><input type='hidden' name='course-id' value="0" class='tl-catalog-course-id' id='course-id' /><input type='hidden' name='category-id' value="0" class='tl-catalog-category-id' id='category-id' /><input type='hidden' name='group-id' value="0" class='tl-catalog-group-id' id='group-id' /><input type='hidden' name='catalog-get-subscription' value="0" class='tl-catalog-get-subscription' id='catalog-get-subscription' /><input type='hidden' name='signup-referrer' value="" class='' id='signup-referrer' />			<div class="spacer"></div>
+			<div class="spacer">
+				<div class='control-group '>
+					<label class='control-label tl-mandatory-label' for='tl-shared-first-name'>First name</label>					<div class='controls'>
+						<div class='input-append tl-countdown'><input type='text' name='name' value="" class='' id='tl-shared-first-name' placeholder="e.g. John"    autocomplete='off'  tabindex='' data-provide='limit' data-counter='#counter-tl-shared-first-name' data-maxchars='50'/><span class='add-on' id='counter-tl-shared-first-name'></span></div>						<span class="help-block"></span>
+					</div>
+				</div>
+			</div>
+			<div class="spacer">
+				<div class='control-group '>
+					<label class='control-label tl-mandatory-label' for='1839158618'>Last name</label>					<div class='controls'>
+						<div class='input-append tl-countdown'><input type='text' name='surname' value="" class='' id='1839158618' placeholder="e.g. Doe"    autocomplete='off'  tabindex='' data-provide='limit' data-counter='#counter-1839158618' data-maxchars='50'/><span class='add-on' id='counter-1839158618'></span></div>						<span class="help-block"></span>
+					</div>
+				</div>
+			</div>
+			<div class="spacer">
+				<div class='control-group '>
+					<label class='control-label tl-mandatory-label' for='582029100'>Email address</label>					<div class='controls'>
+						<div class='input-append tl-countdown'><input type='text' name='email' value="" class='' id='582029100' placeholder="e.g. jdoe@example.com"    autocomplete='off'  tabindex='' data-provide='limit' data-counter='#counter-582029100' data-maxchars='150'/><span class='add-on' id='counter-582029100'></span></div>						<span class="help-block"></span>
+					</div>
+				</div>
+			</div>
+			<div class="spacer">
+				<div class='control-group '>
+					<label class='control-label tl-mandatory-label' for='1405981066'>Username</label>					<div class='controls'>
+						<div class='input-append tl-countdown'><input type='text' name='login' value="" class='' id='1405981066' placeholder="e.g. jdoe"    autocomplete='off'  tabindex='' data-provide='limit' data-counter='#counter-1405981066' data-maxchars='150'/><span class='add-on' id='counter-1405981066'></span></div>						<span class="help-block"></span>
+					</div>
+				</div>
+			</div>
+			<div class="spacer">
+				<div class='control-group '>
+					<label class='control-label tl-mandatory-label' for='1117589711'>Password</label>					<div class='controls'>
+						<div class='input-append tl-countdown'><input type='password' name='password'  value="" class='' id='1117589711' placeholder="" autocomplete="off" tabindex='' data-provide='limit' data-counter='#counter-1117589711' data-maxchars='30'/><span class='add-on' id='counter-1117589711'></span></div>						<span class="help-block"></span>
+					</div>
+				</div>
+			</div>
+							<hr/>
+									<div class="spacer">
+						<div class='control-group '>
+															<label class='control-label tl-mandatory-label' for='895672736'>Company Name</label>														<div class='controls'>
+								<div class='input-append tl-countdown'><input type='text' name='custom_field_1' value="" class='' id='895672736' placeholder=""    autocomplete='off'  tabindex='' data-provide='limit' data-counter='#counter-895672736' data-maxchars='150'/><span class='add-on' id='counter-895672736'></span></div>																<span class="help-block"></span>
+							</div>
+						</div>
+					</div>
+									<div class="spacer">
+						<div class='control-group '>
+														<div class='controls'>
+								<input type='checkbox' name='custom_field_3'    class='' id='830473986'  tabindex=''/>																	<label class='control-label' for='830473986'>Privacy Policy</label>																<span class="help-block"></span>
+							</div>
+						</div>
+					</div>
+									<div class="spacer">
+						<div class='control-group '>
+														<div class='controls'>
+								<input type='checkbox' name='custom_field_4'    class='' id='114303327'  tabindex=''/>																	<label class='control-label' for='114303327'>Subscribe</label>																<span class="help-block"></span>
+							</div>
+						</div>
+					</div>
+										<div class="spacer--x2">
+				<div class='control-group'>
+					<input type='submit' name='submit'  value="Create account" class='btn btn-primary btn-large' id='1756903414' autocomplete="off" data-loading-text="Processing..." tabindex=''/>				</div>
+			</div>
+			<div class="spacer"></div>
+						</form>		</div>
+					<hr class="m-0 tl-auth-form_hr">
+			<div class="spacer spacer--x2 text-center">
+				<a class="link-color" href="javascript:void(0)" data-select-state="auth_form_view:login">Log in</a>
+			</div>
+			</div>
+
+<script type="text/javascript">
+	$(document).on('state:change', function(e, data){
+		var stateScope = data.scope;
+		var stateName = data.name;
+		var transitionDelay = 50;
+
+		switch(stateScope){
+			case "auth_form_view":
+				switch(stateName){
+					case "login":
+						setTimeout(function(){
+							$('form input[name="login"]').focus();
+						}, transitionDelay);
+						break;
+					case "forgot_password":
+						setTimeout(function(){
+							$('form input[name="username"]').focus();
+						}, transitionDelay);
+						break;
+					case "ldap_login":
+						setTimeout(function(){
+							$('form input[name="ldap_login"]').focus();
+							$('.tl-form-password-field').trigger('keyup');
+						}, 10);
+						break;
+					case "signup":
+						setTimeout(function(){
+							$('form[name="signup_form"] input[name="name"]').focus();
+						}, transitionDelay);
+						break;
+					default:
+				}
+				break;
+			default:
+		}
+	});
+
+	$(document).ready(function(){
+
+		var initialScreen = "login";
+		var switchToForgotPassword = !!'';
+		var switchToLDAPLogin = !!'';
+		if(switchToForgotPassword){
+			initialScreen = "forgot_password";
+		}
+		if(switchToLDAPLogin){
+			initialScreen = "ldap_login"
+		}
+
+		setState("auth_form_view", initialScreen);
+
+	});
+
+</script>
+<script>
+	$(document).ready(function(){
+
+		/* LOGIN FORM */
+		$("#tl-catalog-login-form").on('submit', function(e){
+			$("#tl-catalog-login-form .error").removeClass('error');
+			$("#tl-catalog-login-form .help-block").html('');
+
+			var url = 'https://university.plesk.com/catalog/login';
+			var formdata = $(this).serialize();
+			var loginReferrer = $("#tl-catalog-login-form #login-referrer").val();
+
+			myportal.app.ajax(url, {
+				type: "post",
+				data: formdata,
+				dataType: 'json',
+				success: function(resp){
+					if(!resp.success){
+						if(resp.data){
+							$.each(resp.data, function(key, val){
+								$("#tl-catalog-login-form input[name='" + key + "']").parents('.control-group').addClass('error');
+								$("#tl-catalog-login-form input[name='" + key + "']").closest('.controls').find('.help-block:first').html('<span class="help-inline">' + val + '</span>');
+							});
+						}
+						else if(resp.exc){
+							myportal.app.notify({type: "error", message: resp.exc});
+						}
+						else if(resp.permissionError || resp.blockedByLevel){
+							$(location).attr('href', 'https://university.plesk.com/dashboard');
+						}
+
+						$('#tl-catalog-login-form input[type=submit]').removeClass('disabled').removeAttr('disabled').val("Login");
+					}
+					else{
+						if(typeof (resp.freecourse) != 'undefined'){
+							if(resp.freecourse){
+								$(location).attr('href', resp.url);
+							}
+							else{
+								var url = "https://university.plesk.com/catalog/getprerequisites/course_id:##CID##".replace("##CID##", resp.courseId);
+								myportal.app.ajax(url, {
+									type: 'GET',
+									dataType: 'json',
+									success: function(response){
+										if(response.success){
+											if(response.prerequisitesCnt > 0){
+												$('#tl-catalog-payment-modal .alert .cnt').text(response.prerequisitesCnt);
+												$('#tl-catalog-payment-modal .alert').show();
+											}
+										}
+										$('#tl-catalog-login-modal').modal('hide');
+										$("#payment-form-coursename-group, #payvia-credits-form-coursename-group").show();
+										$("#payment-form-categoryname-group, #payment-form-groupname-group, #payvia-credits-form-categoryname-group, #payvia-credits-form-groupname-group").hide();
+										$("#payment-form-coursename, #payvia-credits-form-coursename").html(decodeURIComponent(resp.courseName));
+										$("#tl-original-price, #tl-payvia-credits-original-price").html(decodeURIComponent(resp.courseOriginalPrice));
+										$("#tl-discount-price, #tl-payvia-credits-discount-price").html(decodeURIComponent(resp.courseDiscountPrice));
+										$("#payment-form-raw-price, #payvia-credits-form-raw-price").text(resp.courseRawPrice);
+										$('#tl-payvia-credits-credits-price').html(decodeURIComponent(resp.courseCreditsPrice));
+										$("#payment-course-id, #payvia-credits-course-id").val(resp.courseId);
+										$("#payment-category-id, #payvia-credits-category-id, #payment-group-id, #payvia-credits-group-id").val('');
+										$("#payment-user-id, #payvia-credits-user-id").val(resp.userId);
+										$("#payment-referrer, #payvia-credits-referrer").val(loginReferrer);
+										$('#tl-catalog-payment-modal').modal();
+										myportal.content.stripeCardholderName = decodeURIComponent(resp.userName);
+									},
+									error: function(jqXHR_obj){
+										var response = $.parseJSON(jqXHR_obj.responseText);
+										myportal.app.notify({type: "error", message: decodeURIComponent(response.message)});
+									}
+								});
+							}
+						}
+						else if(typeof (resp.freecategory) != 'undefined'){
+							if(resp.freecategory){
+								$(location).attr('href', resp.url);
+							}
+							else{
+								$('#tl-catalog-login-modal').modal('hide');
+								$("#payment-form-coursename-group, #payment-form-groupname-group, #payvia-credits-form-coursename-group, #payvia-credits-form-groupname-group").hide();
+								$("#payment-form-categoryname-group, #payvia-credits-form-categoryname-group").show();
+								$("#payment-form-categoryname, #payvia-credits-form-categoryname").html(decodeURIComponent($('.tl-get-category-active').data('categoryname')));
+								$("#tl-original-price, #tl-payvia-credits-original-price").html(decodeURIComponent(resp.categoryOriginalPrice));
+								$("#tl-discount-price, #tl-payvia-credits-discount-price").html(decodeURIComponent(resp.categoryDiscountPrice));
+								$("#payment-form-raw-price, #payvia-credits-form-raw-price").text(resp.categoryRawPrice);
+								$('#tl-payvia-credits-credits-price').html(decodeURIComponent(resp.categoryCreditsPrice));
+								$("#payment-category-id, #payvia-credits-category-id").val(resp.categoryId);
+								$("#payment-course-id, #payvia-credits-course-id, #payment-group-id, #payvia-credits-group-id").val('');
+								$("#payment-user-id, #payvia-credits-user-id").val(resp.userId);
+								$("#payment-referrer, #payvia-credits-referrer").val(loginReferrer);
+								$('#tl-catalog-payment-modal').modal();
+								myportal.content.stripeCardholderName = decodeURIComponent(resp.userName);
+							}
+						}
+						else if(typeof (resp.freegroup) != 'undefined'){
+							if(resp.freegroup){
+								$(location).attr('href', resp.url);
+							}
+							else{
+								$('#tl-catalog-login-modal').modal('hide');
+								$("#payment-form-coursename-group, #payment-form-categoryname-group, #payvia-credits-form-coursename-group, #payvia-credits-form-categoryname-group").hide();
+								$("#payment-form-groupname-group, #payvia-credits-form-groupname-group").show();
+								$("#payment-form-groupname, #payvia-credits-form-groupname").html(decodeURIComponent($('.tl-get-group-active').data('groupname')));
+								$("#tl-original-price, #tl-payvia-credits-original-price").html(decodeURIComponent(resp.groupOriginalPrice));
+								$("#tl-discount-price, #tl-payvia-credits-discount-price").html(decodeURIComponent(resp.groupDiscountPrice));
+								$("#payment-form-raw-price, #payvia-credits-form-raw-price").text(resp.groupRawPrice);
+								$('#tl-payvia-credits-credits-price').html(decodeURIComponent(resp.groupCreditsPrice));
+								$("#payment-category-id, #payvia-credits-category-id, #payment-course-id, #payvia-credits-course-id").val('');
+								$("#payment-group-id, #payvia-credits-group-id").val(resp.groupId);
+								$("#payment-user-id, #payvia-credits-user-id").val(resp.userId);
+								$("#payment-referrer, #payvia-credits-referrer").val(loginReferrer);
+								$('#tl-catalog-payment-modal').modal();
+								myportal.content.stripeCardholderName = decodeURIComponent(resp.userName);
+							}
+						}
+						else if(typeof (resp.freesubscription) != 'undefined'){
+							if(resp.freesubscription){
+								$(location).attr('href', resp.url);
+							}
+							else{
+								if(typeof (resp.addedtosubscription) != 'undefined'){
+									$(location).attr('href', resp.url);
+								}
+								else{
+									$('#tl-catalog-login-modal').modal('hide');
+									$("#subscription-course-id").val(resp.courseId);
+									$('#tl-catalog-subscription-modal').modal();
+									myportal.content.stripeCardholderName = decodeURIComponent(resp.userName);
+								}
+							}
+						}
+						else{
+							$(location).attr('href', resp.url);
+						}
+					}
+				},
+				error: function(jqXHR_obj){
+					var response = $.parseJSON(jqXHR_obj.responseText);
+					$('#tl-catalog-login-modal').modal('hide');
+					$('#tl-catalog-login-form input[type=submit]').removeClass('disabled').removeAttr('disabled').val("Login");
+					myportal.app.notify({type: "error", message: decodeURIComponent(response.message)});
+				}
+			});
+
+			return false;
+		});
+
+		/* FORGOT PASSWORD FORM */
+		$("#tl-catalog-forgot-password-form").on('submit', function(e){
+			$("#tl-catalog-forgot-password-form .error").removeClass('error');
+			$("#tl-catalog-forgot-password-form .help-block").html('');
+
+			var url = 'https://university.plesk.com/catalog/forgotpassword';
+			var formdata = $(this).serialize();
+
+			myportal.app.ajax(url, {
+				type: "post",
+				data: formdata,
+				dataType: 'json',
+				success: function(resp){
+					if(!resp.success){
+						if(resp.data){
+							$.each(resp.data, function(key, val){
+								$("#tl-catalog-forgot-password-form input[name='" + key + "']").parents('.control-group').addClass('error');
+								$("#tl-catalog-forgot-password-form input[name='" + key + "']").closest('.controls').find('.help-block:first').html('<span class="help-inline">' + val + '</span>');
+							});
+						}
+						else if(resp.exc){
+							myportal.app.notify({type: "error", message: resp.exc});
+						}
+					}
+					else{
+						$('#tl-catalog-login-modal .modal-body:first').hide();
+						myportal.app.notify({
+												type: "success",
+												message: "A password reset email has been sent to your email account. If you did not receive an email in your inbox, please check your spam filter."
+											});
+						$('#tl-catalog-login-modal').modal('hide');
+					}
+
+					$('#tl-catalog-forgot-password-form input[type=submit]').removeClass('disabled').removeAttr('disabled').val("Send");
+				},
+				error: function(jqXHR_obj){
+					var response = $.parseJSON(jqXHR_obj.responseText);
+					$('#tl-catalog-login-modal').modal('hide');
+					$('#tl-catalog-forgot-password-form input[type=submit]').removeClass('disabled').removeAttr('disabled').val("Send");
+					myportal.app.notify({type: "error", message: decodeURIComponent(response.message)});
+				}
+			});
+
+			return false;
+		});
+
+		/* SIGNUP FORM */
+		function emailVerificationActivation(){
+						var message = "Your account created successfully! You will now receive an email requesting your confirmation. Please be sure to click on the confirmation link to complete your registration.";
+						
+			signUpformReplaceWithAlertBox("catalog", message);
+			openAuthModalAt("login", "catalog");
+			myportal.app.notify({type: "success", message: message});
+		}
+
+		$("#tl-catalog-signup-form").on('submit', function(e){
+			$("#tl-catalog-signup-form .error").removeClass('error');
+			$("#tl-catalog-signup-form .help-block").html('');
+			$('#tl-catalog-signup-form .alert:not(.tl-catalog-payment-alert)').remove(); // remove all .alert except from payment modal prerequisites alert
+			var url = 'https://university.plesk.com/catalog/signup';
+			var formdata = $(this).serialize();
+			var signupReferrer = $("#signup-referrer").val();
+			
+			myportal.app.ajax(url, {
+				type: "post",
+				data: formdata,
+				dataType: 'json',
+				success: function(resp){
+
+					if(!resp.success){
+						if(resp.data){
+							$.each(resp.data, function(key, val){
+
+								$("#tl-catalog-signup-form input[name='" + key + "']").parents('.control-group').addClass('error');
+								$("#tl-catalog-signup-form input[name='" + key + "']").closest('.controls').find('.help-block:first').html('<span class="help-inline">' + val + '</span>');
+								$("#tl-catalog-signup-form select[name='" + key + "']").parents('.control-group').addClass('error');
+								$("#tl-catalog-signup-form select[name='" + key + "']").closest('.controls').find('.help-block:first').html('<span class="help-inline">' + val + '</span>');
+
+								if(key == 'signup_captcha'){
+									$('#captcha-control-group').addClass('error');
+									$('#captcha-help-block').html('<span class="help-inline">' + val + '</span>');
+								}
+							});
+
+							/* Will reset captcha on every validation(api) error user receives */
+							if ($("#captcha-control-group").length > 0) {
+								resetGrecaptcha();
+							}
+							
+							$('#tl-catalog-login-modal .modal-body').scrollTop(0);
+						}
+						else if(resp.exc){
+							myportal.app.notify({type: "error", message: resp.exc});
+						}
+						else if(resp.permissionError || resp.blockedByLevel){
+							$(location).attr('href', 'https://university.plesk.com/dashboard');
+						}
+
+						$('#tl-catalog-signup-form input[type=submit]').removeClass('disabled').removeAttr('disabled').val("Create account");
+					}
+					else{
+						if(typeof (resp.freecourse) != 'undefined'){
+							if(resp.freecourse){
+								if(resp.redirect){
+									$(location).attr('href', resp.url);
+								}
+								else{
+									emailVerificationActivation();
+								}
+							}
+							else{
+								if(resp.redirect){
+									var url = "https://university.plesk.com/catalog/getprerequisites/course_id:##CID##".replace("##CID##", resp.courseId);
+
+									myportal.app.ajax(url, {
+										type: 'GET',
+										dataType: 'json',
+										success: function(response){
+											if(response.success){
+												if(response.prerequisitesCnt > 0){
+													$('#tl-catalog-payment-modal .alert .cnt').text(response.prerequisitesCnt);
+													$('#tl-catalog-payment-modal .alert').show();
+												}
+											}
+
+											closeAuthModal("catalog");
+											$("#payment-form-coursename-group, #payvia-credits-form-coursename-group").show();
+											$("#payment-form-categoryname-group, #payment-form-groupname-group, #payvia-credits-form-categoryname-group, #payvia-credits-form-groupname-group").hide();
+											$("#payment-form-coursename, #payvia-credits-form-coursename").html(decodeURIComponent(resp.courseName));
+											$("#tl-original-price, #tl-payvia-credits-original-price").html(decodeURIComponent(resp.courseOriginalPrice));
+											$("#tl-discount-price, #tl-payvia-credits-discount-price").html(decodeURIComponent(resp.courseDiscountPrice));
+											$("#payment-form-raw-price, #payvia-credits-form-raw-price").text(resp.courseRawPrice);
+											$('#tl-payvia-credits-credits-price').html(decodeURIComponent(resp.courseCreditsPrice));
+											$("#payment-course-id, #payvia-credits-course-id").val(resp.courseId);
+											$("#payment-category-id, #payvia-credits-category-id, #payment-group-id, #payvia-credits-group-id").val('');
+											$("#payment-user-id, #payvia-credits-user-id").val(resp.userId);
+											$("#payment-referrer, #payvia-credits-referrer").val(signupReferrer);
+											$('#tl-catalog-payment-modal').modal();
+											myportal.content.stripeCardholderName = decodeURIComponent(resp.userName);
+										},
+										error: function(jqXHR_obj){
+											var response = $.parseJSON(jqXHR_obj.responseText);
+											myportal.app.notify({type: "error", message: decodeURIComponent(response.message)});
+										}
+									});
+								}
+								else{
+									emailVerificationActivation();
+								}
+							}
+						}
+						else if(typeof (resp.freecategory) != 'undefined'){
+							if(resp.freecategory){
+								if(resp.redirect){
+									$(location).attr('href', resp.url);
+								}
+								else{
+									emailVerificationActivation();
+								}
+							}
+							else{
+								if(resp.redirect){
+									closeAuthModal("catalog");
+									$("#payment-form-coursename-group, #payment-form-groupname-group, #payvia-credits-form-coursename-group, #payvia-credits-form-groupname-group").hide();
+									$("#payment-form-categoryname-group, #payvia-credits-form-categoryname-group").show();
+									$("#payment-form-categoryname, #payvia-credits-form-categoryname").html(decodeURIComponent($('.tl-get-category-active').data('categoryname')));
+									$("#tl-original-price, #tl-payvia-credits-original-price").html(decodeURIComponent(resp.categoryOriginalPrice));
+									$("#tl-discount-price, #tl-payvia-credits-discount-price").html(decodeURIComponent(resp.categoryDiscountPrice));
+									$("#payment-form-raw-price, #payvia-credits-form-raw-price").text(resp.categoryRawPrice);
+									$('#tl-payvia-credits-credits-price').html(decodeURIComponent(resp.categoryCreditsPrice));
+									$("#payment-category-id, #payvia-credits-category-id").val(resp.categoryId);
+									$("#payment-course-id, #payvia-credits-course-id, #payment-group-id, #payvia-credits-group-id").val('');
+									$("#payment-user-id, #payvia-credits-user-id").val(resp.userId);
+									$("#payment-referrer, #payvia-credits-referrer").val(signupReferrer);
+									$('#tl-catalog-payment-modal').modal();
+									myportal.content.stripeCardholderName = decodeURIComponent(resp.userName);
+								}
+								else{
+									emailVerificationActivation();
+								}
+							}
+						}
+						else if(typeof (resp.freegroup) != 'undefined'){
+							if(resp.freegroup){
+								if(resp.redirect){
+									$(location).attr('href', resp.url);
+								}
+								else{
+									emailVerificationActivation();
+								}
+							}
+							else{
+								if(resp.redirect){
+									closeAuthModal("catalog");
+									$("#payment-form-coursename-group, #payment-form-categoryname-group, #payvia-credits-form-coursename-group, #payvia-credits-form-categoryname-group").hide();
+									$("#payment-form-groupname-group, #payvia-credits-form-groupname-group").show();
+									$("#payment-form-groupname, #payvia-credits-form-groupname").html(decodeURIComponent($('.tl-get-group-active').data('groupname')));
+									$("#tl-original-price, #tl-payvia-credits-original-price").html(decodeURIComponent(resp.groupOriginalPrice));
+									$("#tl-discount-price, #tl-payvia-credits-discount-price").html(decodeURIComponent(resp.groupDiscountPrice));
+									$("#payment-form-raw-price, #payvia-credits-form-raw-price").text(resp.groupRawPrice);
+									$('#tl-payvia-credits-credits-price').html(decodeURIComponent(resp.groupCreditsPrice));
+									$("#payment-category-id, #payvia-credits-category-id, #payment-course-id, #payvia-credits-course-id").val('');
+									$("#payment-group-id, #payvia-credits-group-id").val(resp.groupId);
+									$("#payment-user-id, #payvia-credits-user-id").val(resp.userId);
+									$("#payment-referrer, #payvia-credits-referrer").val(signupReferrer);
+									$('#tl-catalog-payment-modal').modal();
+									myportal.content.stripeCardholderName = decodeURIComponent(resp.userName);
+								}
+								else{
+									emailVerificationActivation();
+								}
+							}
+						}
+						else if(typeof (resp.getsubscription) != 'undefined'){
+							if(resp.redirect){
+								closeAuthModal("catalog");
+								$("#subscription-course-id").val(resp.courseId);
+								$('#tl-catalog-subscription-modal').modal();
+								myportal.content.stripeCardholderName = decodeURIComponent(resp.userName);
+							}
+							else{
+								emailVerificationActivation();
+							}
+						}
+						else{
+							if(resp.redirect){
+								$(location).attr('href', resp.url);
+							}
+							else{
+								emailVerificationActivation();
+							}
+						}
+					}
+				},
+				error: function(jqXHR_obj){
+					var response = $.parseJSON(jqXHR_obj.responseText);
+					closeAuthModal("catalog");
+					$('#tl-catalog-signup-form input[type=submit]').removeClass('disabled').removeAttr('disabled').val("Create account");
+					myportal.app.notify({type: "error", message: decodeURIComponent(response.message)});
+				}
+			});
+
+			return false;
+		});
+
+				$(".customfield_date").on('keypress', function(ev){
+			var key = ev.keyCode || ev.charCode;
+
+			if(key == 8 || key == 46){
+				$(this).val('');
+			}
+			return false;
+		});
+
+		$(".customfield_date").dtpicker({ format: datepickerFormat }).on('changeDate', function(ev){
+			$(".customfield_date").dtpicker('hide');
+		});
+		
+	});
+</script></div>
+	<div class="modal-body forgot-message hide"></div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+				var waitForFinalEvent = (function(){
+			var timers = {};
+			return function(callback, ms, uniqueId){
+
+				if(!uniqueId){
+					uniqueId = "uniqueId";
+				}
+
+				if(timers[uniqueId]){
+					clearTimeout(timers[uniqueId]);
+				}
+				timers[uniqueId] = setTimeout(callback, ms);
+			};
+		})();
+
+		$(window).resize(function(){
+			if($(window).width() > 980){
+				$('.nav-collapse li.tl-cms-page').hide();
+			}
+			$('#tl-cms-page-dropdown-more').hide();
+			waitForFinalEvent(function(){
+				buildCmsMenu();
+			}, 500, "...");
+		});
+
+		buildCmsMenu();
+		$('.nav-collapse li.tl-cms-page').show(100);
+		
+        $(document).on('click', '#tl-catalog-nav-login', function(){
+						openAuthModalAt("login", "catalog");
+					});
+
+		$('#tl-catalog-login-modal').on('show', function(){
+			$('#tl-catalog-login-form .error').removeClass('error');
+			$('#tl-catalog-login-modal .help-block').html('');
+			$('#tl-catalog-login-modal .alert-error:not(.tl-catalog-payment-alert):not(.tl-alert-success-signup)').remove(); // remove all .alert-error except from payment modal prerequisites alert and signup alert box after user signed up and waits for verification
+		});
+		$('#tl-catalog-login-modal').on('hidden', function(){
+			$('#tl-catalog-login-modal .modal-body:first').show();
+			$('#tl-catalog-login-modal .forgot-message').hide();
+			setState("auth_form_view", "login");
+			$('#tl-catalog-login-modal .error').removeClass('error');
+			$('#tl-catalog-login-modal .help-block').html('');
+			$('#tl-catalog-login-modal .alert:not(.tl-catalog-payment-alert):not(.tl-alert-success-signup)').remove(); // remove all .alert except from payment modal prerequisites alert and signup alert box after user signed up and waits for verification
+		});
+	});
+
+	function buildCmsMenu(){
+		$('#tl-cms-page-dropdown-more .dropdown-menu li').each(function(){
+			$('#tl-cms-page-dropdown-more').before($(this));
+		});
+
+		$('#tl-cms-page-dropdown-more').hide();
+
+		if($(window).width() < 980){
+			$('.nav-collapse li.tl-cms-page').fadeIn(100);
+			return;
+		}
+
+		var availableNavSpace = $('.nav-collapse').width();
+   		var cmsMenuEntriesSpace = 0;
+   		$('.nav-collapse li:not(.tl-cms-page)').each(function(){  availableNavSpace -= $(this).outerWidth(true); });
+   		availableNavSpace -= $('.brand').outerWidth(true);
+   		$('.nav-collapse li.tl-cms-page').each(function(){ cmsMenuEntriesSpace += getWidthOfHidden($(this));});
+
+   		if(cmsMenuEntriesSpace > availableNavSpace){
+   			$('#tl-cms-page-dropdown-more').fadeIn(100);
+   			$('#tl-cms-page-dropdown-more-divider').fadeIn(100);
+   			availableNavSpace -= $('#tl-cms-page-dropdown-more').outerWidth(true);
+   			availableNavSpace -= $('#tl-cms-page-dropdown-more-divider').outerWidth(true);
+   		}
+
+   		var firstIteration = true;
+   		cmsMenuEntriesSpace = 0;
+
+   		$('.nav-collapse li.tl-cms-page').each(function(index){
+   			cmsMenuEntriesSpace += getWidthOfHidden($(this));
+
+   			if(cmsMenuEntriesSpace > availableNavSpace){
+   				$(this).appendTo('#tl-cms-page-dropdown-more .dropdown-menu');
+   			}
+   			else{
+   	   			if(firstIteration){
+   					$(this).prependTo('.nav-collapse ul[class!="dropdown-menu"]');
+   					firstIteration = false;
+   	   			}
+   				else{
+   					$('.nav-collapse li.tl-cms-page').eq(index-1).after($(this));
+   				}
+   			}
+   		});
+   		$('.nav-collapse li.tl-cms-page').fadeIn(100);
+	}
+
+	function getWidthOfHidden(obj){
+	    var clone = obj.clone().show().css({"visibility":"hidden", "display":"table"}).insertAfter(obj);
+	    var width = clone.outerWidth(true);
+	    clone.remove();
+	    return width;
+	}
+</script>
+
+<div class="container">
+				
+	
+	
+	<div class="row">
+				<div class="span12">			<div class="cms-main-div">
+		<div class="tl-box tl-box-border ">
+			<div class="row">
+				<div class="span12">
+<div class="tl-content-wide tl-catalog-wide tl-catalog-wide_main animated fadeIn">
+	<div class="outter-table-wrapper">
+		<table id="grid_course_catalog" class="table grid-striped " cellpadding="0" cellspacing="0" border="0">
+			<thead>
+				<tr><th></th><th></th><th></th><th></th><th>Course</th><th> </th></tr>
+			</thead>
+			<tbody>
+				<tr><td></td><td></td><td></td><td></td><td><div class="span1 catalog_course_avatar text-center"><a href="https://university.plesk.com/catalog/info/id:338" ><img class="tl-catalog-course-avatar-image avatar-square tl-course-avatar" src="https://d3j0t7vrtr92dk.cloudfront.net/plesk/1562044844_course_icon_obsidian_whatsnew.png?" alt="Plesk Obsidian: What&#039;s new? (OBS-0-WHATSNEW)" title="Plesk Obsidian: What&#039;s new? (OBS-0-WHATSNEW)" /></a></div><div class="tl-course-rating">
+										<div id="courserating" class="average-rating courserating" data-rateit-mode="font" data-rateit-value="4.57" data-rateit-readonly="true"></div>
+									</div></td><td><div class="catalog_categories_title" title="Plesk / Plesk Obsidian"><div class="d-inline-block">Plesk</div> / <div class="d-inline-block">Plesk Obsidian</div></div><span class="catalog_course_name tl-bold-item"><a href="https://university.plesk.com/catalog/info/id:338" ><span title='Plesk Obsidian: What&#039;s new?' class='tl-formatted-course-name'>Plesk Obsidian: What&#039;s new?</span><span class="tl-catalog-course-code">&nbsp;(OBS-0-WHATSNEW)</span></a></span><div class="catalog_course_desc">In this course, you will learn about new features and changes of Plesk Obsidian - the latest version of Plesk.</div></td></tr><tr><td></td><td></td><td></td><td></td><td><div class="span1 catalog_course_avatar text-center"><a href="https://university.plesk.com/catalog/info/id:348" ><img class="tl-catalog-course-avatar-image avatar-square tl-course-avatar" src="https://d3j0t7vrtr92dk.cloudfront.net/plesk/1577192024_course_icon_obsidian_associate.png?" alt="Plesk Obsidian Associate (OBS-1-ASSOCIATE)" title="Plesk Obsidian Associate (OBS-1-ASSOCIATE)" /></a></div><div class="tl-course-rating">
+										<div id="courserating" class="average-rating courserating" data-rateit-mode="font" data-rateit-value="4.335" data-rateit-readonly="true"></div>
+									</div></td><td><div class="catalog_categories_title" title="Plesk / Plesk Obsidian"><div class="d-inline-block">Plesk</div> / <div class="d-inline-block">Plesk Obsidian</div></div><span class="catalog_course_name tl-bold-item"><a href="https://university.plesk.com/catalog/info/id:348" ><span title='Plesk Obsidian Associate' class='tl-formatted-course-name'>Plesk Obsidian Associate</span><span class="tl-catalog-course-code">&nbsp;(OBS-1-ASSOCIATE)</span></a></span><div class="catalog_course_desc">After completing this course, you will be able to design a managed hosting service with Plesk and its extensions.
+
+Course duration: 1 hour</div></td></tr><tr><td></td><td></td><td></td><td></td><td><div class="span1 catalog_course_avatar text-center"><a href="https://university.plesk.com/catalog/info/id:349" ><img class="tl-catalog-course-avatar-image avatar-square tl-course-avatar" src="https://d3j0t7vrtr92dk.cloudfront.net/plesk/1577192235_course_icon_obsidian_associate_exam.png?" alt="Plesk Obsidian Associate Certification (OBS-1-ASSOCIATE-EXAM)" title="Plesk Obsidian Associate Certification (OBS-1-ASSOCIATE-EXAM)" /></a></div><div class="tl-course-rating">
+										<div id="courserating" class="average-rating courserating" data-rateit-mode="font" data-rateit-value="4.5" data-rateit-readonly="true"></div>
+									</div></td><td><div class="catalog_categories_title" title="Plesk / Plesk Obsidian / Exams">... / <div class="d-inline-block">Plesk Obsidian</div> / <div class="d-inline-block">Exams</div></div><span class="catalog_course_name tl-bold-item"><a href="https://university.plesk.com/catalog/info/id:349" ><span title='Plesk Obsidian Associate Certification' class='tl-formatted-course-name'>Plesk Obsidian Associate Certification</span><span class="tl-catalog-course-code">&nbsp;(OBS-1-ASSOCIATE-EXAM)</span></a></span><div class="catalog_course_desc">Associate level certification is granted to those learners, who proved their basic knowledge of Plesk Obsidian, its licensing, and the Plesk Partner Program.</div></td></tr><tr><td></td><td></td><td></td><td></td><td><div class="span1 catalog_course_avatar text-center"><a href="https://university.plesk.com/catalog/info/id:342" ><img class="tl-catalog-course-avatar-image avatar-square tl-course-avatar" src="https://d3j0t7vrtr92dk.cloudfront.net/plesk/1568866188_course_icon_obsidian_professional.png?" alt="Plesk Obsidian Professional (OBS-2-PRO)" title="Plesk Obsidian Professional (OBS-2-PRO)" /></a></div><div class="tl-course-rating">
+										<div id="courserating" class="average-rating courserating" data-rateit-mode="font" data-rateit-value="4.75" data-rateit-readonly="true"></div>
+									</div></td><td><div class="catalog_categories_title" title="Plesk / Plesk Obsidian"><div class="d-inline-block">Plesk</div> / <div class="d-inline-block">Plesk Obsidian</div></div><span class="catalog_course_name tl-bold-item"><a href="https://university.plesk.com/catalog/info/id:342" ><span title='Plesk Obsidian Professional' class='tl-formatted-course-name'>Plesk Obsidian Professional</span><span class="tl-catalog-course-code">&nbsp;(OBS-2-PRO)</span></a></span><div class="catalog_course_desc">After completing this course, you will be able to install, configure, operate, and administer a web hosting server with the Plesk hosting platform.
+
+To accomplish this objective, you will learn to:
+
+- Install Plesk on a new server or deploy...</div></td></tr><tr><td></td><td></td><td></td><td></td><td><div class="span1 catalog_course_avatar text-center"><a href="https://university.plesk.com/catalog/info/id:343" ><img class="tl-catalog-course-avatar-image avatar-square tl-course-avatar" src="https://d3j0t7vrtr92dk.cloudfront.net/plesk/1568866173_course_icon_obsidian_professional_exam.png?" alt="Plesk Obsidian Professional Certification (OBS-2-PRO-EXAM)" title="Plesk Obsidian Professional Certification (OBS-2-PRO-EXAM)" /></a></div><div class="tl-course-rating">
+										<div id="courserating" class="average-rating courserating" data-rateit-mode="font" data-rateit-value="5" data-rateit-readonly="true"></div>
+									</div></td><td><div class="catalog_categories_title" title="Plesk / Plesk Obsidian / Exams">... / <div class="d-inline-block">Plesk Obsidian</div> / <div class="d-inline-block">Exams</div></div><span class="catalog_course_name tl-bold-item"><a href="https://university.plesk.com/catalog/info/id:343" ><span title='Plesk Obsidian Professional Certification' class='tl-formatted-course-name'>Plesk Obsidian Professional Certification</span><span class="tl-catalog-course-code">&nbsp;(OBS-2-PRO-EXAM)</span></a></span><div class="catalog_course_desc">Professional level certification is granted to those learners, who proved their knowledge of how to install, set up and use Plesk Obsidian to provide hosting services.</div></td></tr><tr><td></td><td></td><td></td><td></td><td><div class="span1 catalog_course_avatar text-center"><a href="https://university.plesk.com/catalog/info/id:344" ><img class="tl-catalog-course-avatar-image avatar-square tl-course-avatar" src="https://d3j0t7vrtr92dk.cloudfront.net/plesk/1587381960_course_icon_obsidian_linexp.png?" alt="Plesk Obsidian for Linux Expert (OBS-3-LINEXP)" title="Plesk Obsidian for Linux Expert (OBS-3-LINEXP)" /></a></div><div class="tl-course-rating">
+										<div id="courserating" class="average-rating courserating" data-rateit-mode="font" data-rateit-value="5" data-rateit-readonly="true"></div>
+									</div></td><td><div class="catalog_categories_title" title="Plesk / Plesk Obsidian"><div class="d-inline-block">Plesk</div> / <div class="d-inline-block">Plesk Obsidian</div></div><span class="catalog_course_name tl-bold-item"><a href="https://university.plesk.com/catalog/info/id:344" ><span title='Plesk Obsidian for Linux Expert' class='tl-formatted-course-name'>Plesk Obsidian for Linux Expert</span><span class="tl-catalog-course-code">&nbsp;(OBS-3-LINEXP)</span></a></span><div class="catalog_course_desc">This course is an interactive guide to advanced server administration and troubleshooting tasks for web hosting providers. By the end of this course, you will be ready to take the Plesk Obsidian for Linux Expert-level certification exam....</div></td></tr><tr><td></td><td></td><td></td><td></td><td><div class="span1 catalog_course_avatar text-center"><a href="https://university.plesk.com/catalog/info/id:345" ><img class="tl-catalog-course-avatar-image avatar-square tl-course-avatar" src="https://d3j0t7vrtr92dk.cloudfront.net/plesk/1587382065_course_icon_obsidian_linexp_exam.png?" alt="Plesk Obsidian for Linux Expert Certification (OBS-3-LINEXP-EXAM)" title="Plesk Obsidian for Linux Expert Certification (OBS-3-LINEXP-EXAM)" /></a></div><div class="tl-course-rating">
+										<div id="courserating" class="average-rating courserating" data-rateit-mode="font" data-rateit-value="3" data-rateit-readonly="true"></div>
+									</div></td><td><div class="catalog_categories_title" title="Plesk / Plesk Obsidian / Exams">... / <div class="d-inline-block">Plesk Obsidian</div> / <div class="d-inline-block">Exams</div></div><span class="catalog_course_name tl-bold-item"><a href="https://university.plesk.com/catalog/info/id:345" ><span title='Plesk Obsidian for Linux Expert Certification' class='tl-formatted-course-name'>Plesk Obsidian for Linux Expert Certification</span><span class="tl-catalog-course-code">&nbsp;(OBS-3-LINEXP-EXAM)</span></a></span><div class="catalog_course_desc">Expert-level certification is granted to those learners who prove their knowledge of how to update and maintain Plesk, solve technical issues with Plesk and hosting services.</div></td></tr><tr><td></td><td></td><td></td><td></td><td><div class="span1 catalog_course_avatar text-center"><a href="https://university.plesk.com/catalog/info/id:272" ><img class="tl-catalog-course-avatar-image avatar-square tl-course-avatar" src="https://d3j0t7vrtr92dk.cloudfront.net/plesk/1517204397_course_icon_acronis.png?" alt="Acronis Backup" title="Acronis Backup" /></a></div><div class="tl-course-rating">
+										<div id="courserating" class="average-rating courserating" data-rateit-mode="font" data-rateit-value="5" data-rateit-readonly="true"></div>
+									</div></td><td><div class="catalog_categories_title" title="Plesk / Extensions"><div class="d-inline-block">Plesk</div> / <div class="d-inline-block">Extensions</div></div><span class="catalog_course_name tl-bold-item"><a href="https://university.plesk.com/catalog/info/id:272" ><span title='Acronis Backup' class='tl-formatted-course-name'>Acronis Backup</span></a></span><div class="catalog_course_desc">In this course, you will learn about a new extension for Plesk Onyx - Acronis Backup. 
+
+The Acronis Backup extension for Plesk enables reliable cloud backups for Plesk web hosting servers, as well as granular, self-service recovery for web...</div></td></tr><tr><td></td><td></td><td></td><td></td><td><div class="span1 catalog_course_avatar text-center"><a href="https://university.plesk.com/catalog/info/id:330" ><img class="tl-catalog-course-avatar-image avatar-square tl-course-avatar" src="https://d3j0t7vrtr92dk.cloudfront.net/plesk/1555303830_course_icon_kolab_seafile.png?" alt="Business email and private file cloud with Plesk Premium Email and Seafile" title="Business email and private file cloud with Plesk Premium Email and Seafile" /></a></div><div class="tl-course-rating">
+										<div id="courserating" class="average-rating courserating" data-rateit-mode="font" data-rateit-value="0" data-rateit-readonly="true"></div>
+									</div></td><td><div class="catalog_categories_title" title="Plesk / Extensions"><div class="d-inline-block">Plesk</div> / <div class="d-inline-block">Extensions</div></div><span class="catalog_course_name tl-bold-item"><a href="https://university.plesk.com/catalog/info/id:330" ><span title='Business email and private file cloud with Plesk Premium Email and Seafile' class='tl-formatted-course-name'>Business email and private file cloud with Plesk Premium Email and Seafile</span></a></span><div class="catalog_course_desc">By the time you complete this course, you will be able to configure and maintain a corporate mail server and private cloud using Plesk Premium Email and Seafile. 
+
+You will be able to complete the following tasks:
+
+- Estimate total cost of...</div></td></tr><tr><td></td><td></td><td></td><td></td><td><div class="span1 catalog_course_avatar text-center"><a href="https://university.plesk.com/catalog/info/id:210" ><img class="tl-catalog-course-avatar-image avatar-square tl-course-avatar" src="https://d3j0t7vrtr92dk.cloudfront.net/plesk/1490181193_EXT-Git.png?" alt="Deploying Web Applications with Git" title="Deploying Web Applications with Git" /></a></div><div class="tl-course-rating">
+										<div id="courserating" class="average-rating courserating" data-rateit-mode="font" data-rateit-value="5" data-rateit-readonly="true"></div>
+									</div></td><td><div class="catalog_categories_title" title="Plesk / Extensions"><div class="d-inline-block">Plesk</div> / <div class="d-inline-block">Extensions</div></div><span class="catalog_course_name tl-bold-item"><a href="https://university.plesk.com/catalog/info/id:210" ><span title='Deploying Web Applications with Git' class='tl-formatted-course-name'>Deploying Web Applications with Git</span></a></span><div class="catalog_course_desc">In this module, you will learn how to use Git to maintain and publish web sites in Plesk Onyx.
+
+Prerequisites to attending this course are:
+- Knowledge of Plesk on the level provided by Plesk Onyx Professional course (certification - optional)
+-...</div></td></tr>
+			</tbody>
+		</table>
+	</div>
+
+	<script type="text/javascript">
+		var gridExportLimit = 50000;
+		$(document).ready(function(){
+			myportal.grid.create('grid_course_catalog', [{"className":"tl-align-left","orderable":true,"visible":false},{"className":"tl-align-left","orderable":true,"visible":false},{"className":"tl-align-left","orderable":true,"visible":false},{"className":"tl-align-left","orderable":true,"visible":false},{"className":"tl-align-left","width":"16%","orderable":true,"searchable":false},{"className":"tl-align-left","width":"84%","orderable":false,"searchable":false}], '<"tl-grid-course-catalog"f>t<"tl-grid-footer"pi>', 'https://university.plesk.com/catalog/listcourses', [[0, 'asc']], 34, 1, false, '', '');
+		});
+	</script></div>
+<div class="tl-content-sidebar tl-catalog-sidebar">
+	<div class='tl-course-catalog-categories-bundles' data-load-more-preload="course-categories">
+		<span><a href="https://university.plesk.com/catalog">Categories</a></span>
+	</div>
+	<hr style='margin: 8px 0px;'/>
+	<div id="tl-course-catalog-tree" class="tl-tree-course-catalog tl-catalog-sidebar_load-more-container load-more_container" data-load-more-preload="course-categories" data-load-more-container-group="course-catalog" data-load-more-container="course-categories" style="display: none;">[{"id":"52","name":"Plesk","price":"0","parent_id":0,"previous_id":0,"isFolder":false,"children":[{"id":"21","name":"Extensions","price":"0","parent_id":"52","previous_id":0,"title":"Extensions &lt;span class=\"tl-category-courses-count\"&gt;(10)&lt;\/span&gt;","key":"21","type":"categories","expand":true,"icon":false,"tooltip":"Extensions (10)","href":"https:\/\/university.plesk.com\/catalog\/index\/cat:21","addClass":"course_catalog_category"},{"id":"44","name":"Plesk Obsidian","price":"0","parent_id":"52","previous_id":0,"title":"Plesk Obsidian &lt;span class=\"tl-category-courses-count\"&gt;(9)&lt;\/span&gt;","key":"44","type":"categories","expand":true,"icon":false,"tooltip":"Plesk Obsidian (9)","href":"https:\/\/university.plesk.com\/catalog\/index\/cat:44","addClass":"course_catalog_category","isFolder":false,"children":[{"id":"46","name":"Exams","price":"0","parent_id":"44","previous_id":0,"title":"Exams &lt;span class=\"tl-category-courses-count\"&gt;(4)&lt;\/span&gt;","key":"46","type":"categories","expand":true,"icon":false,"tooltip":"Exams (4)","href":"https:\/\/university.plesk.com\/catalog\/index\/cat:46","addClass":"course_catalog_category"}]},{"id":"13","name":"Plesk Onyx","price":"0","parent_id":"52","previous_id":0,"title":"Plesk Onyx &lt;span class=\"tl-category-courses-count\"&gt;(11)&lt;\/span&gt;","key":"13","type":"categories","expand":true,"icon":false,"tooltip":"Plesk Onyx (11)","href":"https:\/\/university.plesk.com\/catalog\/index\/cat:13","addClass":"course_catalog_category","isFolder":false,"children":[{"id":"14","name":"Exams","price":"0","parent_id":"13","previous_id":0,"title":"Exams &lt;span class=\"tl-category-courses-count\"&gt;(4)&lt;\/span&gt;","key":"14","type":"categories","expand":true,"icon":false,"tooltip":"Exams (4)","href":"https:\/\/university.plesk.com\/catalog\/index\/cat:14","addClass":"course_catalog_category"}]}],"title":"Plesk &lt;span class=\"tl-category-courses-count\"&gt;(30)&lt;\/span&gt;","tooltip":"Plesk (30)","key":"52","type":"categories","expand":true,"icon":false,"addClass":"course_catalog_category"},{"id":"49","name":"SolusIO","price":"0","parent_id":0,"previous_id":0,"isFolder":false,"children":[{"id":"50","name":"Exams","price":"0","parent_id":"49","previous_id":0,"title":"Exams &lt;span class=\"tl-category-courses-count\"&gt;(1)&lt;\/span&gt;","key":"50","type":"categories","expand":true,"icon":false,"tooltip":"Exams (1)","href":"https:\/\/university.plesk.com\/catalog\/index\/cat:50","addClass":"course_catalog_category"}],"title":"SolusIO &lt;span class=\"tl-category-courses-count\"&gt;(2)&lt;\/span&gt;","tooltip":"SolusIO (2)","key":"49","type":"categories","expand":true,"icon":false,"addClass":"course_catalog_category"},{"id":"42","name":"SolusVM","price":"0","parent_id":0,"previous_id":0,"title":"SolusVM &lt;span class=\"tl-category-courses-count\"&gt;(1)&lt;\/span&gt;","tooltip":"SolusVM (1)","key":"42","type":"categories","expand":true,"icon":false,"addClass":"course_catalog_category"},{"id":"41","name":"XOVI","price":"0","parent_id":0,"previous_id":0,"title":"XOVI &lt;span class=\"tl-category-courses-count\"&gt;(1)&lt;\/span&gt;","tooltip":"XOVI (1)","key":"41","type":"categories","expand":true,"icon":false,"addClass":"course_catalog_category"}]</div>
+	<div data-load-more-preload="course-categories" class="tl-catalog-sidebar_load-more--wrap load-more_wrap-btn load-more_wrap-btn--hidden">
+		<button data-load-more="course-categories" data-load-more-keep-state="course-categories" class="btn load-more_btn" >more</button>
+	</div>
+
+</div>
+
+				</div>
+			</div>
+		</div></div>
+<div class="modal fade hide" id="tl-catalog-login-signup" style="outline: none;" tabindex="-1">
+	<div class="modal-header">
+		<a href="javascript:void(0)" class="close" data-dismiss="modal">&times;</a>
+		<h3 id="tl-catalog-modal-header"></h3>
+	</div>
+	<div class="modal-body">
+		<p id="tl-catalog-modal-body">
+			<a href="javascript:void(0)" class="btn btn-primary" id="tl-catalog-login">Login</a>
+						&nbsp;<a href="javascript:void(0)" class="btn btn-primary" id="tl-catalog-signup">Signup</a>
+					</p>
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		var categoryFiltered = false;
+		var categoryFilter = '';
+		var ids = '';
+
+		$('.tl-grid-course-catalog').append('<div class="btn-group pull-right hidden-phone" id="tl-catalog-switcher" style="margin-left: 10px;" data-toggle="buttons-radio"><button type="button" class="btn catalog-switcher-button" id="catalog-mode-list"><i class="icon-th-list tl-icon17"></i></button><button type="button" class="btn catalog-switcher-button" id="catalog-mode-grid"><i class="icon-th tl-icon17"></i></button></div>');
+		var catalogMode = 'list';
+		var sortingTypes = '<div class="dropdown tl-grid-catalog-sorting-wrapper pull-right hidden-phone"><a href="#" class="dropdown-toggle tl-catalog-sorting pull-right btn" data-toggle="dropdown" data-target="#" role="button" title="Order"><i class="icon-layers tl-icon20"></i><span class="tl-current-sorting-type">Name</span></a><ul class="dropdown-menu" role="menu"><li class="nav-header">Order</li>';
+
+				sortingTypes += '<li><a class="tl-cursor-pointer sorting-type-option active-sorting-type" href="javascript:void(0)" data-sortingtype="name">Name</a></li>';
+				sortingTypes += '<li><a class="tl-cursor-pointer sorting-type-option " href="javascript:void(0)" data-sortingtype="lastupdate_date">Date</a></li>';
+				sortingTypes += '<li><a class="tl-cursor-pointer sorting-type-option " href="javascript:void(0)" data-sortingtype="price">Price</a></li>';
+				sortingTypes += '<li><a class="tl-cursor-pointer sorting-type-option " href="javascript:void(0)" data-sortingtype="rating">Rating</a></li>';
+		
+		sortingTypes += '</ul></div>';
+		$('.tl-grid-course-catalog').append(sortingTypes);
+
+		$('.tl-tree-course-catalog ul.dynatree-container > li').last().removeClass('dynatree-lastsib');	// last category in the right sidebar
+		$('.tl-tree-course-catalog ul.dynatree-container li').last().find('span:first .dynatree-checkbox').css('margin-bottom', '0px');	// last category in the right sidebar
+
+		$('.sorting-type-option').on('click', function(){
+			if(ids != ''){
+				var url_ = 'https://university.plesk.com/catalog/listcourses/catalog-sorting-type:##sorting-type##,categories:##categories##'.replace('##categories##', ids).replace('##sorting-type##', $(this).data('sortingtype'));
+			}
+			else{
+								var url_ = 'https://university.plesk.com/catalog/listcourses/catalog-sorting-type:##sorting-type##'.replace('##sorting-type##', $(this).data('sortingtype'));
+							}
+
+			$('.sorting-type-option').removeClass('active-sorting-type');
+			$(this).addClass('active-sorting-type');
+			$('.tl-current-sorting-type').text($(this).text());
+
+			var table = $('#grid_course_catalog').DataTable();
+			table.ajax.url(url_).load();
+		});
+
+		if(catalogMode == 'list'){
+			$('#catalog-mode-list').addClass('active');
+			$('#grid_course_catalog tbody').addClass('listCourseCatalog');
+
+			var table = $('#grid_course_catalog').DataTable();
+			table.column(5).visible(true);
+		}
+		else{
+			myportal.content.gridModeCourseNameBackground = $('.grid-striped tbody tr:nth-child(2n) td').css('background-color');
+			$('#catalog-mode-grid').addClass('active');
+			$('#grid_course_catalog tbody').addClass('gridCourseCatalog');
+
+			var table = $('#grid_course_catalog').DataTable();
+			table.column(5).visible(false);
+
+			table.page.len(21);
+			table.draw();
+		}
+
+        $(document).on('click', '.catalog-switcher-button', function(){
+			$('#grid_course_catalog').css('visibility', 'hidden');
+			var table = $('#grid_course_catalog').DataTable();
+
+			if($(this).attr('id') == 'catalog-mode-list'){
+				$('#grid_course_catalog tbody').addClass('listCourseCatalog').removeClass('gridCourseCatalog');
+				table.page.len(10);
+
+				if(ids != ''){
+					var url_ = 'https://university.plesk.com/catalog/listcourses/catalog-mode:list,categories:##categories##'.replace('##categories##', ids);
+				}
+				else{
+										var url_ = 'https://university.plesk.com/catalog/listcourses/catalog-mode:list';
+									}
+
+				table.column(5).visible(true);
+			}
+			else{
+				myportal.content.gridModeCourseNameBackground = $('.grid-striped tbody tr:nth-child(2n) td').css('background-color');
+				$('#grid_course_catalog tbody').removeClass('listCourseCatalog').addClass('gridCourseCatalog');
+				table.page.len(21);
+
+				if(ids != ''){
+					var url_ = 'https://university.plesk.com/catalog/listcourses/catalog-mode:grid,categories:##categories##'.replace('##categories##', ids);
+				}
+				else{
+										var url_ = 'https://university.plesk.com/catalog/listcourses/catalog-mode:grid';
+									}
+
+				table.column(5).visible(false);
+			}
+
+			table.ajax.url(url_).load();
+		});
+
+		$('#grid_course_catalog').on('draw.dt', function(){
+			$('#grid_course_catalog').css('visibility', 'visible');
+						$('.courserating').rateit({ max: 5, step: 1 });
+					});
+
+				$('.courserating').rateit({ max: 5, step: 1 });
+		
+		$('#grid_course_catalog tbody').on('click', 'tr', function(event){
+			var ids_ = '';
+
+			$('.dynatree-selected').each(function(i){
+				var id_ = $(this).parents('li:first').attr('id').replace('dynatree-id-', '');
+				ids_ = ids_ + id_ + '-';
+			});
+
+			$.cookie("catalog_selected_categories", ids_, {expires: null, path: '/', domain: 'university.plesk.com', secure: false});
+            $.cookie("catalog_category_visible_get_all", $('.tl-get-category').is(':visible') ? '1' : '0', {expires: null, path: '/', domain: 'university.plesk.com', secure: false});
+			var $target = $(event.target);
+
+			if(!($target.hasClass('tl-get-catalog-course') || $target.hasClass('tl-get-subscription') || $target.hasClass('tl-addto-subscription') || $target.hasClass('tl-catalog-course-avatar-image') || $target.hasClass('tl-catalog-course-code') || $target.hasClass('tl-formatted-course-name'))){
+				$(location).attr('href', $(this).children('td').find('a:first').attr('href'));
+			}
+		});
+
+        $(document).on('click', '.dynatree-checkbox', function(e){
+			var nodeId = $(this).parents('li:first').attr('id').replace('dynatree-id-', '');
+			ids = '';
+
+			if (!(e.originalEvent === undefined)) { //We check if event was fire as mouse click ( ex. $("demo").click() ) or triggered ( ex. $("demo").trigger("click") )
+				if(!$('#dynatree-id-' + nodeId).prop("dtnode").isSelected()){
+					$('#dynatree-id-' + nodeId + ' a.dynatree-title:first').removeClass('course-catalog-selected-category');
+
+					$('#dynatree-id-' + nodeId + ' li').each(function () { // When de-selecting a node, de-select all children also
+						$(this).prop("dtnode").select(false);
+						$(this).find('a.dynatree-title:first').removeClass('course-catalog-selected-category'); // strip the class from a selected child also
+					});
+				}
+				else{
+					$('#dynatree-id-' + nodeId + ' li').each(function () { // When selecting a node, select all children also!
+						$(this).prop("dtnode").select(true);
+					});
+				}
+			}
+
+
+			$('.dynatree-selected').each(function(i){
+				var id = $(this).parents('li:first').attr('id').replace('dynatree-id-', '');
+				ids = ids + id + '-';
+			});
+
+			if(ids != ''){
+				var url_ = 'https://university.plesk.com/catalog/listcourses/categories:##categories##'.replace('##categories##', ids);
+			}
+			else{
+				var url_ = 'https://university.plesk.com/catalog/listcourses';
+			}
+
+			$('.tl-buy-many-courses').hide();
+			var table = $('#grid_course_catalog').DataTable();
+			table.ajax.url(url_).load();
+		});
+
+		var categoryId = '-1';
+
+		if(categoryId != '-1'){
+			$('#dynatree-id-' + categoryId + ' a.dynatree-title:first').addClass('course-catalog-selected-category');
+			$('#category-discount-' + categoryId + ' a').addClass('course-catalog-selected-category');
+			$('#dynatree-id-' + categoryId).prop("dtnode").select(true);
+		}
+
+		
+		
+		
+		
+		
+		
+		
+		
+		        $(document).on('click', '.tl-get-course', function(){
+			if($(this).hasClass('disabled')){
+				return false;
+			}
+
+			$('.tl-get-category').removeClass('tl-get-category-active');
+			$('.tl-get-group').removeClass('tl-get-group-active');
+			$('.tl-get-subscription').removeClass('tl-get-subscription-active');
+
+			$('.tl-get-course').each(function(i){
+				$(this).removeClass('tl-get-course-active');
+			});
+
+			$(this).addClass('tl-get-course-active');
+			$('#tl-catalog-login-signup').modal();
+		});
+
+		$('#tl-catalog-login-signup').on('show', function(){
+			var getCourse = $('.tl-get-course-active');
+			var getCategory = $('.tl-get-category-active');
+			var getGroup = $('.tl-get-group-active');
+			$('#tl-catalog-modal-desc').remove();
+
+			if(getCourse.length != 0){
+				$('#tl-catalog-modal-header').html(getCourse.data('course'));
+
+								$('#tl-catalog-modal-body').prepend("<p id='tl-catalog-modal-desc'>You selected to get the course <b>##course-name##</b>. Please Login or Signup to get it.</p>".replace('##course-name##', getCourse.data('course')));
+							}
+			else if(getCategory.length != 0){
+				$('#tl-catalog-modal-header').text(getCategory.data('categoryname'));
+
+								$('#tl-catalog-modal-body').prepend("<p id='tl-catalog-modal-desc'>You selected to get the courses of bundle <b>##bundle-name##</b>. Please Login or Signup to get it.</p>".replace('##bundle-name##', getCategory.data('categoryname')));
+							}
+			else if(getGroup.length != 0){
+				$('#tl-catalog-modal-header').text(getGroup.data('groupname'));
+
+								$('#tl-catalog-modal-body').prepend("<p id='tl-catalog-modal-desc'>You selected to get the courses of bundle <b>##bundle-name##</b>. Please Login or Signup to get it.</p>".replace('##bundle-name##', getGroup.data('groupname')));
+							}
+			else if($('.tl-get-subscription-active').length != 0){
+				$('#tl-catalog-modal-header').text("Subscription");
+
+								$('#tl-catalog-modal-body').prepend("<p id='tl-catalog-modal-desc'>You selected to subscribe for unlimited access to all paid courses. Please Login or Signup to subscribe.</p>");
+							}
+		});
+
+        $(document).on('click', '#tl-catalog-login', function(){
+						$('#tl-catalog-login-signup').modal('hide');
+			$('#tl-catalog-login-modal').modal();
+			$("#login-referrer").val('catalog-index');
+			setHiddenFields();
+					});
+
+		        $(document).on('click', '#tl-catalog-signup', function(){
+			openAuthModalAt('signup', 'catalog');
+			$("#signup-referrer").val('catalog-index');
+			setHiddenFields();
+		});
+		
+        $(document).on('click', '.tl-get-category', function(){
+			if($(this).hasClass('disabled')){
+				return false;
+			}
+
+			$('.tl-get-course').each(function(i){
+				$(this).removeClass('tl-get-course-active');
+			});
+
+			$('.tl-get-group').removeClass('tl-get-group-active');
+			$('.tl-get-subscription').removeClass('tl-get-subscription-active');
+			$(this).addClass('tl-get-category-active');
+			$('#tl-catalog-login-signup').modal();
+		});
+
+        $(document).on('click', '.tl-get-group', function(){
+			if($(this).hasClass('disabled')){
+				return false;
+			}
+
+			$('.tl-get-course').each(function(i){
+				$(this).removeClass('tl-get-course-active');
+			});
+
+			$('.tl-get-category').removeClass('tl-get-category-active');
+			$('.tl-get-subscription').removeClass('tl-get-subscription-active');
+			$(this).addClass('tl-get-group-active');
+			$('#tl-catalog-login-signup').modal();
+		});
+
+        $(document).on('click', '.tl-get-subscription', function(){
+			$('.tl-get-course').each(function(i){
+				$(this).removeClass('tl-get-course-active');
+			});
+
+			$('.tl-get-category').removeClass('tl-get-category-active');
+			$('.tl-get-group').removeClass('tl-get-group-active');
+			$(this).addClass('tl-get-subscription-active');
+			$('#tl-catalog-login-signup').modal();
+		});
+		
+		$('.dynatree-container').on('click', function(event){
+			var $target = $(event.target);
+
+			if ($target.hasClass('dynatree-title')) {
+				$target.siblings('.dynatree-checkbox')[0].click();
+
+				return false;
+			}
+		});
+
+		$('#tl-catalog-payment-modal').on('hidden', function(){
+			$('#tl-catalog-payment-modal .tl-catalog-payment-alert').hide();
+		});
+
+		var courseCatalogRefreshedPage = false;
+		$("#tl-course-catalog-bundles").delegate('a', 'click', function(){
+			courseCatalogRefreshedPage = true
+		});
+
+		window.onbeforeunload = function (e) {
+			if (courseCatalogRefreshedPage) {
+				removeUserActionsPreferencesBasedOnKey('store_and_replace_preferences');
+			}
+			return null;
+		};
+
+		initListenersOnSearchInputs();
+		localStorage.setItem('store_and_replace_preferences', 'catalog_user_actions');
+		getParamsFromUrlWhenPageLoads("catalog_user_actions");
+	});
+
+
+
+		function setHiddenFields(){
+		var getCourse = $('.tl-get-course-active');
+		var getCategory = $('.tl-get-category-active');
+		var getGroup = $('.tl-get-group-active');
+		var getSubscription = $('.tl-get-subscription-active');
+
+		(getCourse.length != 0) ? $('.tl-catalog-course-id').val(getCourse.data('id')) : $('.tl-catalog-course-id').val('0');
+		(getCategory.length != 0) ? $('.tl-catalog-category-id').val(getCategory.data('category')) : $('.tl-catalog-category-id').val('0');
+		(getGroup.length != 0) ? $('.tl-catalog-group-id').val(getGroup.data('group')) : $('.tl-catalog-group-id').val('0');
+		(getSubscription.length != 0) ? $('.tl-catalog-get-subscription').val(getSubscription.data('courseid')) : $('.tl-catalog-get-subscription').val('0');
+	}
+	</script>
+			</div>	</div>
+	
+		<div id="tl-gamification-points-message" class="hide hidden-phone text-center tl-bold-item"></div>
+	<div id="tl-gamification-badges-message" class="hide hidden-phone">
+		<div class="tl-badge-image-message-wrapper">
+			<img class="tl-badge-image pull-left image60x60"/>
+			<div class="tl-badge-message text-center tl-bold-item"></div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade hide" id="tl-confirm" style="outline: none;" tabindex="-1">
+	<div class="modal-header">
+		<a href="javascript:void(0)" class="close" data-dismiss="modal" >&times;</a>
+		<h3 class="tl-modal-header">Notice</h3>
+	</div>
+	<div class="modal-body"><p id="tl-modal-body"></p></div>
+	<div class="modal-footer">
+		<a id="tl-confirm-submit" class="btn btn-danger" ><i class="icon-trash"></i>&nbsp;Delete</a>
+		<a id="tl-confirm-continue" class="btn btn-danger hide" ><i class="icon-trash"></i>&nbsp;Delete, don't keep asking</a>
+		<a class="btn" data-dismiss="modal" >Cancel</a>
+	</div>
+</div>
+<div class="modal fade hide" id="tl-confirm-double" style="outline: none;" tabindex="-1">
+	<div class="modal-header">
+		<a href="javascript:void(0)" class="close" data-dismiss="modal">&times;</a>
+		<h3 class="tl-modal-header-double">Notice</h3>
+	</div>
+	<div class="modal-body"><p id="tl-modal-body-double"></p></div>
+	<div class="modal-footer">
+		<a id="tl-confirm-submit-double" class="btn btn-danger"><i class="icon-trash"></i>&nbsp;Delete</a>
+		<a id="tl-confirm-submit-double2" class="btn btn-danger"></a>
+		<a class="btn" data-dismiss="modal">Cancel</a>
+	</div>
+</div>
+<div class="modal fade hide" id="tl_leavepage_confirm" style="outline: none;" tabindex="-1">
+	<div class="modal-header">
+		<a href="javascript:void(0)" class="close" data-dismiss="modal">&times;</a>
+		<h3>Notice</h3>
+	</div>
+	<div class="modal-body"><p></p></div>
+	<div class="modal-footer">
+		<a id="tl-leavepage" class="btn btn-danger"><i class="icon-trash"></i>&nbsp;Discard changes</a>
+		<a class="btn" data-dismiss="modal">Cancel</a>
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+	$('body').on('touchstart.dropdown', '.dropdown-menu', function(e){ e.stopPropagation(); });	// Fix for https://github.com/twitter/bootstrap/issues/2975#issuecomment-6659992, should be removed if fixed in twitter bs 2.1.2 (or whenever)
+	myportal.app.translations['search'] = "Search";
+	myportal.app.translations['Completed'] = "Completed";
+	myportal.app.translations['cancel'] = "Cancel";
+	myportal.app.translations['ok'] = "Ok";
+	myportal.app.translations['save'] = "Save";
+	myportal.app.translations['save-as-new'] = "Save as new";
+	myportal.app.translations['more'] = "more";
+	myportal.app.translations['less'] = "less";
+	myportal.app.translations['remove'] = "Remove";
+	myportal.app.translations['reset'] = "Reset";
+	myportal.app.translations['refresh'] = "Refresh";
+	myportal.app.translations['notice'] = "Notice";
+	myportal.app.translations['reset-remove-certification'] = "Reset & remove certification";
+	myportal.app.translations['activate'] = "activate";
+	myportal.app.translations['deactivate'] = "deactivate";
+	myportal.app.translations['search-courses'] = "Search courses";
+	myportal.app.translations['add-image'] = "Add image";
+	myportal.app.translations['change-image'] = "Change image";
+	myportal.app.translations['accepted-files'] = "Accepted files";
+	myportal.app.translations['max-file-size'] = "Max file size";
+	myportal.app.translations['switch-editor'] = "Switch between HTML and Source view";
+	myportal.app.translations['grid-more-results'] = "Show more results per page";
+	myportal.app.translations['grid-less-results'] = "Show less results per page";
+	myportal.app.translations['image-course-files'] = "Use an image from course files";
+	myportal.app.translations['use-image-url'] = "Use an image URL (http://...)";
+	myportal.app.translations['width'] = "Width";
+	myportal.app.translations['padding'] = "Padding";
+	myportal.app.translations['align-default'] = "Align (default)";
+	myportal.app.translations['align-left'] = "Align left";
+	myportal.app.translations['align-right'] = "Align right";
+	myportal.app.translations['make-changes'] = "Save changes";
+	myportal.app.translations['grid-start-end-total'] = "_START_ to _END_ of _TOTAL_";
+	myportal.app.translations['export'] = "Export";
+	myportal.app.translations['save-as-csv'] = "Save as CSV";
+	myportal.app.translations['active-file-upload'] = "There is an active file upload transfer";
+	myportal.app.translations['upload-leave-page'] = "Are you sure you want to leave this page? File upload will stop and you will lose all uploaded data.";
+	myportal.app.translations['unsaved-changes'] = "There are unsaved changes";
+	myportal.app.translations['changes-leave-page'] = "Are you sure you want to leave this page? You will lose all unsaved changes.";
+	myportal.app.translations['discard-draft'] = "Are you sure you want to delete the autosave? This action cannot be undone.";
+	myportal.app.translations['restore-draft'] = "Are you sure you want to restore the autosave? This action cannot be undone.";
+	myportal.app.translations['add'] = "Add";
+	myportal.app.translations['added'] = "Added";
+	myportal.app.translations['processing'] = "Processing...";
+	myportal.app.translations['validate'] = "Validate";
+	myportal.app.translations['click-to-start'] = "Start";
+	myportal.app.translations['reset-password'] = "Reset password";
+	myportal.app.translations['operation-completed-successfully'] = "Operation completed successfully";
+	myportal.app.translations['points'] = "points";
+	myportal.app.translations['badges'] = "badges";
+	myportal.app.translations['help-videos-unavailable'] = "Videos are not currently available";
+	myportal.app.translations['next'] = "Next";
+	myportal.app.translations['previous'] = "Previous";
+	myportal.app.translations['your-rating'] = "Your rating";
+	myportal.app.translations['reset-your-rating'] = "Reset your rating";
+	myportal.app.translations['creating-export'] = "Creating the export file. Please wait...";
+	myportal.app.translations['no-results-found'] = "No results were found. Please try again.";
+	myportal.app.translations['login'] = "Login";
+	myportal.app.translations['crop'] = "Crop";
+	myportal.app.translations['apply'] = "Apply";
+	myportal.app.translations['preview-certification-error'] = "An error occurred while generating the preview, try again later";
+	myportal.app.translations['preview'] = "Preview";
+	myportal.app.translations['wait-preview-generation'] = "Please wait while generating the preview";
+
+	var isMobile = true;
+	var isRtl = false;
+	var general_css = 'https://university.plesk.com/index/css/fmt:1594213540,tn:25,tv:428,ct:1';
+	var editorMaxUploadSize = '10485760';
+	var editorFormattedMaxUploadSize = '10 MB';
+	var editorAcceptedFileTypes = 'gif|jpg|jpeg|png';
+	var editorFormattedAcceptedFileTypes = 'gif, jpg, jpeg, png';
+	var imageAcceptedFileTypes = 'gif|jpg|jpeg|png';
+	var imageMaxUploadSize = '3145728';
+	
+	var courseImageCanvasSizeWidth = '120';
+	var courseImageCanvasSizeHeight = '80';
+	
+	var datepickerFormat = 'dd/mm/yyyy';
+	var showSelect2 = false;
+	var currentUserId = "";
+	var currentUserName = "";
+	var currentUserEmail = "";
+	var currentUserCreatedOn = "";
+	var currentUserIntercomHash = '';
+	var myToken = "";
+	var myEffectiveDomain = 'university.plesk.com';
+	var myAdminDomain = '';
+	var gridExportChunkSize = 5000;
+	var gridExportProgressThreshold = 100;
+	var isDummy = false;
+	var sessionMaxLifeTime = 10800;
+	var checkSessionExpirationUrl = 'https://university.plesk.com/index/checksessionexpiration';
+	var logourRedirectUrl = '';
+	var enableRelogin = false;
+	</script>
+
+	<script type="text/javascript">// CookieBar code. Source: https://github.com/carlwoodhouse/jquery.cookieBar
+(function(e){e.cookie=function(o,i,n){if(arguments.length>1&&(!/Object/.test(Object.prototype.toString.call(i))||null===i||void 0===i)){if(n=e.extend({},n),null!==i&&void 0!==i||(n.expires=-1),"number"==typeof n.expires){var t=n.expires,r=n.expires=new Date;r.setDate(r.getDate()+t)}return i=String(i),document.cookie=[encodeURIComponent(o),"=",n.raw?i:encodeURIComponent(i),n.expires?"; expires="+n.expires.toUTCString():"",n.path?"; path="+n.path:"",n.domain?"; domain="+n.domain:"",n.secure?"; secure":""].join("")}n=i||{};for(var c,s=n.raw?function(e){return e}:decodeURIComponent,a=document.cookie.split("; "),u=0;c=a[u]&&a[u].split("=");u++)if(s(c[0])===o)return s(c[1]||"");return null},e.fn.cookieBar=function(o){var i=e.extend({closeButton:"none",hideOnClose:!0,secure:!1,path:"/",domain:""},o);return this.each(function(){var o=e(this);o.hide(),"none"==i.closeButton&&(o.append('<a class="cookiebar-close">Continue</a>'),e.extend(i,{closeButton:".cookiebar-close"})),"hide"!=e.cookie("cookiebar")&&o.show(),o.find(i.closeButton).click(function(){return i.hideOnClose&&o.hide(),e.cookie("cookiebar","hide",{path:i.path,secure:i.secure,domain:i.domain,expires:30}),o.trigger("cookieBar-close"),!1})})},e.cookieBar=function(o){e("body").prepend('<div class="ui-widget"><div style="display: none;" class="cookie-message ui-widget-header blue"><p>By using this website you allow us to place cookies on your computer. They are harmless and never personally identify you.</p></div></div>'),e(".cookie-message").cookieBar(o)}})(jQuery);
+
+// Call Google Tag javascript
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-K8WWVP');
+
+$(document).ready(function () {
+	// Fix for message img logout vulnerabilities
+	if (window.location.href.indexOf("/message/") > -1) {
+		$("form[name='msg_form']").submit(function() { 
+			$("textarea").each(function(){
+				var in_text = $(this).val();
+				$(this).val(in_text.replace(/&lt;/, ""));
+			});
+		});
+	}
+	
+	// Protection from tab-nabbing attack
+	$("a[target='_blank']").attr('rel', 'noreferrer');
+	
+	// Embed Google Tag code snippet
+	$(document.body).prepend("<!-- Google Tag Manager --><noscript><iframe src=\"//www.googletagmanager.com/ns.html?id=GTM-K8WWVP\" height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>");
+	
+	// Add HubSpot pixel
+	$('<scr' + 'ipt/>', { id: 'hs-script-loader', async: true, defer: true, type: 'text/javascript' , src: '//js.hs-scripts.com/1784136.js'}).appendTo(document.body);
+	
+	// Twitter
+	$(document.body).prepend("<scr" + "ipt>window.twttr = (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {}; if (d.getElementById(id)) return t; js = d.createElement(s); js.id = id; js.src = 'https://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.push(f); }; return t; }(document, 'script', 'twitter-wjs'));</scr" + "ipt>");
+
+	// Facebook
+	$(document.body).prepend('<div id="fb-root"></div><scr' + 'ipt>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.8"; fjs.parentNode.insertBefore(js, fjs); }(document, "script", "facebook-jssdk"));</scr' + 'ipt>');
+	
+	// Cookie Notice
+	if (window.location.href.match("/dashboard")) {
+		var cookie_message = 'This site uses cookies. Read our <a target="_blank" href="https://university.plesk.com/privacy-policy" style="text-decoration:underline;">Privacy Policy</a> to learn more.';
+		$('body').prepend('<div class="ui-widget"><div style="display: none;" class="cookie-message ui-widget-header blue"><p>' + cookie_message + ' <a class="close-cookie-notice">Got it!</a></p></div></div>');
+		$('.cookie-message').cookieBar({ closeButton: '.close-cookie-notice' });
+	}
+
+	// Privacy Policy & subscription
+	var gdpr_consent = 'I hereby provide my personal information above to Plesk for the purpose of associating it with my Plesk University account. I agree that my personal information may be stored and processed by Plesk (including cross-border processing) to track my learning activity in order to provide efficient training and certification services. See more details in <a target="_blank" href="https://university.plesk.com/privacy-policy" style="text-decoration:underline;">Plesk University Privacy Policy</a>.';
+	var gdpr_consent_revoke = '<strong><font color="ff0000">By clearing this checkbox, I revoke my consent for Plesk to store and process my personal information and request to delete my Plesk University account.</font></strong>';
+	var subscription_consent = '<a href="https://page.plesk.com/plesk_university_subscription" target="_blank" style="text-decoration: underline;">Subscribe to Plesk University newsletter</a> if you would like to receive periodic updates about Plesk University via email and participate in regular surveys.';
+
+	var create_button = $("input[value='Create account']");
+
+	if (window.location.href.match("/user/info/") || window.location.href.match("/catalog") || create_button.length > 0) {
+		$("label.control-label").css("font-weight", "bold");
+		
+		var privacy_statement = $("input[name='custom_field_3'] ~ span.help-block");
+		var subscribe_statement = $("input[name='custom_field_4'] ~ span.help-block");
+
+		privacy_statement.addClass('gdpr-notice');
+	
+		// if (window.location.href.match("/index/signup$")) {
+		if (window.location.href.match("/catalog") && currentUserEmail == "") {
+			$("#tl-catalog-login-modal").on("shown", function() {
+				//var create_button = $("input[type='submit']");
+				create_button.attr("disabled", true); 
+	        	
+				privacy_statement.html(gdpr_consent);
+				//subscribe_statement.html(subscription_consent);
+				subscribe_statement.parent().parent().remove();
+        		
+				var privacy_checkbox = $("input[name='custom_field_3']");
+			
+				privacy_checkbox.change(function() {
+					if(this.checked) {
+						create_button.attr("disabled", false);
+					} else {
+						create_button.attr("disabled", true);
+					}
+				});
+			});
+		} else if (create_button.length > 0) {
+			create_button.attr("disabled", true); 
+	
+			privacy_statement.html(gdpr_consent);
+			//subscribe_statement.html(subscription_consent);
+			subscribe_statement.parent().parent().remove();
+        		
+			var privacy_checkbox = $("input[name='custom_field_3']");
+			
+			privacy_checkbox.change(function() {
+				if(this.checked) {
+					create_button.attr("disabled", false);
+				} else {
+					create_button.attr("disabled", true);
+				}
+			});
+		} else {
+			privacy_statement.html(gdpr_consent + '<br><br>' + gdpr_consent_revoke);
+			subscribe_statement.parent().addClass('gdpr-notice');
+			subscribe_statement.parent().html(subscription_consent);	
+		}
+	}
+
+	// Hide test results from branch admins
+        if(window.location.hostname != "university.plesk.com") {
+		var current_title = document.title;
+		var new_title = current_title.replace(/^[^|]+/, "Plesk University ");
+		
+		document.title = new_title;
+		
+		if (window.location.href.indexOf("/testinfo/") > -1) 
+		{
+			$("table#tl-test-reports-list-users th:last-child()").remove();
+			$("table#tl-test-reports-list-users td:last-child()").remove();
+			$("div#tl-excel-export-group").remove();
+			$(".nav-tabs > li")[1].remove()
+		} 
+		else if (window.location.href.indexOf("/userinfo/") > -1) 
+		{
+			$(document).ajaxComplete(function() {
+				$("table#tl-user-reports-list-tests th:last-child()").remove();
+				$("table#tl-user-reports-list-tests td:last-child()").remove();
+			});
+		} 
+	}
+	
+	// password protection of exams
+	// test description must have the following in its description:
+	// <span id="exam-password" data-exam-password="1qazXSW@"></span>
+	var start_button = $(".tl-start-test-button");
+
+	if ($("#exam-password").length == 1 && start_button && currentUserEmail.match("@plesk.com$") == null) {
+		var exam_description = $("div.hero-unit");
+		exam_description.before('<div class="hero-unit text-center" id="exam-password-protection"><span><i class="icon-lock-1 tl-test-icon tl-big-glyph tl-cursor-default"></i></span><br/><br/>This exam must be accessed only while proctor is observing your actions. To limit access to this test without proctor, the test is protected by a password. Please, ask the proctor to enter the password below and click <strong>Submit</strong>:<br/><br/><form id="password-form"><input type="password" id="input-exam-password" /><br/><br/><a class="btn btn-large tl-start-test-button" id="submit-exam-password" name="submit-pass">Submit</a></form><br/><br/><span id="wrong-password" style="color: #f00; font-weight: bold; display: none;">Wrong password!</span></div>');
+	
+		var exam_protection = $("div#exam-password-protection");
+		exam_description.hide();
+	
+		var password_handler = function () {
+				if ($("#input-exam-password").val() == $("#exam-password").attr("data-exam-password")) {
+					exam_protection.hide();
+					exam_description.fadeIn(1000);
+				} else {
+					$("#wrong-password").show();
+				}
+			};
+			
+		$("#password-form").submit( function() { password_handler() ; return false; } );
+		$("#input-exam-password").click( function () { $("#wrong-password").hide(); } );
+		$("a#submit-exam-password").click( password_handler );
+	}
+
+	// Skip proctor instructions for members of Plesk Team
+	if ($("#proctor-intro-unit").length == 1 && currentUserEmail.match('@plesk.com$') != null && window.location.href.match("/edit/") == null && document.referrer.match("/trainer/") == null) {
+		$(".readability > div").html('<center>Skipping the introduction.</center>');
+		$(".tl-complete-button").trigger("click");
+	}
+
+	// Replace discussions with facebook community link
+	var discussions_block = $("div.tl-icons-block[onclick=\"location='https://university.plesk.com/discussion/index'\"]");
+	var facebook_community_url = "https://www.facebook.com/groups/2383013061934982/";
+
+	if (discussions_block.length != 0) {
+		discussions_icon = discussions_block.find("i.icon-comment");
+		discussions_icon.toggleClass("icon-facebook").toggleClass("icon-comment");
+		discussions_icon.css("left", "13px");
+		
+		discussions_label = discussions_block.find("div.tl-icon-label a[title='Join the community']");
+		discussions_label.attr("href", facebook_community_url).attr("target", "_blank");
+		
+		discussions_block.find("div.tl-icon-label > div:last-child > a").attr("href", facebook_community_url).attr("target", "_blank")
+
+		discussions_block.removeAttr("onclick");
+		//discussions_block.on("click", function() { window.open(facebook_community_url, "_blank"); })
+	}
+});</script><script type="text/javascript">
+		window.getTestIdAttr = function () {
+		return window.testIDAttr || "";
+	};
+	window.printTestId = function ( testID ) {
+		if ( window.testEnvActive && ( typeof testID !== 'undefined' ) ) {
+			return window.getTestIdAttr() + '=' + testID;
+		} else {
+			return '';
+		}
+	};
+	jQuery.fn.printTestId = function ( testID ) {
+	    var el = $(this[0]);
+		if ( window.testEnvActive && ( typeof testID !== 'undefined' ) ) {
+			el.attr(window.getTestIdAttr(), testID);
+		}
+	    return this;
+	};
+</script>
+
+</body>
+</html>

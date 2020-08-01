@@ -1,0 +1,658 @@
+[00:00:00] Build started
+[00:00:00] git clone -q -n --branch=v8.1.2 https://github.com/aaubry/YamlDotNet.git C:\projects\yamldotnet
+[00:00:01] git checkout -qf v8.1.2
+[00:00:02] Running Install scripts
+[00:00:02] git submodule update --init
+[00:00:03] Submodule 'BuildUtils.UnityPrerequisites' (https://github.com/aaubry/BuildUtils.UnityPrerequisites.git) registered for path 'BuildUtils.UnityPrerequisites'
+[00:00:03] Submodule 'yaml-test-suite' (https://github.com/yaml/yaml-test-suite) registered for path 'YamlDotNet.Test/yaml-test-suite'
+[00:00:04] Cloning into 'C:/projects/yamldotnet/BuildUtils.UnityPrerequisites'...
+[00:00:06] Cloning into 'C:/projects/yamldotnet/YamlDotNet.Test/yaml-test-suite'...
+[00:00:06] Submodule path 'BuildUtils.UnityPrerequisites': checked out '0db1240a03a5bdf9f4666c3b0fc511cc4622104a'
+[00:00:08] Submodule path 'YamlDotNet.Test/yaml-test-suite': checked out 'a12ee724ceb4ca16d592f674b07a5e77364fb6fe'
+[00:00:08] .\build.ps1 -Target Package
+[00:00:08] Preparing to run build script...
+[00:00:11] Running build script...
+[00:00:15] The assembly 'Cake.Incubator, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null' 
+[00:00:15] is referencing an older version of Cake.Core (0.28.0). 
+[00:00:15] For best compatibility it should target Cake.Core version 0.33.0.
+[00:00:15] The assembly 'Cake.SemVer, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null' 
+[00:00:15] is referencing an older version of Cake.Core (0.26.1). 
+[00:00:15] For best compatibility it should target Cake.Core version 0.33.0.
+[00:00:16] Namespace Cake.Incubator.EnvironmentExtensions excluded by code generation, affected methods:
+[00:00:16] 	method "EnvironmentVariable" excluded from code generation and will need to be fully qualified on ICakeContext.
+[00:00:22] 
+[00:00:22] ========================================
+[00:00:22] Clean
+[00:00:22] ========================================
+[00:00:22] 
+[00:00:22] ========================================
+[00:00:22] Restore-NuGet-Packages
+[00:00:22] ========================================
+[00:00:22] MSBuild auto-detection: using msbuild version '16.5.0.12403' from 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin'.
+[00:00:27] Restoring packages for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.Lib\YamlDotNet.PerformanceTests.Lib.csproj...
+[00:00:27] Restoring packages for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.Runner\YamlDotNet.PerformanceTests.Runner.csproj...
+[00:00:27]   GET https://api.nuget.org/v3-flatcontainer/aaubry.netframework.referenceassemblies.net35/index.json
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/benchmarkdotnet/index.json
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies/index.json
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/aaubry.netframework.referenceassemblies.net35/index.json 110ms
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/aaubry.netframework.referenceassemblies.net35/1.0.0-preview.1/aaubry.netframework.referenceassemblies.net35.1.0.0-preview.1.nupkg
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/aaubry.netframework.referenceassemblies.net35/1.0.0-preview.1/aaubry.netframework.referenceassemblies.net35.1.0.0-preview.1.nupkg 12ms
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies/index.json 188ms
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/benchmarkdotnet/index.json 190ms
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies/1.0.0-preview.1/microsoft.netframework.referenceassemblies.1.0.0-preview.1.nupkg
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/benchmarkdotnet/0.11.1/benchmarkdotnet.0.11.1.nupkg
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies/1.0.0-preview.1/microsoft.netframework.referenceassemblies.1.0.0-preview.1.nupkg 26ms
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/benchmarkdotnet/0.11.1/benchmarkdotnet.0.11.1.nupkg 27ms
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies.net461/index.json
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/commandlineparser/index.json
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies.net461/index.json 101ms
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies.net461/1.0.0-preview.1/microsoft.netframework.referenceassemblies.net461.1.0.0-preview.1.nupkg
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.csharp/index.json
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/commandlineparser/index.json 17ms
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/microsoft.dotnet.platformabstractions/index.json
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/commandlineparser/2.2.1/commandlineparser.2.2.1.nupkg
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies.net461/1.0.0-preview.1/microsoft.netframework.referenceassemblies.net461.1.0.0-preview.1.nupkg 25ms
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/microsoft.dotnet.platformabstractions/index.json 23ms
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/microsoft.dotnet.platformabstractions/1.1.1/microsoft.dotnet.platformabstractions.1.1.1.nupkg
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/system.collections.immutable/index.json
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/microsoft.dotnet.platformabstractions/1.1.1/microsoft.dotnet.platformabstractions.1.1.1.nupkg 11ms
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/commandlineparser/2.2.1/commandlineparser.2.2.1.nupkg 43ms
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/system.management/index.json
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/system.management/index.json 25ms
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/system.management/4.5.0/system.management.4.5.0.nupkg
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/system.collections/index.json
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/system.reflection.metadata/index.json
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/system.console/index.json
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/system.management/4.5.0/system.management.4.5.0.nupkg 11ms
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/system.collections.immutable/index.json 57ms
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.csharp/index.json 103ms
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/system.xml.xpath.xmldocument/index.json
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/system.collections.immutable/1.4.0/system.collections.immutable.1.4.0.nupkg
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/system.collections/index.json 22ms
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/system.diagnostics.debug/index.json
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.csharp/2.8.2/microsoft.codeanalysis.csharp.2.8.2.nupkg
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/system.collections/4.0.11-rc2-24027/system.collections.4.0.11-rc2-24027.nupkg
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/system.collections.immutable/1.4.0/system.collections.immutable.1.4.0.nupkg 12ms
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.csharp/2.8.2/microsoft.codeanalysis.csharp.2.8.2.nupkg 12ms
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/system.globalization/index.json
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/system.diagnostics.debug/index.json 20ms
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/system.io/index.json
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/system.linq/index.json
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/system.linq.expressions/index.json
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/system.xml.xpath.xmldocument/index.json 59ms
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/system.reflection/index.json
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/system.reflection.extensions/index.json
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/system.collections/4.0.11-rc2-24027/system.collections.4.0.11-rc2-24027.nupkg 64ms
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/system.reflection.typeextensions/index.json
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/system.resources.resourcemanager/index.json
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/system.runtime/index.json
+[00:00:28]   GET https://api.nuget.org/v3-flatcontainer/system.runtime.extensions/index.json
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/system.console/index.json 173ms
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/system.reflection.metadata/index.json 179ms
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/system.linq/index.json 212ms
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/system.reflection/index.json 187ms
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/system.reflection.extensions/index.json 179ms
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/system.runtime.extensions/index.json 139ms
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/system.runtime/index.json 190ms
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/system.resources.resourcemanager/index.json 200ms
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/system.reflection.typeextensions/index.json 214ms
+[00:00:28]   OK https://api.nuget.org/v3-flatcontainer/system.linq.expressions/index.json 247ms
+[00:00:29] Installing Microsoft.NETFramework.ReferenceAssemblies.net461 1.0.0-preview.1.
+[00:00:29] Installing Microsoft.NETFramework.ReferenceAssemblies 1.0.0-preview.1.
+[00:00:29] Installing AAubry.NETFramework.ReferenceAssemblies.net35 1.0.0-preview.1.
+[00:00:29]   GET https://api.nuget.org/v3-flatcontainer/system.diagnostics.debug/4.0.11-rc2-24027/system.diagnostics.debug.4.0.11-rc2-24027.nupkg
+[00:00:29]   GET https://api.nuget.org/v3-flatcontainer/system.xml.xpath.xmldocument/4.3.0/system.xml.xpath.xmldocument.4.3.0.nupkg
+[00:00:29]   GET https://api.nuget.org/v3-flatcontainer/system.console/4.0.0-rc2-24027/system.console.4.0.0-rc2-24027.nupkg
+[00:00:29]   OK https://api.nuget.org/v3-flatcontainer/system.diagnostics.debug/4.0.11-rc2-24027/system.diagnostics.debug.4.0.11-rc2-24027.nupkg 10ms
+[00:00:29]   GET https://api.nuget.org/v3-flatcontainer/system.reflection.metadata/1.5.0/system.reflection.metadata.1.5.0.nupkg
+[00:00:29]   GET https://api.nuget.org/v3-flatcontainer/system.linq/4.1.0-rc2-24027/system.linq.4.1.0-rc2-24027.nupkg
+[00:00:29]   GET https://api.nuget.org/v3-flatcontainer/system.reflection/4.1.0-rc2-24027/system.reflection.4.1.0-rc2-24027.nupkg
+[00:00:29]   OK https://api.nuget.org/v3-flatcontainer/system.xml.xpath.xmldocument/4.3.0/system.xml.xpath.xmldocument.4.3.0.nupkg 25ms
+[00:00:29]   OK https://api.nuget.org/v3-flatcontainer/system.linq/4.1.0-rc2-24027/system.linq.4.1.0-rc2-24027.nupkg 10ms
+[00:00:29]   OK https://api.nuget.org/v3-flatcontainer/system.console/4.0.0-rc2-24027/system.console.4.0.0-rc2-24027.nupkg 25ms
+[00:00:29]   OK https://api.nuget.org/v3-flatcontainer/system.reflection/4.1.0-rc2-24027/system.reflection.4.1.0-rc2-24027.nupkg 11ms
+[00:00:29]   GET https://api.nuget.org/v3-flatcontainer/system.reflection.extensions/4.0.1-rc2-24027/system.reflection.extensions.4.0.1-rc2-24027.nupkg
+[00:00:29]   OK https://api.nuget.org/v3-flatcontainer/system.reflection.metadata/1.5.0/system.reflection.metadata.1.5.0.nupkg 27ms
+[00:00:29]   GET https://api.nuget.org/v3-flatcontainer/system.runtime/4.1.0-rc2-24027/system.runtime.4.1.0-rc2-24027.nupkg
+[00:00:29]   GET https://api.nuget.org/v3-flatcontainer/system.resources.resourcemanager/4.0.1-rc2-24027/system.resources.resourcemanager.4.0.1-rc2-24027.nupkg
+[00:00:29]   OK https://api.nuget.org/v3-flatcontainer/system.io/index.json 1391ms
+[00:00:29]   GET https://api.nuget.org/v3-flatcontainer/system.runtime.extensions/4.1.0-rc2-24027/system.runtime.extensions.4.1.0-rc2-24027.nupkg
+[00:00:29]   GET https://api.nuget.org/v3-flatcontainer/system.linq.expressions/4.0.11-rc2-24027/system.linq.expressions.4.0.11-rc2-24027.nupkg
+[00:00:29]   OK https://api.nuget.org/v3-flatcontainer/system.reflection.extensions/4.0.1-rc2-24027/system.reflection.extensions.4.0.1-rc2-24027.nupkg 12ms
+[00:00:29]   OK https://api.nuget.org/v3-flatcontainer/system.runtime/4.1.0-rc2-24027/system.runtime.4.1.0-rc2-24027.nupkg 15ms
+[00:00:29]   OK https://api.nuget.org/v3-flatcontainer/system.globalization/index.json 1417ms
+[00:00:29]   GET https://api.nuget.org/v3-flatcontainer/system.reflection.typeextensions/4.1.0-rc2-24027/system.reflection.typeextensions.4.1.0-rc2-24027.nupkg
+[00:00:29]   OK https://api.nuget.org/v3-flatcontainer/system.resources.resourcemanager/4.0.1-rc2-24027/system.resources.resourcemanager.4.0.1-rc2-24027.nupkg 26ms
+[00:00:29]   OK https://api.nuget.org/v3-flatcontainer/system.runtime.extensions/4.1.0-rc2-24027/system.runtime.extensions.4.1.0-rc2-24027.nupkg 25ms
+[00:00:30]   OK https://api.nuget.org/v3-flatcontainer/system.linq.expressions/4.0.11-rc2-24027/system.linq.expressions.4.0.11-rc2-24027.nupkg 26ms
+[00:00:30]   OK https://api.nuget.org/v3-flatcontainer/system.reflection.typeextensions/4.1.0-rc2-24027/system.reflection.typeextensions.4.1.0-rc2-24027.nupkg 10ms
+[00:00:30]   GET https://api.nuget.org/v3-flatcontainer/system.io/4.1.0-rc2-24027/system.io.4.1.0-rc2-24027.nupkg
+[00:00:30]   OK https://api.nuget.org/v3-flatcontainer/system.io/4.1.0-rc2-24027/system.io.4.1.0-rc2-24027.nupkg 26ms
+[00:00:30]   GET https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.common/index.json
+[00:00:30]   OK https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.common/index.json 44ms
+[00:00:30]   GET https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.common/2.8.2/microsoft.codeanalysis.common.2.8.2.nupkg
+[00:00:30]   GET https://api.nuget.org/v3-flatcontainer/system.globalization/4.0.11-rc2-24027/system.globalization.4.0.11-rc2-24027.nupkg
+[00:00:30]   OK https://api.nuget.org/v3-flatcontainer/system.globalization/4.0.11-rc2-24027/system.globalization.4.0.11-rc2-24027.nupkg 10ms
+[00:00:30]   OK https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.common/2.8.2/microsoft.codeanalysis.common.2.8.2.nupkg 30ms
+[00:00:30] Installing Microsoft.CodeAnalysis.Common 2.8.2.
+[00:00:30] Installing System.Runtime.Extensions 4.1.0-rc2-24027.
+[00:00:30] Installing System.Runtime 4.1.0-rc2-24027.
+[00:00:30] Installing System.Globalization 4.0.11-rc2-24027.
+[00:00:30] Installing System.Console 4.0.0-rc2-24027.
+[00:00:30] Installing System.Linq.Expressions 4.0.11-rc2-24027.
+[00:00:30] Installing System.Reflection.TypeExtensions 4.1.0-rc2-24027.
+[00:00:30] Installing System.IO 4.1.0-rc2-24027.
+[00:00:30] Installing System.Resources.ResourceManager 4.0.1-rc2-24027.
+[00:00:30] Installing System.Linq 4.1.0-rc2-24027.
+[00:00:30] Installing System.Reflection 4.1.0-rc2-24027.
+[00:00:30] Installing System.Reflection.Extensions 4.0.1-rc2-24027.
+[00:00:30] Installing System.Collections 4.0.11-rc2-24027.
+[00:00:30] Installing System.Diagnostics.Debug 4.0.11-rc2-24027.
+[00:00:30] Installing Microsoft.CodeAnalysis.CSharp 2.8.2.
+[00:00:30] Installing CommandLineParser 2.2.1.
+[00:00:30] Installing System.Reflection.Metadata 1.5.0.
+[00:00:30] Installing System.Collections.Immutable 1.4.0.
+[00:00:30] Installing BenchmarkDotNet 0.11.1.
+[00:00:31] Installing System.Xml.XPath.XmlDocument 4.3.0.
+[00:00:31] Installing Microsoft.DotNet.PlatformAbstractions 1.1.1.
+[00:00:31] Installing System.Management 4.5.0.
+[00:00:33] Committing restore...
+[00:00:33] Generating MSBuild file C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.Lib\obj\YamlDotNet.PerformanceTests.Lib.csproj.nuget.g.props.
+[00:00:33] Generating MSBuild file C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.Lib\obj\YamlDotNet.PerformanceTests.Lib.csproj.nuget.g.targets.
+[00:00:33] Writing assets file to disk. Path: C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.Lib\obj\project.assets.json
+[00:00:33] Restore completed in 6.27 sec for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.Lib\YamlDotNet.PerformanceTests.Lib.csproj.
+[00:00:33] Restoring packages for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v1.2.1\YamlDotNet.PerformanceTests.v1.2.1.csproj...
+[00:00:33]   GET https://api.nuget.org/v3-flatcontainer/yamldotnet.core/index.json
+[00:00:33]   GET https://api.nuget.org/v3-flatcontainer/yamldotnet.representationmodel/index.json
+[00:00:33]   OK https://api.nuget.org/v3-flatcontainer/yamldotnet.representationmodel/index.json 25ms
+[00:00:33]   GET https://api.nuget.org/v3-flatcontainer/yamldotnet.representationmodel/1.2.1/yamldotnet.representationmodel.1.2.1.nupkg
+[00:00:33]   OK https://api.nuget.org/v3-flatcontainer/yamldotnet.representationmodel/1.2.1/yamldotnet.representationmodel.1.2.1.nupkg 11ms
+[00:00:33]   OK https://api.nuget.org/v3-flatcontainer/yamldotnet.core/index.json 132ms
+[00:00:33]   GET https://api.nuget.org/v3-flatcontainer/yamldotnet.core/1.2.1/yamldotnet.core.1.2.1.nupkg
+[00:00:33]   OK https://api.nuget.org/v3-flatcontainer/yamldotnet.core/1.2.1/yamldotnet.core.1.2.1.nupkg 12ms
+[00:00:33] Installing YamlDotNet.Core 1.2.1.
+[00:00:33] Installing YamlDotNet.RepresentationModel 1.2.1.
+[00:00:35] Committing restore...
+[00:00:35] Generating MSBuild file C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.Runner\obj\YamlDotNet.PerformanceTests.Runner.csproj.nuget.g.props.
+[00:00:35] Generating MSBuild file C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.Runner\obj\YamlDotNet.PerformanceTests.Runner.csproj.nuget.g.targets.
+[00:00:35] Writing assets file to disk. Path: C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.Runner\obj\project.assets.json
+[00:00:35] Committing restore...
+[00:00:35] Generating MSBuild file C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v1.2.1\obj\YamlDotNet.PerformanceTests.v1.2.1.csproj.nuget.g.props.
+[00:00:35] Generating MSBuild file C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v1.2.1\obj\YamlDotNet.PerformanceTests.v1.2.1.csproj.nuget.g.targets.
+[00:00:35] Writing assets file to disk. Path: C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v1.2.1\obj\project.assets.json
+[00:00:35] Restore completed in 7.7 sec for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.Runner\YamlDotNet.PerformanceTests.Runner.csproj.
+[00:00:35] Restore completed in 1.36 sec for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v1.2.1\YamlDotNet.PerformanceTests.v1.2.1.csproj.
+[00:00:35] Restoring packages for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v2.2.0\YamlDotNet.PerformanceTests.v2.2.0.csproj...
+[00:00:35] Restoring packages for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v2.3.0\YamlDotNet.PerformanceTests.v2.3.0.csproj...
+[00:00:35]   GET https://api.nuget.org/v3-flatcontainer/yamldotnet.core/2.2.0/yamldotnet.core.2.2.0.nupkg
+[00:00:35]   GET https://api.nuget.org/v3-flatcontainer/yamldotnet.representationmodel/2.2.0/yamldotnet.representationmodel.2.2.0.nupkg
+[00:00:35]   GET https://api.nuget.org/v3-flatcontainer/yamldotnet/index.json
+[00:00:35]   OK https://api.nuget.org/v3-flatcontainer/yamldotnet.representationmodel/2.2.0/yamldotnet.representationmodel.2.2.0.nupkg 12ms
+[00:00:35]   OK https://api.nuget.org/v3-flatcontainer/yamldotnet.core/2.2.0/yamldotnet.core.2.2.0.nupkg 33ms
+[00:00:35] Installing YamlDotNet.Core 2.2.0.
+[00:00:35] Installing YamlDotNet.RepresentationModel 2.2.0.
+[00:00:35]   OK https://api.nuget.org/v3-flatcontainer/yamldotnet/index.json 107ms
+[00:00:35]   GET https://api.nuget.org/v3-flatcontainer/yamldotnet/2.3.0-rc/yamldotnet.2.3.0-rc.nupkg
+[00:00:35]   OK https://api.nuget.org/v3-flatcontainer/yamldotnet/2.3.0-rc/yamldotnet.2.3.0-rc.nupkg 14ms
+[00:00:35] Installing YamlDotNet 2.3.0-rc.
+[00:00:35] Committing restore...
+[00:00:35] Generating MSBuild file C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v2.2.0\obj\YamlDotNet.PerformanceTests.v2.2.0.csproj.nuget.g.props.
+[00:00:35] Generating MSBuild file C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v2.2.0\obj\YamlDotNet.PerformanceTests.v2.2.0.csproj.nuget.g.targets.
+[00:00:35] Writing assets file to disk. Path: C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v2.2.0\obj\project.assets.json
+[00:00:35] Restore completed in 372.26 ms for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v2.2.0\YamlDotNet.PerformanceTests.v2.2.0.csproj.
+[00:00:35] Restoring packages for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v3.8.0\YamlDotNet.PerformanceTests.v3.8.0.csproj...
+[00:00:35]   GET https://api.nuget.org/v3-flatcontainer/yamldotnet/3.8.0/yamldotnet.3.8.0.nupkg
+[00:00:35]   OK https://api.nuget.org/v3-flatcontainer/yamldotnet/3.8.0/yamldotnet.3.8.0.nupkg 20ms
+[00:00:35] Installing YamlDotNet 3.8.0.
+[00:00:35] Committing restore...
+[00:00:35] Generating MSBuild file C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v2.3.0\obj\YamlDotNet.PerformanceTests.v2.3.0.csproj.nuget.g.props.
+[00:00:35] Generating MSBuild file C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v2.3.0\obj\YamlDotNet.PerformanceTests.v2.3.0.csproj.nuget.g.targets.
+[00:00:35] Writing assets file to disk. Path: C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v2.3.0\obj\project.assets.json
+[00:00:35] Restore completed in 444.5 ms for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v2.3.0\YamlDotNet.PerformanceTests.v2.3.0.csproj.
+[00:00:35] Restoring packages for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v4.0.0\YamlDotNet.PerformanceTests.v4.0.0.csproj...
+[00:00:35]   GET https://api.nuget.org/v3-flatcontainer/yamldotnet/4.0.0/yamldotnet.4.0.0.nupkg
+[00:00:35]   OK https://api.nuget.org/v3-flatcontainer/yamldotnet/4.0.0/yamldotnet.4.0.0.nupkg 36ms
+[00:00:35] Installing YamlDotNet 4.0.0.
+[00:00:35] Committing restore...
+[00:00:35] Generating MSBuild file C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v3.8.0\obj\YamlDotNet.PerformanceTests.v3.8.0.csproj.nuget.g.props.
+[00:00:35] Generating MSBuild file C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v3.8.0\obj\YamlDotNet.PerformanceTests.v3.8.0.csproj.nuget.g.targets.
+[00:00:35] Writing assets file to disk. Path: C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v3.8.0\obj\project.assets.json
+[00:00:35] Restore completed in 219.06 ms for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v3.8.0\YamlDotNet.PerformanceTests.v3.8.0.csproj.
+[00:00:35] Restoring packages for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v5.2.1\YamlDotNet.PerformanceTests.v5.2.1.csproj...
+[00:00:35]   GET https://api.nuget.org/v3-flatcontainer/yamldotnet/5.2.1/yamldotnet.5.2.1.nupkg
+[00:00:35]   OK https://api.nuget.org/v3-flatcontainer/yamldotnet/5.2.1/yamldotnet.5.2.1.nupkg 13ms
+[00:00:35] Installing YamlDotNet 5.2.1.
+[00:00:35] Committing restore...
+[00:00:35] Generating MSBuild file C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v4.0.0\obj\YamlDotNet.PerformanceTests.v4.0.0.csproj.nuget.g.props.
+[00:00:35] Generating MSBuild file C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v4.0.0\obj\YamlDotNet.PerformanceTests.v4.0.0.csproj.nuget.g.targets.
+[00:00:35] Writing assets file to disk. Path: C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v4.0.0\obj\project.assets.json
+[00:00:35] Restore completed in 234.05 ms for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v4.0.0\YamlDotNet.PerformanceTests.v4.0.0.csproj.
+[00:00:35] Restoring packages for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v8.0.0\YamlDotNet.PerformanceTests.v8.0.0.csproj...
+[00:00:35]   GET https://api.nuget.org/v3-flatcontainer/yamldotnet/8.0.0/yamldotnet.8.0.0.nupkg
+[00:00:35]   OK https://api.nuget.org/v3-flatcontainer/yamldotnet/8.0.0/yamldotnet.8.0.0.nupkg 11ms
+[00:00:35] Installing YamlDotNet 8.0.0.
+[00:00:35] Committing restore...
+[00:00:35] Generating MSBuild file C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v5.2.1\obj\YamlDotNet.PerformanceTests.v5.2.1.csproj.nuget.g.props.
+[00:00:35] Generating MSBuild file C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v5.2.1\obj\YamlDotNet.PerformanceTests.v5.2.1.csproj.nuget.g.targets.
+[00:00:35] Writing assets file to disk. Path: C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v5.2.1\obj\project.assets.json
+[00:00:35] Restore completed in 190.21 ms for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v5.2.1\YamlDotNet.PerformanceTests.v5.2.1.csproj.
+[00:00:35] Restoring packages for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.vlatest\YamlDotNet.PerformanceTests.vlatest.csproj...
+[00:00:36] Committing restore...
+[00:00:36] Generating MSBuild file C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v8.0.0\obj\YamlDotNet.PerformanceTests.v8.0.0.csproj.nuget.g.props.
+[00:00:36] Generating MSBuild file C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v8.0.0\obj\YamlDotNet.PerformanceTests.v8.0.0.csproj.nuget.g.targets.
+[00:00:36] Writing assets file to disk. Path: C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v8.0.0\obj\project.assets.json
+[00:00:36] Restore completed in 220.41 ms for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v8.0.0\YamlDotNet.PerformanceTests.v8.0.0.csproj.
+[00:00:36] Restoring packages for C:\projects\yamldotnet\YamlDotNet.AotTest\YamlDotNet.AotTest.csproj...
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies.net45/index.json
+[00:00:36] Committing restore...
+[00:00:36] Generating MSBuild file C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.vlatest\obj\YamlDotNet.PerformanceTests.vlatest.csproj.nuget.g.props.
+[00:00:36] Generating MSBuild file C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.vlatest\obj\YamlDotNet.PerformanceTests.vlatest.csproj.nuget.g.targets.
+[00:00:36] Writing assets file to disk. Path: C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.vlatest\obj\project.assets.json
+[00:00:36] Restore completed in 163.86 ms for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.vlatest\YamlDotNet.PerformanceTests.vlatest.csproj.
+[00:00:36] Restoring packages for C:\projects\yamldotnet\YamlDotNet.Samples\YamlDotNet.Samples.csproj...
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/index.json
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/xunit/index.json
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/index.json
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies.net45/index.json 25ms
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies.net45/1.0.0-preview.1/microsoft.netframework.referenceassemblies.net45.1.0.0-preview.1.nupkg
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies.net45/1.0.0-preview.1/microsoft.netframework.referenceassemblies.net45.1.0.0-preview.1.nupkg 10ms
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/index.json 32ms
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/2.4.0/xunit.runner.visualstudio.2.4.0.nupkg
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/index.json 72ms
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/15.9.0/microsoft.net.test.sdk.15.9.0.nupkg
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/xunit/index.json 83ms
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/xunit/2.4.0/xunit.2.4.0.nupkg
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/2.4.0/xunit.runner.visualstudio.2.4.0.nupkg 51ms
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/15.9.0/microsoft.net.test.sdk.15.9.0.nupkg 51ms
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/xunit/2.4.0/xunit.2.4.0.nupkg 47ms
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/xunit.core/index.json
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/xunit.assert/index.json
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/xunit.analyzers/index.json
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.testhost/index.json
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/microsoft.codecoverage/index.json
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/xunit.assert/index.json 33ms
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/xunit.assert/2.4.0/xunit.assert.2.4.0.nupkg
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/microsoft.codecoverage/index.json 44ms
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/microsoft.codecoverage/15.9.0/microsoft.codecoverage.15.9.0.nupkg
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/xunit.assert/2.4.0/xunit.assert.2.4.0.nupkg 45ms
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/xunit.core/index.json 86ms
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.testhost/index.json 67ms
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/microsoft.codecoverage/15.9.0/microsoft.codecoverage.15.9.0.nupkg 24ms
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/xunit.analyzers/index.json 88ms
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/xunit.core/2.4.0/xunit.core.2.4.0.nupkg
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.testhost/15.9.0/microsoft.testplatform.testhost.15.9.0.nupkg
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/xunit.analyzers/0.10.0/xunit.analyzers.0.10.0.nupkg
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/xunit.core/2.4.0/xunit.core.2.4.0.nupkg 27ms
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/xunit.extensibility.core/index.json
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/xunit.extensibility.execution/index.json
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.testhost/15.9.0/microsoft.testplatform.testhost.15.9.0.nupkg 27ms
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/xunit.analyzers/0.10.0/xunit.analyzers.0.10.0.nupkg 25ms
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/xunit.extensibility.execution/index.json 23ms
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/xunit.extensibility.execution/2.4.0/xunit.extensibility.execution.2.4.0.nupkg
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/xunit.extensibility.core/index.json 52ms
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/xunit.extensibility.execution/2.4.0/xunit.extensibility.execution.2.4.0.nupkg 30ms
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/xunit.extensibility.core/2.4.0/xunit.extensibility.core.2.4.0.nupkg
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/xunit.extensibility.core/2.4.0/xunit.extensibility.core.2.4.0.nupkg 33ms
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/xunit.abstractions/index.json
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.objectmodel/index.json
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/xunit.abstractions/index.json 49ms
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/xunit.abstractions/2.0.2/xunit.abstractions.2.0.2.nupkg
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/xunit.abstractions/2.0.2/xunit.abstractions.2.0.2.nupkg 25ms
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.objectmodel/index.json 51ms
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.objectmodel/15.9.0/microsoft.testplatform.objectmodel.15.9.0.nupkg
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.objectmodel/15.9.0/microsoft.testplatform.objectmodel.15.9.0.nupkg 25ms
+[00:00:36] Installing Microsoft.NETFramework.ReferenceAssemblies.net45 1.0.0-preview.1.
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/index.json
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/index.json 18ms
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/1.0.3/microsoft.extensions.dependencymodel.1.0.3.nupkg
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/1.0.3/microsoft.extensions.dependencymodel.1.0.3.nupkg 13ms
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/microsoft.dotnet.platformabstractions/1.0.3/microsoft.dotnet.platformabstractions.1.0.3.nupkg
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/microsoft.dotnet.platformabstractions/1.0.3/microsoft.dotnet.platformabstractions.1.0.3.nupkg 11ms
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/system.xml.xpath.xmldocument/4.0.1/system.xml.xpath.xmldocument.4.0.1.nupkg
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/system.xml.xpath.xmldocument/4.0.1/system.xml.xpath.xmldocument.4.0.1.nupkg 13ms
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/system.diagnostics.textwritertracelistener/index.json
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/system.diagnostics.tracesource/index.json
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/system.diagnostics.textwritertracelistener/index.json 24ms
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/system.diagnostics.textwritertracelistener/4.0.0/system.diagnostics.textwritertracelistener.4.0.0.nupkg
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/system.diagnostics.textwritertracelistener/4.0.0/system.diagnostics.textwritertracelistener.4.0.0.nupkg 13ms
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/system.diagnostics.tracesource/index.json 55ms
+[00:00:36]   GET https://api.nuget.org/v3-flatcontainer/system.diagnostics.tracesource/4.0.0/system.diagnostics.tracesource.4.0.0.nupkg
+[00:00:36]   OK https://api.nuget.org/v3-flatcontainer/system.diagnostics.tracesource/4.0.0/system.diagnostics.tracesource.4.0.0.nupkg 12ms
+[00:00:36] Installing System.Diagnostics.TraceSource 4.0.0.
+[00:00:36] Installing System.Diagnostics.TextWriterTraceListener 4.0.0.
+[00:00:36] Installing System.Xml.XPath.XmlDocument 4.0.1.
+[00:00:37] Installing System.ComponentModel.EventBasedAsync 4.0.11.
+[00:00:37] Installing Microsoft.DotNet.PlatformAbstractions 1.0.3.
+[00:00:37] Installing xunit.abstractions 2.0.2.
+[00:00:37] Installing Microsoft.TestPlatform.ObjectModel 15.9.0.
+[00:00:37] Installing Microsoft.Extensions.DependencyModel 1.0.3.
+[00:00:37] Installing xunit.extensibility.core 2.4.0.
+[00:00:37] Installing xunit.extensibility.execution 2.4.0.
+[00:00:37] Installing Microsoft.TestPlatform.TestHost 15.9.0.
+[00:00:37] Installing Microsoft.CodeCoverage 15.9.0.
+[00:00:37] Installing xunit.core 2.4.0.
+[00:00:37] Installing xunit.analyzers 0.10.0.
+[00:00:37] Installing xunit.assert 2.4.0.
+[00:00:37] Installing Microsoft.NET.Test.Sdk 15.9.0.
+[00:00:37] Installing xunit.runner.visualstudio 2.4.0.
+[00:00:37] Installing xunit 2.4.0.
+[00:00:39] Committing restore...
+[00:00:39] Generating MSBuild file C:\projects\yamldotnet\YamlDotNet.AotTest\obj\YamlDotNet.AotTest.csproj.nuget.g.props.
+[00:00:39] Generating MSBuild file C:\projects\yamldotnet\YamlDotNet.AotTest\obj\YamlDotNet.AotTest.csproj.nuget.g.targets.
+[00:00:39] Writing assets file to disk. Path: C:\projects\yamldotnet\YamlDotNet.AotTest\obj\project.assets.json
+[00:00:39] Restore completed in 3.3 sec for C:\projects\yamldotnet\YamlDotNet.AotTest\YamlDotNet.AotTest.csproj.
+[00:00:39] Restoring packages for C:\projects\yamldotnet\YamlDotNet.Test\YamlDotNet.Test.csproj...
+[00:00:39]   GET https://api.nuget.org/v3-flatcontainer/fakeiteasy/index.json
+[00:00:39]   GET https://api.nuget.org/v3-flatcontainer/fluentassertions/index.json
+[00:00:39]   OK https://api.nuget.org/v3-flatcontainer/fakeiteasy/index.json 27ms
+[00:00:39]   GET https://api.nuget.org/v3-flatcontainer/fakeiteasy/4.3.0/fakeiteasy.4.3.0.nupkg
+[00:00:39]   GET https://api.nuget.org/v3-flatcontainer/system.text.encoding.codepages/index.json
+[00:00:39]   GET https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies.net46/index.json
+[00:00:39]   OK https://api.nuget.org/v3-flatcontainer/fakeiteasy/4.3.0/fakeiteasy.4.3.0.nupkg 10ms
+[00:00:39]   OK https://api.nuget.org/v3-flatcontainer/fluentassertions/index.json 58ms
+[00:00:39]   GET https://api.nuget.org/v3-flatcontainer/fluentassertions/4.19.2/fluentassertions.4.19.2.nupkg
+[00:00:39]   OK https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies.net46/index.json 27ms
+[00:00:39]   GET https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies.net46/1.0.0-preview.1/microsoft.netframework.referenceassemblies.net46.1.0.0-preview.1.nupkg
+[00:00:39]   OK https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies.net46/1.0.0-preview.1/microsoft.netframework.referenceassemblies.net46.1.0.0-preview.1.nupkg 16ms
+[00:00:39]   OK https://api.nuget.org/v3-flatcontainer/system.text.encoding.codepages/index.json 56ms
+[00:00:39]   GET https://api.nuget.org/v3-flatcontainer/system.text.encoding.codepages/4.5.1/system.text.encoding.codepages.4.5.1.nupkg
+[00:00:39]   OK https://api.nuget.org/v3-flatcontainer/fluentassertions/4.19.2/fluentassertions.4.19.2.nupkg 37ms
+[00:00:39]   OK https://api.nuget.org/v3-flatcontainer/system.text.encoding.codepages/4.5.1/system.text.encoding.codepages.4.5.1.nupkg 76ms
+[00:00:39]   GET https://api.nuget.org/v3-flatcontainer/castle.core/index.json
+[00:00:39]   OK https://api.nuget.org/v3-flatcontainer/castle.core/index.json 59ms
+[00:00:39]   GET https://api.nuget.org/v3-flatcontainer/castle.core/4.2.1/castle.core.4.2.1.nupkg
+[00:00:39]   OK https://api.nuget.org/v3-flatcontainer/castle.core/4.2.1/castle.core.4.2.1.nupkg 30ms
+[00:00:39]   GET https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/index.json
+[00:00:39]   GET https://api.nuget.org/v3-flatcontainer/system.runtime.compilerservices.unsafe/index.json
+[00:00:39]   OK https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/index.json 17ms
+[00:00:39]   GET https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/2.1.2/microsoft.netcore.platforms.2.1.2.nupkg
+[00:00:39]   OK https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/2.1.2/microsoft.netcore.platforms.2.1.2.nupkg 15ms
+[00:00:39]   OK https://api.nuget.org/v3-flatcontainer/system.runtime.compilerservices.unsafe/index.json 44ms
+[00:00:39]   GET https://api.nuget.org/v3-flatcontainer/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg
+[00:00:39]   OK https://api.nuget.org/v3-flatcontainer/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg 12ms
+[00:00:40] Installing Microsoft.NETFramework.ReferenceAssemblies.net46 1.0.0-preview.1.
+[00:00:40] Installing System.Diagnostics.TraceSource 4.3.0.
+[00:00:40] Installing System.Runtime.CompilerServices.Unsafe 4.5.2.
+[00:00:40] Installing Microsoft.NETCore.Platforms 2.1.2.
+[00:00:40] Installing Castle.Core 4.2.1.
+[00:00:40] Installing System.Text.Encoding.CodePages 4.5.1.
+[00:00:40] Installing FakeItEasy 4.3.0.
+[00:00:40] Installing FluentAssertions 4.19.2.
+[00:00:41] Committing restore...
+[00:00:41] Generating MSBuild file C:\projects\yamldotnet\YamlDotNet.Samples\obj\YamlDotNet.Samples.csproj.nuget.g.props.
+[00:00:41] Generating MSBuild file C:\projects\yamldotnet\YamlDotNet.Samples\obj\YamlDotNet.Samples.csproj.nuget.g.targets.
+[00:00:41] Writing assets file to disk. Path: C:\projects\yamldotnet\YamlDotNet.Samples\obj\project.assets.json
+[00:00:41] Restore completed in 5.14 sec for C:\projects\yamldotnet\YamlDotNet.Samples\YamlDotNet.Samples.csproj.
+[00:00:41] Restoring packages for C:\projects\yamldotnet\YamlDotNet\YamlDotNet.csproj...
+[00:00:41]   GET https://api.nuget.org/v3-flatcontainer/nullable/index.json
+[00:00:41]   GET https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies.net20/index.json
+[00:00:41]   GET https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies.net40/index.json
+[00:00:41]   OK https://api.nuget.org/v3-flatcontainer/nullable/index.json 65ms
+[00:00:41]   GET https://api.nuget.org/v3-flatcontainer/nullable/1.1.1/nullable.1.1.1.nupkg
+[00:00:41]   OK https://api.nuget.org/v3-flatcontainer/nullable/1.1.1/nullable.1.1.1.nupkg 63ms
+[00:00:41]   OK https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies.net40/index.json 127ms
+[00:00:41]   OK https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies.net20/index.json 130ms
+[00:00:41]   GET https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies.net40/1.0.0-preview.1/microsoft.netframework.referenceassemblies.net40.1.0.0-preview.1.nupkg
+[00:00:41]   GET https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies.net20/1.0.0-preview.1/microsoft.netframework.referenceassemblies.net20.1.0.0-preview.1.nupkg
+[00:00:41]   OK https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies.net40/1.0.0-preview.1/microsoft.netframework.referenceassemblies.net40.1.0.0-preview.1.nupkg 32ms
+[00:00:41]   OK https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies.net20/1.0.0-preview.1/microsoft.netframework.referenceassemblies.net20.1.0.0-preview.1.nupkg 23ms
+[00:00:42] Installing Microsoft.NETFramework.ReferenceAssemblies.net40 1.0.0-preview.1.
+[00:00:42] Installing Microsoft.NETFramework.ReferenceAssemblies.net20 1.0.0-preview.1.
+[00:00:42] Installing Nullable 1.1.1.
+[00:00:44] Committing restore...
+[00:00:44] Generating MSBuild file C:\projects\yamldotnet\YamlDotNet.Test\obj\YamlDotNet.Test.csproj.nuget.g.props.
+[00:00:44] Generating MSBuild file C:\projects\yamldotnet\YamlDotNet.Test\obj\YamlDotNet.Test.csproj.nuget.g.targets.
+[00:00:44] Writing assets file to disk. Path: C:\projects\yamldotnet\YamlDotNet.Test\obj\project.assets.json
+[00:00:44] Restore completed in 4.75 sec for C:\projects\yamldotnet\YamlDotNet.Test\YamlDotNet.Test.csproj.
+[00:00:45] Committing restore...
+[00:00:45] Generating MSBuild file C:\projects\yamldotnet\YamlDotNet\obj\YamlDotNet.csproj.nuget.g.props.
+[00:00:45] Generating MSBuild file C:\projects\yamldotnet\YamlDotNet\obj\YamlDotNet.csproj.nuget.g.targets.
+[00:00:45] Writing assets file to disk. Path: C:\projects\yamldotnet\YamlDotNet\obj\project.assets.json
+[00:00:45] Restore completed in 4.09 sec for C:\projects\yamldotnet\YamlDotNet\YamlDotNet.csproj.
+[00:00:45] 
+[00:00:45] NuGet Config files used:
+[00:00:45]     C:\Users\appveyor\AppData\Roaming\NuGet\NuGet.Config
+[00:00:45]     C:\Program Files (x86)\NuGet\Config\Microsoft.VisualStudio.Offline.config
+[00:00:45]     C:\Program Files (x86)\NuGet\Config\Xamarin.Offline.config
+[00:00:45] 
+[00:00:45] Feeds used:
+[00:00:45]     C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
+[00:00:45]     https://api.nuget.org/v3/index.json
+[00:00:45] 
+[00:00:45] Installed:
+[00:00:45]     3 package(s) to C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.Lib\YamlDotNet.PerformanceTests.Lib.csproj
+[00:00:45]     25 package(s) to C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.Runner\YamlDotNet.PerformanceTests.Runner.csproj
+[00:00:45]     27 package(s) to C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v1.2.1\YamlDotNet.PerformanceTests.v1.2.1.csproj
+[00:00:45]     27 package(s) to C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v2.2.0\YamlDotNet.PerformanceTests.v2.2.0.csproj
+[00:00:45]     26 package(s) to C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v2.3.0\YamlDotNet.PerformanceTests.v2.3.0.csproj
+[00:00:45]     26 package(s) to C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v3.8.0\YamlDotNet.PerformanceTests.v3.8.0.csproj
+[00:00:45]     26 package(s) to C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v4.0.0\YamlDotNet.PerformanceTests.v4.0.0.csproj
+[00:00:45]     26 package(s) to C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v5.2.1\YamlDotNet.PerformanceTests.v5.2.1.csproj
+[00:00:45]     26 package(s) to C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v8.0.0\YamlDotNet.PerformanceTests.v8.0.0.csproj
+[00:00:45]     25 package(s) to C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.vlatest\YamlDotNet.PerformanceTests.vlatest.csproj
+[00:00:45]     3 package(s) to C:\projects\yamldotnet\YamlDotNet.AotTest\YamlDotNet.AotTest.csproj
+[00:00:45]     20 package(s) to C:\projects\yamldotnet\YamlDotNet.Samples\YamlDotNet.Samples.csproj
+[00:00:45]     28 package(s) to C:\projects\yamldotnet\YamlDotNet.Test\YamlDotNet.Test.csproj
+[00:00:45]     6 package(s) to C:\projects\yamldotnet\YamlDotNet\YamlDotNet.csproj
+[00:00:45] 
+[00:00:45] ========================================
+[00:00:45] Get-Version
+[00:00:45] ========================================
+[00:00:49] Building release:
+[00:00:49] 	Major:	8
+[00:00:49] 	Minor:	1
+[00:00:49] 	Patch:	2
+[00:00:49] 	PreReleaseTag:	
+[00:00:49] 	PreReleaseTagWithDash:	
+[00:00:49] 	PreReleaseLabel:	
+[00:00:49] 	PreReleaseNumber:	
+[00:00:49] 	BuildMetaData:	
+[00:00:49] 	BuildMetaDataPadded:	
+[00:00:49] 	FullBuildMetaData:	Branch.master.Sha.60139851a1fcf9e252b9336a4fe69235137694de
+[00:00:49] 	MajorMinorPatch:	8.1.2
+[00:00:49] 	SemVer:	8.1.2
+[00:00:49] 	LegacySemVer:	8.1.2
+[00:00:49] 	LegacySemVerPadded:	8.1.2
+[00:00:49] 	AssemblySemVer:	8.1.2.0
+[00:00:49] 	AssemblySemFileVer:	8.1.2.0
+[00:00:49] 	FullSemVer:	8.1.2
+[00:00:49] 	InformationalVersion:	8.1.2+Branch.master.Sha.60139851a1fcf9e252b9336a4fe69235137694de
+[00:00:49] 	BranchName:	master
+[00:00:49] 	Sha:	60139851a1fcf9e252b9336a4fe69235137694de
+[00:00:49] 	NuGetVersionV2:	8.1.2
+[00:00:49] 	NuGetVersion:	8.1.2
+[00:00:49] 	CommitsSinceVersionSource:	0
+[00:00:49] 	CommitsSinceVersionSourcePadded:	0000
+[00:00:49] 	CommitDate:	2020-05-28
+[00:00:49] 
+[00:00:49] 
+[00:00:49] ========================================
+[00:00:49] Set-Build-Version
+[00:00:49] ========================================
+[00:00:49] 
+[00:00:49] ========================================
+[00:00:49] Build-Release-Configurations
+[00:00:49] ========================================
+[00:00:49] 
+[00:00:49] ----------------------------------------
+[00:00:49] Building Release
+[00:00:49] ----------------------------------------
+[00:00:49] version: Cake.Common.Tools.GitVersion.GitVersion
+[00:00:49] version.NuGetVersion: 8.1.2
+[00:00:50] Microsoft (R) Build Engine version 16.5.0+d4cbfca49 for .NET Core
+[00:00:50] Copyright (C) Microsoft Corporation. All rights reserved.
+[00:00:50] 
+[00:00:54]   Restore completed in 753.83 ms for C:\projects\yamldotnet\YamlDotNet.Test\YamlDotNet.Test.csproj.
+[00:00:54]   Restore completed in 753.82 ms for C:\projects\yamldotnet\YamlDotNet\YamlDotNet.csproj.
+[00:00:54]   Restore completed in 39.66 ms for C:\projects\yamldotnet\YamlDotNet.AotTest\YamlDotNet.AotTest.csproj.
+[00:00:55]   Restore completed in 187.77 ms for C:\projects\yamldotnet\YamlDotNet.Samples\YamlDotNet.Samples.csproj.
+[00:00:55]   Restore completed in 209.94 ms for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.vlatest\YamlDotNet.PerformanceTests.vlatest.csproj.
+[00:00:55]   Restore completed in 122.77 ms for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v8.0.0\YamlDotNet.PerformanceTests.v8.0.0.csproj.
+[00:00:55]   Restore completed in 134.61 ms for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v5.2.1\YamlDotNet.PerformanceTests.v5.2.1.csproj.
+[00:00:55]   Restore completed in 136.21 ms for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v4.0.0\YamlDotNet.PerformanceTests.v4.0.0.csproj.
+[00:00:55]   Restore completed in 119.6 ms for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v3.8.0\YamlDotNet.PerformanceTests.v3.8.0.csproj.
+[00:00:55]   Restore completed in 118.98 ms for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v2.3.0\YamlDotNet.PerformanceTests.v2.3.0.csproj.
+[00:00:55]   Restore completed in 138.96 ms for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v2.2.0\YamlDotNet.PerformanceTests.v2.2.0.csproj.
+[00:00:55]   Restore completed in 141.95 ms for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v1.2.1\YamlDotNet.PerformanceTests.v1.2.1.csproj.
+[00:00:55]   Restore completed in 6.05 ms for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.Lib\YamlDotNet.PerformanceTests.Lib.csproj.
+[00:00:55]   Restore completed in 95.25 ms for C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.Runner\YamlDotNet.PerformanceTests.Runner.csproj.
+[00:01:01] Serialization\SerializerBuilder.cs(557,64): warning CS8625: Cannot convert null literal to non-nullable reference type. [C:\projects\yamldotnet\YamlDotNet\YamlDotNet.csproj]
+[00:01:01] Serialization\SerializerBuilder.cs(557,64): warning CS8625: Cannot convert null literal to non-nullable reference type. [C:\projects\yamldotnet\YamlDotNet\YamlDotNet.csproj]
+[00:01:02]   YamlDotNet -> C:\projects\yamldotnet\YamlDotNet\bin\Release\netcoreapp3.0\YamlDotNet.dll
+[00:01:02]   YamlDotNet -> C:\projects\yamldotnet\YamlDotNet\bin\Release\netstandard2.1\YamlDotNet.dll
+[00:01:05] Serialization\SerializerBuilder.cs(557,64): warning CS8625: Cannot convert null literal to non-nullable reference type. [C:\projects\yamldotnet\YamlDotNet\YamlDotNet.csproj]
+[00:01:05] Serialization\SerializerBuilder.cs(557,64): warning CS8625: Cannot convert null literal to non-nullable reference type. [C:\projects\yamldotnet\YamlDotNet\YamlDotNet.csproj]
+[00:01:05]   YamlDotNet -> C:\projects\yamldotnet\YamlDotNet\bin\Release\net20\YamlDotNet.dll
+[00:01:05]   YamlDotNet -> C:\projects\yamldotnet\YamlDotNet\bin\Release\netstandard1.3\YamlDotNet.dll
+[00:01:08] Serialization\SerializerBuilder.cs(557,64): warning CS8625: Cannot convert null literal to non-nullable reference type. [C:\projects\yamldotnet\YamlDotNet\YamlDotNet.csproj]
+[00:01:08]   YamlDotNet -> C:\projects\yamldotnet\YamlDotNet\bin\Release\net35\YamlDotNet.dll
+[00:01:08] Serialization\SerializerBuilder.cs(557,64): warning CS8625: Cannot convert null literal to non-nullable reference type. [C:\projects\yamldotnet\YamlDotNet\YamlDotNet.csproj]
+[00:01:08]   YamlDotNet -> C:\projects\yamldotnet\YamlDotNet\bin\Release\net40\YamlDotNet.dll
+[00:01:10] Serialization\SerializerBuilder.cs(557,64): warning CS8625: Cannot convert null literal to non-nullable reference type. [C:\projects\yamldotnet\YamlDotNet\YamlDotNet.csproj]
+[00:01:10]   YamlDotNet -> C:\projects\yamldotnet\YamlDotNet\bin\Release\net45\YamlDotNet.dll
+[00:01:10]   YamlDotNet.PerformanceTests.Lib -> C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.Lib\bin\Release\net461\YamlDotNet.PerformanceTests.Lib.dll
+[00:01:12]   YamlDotNet.PerformanceTests.v1.2.1 -> C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v1.2.1\bin\Release\net461\YamlDotNet.PerformanceTests.v1.2.1.exe
+[00:01:13]   YamlDotNet.Test -> C:\projects\yamldotnet\YamlDotNet.Test\bin\Release\netcoreapp3.0\YamlDotNet.Test.dll
+[00:01:13]   YamlDotNet.Samples -> C:\projects\yamldotnet\YamlDotNet.Samples\bin\Release\netcoreapp3.0\YamlDotNet.Samples.dll
+[00:01:13]   YamlDotNet.PerformanceTests.v2.2.0 -> C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v2.2.0\bin\Release\net461\YamlDotNet.PerformanceTests.v2.2.0.exe
+[00:01:15]   YamlDotNet.PerformanceTests.v3.8.0 -> C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v3.8.0\bin\Release\net461\YamlDotNet.PerformanceTests.v3.8.0.exe
+[00:01:15]   YamlDotNet.PerformanceTests.v2.3.0 -> C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v2.3.0\bin\Release\net461\YamlDotNet.PerformanceTests.v2.3.0.exe
+[00:01:15]   YamlDotNet.PerformanceTests.v4.0.0 -> C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v4.0.0\bin\Release\net461\YamlDotNet.PerformanceTests.v4.0.0.exe
+[00:01:15]   YamlDotNet.PerformanceTests.v5.2.1 -> C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v5.2.1\bin\Release\net461\YamlDotNet.PerformanceTests.v5.2.1.exe
+[00:01:15]   YamlDotNet.Test -> C:\projects\yamldotnet\YamlDotNet.Test\bin\Release\net46\YamlDotNet.Test.dll
+[00:01:16] ReceiptTest.cs(37,35): warning CS0618: 'CamelCaseNamingConvention.CamelCaseNamingConvention()' is obsolete: 'Use the Instance static field instead of creating new instances' [C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v8.0.0\YamlDotNet.PerformanceTests.v8.0.0.csproj]
+[00:01:16]   YamlDotNet.PerformanceTests.v8.0.0 -> C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v8.0.0\bin\Release\net461\YamlDotNet.PerformanceTests.v8.0.0.exe
+[00:01:16]   YamlDotNet.PerformanceTests.vlatest -> C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.vlatest\bin\Release\net461\YamlDotNet.PerformanceTests.vlatest.exe
+[00:01:16]   YamlDotNet.AotTest -> C:\projects\yamldotnet\YamlDotNet.AotTest\bin\Release\net45\YamlDotNet.AotTest.exe
+[00:01:16]   YamlDotNet.PerformanceTests.Runner -> C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.Runner\bin\Release\net461\YamlDotNet.PerformanceTests.Runner.exe
+[00:01:17] 
+[00:01:17] Build succeeded.
+[00:01:17] 
+[00:01:17] Serialization\SerializerBuilder.cs(557,64): warning CS8625: Cannot convert null literal to non-nullable reference type. [C:\projects\yamldotnet\YamlDotNet\YamlDotNet.csproj]
+[00:01:17] Serialization\SerializerBuilder.cs(557,64): warning CS8625: Cannot convert null literal to non-nullable reference type. [C:\projects\yamldotnet\YamlDotNet\YamlDotNet.csproj]
+[00:01:17] Serialization\SerializerBuilder.cs(557,64): warning CS8625: Cannot convert null literal to non-nullable reference type. [C:\projects\yamldotnet\YamlDotNet\YamlDotNet.csproj]
+[00:01:17] Serialization\SerializerBuilder.cs(557,64): warning CS8625: Cannot convert null literal to non-nullable reference type. [C:\projects\yamldotnet\YamlDotNet\YamlDotNet.csproj]
+[00:01:17] Serialization\SerializerBuilder.cs(557,64): warning CS8625: Cannot convert null literal to non-nullable reference type. [C:\projects\yamldotnet\YamlDotNet\YamlDotNet.csproj]
+[00:01:17] Serialization\SerializerBuilder.cs(557,64): warning CS8625: Cannot convert null literal to non-nullable reference type. [C:\projects\yamldotnet\YamlDotNet\YamlDotNet.csproj]
+[00:01:17] Serialization\SerializerBuilder.cs(557,64): warning CS8625: Cannot convert null literal to non-nullable reference type. [C:\projects\yamldotnet\YamlDotNet\YamlDotNet.csproj]
+[00:01:17] ReceiptTest.cs(37,35): warning CS0618: 'CamelCaseNamingConvention.CamelCaseNamingConvention()' is obsolete: 'Use the Instance static field instead of creating new instances' [C:\projects\yamldotnet\PerformanceTests\YamlDotNet.PerformanceTests.v8.0.0\YamlDotNet.PerformanceTests.v8.0.0.csproj]
+[00:01:17]     8 Warning(s)
+[00:01:17]     0 Error(s)
+[00:01:17] 
+[00:01:17] Time Elapsed 00:00:25.99
+[00:01:17] 
+[00:01:17] ========================================
+[00:01:17] Test-Release-Configurations
+[00:01:17] ========================================
+[00:01:18] C:\projects\yamldotnet\YamlDotNet.sln.metaproj : warning MSB4121: The project configuration for project "YamlDotNet.PerformanceTests.v8.0.0" was not specified in the solution file for the solution configuration "Debug|Any CPU". [C:\projects\yamldotnet\YamlDotNet.sln]
+[00:01:22] C:\projects\yamldotnet\YamlDotNet.sln.metaproj : warning MSB4121: The project configuration for project "YamlDotNet.PerformanceTests.v8.0.0" was not specified in the solution file for the solution configuration "Debug|Any CPU". [C:\projects\yamldotnet\YamlDotNet.sln]
+[00:01:26] Serialization\SerializerBuilder.cs(557,64): warning CS8625: Cannot convert null literal to non-nullable reference type. [C:\projects\yamldotnet\YamlDotNet\YamlDotNet.csproj]
+[00:01:26] Serialization\SerializerBuilder.cs(557,64): warning CS8625: Cannot convert null literal to non-nullable reference type. [C:\projects\yamldotnet\YamlDotNet\YamlDotNet.csproj]
+[00:01:28] Serialization\SerializerBuilder.cs(557,64): warning CS8625: Cannot convert null literal to non-nullable reference type. [C:\projects\yamldotnet\YamlDotNet\YamlDotNet.csproj]
+[00:01:28] Serialization\SerializerBuilder.cs(557,64): warning CS8625: Cannot convert null literal to non-nullable reference type. [C:\projects\yamldotnet\YamlDotNet\YamlDotNet.csproj]
+[00:01:30] Serialization\SerializerBuilder.cs(557,64): warning CS8625: Cannot convert null literal to non-nullable reference type. [C:\projects\yamldotnet\YamlDotNet\YamlDotNet.csproj]
+[00:01:31] Serialization\SerializerBuilder.cs(557,64): warning CS8625: Cannot convert null literal to non-nullable reference type. [C:\projects\yamldotnet\YamlDotNet\YamlDotNet.csproj]
+[00:01:32] Serialization\SerializerBuilder.cs(557,64): warning CS8625: Cannot convert null literal to non-nullable reference type. [C:\projects\yamldotnet\YamlDotNet\YamlDotNet.csproj]
+[00:01:36] Test run for C:\projects\yamldotnet\YamlDotNet.Samples\bin\Debug\netcoreapp3.0\YamlDotNet.Samples.dll(.NETCoreApp,Version=v3.0)
+[00:01:37] Microsoft (R) Test Execution Command Line Tool Version 16.5.0
+[00:01:37] Copyright (c) Microsoft Corporation.  All rights reserved.
+[00:01:37] 
+[00:01:37] Test run for C:\projects\yamldotnet\YamlDotNet.Test\bin\Debug\net46\YamlDotNet.Test.dll(.NETFramework,Version=v4.6)
+[00:01:37] Starting test execution, please wait...
+[00:01:37] Microsoft (R) Test Execution Command Line Tool Version 16.5.0
+[00:01:37] Copyright (c) Microsoft Corporation.  All rights reserved.
+[00:01:37] 
+[00:01:37] 
+[00:01:37] A total of 1 test files matched the specified pattern.
+[00:01:37] Starting test execution, please wait...
+[00:01:37] 
+[00:01:37] A total of 1 test files matched the specified pattern.
+[00:01:42] 
+[00:01:43] Test Run Successful.
+[00:01:43] Total tests: 6
+[00:01:43]      Passed: 6
+[00:01:43]  Total time: 5.2478 Seconds
+[00:01:46] 
+[00:01:46] Test Run Successful.
+[00:01:46] Total tests: 868
+[00:01:46]      Passed: 868
+[00:01:46]  Total time: 8.9202 Seconds
+[00:01:47] Test run for C:\projects\yamldotnet\YamlDotNet.Test\bin\Debug\netcoreapp3.0\YamlDotNet.Test.dll(.NETCoreApp,Version=v3.0)
+[00:01:47] Microsoft (R) Test Execution Command Line Tool Version 16.5.0
+[00:01:47] Copyright (c) Microsoft Corporation.  All rights reserved.
+[00:01:47] 
+[00:01:47] Starting test execution, please wait...
+[00:01:47] 
+[00:01:47] A total of 1 test files matched the specified pattern.
+[00:01:51] 
+[00:01:51] Test Run Successful.
+[00:01:51] Total tests: 868
+[00:01:51]      Passed: 868
+[00:01:51]  Total time: 3.7605 Seconds
+[00:01:51] 
+[00:01:51] ========================================
+[00:01:51] Package
+[00:01:51] ========================================
+[00:01:52] Attempting to build package from 'YamlDotNet.nuspec.temp.nuspec'.
+[00:01:52] Successfully created package 'C:\projects\yamldotnet\YamlDotNet\bin\YamlDotNet.8.1.2.nupkg'.
+[00:01:52] WARNING: NU5128: Some target frameworks declared in the dependencies group of the nuspec and the lib/ref folder do not have exact matches in the other location. Consult the list of actions below:
+[00:01:52] - Add a dependency group for .NETFramework4.5 to the nuspec
+[00:01:52] - Add a dependency group for .NETFramework3.5 to the nuspec
+[00:01:52] - Add a dependency group for .NETFramework2.0 to the nuspec
+[00:01:52] - Add a dependency group for .NETStandard1.3 to the nuspec
+[00:01:52] - Add a dependency group for .NETStandard2.1 to the nuspec
+[00:01:52] - Add a dependency group for .NETFramework3.5-Client to the nuspec
+[00:01:52] WARNING: NU5048: The 'PackageIconUrl'/'iconUrl' element is deprecated. Consider using the 'PackageIcon'/'icon' element instead. Learn more at https://aka.ms/deprecateIconUrl
+[00:01:52] 
+[00:01:52] Task                          Duration            
+[00:01:52] --------------------------------------------------
+[00:01:52] Clean                         00:00:00.0130718    
+[00:01:52] Restore-NuGet-Packages        00:00:23.1727815    
+[00:01:52] Fix-GitVersionOnLinux         Skipped             
+[00:01:52] Get-Version                   00:00:04.4098411    
+[00:01:52] Set-Build-Version             00:00:00.0071667    
+[00:01:52] Build-Release-Configurations  00:00:27.1860418    
+[00:01:52] Test-Release-Configurations   00:00:34.4695890    
+[00:01:52] Package                       00:00:01.0753877    
+[00:01:52] --------------------------------------------------
+[00:01:52] Total:                        00:01:30.3338796    
+[00:01:52] Collecting artifacts...
+[00:01:52] Found artifact 'YamlDotNet\bin\Release\net20' matching 'YamlDotNet\bin\Release\net20' path
+[00:01:52] Found artifact 'YamlDotNet\bin\Release\net35' matching 'YamlDotNet\bin\Release\net35' path
+[00:01:52] Found artifact 'YamlDotNet\bin\Release\net40' matching 'YamlDotNet\bin\Release\net40' path
+[00:01:52] Found artifact 'YamlDotNet\bin\Release\net45' matching 'YamlDotNet\bin\Release\net45' path
+[00:01:52] Found artifact 'YamlDotNet\bin\Release\netstandard1.3' matching 'YamlDotNet\bin\Release\netstandard1.3' path
+[00:01:52] Found artifact 'YamlDotNet\bin\Release\netstandard2.1' matching 'YamlDotNet\bin\Release\netstandard2.1' path
+[00:01:52] Found artifact 'YamlDotNet\bin\YamlDotNet.8.1.2.nupkg' matching 'YamlDotNet\bin\*.nupkg' path
+[00:01:52] Uploading artifacts...
+[00:01:52] 
+[00:01:53] [1/7] Release-Net20...Zipping to Release-Net20.zip
+[00:01:53] [1/7] YamlDotNet\bin\Release\Release-Net20.zip (154,651 bytes)...43%
+[00:01:53] [1/7] YamlDotNet\bin\Release\Release-Net20.zip (154,651 bytes)...100%
+[00:01:53] 
+[00:01:54] [2/7] Release-Net35...Zipping to Release-Net35.zip
+[00:01:54] [2/7] YamlDotNet\bin\Release\Release-Net35.zip (148,744 bytes)...45%
+[00:01:54] [2/7] YamlDotNet\bin\Release\Release-Net35.zip (148,744 bytes)...100%
+[00:01:54] 
+[00:01:54] [3/7] Release-UnitySubset-v35...Zipping to Release-UnitySubset-v35.zip
+[00:01:54] [3/7] YamlDotNet\bin\Release\Release-UnitySubset-v35.zip (192,988 bytes)...34%
+[00:01:54] [3/7] YamlDotNet\bin\Release\Release-UnitySubset-v35.zip (192,988 bytes)...100%
+[00:01:54] 
+[00:01:54] [4/7] Release-Net45...Zipping to Release-Net45.zip
+[00:01:54] [4/7] YamlDotNet\bin\Release\Release-Net45.zip (179,177 bytes)...37%
+[00:01:54] [4/7] YamlDotNet\bin\Release\Release-Net45.zip (179,177 bytes)...100%
+[00:01:55] 
+[00:01:55] [5/7] Release-NetStandard-1.3...Zipping to Release-NetStandard-1.3.zip
+[00:01:55] [5/7] YamlDotNet\bin\Release\Release-NetStandard-1.3.zip (157,920 bytes)...42%
+[00:01:55] [5/7] YamlDotNet\bin\Release\Release-NetStandard-1.3.zip (157,920 bytes)...100%
+[00:01:55] 
+[00:01:55] [6/7] Release-NetStandard-2.1...Zipping to Release-NetStandard-2.1.zip
+[00:01:55] [6/7] YamlDotNet\bin\Release\Release-NetStandard-2.1.zip (151,498 bytes)...44%
+[00:01:55] [6/7] YamlDotNet\bin\Release\Release-NetStandard-2.1.zip (151,498 bytes)...100%
+[00:01:56] 
+[00:01:56] [7/7] YamlDotNet\bin\YamlDotNet.8.1.2.nupkg (645,135 bytes)...11%
+[00:01:56] [7/7] YamlDotNet\bin\YamlDotNet.8.1.2.nupkg (645,135 bytes)...100%
+[00:01:56] Deploying using NuGet provider
+[00:01:57] Publishing YamlDotNet.8.1.2.nupkg to https://www.nuget.org/api/v2/package...OK
+[00:01:57] Total packages published: 1
+[00:01:57] Build success
